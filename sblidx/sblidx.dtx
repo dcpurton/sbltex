@@ -411,13 +411,15 @@ delim_t "}"
         title   = \l_@@_modern_authors_title_tl ,
         options = -s ~ sblidx.ist ~ -q
       ]
-    \DeclareIndexNameFormat{default}{%
-      \usebibmacro{index:name}
-        {\index[\jobname-modern-authors]}
-        {\namepartfamily}
-        {\namepartgiven}
-        {\namepartprefix}
-        {\namepartsuffix}}
+    \DeclareIndexNameFormat { default }
+      {
+        \usebibmacro { index:name }
+          { \index [ \jobname-modern-authors ] }
+          { \namepartfamily }
+          { \namepartgiven }
+          { \namepartprefix }
+          { \namepartsuffix }
+      }
   }
 %    \end{macrocode}
 %
