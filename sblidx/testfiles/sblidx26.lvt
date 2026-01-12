@@ -1,0 +1,31 @@
+\documentclass{article}
+\begin{filecontents}{\jobname.bib}
+@book{talbert:1992,
+  author = {Talbert, Charles H.},
+  title = {Reading John},
+  subtitle = {A Literary and Theological Commentary on the Fourth
+              Gospel and the Johannine Epistles},
+  location = {New York},
+  publisher = {Crossroad},
+  date = {1992}
+}
+\end{filecontents}
+\input{regression-test}
+\usepackage[style=sbl]{biblatex}
+\addbibresource{\jobname.bib}
+\usepackage[subject, ancient sources, modern authors]{sblidx}
+\pagestyle{empty}
+\begin{document}
+A topic\index{topic}. A reference to \ibibleverse{John}(1:1)
+\autocite{talbert:1992}. Another topic.\footnote{An index entry in a
+footnote.\index{another topic}.} And an example of a cross reference in an
+index.\index{entry|see{topic}}
+
+\clearpage
+
+\showoutput
+\START
+
+\SBLPrintIndices
+
+\end{document}

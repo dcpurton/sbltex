@@ -1,0 +1,370 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+runsystem(makeindex -s sblidx.ist -q sblidx26-ancient-sources.idx)...executed safely (allowed).
+(sblidx26-ancient-sources.ind)
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 508.04298fil
+...\write-{}
+...\write-{}
+...\glue(\topskip) 0.00002
+...\hbox(9.99998+0.0)x345.0, glue set 185.35182fil
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+....\OT1/cmr/bx/n/14.4 A
+....\OT1/cmr/bx/n/14.4 n
+....\OT1/cmr/bx/n/14.4 c
+....\OT1/cmr/bx/n/14.4 i
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 n
+....\kern-0.45001
+....\OT1/cmr/bx/n/14.4 t
+....\glue 5.4 plus 2.7 minus 1.79999
+....\OT1/cmr/bx/n/14.4 S
+....\OT1/cmr/bx/n/14.4 o
+....\OT1/cmr/bx/n/14.4 u
+....\OT1/cmr/bx/n/14.4 r
+....\OT1/cmr/bx/n/14.4 c
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 s
+....\glue 5.4 plus 2.7 minus 1.79999
+....\OT1/cmr/bx/n/14.4 I
+....\OT1/cmr/bx/n/14.4 n
+....\OT1/cmr/bx/n/14.4 d
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 x
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\penalty 10000
+...\glue 9.90276 plus 0.86108
+...\write1{\@writefile{toc}{\protect \contentsline {section}{Ancient Sources Index}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 0.0
+...\kern 1.0
+...\hbox(21.0+1.75)x345.0, glue set 18.0675fil
+....\vbox(21.0+0.0)x154.4325
+.....\glue 0.0 plus -2.0
+.....\glue(\splittopskip) 3.825 plus 2.0
+.....\hbox(6.175+0.0)x154.4325, glue set 81.53404fil
+......\OT1/cmr/bx/n/9 N
+......\OT1/cmr/bx/n/9 e
+......\OT1/cmr/bx/n/9 w
+......\glue 3.54996 plus 1.77498 minus 1.18332
+......\OT1/cmr/bx/n/9 T
+......\kern-0.88751
+......\OT1/cmr/bx/n/9 e
+......\OT1/cmr/bx/n/9 s
+......\discretionary
+.......\OT1/cmr/bx/n/9 -
+......\OT1/cmr/bx/n/9 t
+......\OT1/cmr/bx/n/9 a
+......\discretionary
+.......\OT1/cmr/bx/n/9 -
+......\OT1/cmr/bx/n/9 m
+......\OT1/cmr/bx/n/9 e
+......\OT1/cmr/bx/n/9 n
+......\kern-0.29585
+......\OT1/cmr/bx/n/9 t
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\rule(*+*)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(21.0+0.0)x154.4325
+.....\glue 0.0 plus -2.0
+.....\glue(\splittopskip) 3.75 plus 2.0
+.....\hbox(6.25+0.0)x154.4325, glue set 134.77708fil
+......\hbox(0.0+0.0)x0.0
+......\OT1/cmr/m/n/9 J
+......\OT1/cmr/m/n/9 o
+......\OT1/cmr/m/n/9 h
+......\OT1/cmr/m/n/9 n
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+.....\glue(\parskip) 0.0 plus 0.3
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 5.20001
+.....\hbox(5.79999+0.0)x154.4325, glue set 110.67073fill
+......\hbox(0.0+0.0)x0.0
+......\rule(*+*)x0.0
+......\penalty 10000
+......\glue 18.06749
+......\glue 0.0
+......\OT1/cmr/m/n/9 1
+......\OT1/cmr/m/n/9 :
+......\OT1/cmr/m/n/9 1
+......\glue 9.24994
+......\glue 0.0 plus 1.0fill
+......\OT1/cmr/m/n/9 1
+......\kern 0.0
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+....\hbox(3.87498+1.75)x0.0, glue set - 5.13885fil
+.....\hbox(3.87498+1.75)x5.13885
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\kern -1.75
+...\penalty 0
+...\penalty 10000
+...\penalty 0
+...\glue 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 30.0
+..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
+runsystem(makeindex -s sblidx.ist -q sblidx26-modern-authors.idx)...executed safely (allowed).
+(sblidx26-modern-authors.ind)
+Completed box being shipped out [3]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 519.04181fil
+...\write-{}
+...\glue(\topskip) 0.00002
+...\hbox(9.99998+0.0)x345.0, glue set 180.66013fil
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+....\OT1/cmr/bx/n/14.4 M
+....\OT1/cmr/bx/n/14.4 o
+....\kern0.45
+....\OT1/cmr/bx/n/14.4 d
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 r
+....\OT1/cmr/bx/n/14.4 n
+....\glue 5.4 plus 2.7 minus 1.79999
+....\OT1/cmr/bx/n/14.4 A
+....\OT1/cmr/bx/n/14.4 u
+....\OT1/cmr/bx/n/14.4 t
+....\OT1/cmr/bx/n/14.4 h
+....\OT1/cmr/bx/n/14.4 o
+....\OT1/cmr/bx/n/14.4 r
+....\OT1/cmr/bx/n/14.4 s
+....\glue 5.4 plus 2.7 minus 1.79999
+....\OT1/cmr/bx/n/14.4 I
+....\OT1/cmr/bx/n/14.4 n
+....\OT1/cmr/bx/n/14.4 d
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 x
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\penalty 10000
+...\glue 9.90276 plus 0.86108
+...\write1{\@writefile{toc}{\protect \contentsline {section}{Modern Authors Index}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 0.0
+...\kern 1.0
+...\hbox(10.0+1.75)x345.0, glue set 18.0675fil
+....\vbox(10.0+1.75)x154.4325
+.....\glue 0.0 plus -2.0
+.....\glue(\splittopskip) 3.75 plus 2.0
+.....\hbox(6.25+1.75)x154.4325, glue set 43.5916fill
+......\OT1/cmr/m/n/9 T
+......\kern-0.77083
+......\OT1/cmr/m/n/9 a
+......\OT1/cmr/m/n/9 l
+......\OT1/cmr/m/n/9 b
+......\kern0.25694
+......\OT1/cmr/m/n/9 e
+......\OT1/cmr/m/n/9 r
+......\OT1/cmr/m/n/9 t
+......\OT1/cmr/m/n/9 ,
+......\glue 3.08331 plus 1.92706 minus 0.8222
+......\OT1/cmr/m/n/9 C
+......\OT1/cmr/m/n/9 h
+......\OT1/cmr/m/n/9 a
+......\OT1/cmr/m/n/9 r
+......\OT1/cmr/m/n/9 l
+......\OT1/cmr/m/n/9 e
+......\OT1/cmr/m/n/9 s
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 H
+......\OT1/cmr/m/n/9 .
+......\glue 9.24994
+......\glue 0.0 plus 1.0fill
+......\OT1/cmr/m/n/9 1
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 n
+......\OT1/cmr/m/n/9 .
+......\penalty 10000
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 1
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\rule(*+*)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(10.0+0.0)x154.4325, glue set -5.0
+.....\glue 0.0 plus -2.0
+....\hbox(3.87498+1.75)x0.0, glue set - 5.13885fil
+.....\hbox(3.87498+1.75)x5.13885
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\kern -1.75
+...\penalty 0
+...\penalty 10000
+...\penalty 0
+...\glue 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 30.0
+..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
+runsystem(makeindex -s sblidx.ist -q sblidx26.idx)...executed safely (allowed).
+(sblidx26.ind)
+Completed box being shipped out [4]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 500.04384fil
+...\write-{}
+...\glue(\topskip) 0.00002
+...\hbox(9.99998+2.79999)x345.0, glue set 245.88345fil
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+....\OT1/cmr/bx/n/14.4 S
+....\OT1/cmr/bx/n/14.4 u
+....\OT1/cmr/bx/n/14.4 b
+....\kern0.9
+....\OT1/cmr/bx/n/14.4 j
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 c
+....\OT1/cmr/bx/n/14.4 t
+....\glue 5.4 plus 2.7 minus 1.79999
+....\OT1/cmr/bx/n/14.4 I
+....\OT1/cmr/bx/n/14.4 n
+....\OT1/cmr/bx/n/14.4 d
+....\OT1/cmr/bx/n/14.4 e
+....\OT1/cmr/bx/n/14.4 x
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\penalty 10000
+...\glue 9.90276 plus 0.86108
+...\write1{\@writefile{toc}{\protect \contentsline {section}{Subject Index}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 0.0
+...\kern -1.79999
+...\hbox(29.0+1.75)x345.0, glue set 18.0675fil
+....\vbox(29.0+1.75)x154.4325, glue set - 1.0
+.....\glue 0.0 plus -2.0
+.....\glue(\splittopskip) 3.75 plus 2.0
+.....\hbox(6.25+1.75)x154.4325, glue set 71.67264fil
+......\OT1/cmr/m/n/9 a
+......\OT1/cmr/m/n/9 n
+......\OT1/cmr/m/n/9 o
+......\OT1/cmr/m/n/9 t
+......\OT1/cmr/m/n/9 h
+......\OT1/cmr/m/n/9 e
+......\OT1/cmr/m/n/9 r
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 t
+......\OT1/cmr/m/n/9 o
+......\OT1/cmr/m/n/9 p
+......\OT1/cmr/m/n/9 i
+......\OT1/cmr/m/n/9 c
+......\OT1/cmr/m/n/9 ,
+......\glue 3.08331 plus 1.92706 minus 0.8222
+......\OT1/cmr/m/n/9 1
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 n
+......\OT1/cmr/m/n/9 .
+......\penalty 10000
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 2
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+.....\glue 12.0 plus 4.0 minus 4.0
+.....\glue 0.0
+.....\glue(\parskip) 0.0 plus 0.3
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 3.10002
+.....\hbox(6.14998+1.75)x154.4325, glue set 89.6313fil
+......\hbox(0.0+0.0)x0.0
+......\OT1/cmr/m/n/9 e
+......\OT1/cmr/m/n/9 n
+......\kern-0.25694
+......\OT1/cmr/m/n/9 t
+......\OT1/cmr/m/n/9 r
+......\OT1/cmr/m/n/9 y
+......\OT1/cmr/m/n/9 .
+......\glue 4.11108 plus 4.62497 minus 0.34259
+......\OT1/cmr/m/it/9 S
+......\OT1/cmr/m/it/9 e
+......\kern-0.47224
+......\OT1/cmr/m/it/9 e
+......\kern 0.67986
+......\glue 3.08331 plus 1.54166 minus 1.02777
+......\OT1/cmr/m/n/9 t
+......\OT1/cmr/m/n/9 o
+......\OT1/cmr/m/n/9 p
+......\OT1/cmr/m/n/9 i
+......\OT1/cmr/m/n/9 c
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\rule(*+*)x0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(29.0+0.0)x154.4325, glue set 17.25fil
+.....\glue 0.0 plus -2.0
+.....\glue(\splittopskip) 3.97816 plus 2.0
+.....\hbox(6.02184+1.75)x154.4325, glue set 124.11325fil
+......\hbox(0.0+0.0)x0.0
+......\OT1/cmr/m/n/9 t
+......\OT1/cmr/m/n/9 o
+......\OT1/cmr/m/n/9 p
+......\OT1/cmr/m/n/9 i
+......\OT1/cmr/m/n/9 c
+......\OT1/cmr/m/n/9 ,
+......\glue 3.08331 plus 1.92706 minus 0.8222
+......\OT1/cmr/m/n/9 1
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0
+.....\glue 0.0 plus 1.0fil
+....\hbox(3.87498+1.75)x0.0, glue set - 5.13885fil
+.....\hbox(3.87498+1.75)x5.13885
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\kern -1.75
+...\penalty 0
+...\penalty 10000
+...\penalty 0
+...\glue 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 30.0
+..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
+(sblidx26.aux)
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+Package logreq Info: Writing requests to 'sblidx26.run.xml'.

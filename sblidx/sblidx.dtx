@@ -68,11 +68,16 @@
 % A subject index is automatically enabled and indices of modern authors and
 % ancient sources can optionally be added. Modern authors are indexed when
 % they are cited using the \pkg{biblatex-sbl} package and books of the Bible
-% are indexed using the \pkg{bibleref-sbl} package.
+% are indexed using the \pkg{bibleref-sbl} package. The different format of
+% these three indices as required by the SBL is handled automatically.
 %
 % \subsection{Usage}
 %
-% A simple example document is shown in Figure \ref{exampleusage}.
+% A simple example document is shown in Figure \ref{exampleusage} and the
+% output is shown in Figure \ref{exampleoutput}.
+%
+% \textbf{Note:} You should load \pkg{sblidx} \emph{after} you load
+% \pkg{biblatex}.
 %
 % \lstset{
 %   language={[LaTeX]TeX},
@@ -83,7 +88,7 @@
 %   tabsize=2,
 % }
 %
-% \begin{figure}
+% \begin{figure}[b!]
 % \iffalse
 %<*example>
 % \fi
@@ -100,6 +105,8 @@
   date = {1992}
 }
 \end{filecontents}
+\usepackage[style=sbl]{biblatex}
+\addbibresource{\jobname.bib}
 \usepackage[subject, ancient sources, modern authors]{sblidx}
 \begin{document}
 A topic\index{topic}. A reference to \ibibleverse{John}(1:1)
@@ -113,8 +120,37 @@ cross reference in an index.\index{entry|see{topic}}
 %</example>
 % \fi
 %   \caption{Example \LaTeX\ source showing subject, ancient sources and
-%   modern authors indices.}
+%     modern authors indices.}
 %   \label{exampleusage}
+% \end{figure}
+%
+% \begin{figure}
+%   \centering
+%   \framebox[0.5\linewidth]{%
+%     \parbox{\dimexpr 0.5\linewidth-2\fboxsep-2\fboxrule}{%
+%       \setlength{\parskip}{0pt}\small
+%       {\large\bfseries Ancient Sources Index\par}
+%       \medskip
+%       \textbf{New Testament}\par
+%       \quad John\par
+%       \qquad 1:1\hfill 1\par
+%       \bigskip
+%       {\large\bfseries Modern Authors Index\par}
+%       \medskip
+%       Talbert, Charles H.\hfill 1 n.~1\par
+%       \bigskip
+%       {\large\bfseries Subject Index\par}
+%       \medskip
+%       another topic, 1 n.~2\par
+%       \smallskip
+%       entry. \emph{See} topic\par
+%       \smallskip
+%       topic, 1
+%     }%
+%   }
+%   \caption{Example output showing subject, ancient sources and modern
+%     authors indices.}
+%   \label{exampleoutput}
 % \end{figure}
 %
 % \subsection{Bug Reports and Feature Requests}
@@ -307,7 +343,7 @@ delim_t "}"
   {
     , ancient~sources       .bool_set:N = \l_@@_ancient_sources_bool
     , ancient~sources~title .tl_set:N   = \l_@@_ancient_sources_title_tl
-    , ancient sources title .initial:n  = Ancient~Sources~Index
+    , ancient~sources~title .initial:n  = Ancient~Sources~Index
     , modern~authors        .bool_set:N = \l_@@_modern_authors_bool
     , modern~authors~title  .tl_set:N   = \l_@@_modern_authors_title_tl
     , modern~authors~title  .initial:n  = Modern~Authors~Index
@@ -359,7 +395,7 @@ delim_t "}"
       ]
     \cs_set_nopar:Npn \biblerefindex
       {
-        \@sblidx@index [ \jobname-ancient-sources ]
+        \index [ \jobname-ancient-sources ]
       }
   }
 %    \end{macrocode}
@@ -368,6 +404,7 @@ delim_t "}"
 \bool_if:NT \l_@@_modern_authors_bool
   {
     \RequirePackage { biblatex }
+    \ExecuteBibliographyOptions { indexing = true }
     \makeindex
       [
         name    = \jobname-modern-authors ,
