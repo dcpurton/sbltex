@@ -1,0 +1,407 @@
+% \iffalse meta-comment
+%
+% Copyright (c) 2026 David Purton <dcpurton@marshwiggle.net>
+%
+% This work may be distributed and/or modified under the conditions of
+% the LaTeX Project Public License, either version 1.3c of this license
+% or (at your option) any later version. The latest version of this
+% license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+%<*driver>
+\RequirePackage{pdfmanagement}
+\documentclass[a4paper]{l3doc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{mlmodern}
+\usepackage{sblfonts}
+
+\AddToHook{env/macrocode/before}{%
+  \addvspace{\medskipamount}}
+
+\AddToHook{env/macro/before}{%
+  \addvspace{\medskipamount}}
+
+\begin{document}
+\DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \title{The \pkg{sblfonts} Package}
+% \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
+% \date{2026/01/12 v1.0}
+%
+% \maketitle
+%
+% \begin{abstract}
+%   The \pkg{sblfonts} package provides a LaTeX style for setting up font and
+%   language support for documents conforming to the requirements of the
+%   Society of Biblical Literature. Greek and Hebrew languages are supported
+%   using the SBL fonts. If these fonts are not available then fonts included
+%   with TeXLive are used.
+% \end{abstract}
+%
+% \tableofcontents
+%
+% \section{Introduction}
+%
+% \subsection{Usage}
+%
+% \subsection{Bug Reports and Feature Requests}
+%
+% Bug reports and feature requests can be made at the \pkg{sbltex}
+% GitHub repository. See \url{https://github.com/dcpurton/sbltex}.
+%
+% \section{Package Options}
+%
+% \section{Commands}
+%
+% \section{Implementation}
+%
+% \setlength{\parindent}{0em}
+%
+%    \begin{macrocode}
+%<*package>
+%<@@=sblfonts>
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesExplPackage{sblfonts}{2026/01/12}{1.0}
+  {Society of Biblical Literature Font and Language Set Up (DCP)}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\keys_define:nn { sblfonts }
+  {
+    , mainfont        .tl_set:N    = \l_@@_mainfont_tl
+    , mainfontoptions .clist_set:N = \l_@@_mainfont_options_clist
+    , hefont          .tl_set:N    = \l_@@_hefont_tl
+    , grfont          .tl_set:N    = \l_@@_grfont_tl
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:T
+  {
+    \keys_define:nn { sblfonts }
+      {
+        , default   .choices:nn = { true, false, fallback }
+                                  {
+                                    \str_set:NV
+                                      \l_@@_sblgreek_str
+                                      \l_keys_choice_str
+                                    \str_set:NV
+                                      \l_@@_sblhebrew_str
+                                      \l_keys_choice_str
+                                  }
+        , default   .default:n  = { true }
+        , sblgreek  .choices:nn = { true, false, fallback }
+                                  {
+                                    \str_set:NV
+                                      \l_@@_sblgreek_str
+                                      \l_keys_choice_str
+                                  }
+        , sblgreek  .default:n  = { true }
+        , sblgreek  .initial:n  = { fallback }
+        , sblhebrew .choices:nn = { true, false, fallback }
+                                  {
+                                    \str_set:NV
+                                      \l_@@_sblhebrew_str
+                                      \l_keys_choice_str
+                                  }
+        , sblhebrew .default:n  = { true }
+        , sblhebrew .initial:n  = { fallback }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\ProcessKeyOptions
+%    \end{macrocode}
+%
+% \subsection{Language Set Up}
+%
+% \cs{babelprovide} macros need to be run outside of ExplSyntax.
+%
+%    \begin{macrocode}
+\ExplSyntaxOff
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\newcommand*{\@sblfonts@load@american}{%
+  \babelprovide[import, main]{american}}
+\newcommand*{\@sblfonts@load@polytonicgreek}{%
+  \babelprovide[import, onchar=ids fonts]{polytonicgreek}}
+\newcommand*{\@sblfonts@load@hebrew}{%
+  \babelprovide[import, onchar=ids fonts]{hebrew}}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\ExplSyntaxOn
+%    \end{macrocode}
+%
+% \begin{macro}{\@@_load_languages:}
+%
+%   Load American, Polytonic Greek and Hebrew languages using \pkg{babel}.
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_load_languages:
+  {
+    \tl_if_eq:NnT \languagename { nil }
+      { \@sblfonts@load@american }
+    \@sblfonts@load@polytonicgreek
+    \@sblfonts@load@hebrew
+    \babeladjust{ select.write = shift }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set_eq:NN \@sblfonts@load@languages \@@_load_languages:
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:TF
+  {
+    \RequirePackage { fontspec }
+    \sys_if_engine_luatex:T
+      { \RequirePackage [ bidi=basic, provide*=* ] { babel } }
+    \sys_if_engine_xetex:T
+      { \RequirePackage [ bidi=default, provide*=* ] { babel } }
+  }
+  {
+    \RequirePackage [ NHE8, LGR, T1 ] { fontenc }
+    \RequirePackage [ bidi=default, provide*=* ] { babel }
+  }
+%    \end{macrocode}
+%
+% \cs{babelprovide} macros need to be run outside of ExplSyntax.
+%
+%    \begin{macrocode}
+\ExplSyntaxOff
+\@sblfonts@load@languages
+\ExplSyntaxOn
+%    \end{macrocode}
+%
+% \subsection{Font Set Up}
+%
+% \begin{macro}{\@@_load_default_greek_font:}
+%
+%   Load the default \LaTeX\ Greek font.
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_load_default_greek_font:
+  {
+    \babelfont [ polytonicgreek ] { rm }
+      [
+        Extension      = .otf ,
+        ItalicFont     = cmunti ,
+        BoldFont       = cmunbx ,
+        BoldItalicFont = cmunbi
+      ]
+      { cmunrm }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_load_default_hebrew_font:}
+%    \begin{macrocode}
+%
+%   Load the default \LaTeX\ Hebrew font.
+%
+\cs_new_protected:Nn \@@_load_default_hebrew_font:
+  {
+    \babelfont [ hebrew ] { rm }
+      [
+        Extension      = .otf ,
+        UprightFont    = *-Medium ,
+        ItalicFont     = *-MediumItalic ,
+        BoldFont       = *-Bold ,
+        BoldItalicFont = *-BoldItalic
+      ]
+      { DavidCLM }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:TF
+  {
+%    \end{macrocode}
+%
+% Use main font for Greek and Hebrew if it supports it unless SBL fonts have
+% been explicitly asked for. \textbf{Note:} Some fonts support only monotonic
+% Greek, but there generally isn't a way to tell this without checking which
+% glyphs are actually present.
+%
+%    \begin{macrocode}
+    \tl_if_empty:NTF \l_@@_mainfont_tl
+      {
+%    \end{macrocode}
+%
+% Initially set Greek and Hebrew to CMU Serif and David CLM
+%
+%    \begin{macrocode}
+        \@@_load_default_greek_font:
+        \@@_load_default_hebrew_font:
+      }
+      {
+        \babelfont { rm }
+          [ \l_@@_mainfont_options_clist ]
+          { \l_@@_mainfont_tl }
+        \fontspec_if_script:nF { grek }
+          {
+            \str_if_eq:VnT \l_@@_sblgreek_str { fallback }
+              { \@@_load_default_greek_font: }
+          }
+        \fontspec_if_script:nF { hebr }
+          {
+            \str_if_eq:VnT \l_@@_sblhebrew_str { fallback }
+              { \@@_load_default_hebrew_font: }
+          }
+      }
+%    \end{macrocode}
+%
+% Try to load SBL fonts if asked for.
+% \begin{description}
+%   \item[For Greek:] SBL BibLit, SBL Greek, Alegreya
+%   \item[For Hebrew:] SBL BibLit, SBL Hebrew, Frank Ruehl CLM
+% \end{description}
+% \textbf{Note:} The SBL font is strongly advised for biblical Hebrew.
+% Alegreya and Frank Ruehl CLM are included in TeXLive so should be present.
+%
+%    \begin{macrocode}
+    \str_if_eq:VnT \l_@@_sblgreek_str { true }
+      {
+        \fontspec_font_if_exist:nTF { SBL ~ BibLit }
+          {
+            \babelfont [ polytonicgreek ] { rm }
+              [
+                ItalicFont     = SBL ~ BibLit ,
+                BoldFont       = SBL ~ BibLit ,
+                BoldItalicFont = SBL ~ BibLit
+              ]
+              { SBL ~ BibLit }
+          }
+          {
+            \fontspec_font_if_exist:nTF { SBL ~ Greek }
+              {
+                \babelfont [ polytonicgreek ] { rm }
+                  [
+                    ItalicFont     = SBL ~ Greek ,
+                    BoldFont       = SBL ~ Greek ,
+                    BoldItalicFont = SBL ~ Greek
+                  ]
+                  { SBL ~ Greek }
+              }
+              {
+                \babelfont [ polytonicgreek ] { rm }
+                  [
+                    Extension   = .otf ,
+                    UprightFont = *-Regular ,
+                    ItalicFont  = *-Italic ,
+                    BoldFont    = *-Bold ,
+                    BoldItalic  = *-BoldItalic
+                  ]
+                  { Alegreya }
+              }
+          }
+      }
+
+    \str_if_eq:VnT \l_@@_sblhebrew_str { true }
+      {
+        \fontspec_font_if_exist:nTF { SBL ~ BibLit }
+          {
+            \babelfont [ hebrew ] { rm }
+              [
+                ItalicFont     = SBL ~ BibLit ,
+                BoldFont       = SBL ~ BibLit ,
+                BoldItalicFont = SBL ~ BibLit
+              ]
+              { SBL ~ BibLit }
+          }
+          {
+            \fontspec_font_if_exist:nTF { SBL ~ Hebrew }
+              {
+                \babelfont [ hebrew ] { rm }
+                  [
+                    ItalicFont     = SBL ~ Hebrew ,
+                    BoldFont       = SBL ~ Hebrew ,
+                    BoldItalicFont = SBL ~ Hebrew
+                  ]
+                  { SBL ~ Hebrew }
+              }
+              {
+                \babelfont [ hebrew ] { rm }
+                  [
+                    Extension = .ttf ,
+                    UprightFont = *-Medium ,
+                    ItalicFont = *-MediumOblique ,
+                    BoldFont = *-Bold ,
+                    BoldItalic = *-BoldOblique
+                  ]
+                  { FrankRuehlCLM }
+              }
+          }
+      }
+%    \end{macrocode}
+%
+% Override Greek and Hebrew fonts if specified in |grfont| and |hefont|
+% options.
+%
+%    \begin{macrocode}
+    \tl_if_empty:NF \l_@@_grfont_tl
+      {
+        \babelfont [ polytonicgreek ] { rm } { \l_@@_grfont_tl }
+      }
+    \tl_if_empty:NF \l_@@_hefont_tl
+      {
+        \babelfont [ hebrew ] { rm } { \l_@@_hefont_tl }
+      }
+  }
+  {
+%    \end{macrocode}
+%
+% For |pdflatex|, load font using a package.
+%
+%    \begin{macrocode}
+    \tl_if_empty:NF \l_@@_mainfont_tl
+      {
+        \RequirePackage
+          [ \l_@@_font_options_clist ]
+          { \l_@@_font_tl }
+      }
+%    \end{macrocode}
+%
+% Override Greek and Hebrew fonts if specified in |grfont| and |hefont|
+% options.
+%
+%    \begin{macrocode}
+    \tl_if_empty:NF \l_@@_grfont_tl
+      {
+        \DeclareFontFamilySubstitution
+          { LGR }
+          { \rmdefault }
+          { \l_@@_grfont_tl }
+      }
+    \tl_if_empty:NF \l_@@_hefont_tl
+      {
+        \DeclareFontFamilySubstitution
+          { NHE8 }
+          { \rmdefault }
+          { \l_@@_hefont_tl }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\endinput
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%</package>
+%    \end{macrocode}

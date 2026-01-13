@@ -1,0 +1,21 @@
+\documentclass{article}
+\input{regression-test}
+\PassOptionsToPackage{quiet}{fontspec}
+\usepackage[mainfont=Baskervaldx-Reg.otf, default]{sblfonts}
+\pagestyle{empty}
+\begin{document}
+\START
+\showoutput
+\begin{quotation}
+  \selectlanguage{polytonicgreek}
+  Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.
+  οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.
+\end{quotation}
+\begin{quotation}
+  \selectlanguage{hebrew}
+  בּראשׁית בּרא אלהים את השּׁמים ואת הארץ׃ והארץ היתה תהוּ ובהוּ וחשׁך על־פּני תהום
+  ורוּח אלהים מרחפת על־פּני המּים׃
+\end{quotation}
+Inline Greek (\foreignlanguage{polytonicgreek}{Ἐν ἀρχῇ}) and Hebrew
+(\foreignlanguage{hebrew}{בּראשׁית}) are also possible.
+\end{document}

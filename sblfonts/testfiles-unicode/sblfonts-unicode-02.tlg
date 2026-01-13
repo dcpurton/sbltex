@@ -1,0 +1,451 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 471.94958fil, direction TLT
+...\write-{}
+...\write1{\babel@aux{american}{}}
+...\write1{\babel@aux{polytonicgreek}{}}
+...\glue(\topskip) 1.68457
+...\hbox(8.31543+2.56348)x295.0, glue set 0.37392, shifted 25.0, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+.....\glue 15.0
+.....\glue -20.0
+.....\glue -5.0
+.....\hbox(0.0+0.0)x20.0, glue set 20.0fil, direction TLT
+......\glue 0.0 plus 1.0fil
+.....\glue 5.0
+....\penalty 0
+....\TU/SBLBibLit(0)/m/n/10 Ἐ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἀ
+....\TU/SBLBibLit(0)/m/n/10 ρ
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+....\TU/SBLBibLit(0)/m/n/10 χ
+....\TU/SBLBibLit(0)/m/n/10 ῇ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἦ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ὁ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 λ
+....\kern-0.04883 (font)
+....\TU/SBLBibLit(0)/m/n/10 ό
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern-0.24414 (font)
+....\TU/SBLBibLit(0)/m/n/10 γ
+....\kern-0.07324 (font)
+....\TU/SBLBibLit(0)/m/n/10 ο
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\kern-0.09766 (font)
+....\TU/SBLBibLit(0)/m/n/10 ,
+....\glue(\spaceskip) 2.70508 plus 1.69067 minus 0.72134
+....\TU/SBLBibLit(0)/m/n/10 κ
+....\TU/SBLBibLit(0)/m/n/10 α
+....\TU/SBLBibLit(0)/m/n/10 ὶ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ὁ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 λ
+....\kern-0.04883 (font)
+....\TU/SBLBibLit(0)/m/n/10 ό
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern-0.24414 (font)
+....\TU/SBLBibLit(0)/m/n/10 γ
+....\kern-0.07324 (font)
+....\TU/SBLBibLit(0)/m/n/10 ο
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἦ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 π
+....\kern-0.14648 (font)
+....\TU/SBLBibLit(0)/m/n/10 ρ
+....\TU/SBLBibLit(0)/m/n/10 ὸ
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 τ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(0)/m/n/10 ὸ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 θ
+....\TU/SBLBibLit(0)/m/n/10 ε
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern-0.02441 (font)
+....\TU/SBLBibLit(0)/m/n/10 ό
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\kern-0.39063 (font)
+....\TU/SBLBibLit(0)/m/n/10 ,
+....\glue(\spaceskip) 2.70508 plus 1.69067 minus 0.72134
+....\TU/SBLBibLit(0)/m/n/10 κ
+....\TU/SBLBibLit(0)/m/n/10 α
+....\TU/SBLBibLit(0)/m/n/10 ὶ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 θ
+....\TU/SBLBibLit(0)/m/n/10 ε
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern-0.02441 (font)
+....\TU/SBLBibLit(0)/m/n/10 ὸ
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἦ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ὁ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 λ
+....\kern-0.04883 (font)
+....\TU/SBLBibLit(0)/m/n/10 ό
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern-0.24414 (font)
+....\TU/SBLBibLit(0)/m/n/10 γ
+....\kern-0.07324 (font)
+....\TU/SBLBibLit(0)/m/n/10 ο
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\kern-0.09766 (font)
+....\TU/SBLBibLit(0)/m/n/10 .
+....\glue(\rightskip) 0.0
+...\penalty 300
+...\glue(\baselineskip) 1.1211
+...\hbox(8.31543+2.56348)x295.0, glue set 173.64258fil, shifted 25.0, direction TLT
+....\TU/SBLBibLit(0)/m/n/10 ο
+....\kern-0.02441 (font)
+....\TU/SBLBibLit(0)/m/n/10 ὗ
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern0.04883 (font)
+....\TU/SBLBibLit(0)/m/n/10 τ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(0)/m/n/10 ο
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἦ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἐ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἀ
+....\TU/SBLBibLit(0)/m/n/10 ρ
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+....\TU/SBLBibLit(0)/m/n/10 χ
+....\TU/SBLBibLit(0)/m/n/10 ῇ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 π
+....\kern-0.14648 (font)
+....\TU/SBLBibLit(0)/m/n/10 ρ
+....\TU/SBLBibLit(0)/m/n/10 ὸ
+....\TU/SBLBibLit(0)/m/n/10 ς
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 τ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(0)/m/n/10 ὸ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 θ
+....\TU/SBLBibLit(0)/m/n/10 ε
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+.....= \kern-0.02441 (font)
+....\TU/SBLBibLit(0)/m/n/10 ό
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\kern-0.39063 (font)
+....\TU/SBLBibLit(0)/m/n/10 .
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\penalty -51
+...\glue 10.0 plus 3.0 minus 5.0
+...\write1{\babel@aux{american}{}}
+...\penalty 10000
+...\glue -10.0 plus -3.0 minus -5.0
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue -12.56348 plus -3.0 minus -5.0
+...\penalty -51
+...\glue 2.56348
+...\glue 10.0 plus 3.0 minus 5.0
+...\write1{\babel@aux{hebrew}{}}
+...\penalty 10000
+...\glue -10.0 plus -3.0 minus -5.0
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 1.24805
+...\hbox(8.18848+1.93848)x295.0, glue set 0.85231, shifted 25.0, direction TRT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\begindir TLT
+....\begindir TRT
+....\hbox(0.0+0.0)x15.0, direction TLT
+.....\glue 15.0
+.....\glue -20.0
+.....\glue -5.0
+.....\hbox(0.0+0.0)x20.0, glue set 20.0fil, direction TLT
+......\glue 0.0 plus 1.0fil
+.....\glue 5.0
+....\penalty 0
+....\TU/SBLBibLit(1)/m/n/10 בּ
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\kern-0.14648 (font)
+....\TU/SBLBibLit(1)/m/n/10 א
+....\TU/SBLBibLit(1)/m/n/10 שׁ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 בּ
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\TU/SBLBibLit(1)/m/n/10 א
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\kern-0.09766 (font)
+....\TU/SBLBibLit(1)/m/n/10 א
+....\kern-0.09766 (font)
+....\TU/SBLBibLit(1)/m/n/10 ל
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ם
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 א
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\TU/SBLBibLit(1)/m/n/10 שּׁ
+....\kern-0.19531 (font)
+....\TU/SBLBibLit(1)/m/n/10 מ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ם
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ו
+....\TU/SBLBibLit(1)/m/n/10 א
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\TU/SBLBibLit(1)/m/n/10 א
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\TU/SBLBibLit(1)/m/n/10 ץ
+....\TU/SBLBibLit(1)/m/n/10 ׃
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ו
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\TU/SBLBibLit(1)/m/n/10 א
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\TU/SBLBibLit(1)/m/n/10 ץ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\TU/SBLBibLit(1)/m/n/10 וּ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\kern-0.1709 (font)
+....\TU/SBLBibLit(1)/m/n/10 ו
+....\TU/SBLBibLit(1)/m/n/10 ב
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\TU/SBLBibLit(1)/m/n/10 וּ
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ו
+....\TU/SBLBibLit(1)/m/n/10 ח
+....\TU/SBLBibLit(1)/m/n/10 שׁ
+....\TU/SBLBibLit(1)/m/n/10 ך
+....\enddir TRT
+....\enddir TLT
+....\glue(\rightskip) 0.0
+...\penalty 300
+...\glue(\baselineskip) 1.87305
+...\hbox(8.18848+1.28906)x295.0, glue set 123.83789fil, shifted 25.0, direction TRT
+....\begindir TLT
+....\begindir TRT
+....\TU/SBLBibLit(1)/m/n/10 ע
+....\TU/SBLBibLit(1)/m/n/10 ל
+....\TU/SBLBibLit(1)/m/n/10 ־
+....\TU/SBLBibLit(1)/m/n/10 פּ
+....\kern-0.43945 (font)
+....\TU/SBLBibLit(1)/m/n/10 נ
+....\TU/SBLBibLit(1)/m/n/10 י
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\TU/SBLBibLit(1)/m/n/10 ו
+....\TU/SBLBibLit(1)/m/n/10 ם
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ו
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\TU/SBLBibLit(1)/m/n/10 וּ
+....\TU/SBLBibLit(1)/m/n/10 ח
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\kern-0.09766 (font)
+....\TU/SBLBibLit(1)/m/n/10 א
+....\kern-0.09766 (font)
+....\TU/SBLBibLit(1)/m/n/10 ל
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ם
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 מ
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\TU/SBLBibLit(1)/m/n/10 ח
+....\TU/SBLBibLit(1)/m/n/10 פ
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ע
+....\TU/SBLBibLit(1)/m/n/10 ל
+....\TU/SBLBibLit(1)/m/n/10 ־
+....\TU/SBLBibLit(1)/m/n/10 פּ
+....\kern-0.43945 (font)
+....\TU/SBLBibLit(1)/m/n/10 נ
+....\TU/SBLBibLit(1)/m/n/10 י
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(1)/m/n/10 ה
+....\kern-0.19531 (font)
+....\TU/SBLBibLit(1)/m/n/10 מּ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ם
+....\TU/SBLBibLit(1)/m/n/10 ׃
+....\penalty 10000
+....\enddir TRT
+....\enddir TLT
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\penalty -51
+...\glue 10.0 plus 3.0 minus 5.0
+...\write1{\babel@aux{american}{}}
+...\penalty 10000
+...\glue -10.0 plus -3.0 minus -5.0
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 3.47461
+...\hbox(7.23633+2.65)x345.0, glue set 75.56342fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 I
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 n
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx-Reg.otf(0)/m/n/10 -
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 l
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 i
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 n
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 G
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 r
+....\kern-0.29 (font)
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 k
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 (
+....\TU/SBLBibLit(0)/m/n/10 Ἐ
+....\TU/SBLBibLit(0)/m/n/10 ν
+....\glue(\spaceskip) 2.70508 plus 1.35254 minus 0.90169
+....\TU/SBLBibLit(0)/m/n/10 ἀ
+....\TU/SBLBibLit(0)/m/n/10 ρ
+....\discretionary (penalty 50)
+.....< \TU/SBLBibLit(0)/m/n/10 -
+....\TU/SBLBibLit(0)/m/n/10 χ
+....\TU/SBLBibLit(0)/m/n/10 ῇ
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 )
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 a
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 n
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 d
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 H
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx-Reg.otf(0)/m/n/10 -
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 b
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 r
+....\kern-0.29 (font)
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\kern-0.12 (font)
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 w
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 (
+....\begindir TRT
+....\TU/SBLBibLit(1)/m/n/10 בּ
+....\TU/SBLBibLit(1)/m/n/10 ר
+....\kern-0.14648 (font)
+....\TU/SBLBibLit(1)/m/n/10 א
+....\TU/SBLBibLit(1)/m/n/10 שׁ
+....\kern-0.12207 (font)
+....\TU/SBLBibLit(1)/m/n/10 י
+....\TU/SBLBibLit(1)/m/n/10 ת
+....\enddir TRT
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 )
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 a
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 r
+....\kern-0.29 (font)
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 a
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 l
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 s
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 o
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 p
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 o
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 s
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx-Reg.otf(0)/m/n/10 -
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 s
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 i
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx-Reg.otf(0)/m/n/10 -
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 b
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 l
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 e
+....\TU/Baskervaldx-Reg.otf(0)/m/n/10 .
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.65
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 30.0
+..\hbox(0.0+0.0)x345.0, direction TLT
+...\hbox(0.0+0.0)x345.0, direction TLT
+(sblfonts-unicode-02.aux)

@@ -1,0 +1,204 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 471.94958fil
+...\write-{}
+...\write1{\babel@aux{american}{}}
+...\write1{\babel@aux{polytonicgreek}{}}
+...\glue(\topskip) 2.95
+...\hbox(7.05+2.71999)x295.0, glue set - 0.23079, shifted 25.0
+....\hbox(0.0+0.0)x15.0
+.....\glue 15.0
+.....\glue -20.0
+.....\glue -5.0
+.....\hbox(0.0+0.0)x20.0, glue set 20.0fil
+......\glue 0.0 plus 1.0fil
+.....\glue 5.0
+....\penalty 0
+....\TU/cmunrm(0)/m/n/10 Ἐν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἀρχῇ
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἦν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ὁ
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 λόγος,
+....\glue 3.33 plus 2.08124 minus 0.888
+....\TU/cmunrm(0)/m/n/10 καὶ
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ὁ
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 λόγος
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἦν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 πρὸς
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 τὸν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 θεόν,
+....\glue 3.33 plus 2.08124 minus 0.888
+....\TU/cmunrm(0)/m/n/10 καὶ
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 θεὸς
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἦν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ὁ
+....\glue(\rightskip) 0.0
+...\penalty 300
+...\glue(\baselineskip) 2.23001
+...\hbox(7.05+2.71999)x295.0, glue set 123.00996fil, shifted 25.0
+....\TU/cmunrm(0)/m/n/10 λόγος.
+....\glue 4.44 plus 4.99498 minus 0.37
+....\TU/cmunrm(0)/m/n/10 οὗτος
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἦν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἐν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἀρχῇ
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 πρὸς
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 τὸν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 θεόν.
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\penalty -51
+...\glue 10.0 plus 3.0 minus 5.0
+...\write1{\babel@aux{american}{}}
+...\penalty 10000
+...\glue -10.0 plus -3.0 minus -5.0
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue -12.71999 plus -3.0 minus -5.0
+...\penalty -51
+...\glue 2.71999
+...\glue 10.0 plus 3.0 minus 5.0
+...\write1{\babel@aux{hebrew}{}}
+...\penalty 10000
+...\glue -10.0 plus -3.0 minus -5.0
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 2.32169
+...\hbox(6.95833+1.98332)x295.0, glue set - 0.28311, shifted 25.0
+....\beginR
+....\hbox(0.0+0.0)x15.0
+.....\glue 15.0
+.....\glue -20.0
+.....\glue -5.0
+.....\hbox(0.0+0.0)x20.0, glue set 20.0fil
+......\glue 0.0 plus 1.0fil
+.....\glue 5.0
+....\penalty 0
+....\TU/DavidCLM(0)/m/n/10 בּראשׁית
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 בּרא
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 אלהים
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 את
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 השּׁמים
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 ואת
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 הארץ׃
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 והארץ
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 היתה
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 תהוּ
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 ובהוּ
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 וחשׁך
+....\endR
+....\glue(\rightskip) 0.0
+...\penalty 300
+...\glue(\baselineskip) 3.05835
+...\hbox(6.95833+1.06665)x295.0, glue set 112.51666fil, shifted 25.0
+....\beginR
+....\TU/DavidCLM(0)/m/n/10 על־פּני
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 תהום
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 ורוּח
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 אלהים
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 מרחפת
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 על־פּני
+....\glue 3.5 plus 1.75 minus 1.16666
+....\TU/DavidCLM(0)/m/n/10 המּים׃
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\endR
+....\glue(\rightskip) 0.0
+...\penalty -51
+...\glue 10.0 plus 3.0 minus 5.0
+...\write1{\babel@aux{american}{}}
+...\penalty 10000
+...\glue -10.0 plus -3.0 minus -5.0
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 3.43335
+...\hbox(7.5+2.71999)x345.0, glue set 67.22664fil
+....\TU/lmr/m/n/10 Inline
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 Greek
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 (
+....\beginL
+....\setlanguage37 (hyphenmin 1,1)
+....\TU/cmunrm(0)/m/n/10 Ἐν
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/cmunrm(0)/m/n/10 ἀρχῇ
+....\endL
+....\setlanguage23 (hyphenmin 2,3)
+....\TU/lmr/m/n/10 )
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 and
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 Hebrew
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 (
+....\beginR
+....\setlanguage39 (hyphenmin 2,3)
+....\TU/DavidCLM(0)/m/n/10 בּראשׁית
+....\endR
+....\setlanguage23 (hyphenmin 2,3)
+....\TU/lmr/m/n/10 )
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 are
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 also
+....\glue 3.33 plus 1.665 minus 1.11
+....\TU/lmr/m/n/10 possible.
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.71999
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 30.0
+..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
+(sblfonts-unicode-01.aux)

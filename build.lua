@@ -3,5 +3,6 @@
 bundle = "sbltex"
 modules = {
   "bibleref-sbl",
+  "sblfonts",
   "sblidx"
 }
