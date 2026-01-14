@@ -16,6 +16,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
 \usepackage{mlmodern}
+\usepackage[font=small, skip=6pt]{caption}
+\usepackage{xcolor}
+\usepackage{listings}
 \usepackage{sblfonts}
 
 \AddToHook{env/macrocode/before}{%
@@ -32,7 +35,7 @@
 %
 % \title{The \pkg{sblfonts} Package}
 % \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
-% \date{2026/01/12 v1.0}
+% \date{2026/01/15 v1.0}
 %
 % \maketitle
 %
@@ -48,7 +51,80 @@
 %
 % \section{Introduction}
 %
+% This package is intended to be used with the SBL fonts and a Unicode \TeX\
+% engine (|lualatex| is recommended). The SBL fonts are free for personal use
+% and can be downloaded from \url{https://www.sbl-site.org/resources/fonts/}.
+% It is, however, possible to use the package with any Unicode font and there
+% is limited support for 8bit fonts under |pdflatex| (in particular pointed
+% Hebrew is not easily possible).
+%
 % \subsection{Usage}
+%
+% To use default \LaTeX\ fonts, load the package with no options. The \LaTeX\
+% source is shown in Figure \ref{exampleusage} and the output is shown in
+% Figure \ref{exampleoutput}.
+%
+% In reality, you will want to install the SBL fonts, use |lualatex|, and load
+% the package with |\usepackage[sblfonts]{sblfonts}|. Note that it is not
+% necessary to mark up inline Greek and Hebrew with |lualatex|.
+%
+% \begin{figure}
+%   \centering
+%   \framebox[\linewidth]{%
+%     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+%       \small\ttfamily
+%       \textbackslash\textcolor{blue!70!black}{documentclass}\{article\}\\
+%       \textbackslash\textcolor{blue!70!black}{usepackage}\{sblfonts\}\\
+%       \textbackslash\textcolor{blue!70!black}{begin}\{document\}\\
+%       \textbackslash\textcolor{blue!70!black}{begin}\{quotation\}\\
+%       \phantom{..}\textbackslash\textcolor{blue!70!black}{selectlanguage}\{polytonicgreek\}\\
+%       {\fontencoding{LGR}\fontfamily{cmtt}\selectfont
+%        \phantom{..}Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.\\
+%        \phantom{..}οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.}\\
+%       \textbackslash\textcolor{blue!70!black}{end}\{quotation\}\\
+%       \textbackslash\textcolor{blue!70!black}{begin}\{quotation\}\\
+%       \phantom{..}\textbackslash\textcolor{blue!70!black}{selectlanguage}\{hebrew\}\\
+%       {\fontencoding{NHE8}\fontfamily{miriam}\fontseries{b}\selectfont
+%       \phantom{..}\foreignlanguage{hebrew}{ב\kern-4.6pt ּ\kern-1ptראש\kern-5.3pt ׁית
+%       ב\kern-4.6pt ּ\kern-1ptרא אלהים את הש\kern-5.3pt ׁ\kern-6.3pt ּ\kern1ptמים ואת
+%       הארץ׃ והארץ היתה תהו\kern-4pt ּ ובהו\kern-4pt ּ וחש\kern-5.3pt ׁך}\\
+%       \phantom{..}\foreignlanguage{hebrew}{על־פ\kern-5.8pt ּני תהום
+%       ורו\kern-4pt ּח אלהים מרחפת על־פ\kern-5.8pt ּני המ\kern-5.5pt ּים׃}}\\
+%       \textbackslash\textcolor{blue!70!black}{end}\{quotation\}\\
+%       Inline Greek
+%       (\textbackslash\textcolor{blue!70!black}{foreignlanguage}\{polytonicgreek\}\{{\fontencoding{LGR}\fontfamily{cmtt}\selectfont
+%       Ἐν ἀρχῇ}\}) and Hebrew
+%       (\textbackslash\textcolor{blue!70!black}{foreignlanguage}\{hebrew\}\{{\fontencoding{NHE8}\fontfamily{miriam}\fontseries{b}\selectfont\foreignlanguage{hebrew}{ב\kern-4.6pt ּ\kern-1ptראש\kern-5.3pt ׁית}}\})
+%       are also possible.\\
+%       \textbackslash\textcolor{blue!70!black}{end}\{document\}%
+%     }%
+%   }
+%   \caption{Example \LaTeX\ source showing default Greek and Hebrew fonts.}
+%   \label{exampleusage}
+% \end{figure}
+%
+% \begin{figure}
+%   \centering
+%   \framebox[\linewidth]{%
+%     \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+%       \begin{quotation}
+%         \selectlanguage{polytonicgreek}
+%         Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ
+%         λόγος.  οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.
+%       \end{quotation}
+%       \begin{quotation}
+%         \selectlanguage{hebrew}
+%         בּראשׁית בּרא אלהים את השּׁמים ואת הארץ׃ והארץ היתה תהוּ ובהוּ וחשׁך על־פּני
+%         תהום ורוּח אלהים מרחפת על־פּני המּים׃
+%       \end{quotation}
+%       Inline Greek (\foreignlanguage{polytonicgreek}{Ἐν ἀρχῇ}) and Hebrew
+%       (\foreignlanguage{hebrew}{בּראשׁית}) are also possible.
+%     }%
+%   }
+%   \caption{Example output showing Greek and Hebrew in default \LaTeX\
+%     fonts.}
+%   \label{exampleoutput}
+% \end{figure}
 %
 % \subsection{Bug Reports and Feature Requests}
 %
@@ -57,7 +133,93 @@
 %
 % \section{Package Options}
 %
-% \section{Commands}
+% \begin{function}{mainfont}
+%   \begin{syntax}
+%     mainfont = \meta{package} \textbar\ \meta{fontspec name}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the main font. Under |pdftex| this is the name of a font package to
+%   load. Under Unicode engines it should be a \pkg{fontspec} name which is
+%   passed to \cs{babelfont}. The optional arguments passed to the package or
+%   \cs{babelfont} can be specified in the |mainfontoptions| option.
+% \end{function}
+%
+% \begin{function}{mainfontoptions}
+%   \begin{syntax}
+%     mainfontoptions = \meta{package options} \textbar\ \meta{fontspec options}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   The optional arguments passed to the font package under |pdflatex| or
+%   \cs{babelfont} under Unicode engines.
+% \end{function}
+%
+% \begin{function}{grfont}
+%   \begin{syntax}
+%     grfont = \meta{NFSS font} \textbar\ \meta{fontspec name}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the Greek font. For |pdflatex| this should be an NFSS font name which
+%   supports the LGR encoding. For Unicode engines this should be a
+%   \pkg{fontspec} font name. If unset, then under |pdflatex| the default
+%   font is |grmn1000| and under Unicode engines the default font is CMU Serif
+%   or |mainfont| if it supports Greek.
+% \end{function}
+%
+% \begin{function}{hefont}
+%   \begin{syntax}
+%     hefont = \meta{NFSS font} \textbar\ \meta{fontspec name}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the Hebrew font. For |pdflatex| this should be an NFSS font name which
+%   supports the NHE8 encoding. For Unicode engines this should be a
+%   \pkg{fontspec} font name. If unset, then under |pdflatex| the default
+%   font is |david| and under Unicode engines the default font is DavidCLM
+%   or |mainfont| if it supports Hebrew.
+%
+%   In reality, |pdflatex| is really only supported for interest. You should
+%   use |lualtex| for any right-to-left languages.
+% \end{function}
+%
+% \subsection{Unicode only options}
+%
+% The following options control whether the SBL Greek and Hebrew fonts should
+% be used.
+%
+% \begin{function}{sblfonts}
+%   \begin{syntax}
+%     sblfonts = true \textbar\ false \textbar\ fallback\hfill Default: fallback
+%   \end{syntax}
+%   This is a shortcut option for setting both |sblgreek| and |sblhebrew| at
+%   the same time.
+% \end{function}
+%
+% \begin{function}{sblgreek}
+%   \begin{syntax}
+%     sblgreek = true \textbar\ false \textbar\ fallback\hfill Default: fallback
+%   \end{syntax}
+%   This option controls if and when the SBL Greek font should be used. The order
+%   of fonts tried for each option is:
+%   \begin{description}
+%     \item[\texttt{true}] SBL BibLit, SBL Greek, Alegreya.
+%     \item[\texttt{false}] |mainfont| (if specified) otherwise CMU Serif.
+%       This is useful if the test to detect Greek support in |mainfont| is
+%       not accurate.
+%     \item[\texttt{fallback}] |mainfont| (if specified and if Greek is
+%     supported) otherwise CMU Serif.
+%   \end{description}
+% \end{function}
+%
+% \begin{function}{sblhebrew}
+%   \begin{syntax}
+%     sblhebrew = true \textbar\ false \textbar\ fallback\hfill Default: fallback
+%   \end{syntax}
+%   This option controls if and when the SBL Hebrew font should be used. The order
+%   of fonts tried for each option is:
+%   \begin{description}
+%     \item[\texttt{true}] SBL BibLit, SBL Hebrew, Frank Ruehl CLM.
+%     \item[\texttt{false}] |mainfont| (if specified) otherwise DavidCLM.
+%       This is useful if the test to detect Hebrew support in |mainfont| is
+%       not accurate.
+%     \item[\texttt{fallback}] |mainfont| (if specified and if Hebrew is
+%     supported) otherwise DavidCLM.
+%   \end{description}
+% \end{function}
 %
 % \section{Implementation}
 %
@@ -70,7 +232,7 @@
 %
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesExplPackage{sblfonts}{2026/01/12}{1.0}
+\ProvidesExplPackage{sblfonts}{2026/01/15}{1.0}
   {Society of Biblical Literature Font and Language Set Up (DCP)}
 %    \end{macrocode}
 %
@@ -79,8 +241,8 @@
   {
     , mainfont        .tl_set:N    = \l_@@_mainfont_tl
     , mainfontoptions .clist_set:N = \l_@@_mainfont_options_clist
-    , hefont          .tl_set:N    = \l_@@_hefont_tl
     , grfont          .tl_set:N    = \l_@@_grfont_tl
+    , hefont          .tl_set:N    = \l_@@_hefont_tl
   }
 %    \end{macrocode}
 %
@@ -89,7 +251,7 @@
   {
     \keys_define:nn { sblfonts }
       {
-        , default   .choices:nn = { true, false, fallback }
+        , sblfonts  .choices:nn = { true, false, fallback }
                                   {
                                     \str_set:NV
                                       \l_@@_sblgreek_str
@@ -98,7 +260,7 @@
                                       \l_@@_sblhebrew_str
                                       \l_keys_choice_str
                                   }
-        , default   .default:n  = { true }
+        , sblfonts  .default:n  = { true }
         , sblgreek  .choices:nn = { true, false, fallback }
                                   {
                                     \str_set:NV

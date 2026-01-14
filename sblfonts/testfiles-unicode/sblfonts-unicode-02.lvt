@@ -1,7 +1,7 @@
 \documentclass{article}
 \input{regression-test}
 \PassOptionsToPackage{quiet}{fontspec}
-\usepackage[mainfont=Baskervaldx-Reg.otf, default]{sblfonts}
+\usepackage[mainfont=Baskervaldx-Reg.otf, sblfonts]{sblfonts}
 \pagestyle{empty}
 \begin{document}
 \START
