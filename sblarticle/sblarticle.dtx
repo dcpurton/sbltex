@@ -1,0 +1,918 @@
+% \iffalse meta-comment
+%
+% Copyright (c) 2026 David Purton <dcpurton@marshwiggle.net>
+%
+% This work may be distributed and/or modified under the conditions of
+% the LaTeX Project Public License, either version 1.3c of this license
+% or (at your option) any later version. The latest version of this
+% license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+%<*driver>
+\RequirePackage{pdfmanagement}
+\documentclass[a4paper]{l3doc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{mlmodern}
+\usepackage[font=small, skip=6pt]{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\AddToHook{env/macrocode/before}{%
+  \addvspace{\medskipamount}}
+
+\AddToHook{env/macro/before}{%
+  \addvspace{\medskipamount}}
+
+\begin{document}
+\DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \title{The \pkg{sblarticle} Class}
+% \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
+% \date{2026/01/15 v1.0}
+%
+% \maketitle
+%
+% \begin{abstract}
+%   The \pkg{sblarticle} class provides a LaTeX class producing articles and
+%   papers conforming to the style required by the Society of Biblical
+%   Literature. It depends on \pkg{sblfonts} for Greek and Hebrew font and
+%   language support and \pkg{biblatex-sbl} for referencing.
+% \end{abstract}
+%
+% \tableofcontents
+%
+% \section{Introduction}
+%
+% The \pkg{sblarticle} class creates a term paper matching the style specified
+% in the \emph{Student Supplement for \emph{The SBL Handbook of Style}, Second
+% Edition}. See
+% \url{https://www.sbl-site.org/wp-content/uploads/2025/04/SBLHSsupp2015-02.pdf}.
+%
+% The class works with both |pdflatex| and the Unicode engines, but in order
+% to make use of the SBL fonts you need to install them and use a Unicode
+% engine (|lualatex| is recommended, especially for Hebrew).
+%
+% This class is not intended to be a general flexible starting point for the
+% requirements of all theological colleges and seminaries. In such cases you
+% are better off beginning with the \pkg{article} class and loading
+% \pkg{biblatex-sbl} and (possibly) \pkg{sblfonts} directly. You could use
+% the code in this class as a guide.
+%
+% \subsection{Usage}
+%
+% Load the class using |\documentclass{sblarticle}|. See
+% |sbltex-termpaper.pdf| in the documentation directory for an extended usage
+% example.
+%
+% The following standard commands and environments have been customised for
+% this class:
+% \begin{itemize}
+%   \item |\author|, |\title|, |\maketitle|
+%   \item |\tableofcontents|, |\listoffigure|, |\listoftables|
+%   \item |\section|, |\subsection|, |\subsubsection|, |\paragraph|,
+%     |\subparagraph|
+%   \item |\footnote|
+%   \item |\caption|
+%   \item |\printbibliography|, |\printbiblist{abbreviations}|
+%   \item |abstract|, |quotation|, |quote|
+% \end{itemize}
+%
+% American, Greek and Hebrew are set up using \pkg{sblfonts} (and
+% \pkg{babel}). A different main language can be chosen by passing the
+% \pkg{babel} language name to the class.
+%
+% \subsection{Bug Reports and Feature Requests}
+%
+% Bug reports and feature requests can be made at the \pkg{sbltex}
+% GitHub repository. See \url{https://github.com/dcpurton/sbltex}.
+%
+% \section{Package Commands}
+%
+% \begin{function}{\course}
+%   \begin{syntax}
+%     |\course| \marg{Course name}
+%   \end{syntax}
+%   Set the name of the course the paper is for. This is included on the title
+%   page.
+% \end{function}
+%
+% \begin{function}{\institution}
+%   \begin{syntax}
+%     |\course| \marg{Institution name}
+%   \end{syntax}
+%   Set the name of the institution the paper will be submitted at. This is
+%   included on the title page.
+% \end{function}
+%
+% \begin{function}{\professor}
+%   \begin{syntax}
+%     |\course| \marg{Professor name}
+%   \end{syntax}
+%   Set the name of the professor the paper will be submitted to. This is
+%   included on the title page.
+% \end{function}
+%
+% \section{Package Options}
+%
+% Items passed to the options below are \emph{appended} to the default options
+% rather than replacing them.
+%
+% Any unrecognised options passed to the \pkg{sblarticle} class are passed
+% through to the \pkg{article} class.
+%
+% \begin{function}{biblatex}
+%   \begin{syntax}
+%     biblatex = \marg{arguments}\hfill Default: \{style=sbl, language=auto, autolang=hyphen\}
+%   \end{syntax}
+%   These options are passed to the \pkg{biblatex} package.
+% \end{function}
+%
+% \begin{function}{sblfonts}
+%   \begin{syntax}
+%     sblfonts = \marg{arguments}
+%   \end{syntax}
+%   Options to pass to the \pkg{sblfonts} package. The defaults depend on
+%   whether the engine in use is 8bit or Unicode:
+%   \begin{description}
+%     \item[8bit defaults:] |{mainfont=tempora, grfont=Alegreya-LF, hefont=frank}|
+%     \item[Unicode defaults:] \mbox{}\\
+%       |{|\\
+%       \strut\quad |mainfont=TeXGyreTermesX,|\\
+%       \strut\quad |mainfontoptions={Extension=.otf, UprightFont=*-Regular,|\\
+%       \strut\qquad |ItalicFont=*-Italic, BoldFont=*-Bold,|\\
+%       \strut\qquad |BoldItalicFont=*-BoldItalic},|\\
+%       \strut\quad |sblfonts=true|\\
+%       |}|
+%   \end{description}
+% \end{function}
+%
+% \section{Implementation}
+%
+% \setlength{\parindent}{0em}
+%
+%    \begin{macrocode}
+%<*class>
+%<@@=sblarticle>
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesExplClass{sblarticle}{2026/01/15}{1.0}
+  {Society of Biblical Literature Article Class (DCP)}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_new:N \l_@@_options_to_article_class_clist
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\keys_define:nn { sblarticle }
+  {
+    , biblatex .clist_set:N = \l_@@_options_to_biblatex_clist
+    , sblfonts .clist_set:N = \l_@@_options_to_sblfonts_clist
+    , unknown  .code:n = {
+                           \clist_put_right:No
+                             \l_@@_options_to_article_class_clist
+                             { \CurrentOption }
+                         }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\ProcessKeyOptions
+%    \end{macrocode}
+%
+% Set default options.
+%
+%    \begin{macrocode}
+\clist_put_left:Nn \l_@@_options_to_article_class_clist
+  {
+    , 12pt
+    , titlepage
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_put_left:Nn \l_@@_options_to_biblatex_clist
+  {
+    , style = sbl
+    , language = auto
+    , autolang = hyphen
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:TF
+  {
+    \clist_put_left:Nn \l_@@_options_to_sblfonts_clist
+      {
+        , mainfont        = TeXGyreTermesX
+        , mainfontoptions = {
+                              , Extension      = .otf
+                              , UprightFont    = *-Regular
+                              , ItalicFont     = *-Italic
+                              , BoldFont       = *-Bold
+                              , BoldItalicFont = *-BoldItalic
+                            }
+        , sblfonts        = true
+      }
+  }
+  {
+    \clist_put_left:Nn \l_@@_options_to_sblfonts_clist
+      {
+        , mainfont = tempora
+        , grfont   = Alegreya-LF
+        , hefont   = frank
+      }
+  }
+%    \end{macrocode}
+%
+% Load article class.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToClass
+  { \l_@@_options_to_article_class_clist }
+  { article }
+\LoadClass { article }
+%    \end{macrocode}
+%
+% Font and language set up.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToPackage
+  { \l_@@_options_to_sblfonts_clist }
+  { sblfonts }
+\RequirePackage { sblfonts }
+%    \end{macrocode}
+%
+% \pkg{biblatex} set up.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToPackage
+  { \l_@@_options_to_biblatex_clist }
+  { biblatex }
+\RequirePackage { biblatex }
+%    \end{macrocode}
+%
+% \subsection{Margins}
+%
+%    \begin{macrocode}
+\RequirePackage [ margin = 1in, headheight = 14.5pt ] { geometry }
+%    \end{macrocode}
+%
+% \subsection{Text layout}
+%
+%    \begin{macrocode}
+\RequirePackage { setspace }
+\RequirePackage { ragged2e }
+\doublespacing
+\frenchspacing
+\dim_set:Nn \RaggedRightParindent { 0.5in }
+\dim_set:Nn \RaggedLeftParindent  { 0.5in }
+\dim_set:Nn \JustifyingParindent  { 0.5in }
+\RaggedRight
+\sloppy
+\raggedbottom
+\sys_if_engine_luatex:F
+  {
+    \AddBabelHook [ hebrew ] { sblarticle } { afterextras }
+      {
+        \raggedleft
+        \parindent 0.5in
+      }
+    \AddBabelHook { sblarticle } { afterextras } { \RaggedRight }
+  }
+%    \end{macrocode}
+%
+% \subsection{Headers and footers}
+%
+%    \begin{macrocode}
+\RequirePackage { fancyhdr }
+\pagestyle { fancy }
+\fancyhf { }
+\fancyhead [ R ] { \thepage }
+\cs_set_nopar:Npn \headrulewidth { 0pt }
+\cs_set_nopar:Npn \sectionmark #1
+  {
+    \markboth
+      { \int_compare:nNnT
+          { \c@secnumdepth } > { \c_zero_int }
+          { \thesection \skip_horizontal:n { 1em } }
+        #1
+      }
+      { }
+  }
+%    \end{macrocode}
+%
+% \subsection{Footnotes}
+%
+%    \begin{macrocode}
+\RequirePackage [ bottom, ragged ] { footmisc }
+\cs_set:Npn \footnoterule
+  {
+    \kern -3pt
+    \hrule width 2in
+    \kern 2.6pt
+    \vskip -8pt
+  }
+\dim_set:Nn \footnotemargin { 0.5in }
+\dim_set:Nn \footnotesep { 20pt }
+\cs_set:Npn \@makefntext #1
+  {
+    \dim_set_eq:NN \parindent \footnotemargin
+    \@thefnmark . \enspace
+    \footnotelayout #1
+  }
+%    \end{macrocode}
+%
+% \subsection{Captions}
+%
+%    \begin{macrocode}
+\RequirePackage [ skip = 12pt ] { caption }
+\cs_set:Npn \thefigure
+  {
+    \arabic { figure }
+  }
+\cs_set:Npn \thetable
+  {
+    \arabic { table }
+  }
+\newcounter { chapter }
+\RequirePackage { chngcntr }
+\counterwithout { figure } { chapter }
+\counterwithout { table } { chapter }
+%    \end{macrocode}
+%
+% \subsection{Block quotes}
+%
+%    \begin{macrocode}
+\renewenvironment { quotation }
+  {
+    \list { }
+      {
+        \dim_set:Nn \leftmargin { 0.5in }
+        \dim_zero:N \rightmargin
+        \dim_zero:N \topsep
+        \dim_zero:N \partopsep
+        \dim_zero:N \itemsep
+        \dim_zero:N \parsep
+        \dim_set:Nn \itemindent { 0.5in }
+        \dim_set:Nn \listparindent { 0.5in }
+      }
+    \item \relax
+    \singlespacing
+    \vspace* { -5pt }
+  }
+  {
+    \endlist
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\renewenvironment { quote }
+  {
+    \list { }
+      {
+        \dim_set:Nn \leftmargin { 0.5in }
+        \dim_zero:N \rightmargin
+        \dim_zero:N \topsep
+        \dim_zero:N \partopsep
+        \dim_zero:N \itemsep
+        \dim_set:Nn \parsep { 7pt }
+        \dim_zero:N \itemindent
+        \dim_zero:N \listparindent
+      }
+    \item \relax
+    \singlespacing
+    \vspace* { -5pt }
+  }
+  {
+    \endlist
+  }
+%    \end{macrocode}
+%
+% \subsection{Title page}
+%
+%    \begin{macrocode}
+\tl_new:N \g_@@_course_tl
+\tl_new:N \g_@@_institution_tl
+\tl_new:N \g_@@_professor_tl
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Npn \course #1
+  {
+    \tl_gset:Nn \g_@@_course_tl { #1 }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Npn \institution #1
+  {
+    \tl_gset:Nn \g_@@_institution_tl { #1 }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Npn \professor #1
+  {
+    \tl_gset:Nn \g_@@_professor_tl { #1 }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\author { [Your ~ Name] }
+\title { Title ~ of ~ Paper }
+\tl_gset:Nn \g_@@_course_tl { [Course ~ Number ~ and ~ Title] }
+\tl_gset:Nn \g__sblarticle_institution_tl { [Name ~ of ~ Institution] }
+\tl_gset:Nn \g__sblarticle_professor_tl { [Name ~ of ~ Professor] }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set_protected:Npn \maketitle
+  {
+    \newgeometry { top=2in, bottom=2in }
+    \pagenumbering { roman }
+    \thispagestyle { empty }
+    \group_begin:
+      \singlespacing
+      \centering
+      \text_uppercase:n { \g_@@_institution_tl } \para_end:
+      \vfill
+      \doublespacing
+      \text_uppercase:n { \@title } \para_end:
+      \vfill
+      \singlespacing
+      \text_uppercase:n
+        { Submitted ~ to ~ \g_@@_professor_tl } \para_end:
+      \text_uppercase:n { in ~ Partial ~ Fulfilment ~ of } \para_end:
+      \text_uppercase:n { \g_@@_course_tl } \para_end:
+      \vfill
+      \text_uppercase:n { By } \para_end:
+      \text_uppercase:n { \@author } \para_end:
+      \text_uppercase:n { \@date } \para_end:
+    \group_end:
+    \restoregeometry
+  }
+%    \end{macrocode}
+%
+% \subsection{Section titles}
+%
+%    \begin{macrocode}
+\RequirePackage { titlesec }
+\int_set:Nn \c@secnumdepth { -1 }
+\providecommand \phantomsection { }
+\titleclass { \chapter } [ 0 ] { top }
+\cs_new_nopar:Npn \@chapapp { \chaptername }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\titlespacing* { \chapter }       { 0pt } { 37pt } { 29pt }
+\titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
+\titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
+\titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
+\titlespacing* { \paragraph }     { 0pt } { 37pt } { 0pt }
+\titlespacing* { \subparagraph }  { 0pt } { 37pt } { 0pt }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\titleformat
+  { \chapter }
+  [ block ]
+  { \normalfont \normalsize \singlespacing \filcenter }
+  { \MakeUppercase \chaptertitlename \space \thechapter . }
+  { 0.5em }
+  { \phantomsection \MakeUppercase }
+\titleformat
+  { \section }
+  [ block ]
+  { \normalfont \normalsize \singlespacing \bfseries \filcenter }
+  { \thesection }
+  { 0.5em }
+  { }
+\titleformat
+  { \subsection }
+  [ block ]
+  { \normalfont \normalsize \singlespacing \filcenter }
+  { \thesubsection }
+  { 0.5em }
+  { }
+\titleformat
+  { \subsubsection }
+  [ block ]
+  { \normalfont \normalsize \singlespacing \bfseries \itshape \filright }
+  { \thesubsubsection }
+  { 0.5em }
+  { }
+\titleformat
+  { \paragraph }
+  [ block ]
+  { \normalfont \normalsize \singlespacing \filright }
+  { \theparagraph }
+  { 0.5em }
+  { }
+\titleformat
+  { \subparagraph }
+  [ runin ]
+  { \normalfont \normalsize \bfseries }
+  { \thesubparagraph }
+  { 1em }
+  { }
+%    \end{macrocode}
+%
+% \subsection{Abstract}
+%
+% \begin{macro}{\@@_abstract_protected_end:n} \marg{abstract}
+%
+%   \medskip
+%
+%   This function is used to inject |\__sblarticle_fontmatter_peek:|
+%
+%    \begin{macrocode}
+\cs_set_eq:Nc \__sblarticle_orig_protected_end:n { end~ }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Nn \@@_abstract_protected_end:n
+  {
+    \@@_orig_protected_end:n { #1 }
+    \tl_if_eq:nnT { #1 } { abstract }
+      {
+        \cs_gset_eq:cN { end~ } \@@_orig_protected_end:n
+        \peek_remove_spaces:n
+          {
+            \peek_analysis_map_inline:n
+              {
+                \exp_args:No \token_if_eq_meaning:NNF { ##1 } \para_end:
+                  {
+                    \peek_analysis_map_break:n
+                      {
+                        \exp_after:wN
+                        \@@_frontmatter_peek:
+                        ##1
+                      }
+                  }
+                ##1
+              }
+          }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\renewenvironment { abstract }
+  {
+    \chapter* { \abstractname }
+    \addcontentsline { toc } { chapter } { \abstractname }
+    \cs_gset_eq:cN { end~ } \@@_abstract_protected_end:n
+  }
+  {
+    \par
+    \clearpage
+    \pagestyle { fancy }
+  }
+%    \end{macrocode}
+%
+% \subsection{Table of contents and list of figures/tables}
+%
+%    \begin{macrocode}
+\RequirePackage { titletoc }
+\int_set:Nn \c@tocdepth { 2 }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \tableofcontents
+  {
+    \chapter* { \contentsname }
+    \@mkboth
+      { \contentsname }
+      { \contentsname }
+    \@starttoc { toc }
+    \clearpage
+    \@@_frontmatter_peek:
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \listoffigures
+  {
+    \chapter* { \listfigurename }
+    \addcontentsline { toc } { chapter } { \listfigurename }
+    \@mkboth
+      { \listfigurename }
+      { \listfigurename }
+    \@starttoc { lof }
+    \clearpage
+    \@@_frontmatter_peek:
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \listoftables
+  {
+    \chapter* { \listtablename }
+    \addcontentsline { toc } { chapter } { \listtablename }
+    \@mkboth
+      { \listfigurename }
+      { \listfigurename }
+    \@starttoc { lot }
+    \clearpage
+    \@@_frontmatter_peek:
+  }
+%    \end{macrocode}
+%
+% \begin{macro}{ \@@_hyperlink:nn } \marg{link} \marg{text}
+%
+%   \medskip
+%
+%   A convenience version of |\hyperlink| that just uses \meta{text} if
+%   \pkg{hyperref} isn't loaded.
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_hyperlink:nn
+  {
+    \cs_if_exist_use:NTF \hyperlink
+      { { #1 } { #2 } }
+      { #2 }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\titlecontents { figure }
+  [ 2em ]
+  { \hspace* { 2em } \filright }
+  {
+    \@@_hyperlink:nn
+      { \Hy@tocdestname }
+      { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+  }
+  { }
+  { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+\titlecontents { table }
+  [ 2em ]
+  { \hspace* { 2em } \filright }
+  {
+    \@@_hyperlink:nn
+      { \Hy@tocdestname }
+      { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+  }
+  { }
+  { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+\titlecontents { chapter }
+  [ 0pt ]
+  { \singlespacing \filright }
+  {
+    \@@_hyperlink:nn
+      { \Hy@tocdestname }
+      {
+        \MakeUppercase \chaptertitlename \space
+        \thecontentslabel : \space
+      }
+    \MakeUppercase
+  }
+  { \MakeUppercase }
+  { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+\titlecontents { section }
+  [ 1em ]
+  { \singlespacing \filright }
+  { }
+  { }
+  { \hfill \contentspage }
+\titlecontents { subsection }
+  [ 2em ]
+  { \singlespacing \filright }
+  { }
+  { }
+  { \hfill \contentspage }
+\titlecontents { subsubsection }
+  [ 3em ]
+  { \singlespacing \filright }
+  { }
+  { }
+  { \hfill \contentspage }
+\titlecontents { paragraph }
+  [ 4em ]
+  { \singlespacing \filright }
+  { }
+  { }
+  { \hfill \contentspage }
+\titlecontents { subparagraph }
+  [ 5em ]
+  { \singlespacing \filright }
+  { }
+  { }
+  { \hfill \contentspage }
+%    \end{macrocode}
+%
+% \subsection{Appendices}
+%
+%    \begin{macrocode}
+\hook_gput_code:nnn
+  { cmd / appendix / after }
+  { sblarticle }
+  {
+    \cs_set_eq:NN \section \chapter
+    \cs_gset_nopar:Npn \thesection
+      { \@arabic \c@section }
+    \int_set_eq:NN \c@secnumdepth \c_one_int
+    \cs_set_nopar:Npn \@chapapp
+      { \appendixname }
+    \addtocontents { toc } { \def \protect \@chapapp { \appendixname } }
+  }
+%    \end{macrocode}
+%
+% \subsection{Bibliography and list of abbreviations}
+%
+%    \begin{macrocode}
+\DefineBibliographyStrings { english }
+  {
+    shorthands = { List~of~Abbreviations }
+  }
+\cs_set_nopar:Npn \bibsetup { \singlespacing }
+\dim_set:Nn \bibhang { 0.5in }
+\dim_set:Nn \bibitemsep { 12pt }
+\dim_set:Nn \biblabelsep { 0.5in }
+\defbibheading { bibliography } [ \bibname ]
+  {
+    \chapter* {#1}
+  }
+\defbibheading { bibintoc } [ \bibname ]
+  {
+    \chapter* {#1}
+    \addcontentsline { toc } { chapter } {#1}
+  }
+\defbibheading { biblist } [ \biblistname ]
+  {
+    \chapter* {#1}
+  }
+\defbibheading { biblistintoc } [ \biblistname ]
+  {
+    \chapter* {#1}
+    \addcontentsline { toc } { chapter } {#1}
+  }
+%    \end{macrocode}
+%
+% Peeking ahead from the end of |\printbiblist| is slightly more complicated
+% because we only want to do so when it's in the front matter and it's defined
+% with |\newrobuscmd*| with optional arguments.
+%
+%    \begin{macrocode}
+\cs_new:Npn \sblarticle@printbiblist@frontmatter@peek
+  {
+    \@@_if_page_numbering:nT { roman }
+      {
+        \@@_frontmatter_peek:
+      }
+  }
+%    \end{macrocode}
+%
+% \subsection{Helper functions}
+%
+%    \begin{macrocode}
+\ExplSyntaxOff
+\expandafter\apptocmd\csname\string\printbiblist\endcsname
+  {\sblarticle@printbiblist@frontmatter@peek}
+  {}
+  {}
+\ExplSyntaxOn
+%    \end{macrocode}
+%
+% \begin{macro}{\@@_if_page_numbering:nT} \marg{numbering style}
+%     \marg{code if true}
+%
+%   \medskip
+%
+%   Test if the current page numbering style matches a particular style.
+%   (e.g., |arabic| or |roman|).
+%
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \@@_if_page_numbering:n #1 { T }
+  {
+    \cs_set_nopar:Nn \@@_thepage_test:
+      { \csname @ #1 \endcsname \c@page }
+    \if_meaning:w \thepage \@@_thepage_test:
+      \prg_return_true:
+    \else:
+      \prg_return_false:
+    \fi:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_frontmatter_peek:}
+%
+%   \medskip
+%
+%   Peek ahead and insert the title of the paper at the start of the main
+%   matter.
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_frontmatter_peek:
+  {
+    \peek_analysis_map_inline:n
+      {
+%    \end{macrocode}
+%
+% Test if the next token is a control sequence of not.
+%
+%    \begin{macrocode}
+        \int_compare:nNnTF {##2} = { -1 }
+          {
+            \exp_args:No \token_if_eq_meaning:NNF {##1} \par
+              {
+                \bool_case:nTF
+                  {
+                    {
+                      \exp_args:No \token_if_eq_meaning_p:NN
+                        {##1} \begin
+                    }
+                      { }
+                    {
+                      \exp_args:No \token_if_eq_meaning_p:NN
+                        {##1} \tableofcontents
+                    }
+                      { }
+                    {
+                      \exp_args:No \token_if_eq_meaning_p:NN
+                        {##1} \listoffigures
+                    }
+                      { }
+                    {
+                      \exp_args:No \token_if_eq_meaning_p:NN
+                        {##1} \listoftables
+                    }
+                      { }
+                    {
+                      \exp_args:No \token_if_eq_meaning_p:NN
+                        {##1} \printbiblist
+                    }
+                      { }
+                  }
+                  { \peek_analysis_map_break:n {##1} }
+                  {
+%    \end{macrocode}
+%
+% Insert the paper title if some control sequence other than the above is
+% found.
+%
+%    \begin{macrocode}
+                    \peek_analysis_map_break:n
+                      {
+                        \chapter { \@title }
+                        \pagenumbering { arabic }
+                        ##1
+                      }
+                  }
+              }
+          }
+          {
+%    \end{macrocode}
+%
+% Ignore spaces and insert the paper title if a token other than a control
+% sequence is found.
+%
+%    \begin{macrocode}
+            \exp_args:No \token_if_space:NF {##1}
+              {
+                \peek_analysis_map_break:n
+                  {
+                    \chapter { \@title }
+                    \pagenumbering { arabic }
+                    ##1
+                  }
+              }
+          }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \medskip
+%
+% Add the code to peek ahead after |maketitle| at the end of preamble because
+% \pkg{hyperref} (if loaded) takes over things.
+%
+%    \begin{macrocode}
+\hook_gput_code:nnn
+  { begindocument / before }
+  { sblarticle }
+  { 
+    \g@addto@macro \maketitle { \@@_frontmatter_peek: }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\endinput
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%</class>
+%    \end{macrocode}

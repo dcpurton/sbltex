@@ -1,0 +1,119 @@
+\documentclass{sblarticle}
+
+\addbibresource{biblatex-sbl.bib}
+
+\begin{document}
+
+\title{Title of Paper}
+\author{[Your Name]}
+\maketitle
+
+\printbiblist[heading=biblistintoc]{abbreviations}
+
+The top margin is two inches for the first page only. There are two blank
+lines between the title and the text (or subheading if there is one). The
+left, right, top, and bottom margins are one inch. The first pages of chapters
+are formatted like the primary heading.
+
+Indent the first line of subsequent paragraphs. All main text should be set in
+a standard 12-point font such as Times-New-Roman.
+
+The \texttt{sblarticle} class uses the TeX Gyre Termes font by default, but an
+alternative can be specified.
+
+\section[First-level subheading (indent three spaces, no dots); titles that
+exceed one line must also be indented for subsequent lines]{First-Level
+Subheading}
+
+Keep two blank lines between the text of the preceding section and a
+subheading, regardless of the level. A first level subheading is centered,
+bold, and capitalized headline style.
+
+\subsection[Second-level subheadings (indent three spaces, no
+dots)]{Second-Level Subheading}
+
+There are two blank lines between the text of the preceding section and the
+subheading. A second-level subheading is centered and capitalized headline
+style.
+
+\subsubsection{Third-Level Subheading}
+
+A third level subheading is on the left margin, in bold, italics, and
+capitalized headline style. A heading should never be the last text on a page.
+If necessary, add extra blank space at the end of the page and begin the
+following page with a heading.
+
+\paragraph{Fourth-Level Subheading}
+
+A fourth-level subheading is on the left margin, capitalized headline style.
+
+The page numbers for the noninitial pages of the paper (or chapter) are
+located at the top right corner. The text of the body of the paper is
+double-spaced except for blocked
+quotations.
+\begin{quote}
+  This is a blocked quotation. It should consist of five or more lines of text
+  and be indented one-half inch. Block quotations should be single-spaced. No
+  quotation marks are used at the beginning or the end of the quote. Double
+  quotation marks within the original matter are retained. The blocked quote
+  is set off by a regular double space before and after the quote. Note that
+  regular spacing resumes after the end of the quotation.\footnote{The first
+  line of a footnote is indented one-half inch. A 10-point font is acceptable.
+  Footnotes, unlike the main text of the paper, should be single-spaced.}
+\end{quote}
+After a block quotation, return to double-spaced text justified to the left
+margin until you finish the paragraph.
+
+Footnotes at the bottom of the page are separated by a two-inch
+rule.\footnote{There should be a blank line between each note and a blank en
+space between the number and the first word of the note.} Maintain subsequent
+numbering in notes. Make sure a footnote and the text to which it refers are
+on the same page.
+
+\section{Citations}
+
+Citations should be referenced using \verb+\autocite+ or \verb+\autocites+ for
+single volume resources and \verb+\avolcite+ or \verb+\avolcites+ for
+multi-volume resources. This will place the citation in a footnote.
+\verb+\parencite+, \verb+\parencites+, \verb+\pvolcite+, and \verb+\pvolcites+
+place citations in parentheses.
+
+For example, citing a classical primary source \ptranscite{tacitus:ann};
+citing a lexicon \autocite[\foreignlanguage{polytonicgreek}{παρρησία}]{BDAG};
+citing volume 2 of a multi-volume commentary
+\avolcite{2}[125]{dahood:1965-1970}; citing two resources by the same author
+in a single footnote \autocites[504]{harrington:1970}[241]{harrington:1986};
+citing a resource for the second time \autocite[505]{harrington:1970}; citing
+an article in an edited collection \autocite{collins:1986}; citing another
+article in the same edited collection \autocite{attridge:1986}.
+
+\section{Greek and Hebrew}
+
+If available, \texttt{sblarticle} will use the SBL fonts for Greek and Hebrew
+with Unicode engines otherwise the class falls back to Alegreya for Greek and
+Frank Ruehl CLM for Hebrew. The class sets up the \texttt{babel} package for
+\texttt{polytonicgreek} and \texttt{hebrew}. Other languages can be loaded
+manually or on the fly with \texttt{lualatex}.
+
+I strongly recommend using the \texttt{luatex} engine for multilingual work,
+especially for right-to-left languages. Inline Greek and Hebrew need to be
+marked up with \texttt{xetex} and \texttt{pdftex}. With \texttt{pdftex} Hebrew
+pointing support is limited and cantillation marks are not supported at all.
+\begin{quotation}
+  \selectlanguage{polytonicgreek}
+  Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.
+  οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.
+\end{quotation}
+\begin{quotation}
+  \selectlanguage{hebrew}
+  בּראשׁית בּרא אלהים את השּׁמים ואת הארץ׃ והארץ היתה תהוּ ובהוּ וחשׁך על־פּני תהום
+  ורוּח אלהים מרחפת על־פּני המּים׃
+\end{quotation}
+Inline Greek (\foreignlanguage{polytonicgreek}{Ἐν ἀρχῇ}) and Hebrew
+(\foreignlanguage{hebrew}{בּראשׁית}) are also possible.
+
+\nocite{NIDNTT, Jastrow, DMBI, mclay:2006, oday:intertextuality, rad:1990}
+
+\printbibliography[heading=bibintoc]
+\end{document}
+
