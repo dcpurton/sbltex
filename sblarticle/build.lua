@@ -3,7 +3,7 @@
 module = "sblarticle"
 maindir = ".."
 checkformat = "latex"
-checkengines = {"pdftex"}
+checkengines = {"luatex"}
 checkdeps = {maindir .. "/sblfonts"}
 typesetdemofiles = {"sbltex-termpaper.tex"}
 typesetdeps = {maindir .. "/sblfonts"}

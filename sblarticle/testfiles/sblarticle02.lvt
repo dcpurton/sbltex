@@ -1,0 +1,38 @@
+\DocumentMetadata{
+  lang=en,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f,
+  tagging=on
+}
+\documentclass{sblarticle}
+\input{regression-test}
+\pagestyle{empty}
+\begin{document}
+\START
+\showoutput
+The text of the body of the paper is double-spaced except for blocked
+quotations.
+\begin{quote}
+  This is a blocked quotation. It should consist of five or more lines of text
+  and be indented one-half inch. Block quotations should be single-spaced. No
+  quotation marks are used at the beginning or the end of the quote. Double
+  quotation marks within the original matter are retained. The blocked quote
+  is set off by a regular double space before and after the quote. Note that
+  regular spacing resumes after the end of the quotation.
+\end{quote}
+After a block quotation, return to double-spaced text justified to the left
+margin until you finish the paragraph.
+
+The text of the body of the paper is double-spaced except for blocked
+quotations.
+\begin{quotation}
+  This is a blocked quotation. It should consist of five or more lines of text
+  and be indented one-half inch. Block quotations should be single-spaced. No
+  quotation marks are used at the beginning or the end of the quote. Double
+  quotation marks within the original matter are retained. The blocked quote
+  is set off by a regular double space before and after the quote. Note that
+  regular spacing resumes after the end of the quotation.
+\end{quotation}
+After a block quotation, return to double-spaced text justified to the left
+margin until you finish the paragraph.
+\end{document}

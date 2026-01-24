@@ -1,0 +1,15 @@
+\DocumentMetadata{
+  lang=en,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f,
+  tagging=on
+}
+\documentclass{sblarticle}
+\input{regression-test}
+\usepackage[colorlinks]{hyperref}
+\pagestyle{empty}
+\begin{document}
+\START
+\showoutput
+Filler text.\footnote{A footnote.}
+\end{document}

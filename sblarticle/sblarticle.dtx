@@ -312,8 +312,38 @@
 %
 % \subsection{Footnotes}
 %
+% Different handling is required for footnotes when tagging code is loaded.
+%
 %    \begin{macrocode}
-\RequirePackage [ bottom, ragged ] { footmisc }
+\IfDocumentMetadataTF
+  {
+    \hook_gput_code:nnn { fntext / para } { sblarticle}
+      {
+        \dim_set:Nn \parindent { 0.5in }
+      }
+    \socket_new_plug:nnn { fntext / mark } { sblarticle }
+      {
+        \skip_horizontal:N \footnotemargin
+        \@thefnmark . \enspace
+      }
+    \socket_assign_plug:nn { fntext / mark } { sblarticle }
+    \socket_assign_plug:nn
+      { build / column / outputbox }
+      { floats-space-footnotes }
+  }
+  {
+    \RequirePackage [ bottom, ragged ] { footmisc }
+    \cs_set:Npn \@makefntext #1
+      {
+        \dim_set_eq:NN \parindent \footnotemargin
+        \@thefnmark . \enspace
+        \footnotelayout #1
+      }
+}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\dim_set:Nn \footnotemargin { 0.5in }
 \cs_set:Npn \footnoterule
   {
     \kern -3pt
@@ -321,14 +351,7 @@
     \kern 2.6pt
     \vskip -8pt
   }
-\dim_set:Nn \footnotemargin { 0.5in }
 \dim_set:Nn \footnotesep { 20pt }
-\cs_set:Npn \@makefntext #1
-  {
-    \dim_set_eq:NN \parindent \footnotemargin
-    \@thefnmark . \enspace
-    \footnotelayout #1
-  }
 %    \end{macrocode}
 %
 % \subsection{Captions}
@@ -344,7 +367,6 @@
     \arabic { table }
   }
 \newcounter { chapter }
-\RequirePackage { chngcntr }
 \counterwithout { figure } { chapter }
 \counterwithout { table } { chapter }
 %    \end{macrocode}
@@ -352,48 +374,90 @@
 % \subsection{Block quotes}
 %
 %    \begin{macrocode}
-\renewenvironment { quotation }
+\IfDocumentMetadataTF
   {
-    \list { }
+    \hook_gput_code:nnn { begindocument / before } { sblarticle }
       {
-        \dim_set:Nn \leftmargin { 0.5in }
-        \dim_zero:N \rightmargin
-        \dim_zero:N \topsep
-        \dim_zero:N \partopsep
-        \dim_zero:N \itemsep
-        \dim_zero:N \parsep
-        \dim_set:Nn \itemindent { 0.5in }
-        \dim_set:Nn \listparindent { 0.5in }
+        \RenewDocumentEnvironment { quotation } { !O { } }
+          {
+            \UseInstance { blockenv } { quotation }
+              {
+                , begin-extra-vspace = 0pt
+                , begin-vspace = 0pt
+                , left-margin  = 0.5in
+                , right-margin = 0pt
+                , para-indent  = 0.5in
+                , para-vspace  = 0pt
+                , final-code   = \singlespacing
+                                 \vspace* { -5pt }
+                                 \ignorespaces
+                , #1
+              }
+          }
+          { \endblockenv }
+        \RenewDocumentEnvironment { quote } { !O { } }
+          {
+            \UseInstance { blockenv } { quote }
+              {
+                , begin-extra-vspace = 0pt
+                , begin-vspace = 0pt
+                , left-margin  = 0.5in
+                , right-margin = 0pt
+                , para-indent  = 0pt
+                , para-vspace  = 7pt
+                , final-code   = \singlespacing
+                                 \vspace* { -5pt }
+                                 \ignorespaces
+                , #1
+              }
+          }
+          { \endblockenv }
       }
-    \item \relax
-    \singlespacing
-    \vspace* { -5pt }
   }
   {
-    \endlist
-  }
+    \renewenvironment { quotation }
+      {
+        \list { }
+          {
+            \dim_set:Nn \leftmargin { 0.5in }
+            \dim_zero:N \rightmargin
+            \dim_zero:N \topsep
+            \dim_zero:N \partopsep
+            \dim_zero:N \itemsep
+            \dim_zero:N \parsep
+            \dim_set:Nn \itemindent { 0.5in }
+            \dim_set:Nn \listparindent { 0.5in }
+          }
+        \item \relax
+        \singlespacing
+        \vspace* { -5pt }
+      }
+      {
+        \endlist
+      }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\renewenvironment { quote }
-  {
-    \list { }
+    \renewenvironment { quote }
       {
-        \dim_set:Nn \leftmargin { 0.5in }
-        \dim_zero:N \rightmargin
-        \dim_zero:N \topsep
-        \dim_zero:N \partopsep
-        \dim_zero:N \itemsep
-        \dim_set:Nn \parsep { 7pt }
-        \dim_zero:N \itemindent
-        \dim_zero:N \listparindent
+        \list { }
+          {
+            \dim_set:Nn \leftmargin { 0.5in }
+            \dim_zero:N \rightmargin
+            \dim_zero:N \topsep
+            \dim_zero:N \partopsep
+            \dim_zero:N \itemsep
+            \dim_set:Nn \parsep { 7pt }
+            \dim_zero:N \itemindent
+            \dim_zero:N \listparindent
+          }
+        \item \relax
+        \singlespacing
+        \vspace* { -5pt }
       }
-    \item \relax
-    \singlespacing
-    \vspace* { -5pt }
-  }
-  {
-    \endlist
+      {
+        \endlist
+      }
   }
 %    \end{macrocode}
 %
