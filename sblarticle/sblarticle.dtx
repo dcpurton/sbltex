@@ -526,6 +526,60 @@
   }
 %    \end{macrocode}
 %
+% \subsection{Abstract}
+%
+% \begin{macro}{\@@_abstract_protected_end:n} \marg{abstract}
+%
+%   \medskip
+%
+%   This function is used to inject |\__sblarticle_fontmatter_peek:|
+%
+%    \begin{macrocode}
+\cs_set_eq:Nc \__sblarticle_orig_protected_end:n { end~ }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Nn \@@_abstract_protected_end:n
+  {
+    \@@_orig_protected_end:n { #1 }
+    \tl_if_eq:nnT { #1 } { abstract }
+      {
+        \cs_gset_eq:cN { end~ } \@@_orig_protected_end:n
+        \peek_remove_spaces:n
+          {
+            \peek_analysis_map_inline:n
+              {
+                \exp_args:No \token_if_eq_meaning:NNF { ##1 } \para_end:
+                  {
+                    \peek_analysis_map_break:n
+                      {
+                        \exp_after:wN
+                        \@@_frontmatter_peek:
+                        ##1
+                      }
+                  }
+                ##1
+              }
+          }
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\renewenvironment { abstract }
+  {
+    \chapter* { \abstractname }
+    \addcontentsline { toc } { chapter } { \abstractname }
+    \cs_gset_eq:cN { end~ } \@@_abstract_protected_end:n
+  }
+  {
+    \par
+    \clearpage
+    \pagestyle { fancy }
+  }
+%    \end{macrocode}
+%
 % \subsection{Section titles}
 %
 %    \begin{macrocode}
@@ -588,60 +642,6 @@
   { \thesubparagraph }
   { 1em }
   { }
-%    \end{macrocode}
-%
-% \subsection{Abstract}
-%
-% \begin{macro}{\@@_abstract_protected_end:n} \marg{abstract}
-%
-%   \medskip
-%
-%   This function is used to inject |\__sblarticle_fontmatter_peek:|
-%
-%    \begin{macrocode}
-\cs_set_eq:Nc \__sblarticle_orig_protected_end:n { end~ }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-\cs_new_nopar:Nn \@@_abstract_protected_end:n
-  {
-    \@@_orig_protected_end:n { #1 }
-    \tl_if_eq:nnT { #1 } { abstract }
-      {
-        \cs_gset_eq:cN { end~ } \@@_orig_protected_end:n
-        \peek_remove_spaces:n
-          {
-            \peek_analysis_map_inline:n
-              {
-                \exp_args:No \token_if_eq_meaning:NNF { ##1 } \para_end:
-                  {
-                    \peek_analysis_map_break:n
-                      {
-                        \exp_after:wN
-                        \@@_frontmatter_peek:
-                        ##1
-                      }
-                  }
-                ##1
-              }
-          }
-      }
-  }
-%    \end{macrocode}
-% \end{macro}
-%
-%    \begin{macrocode}
-\renewenvironment { abstract }
-  {
-    \chapter* { \abstractname }
-    \addcontentsline { toc } { chapter } { \abstractname }
-    \cs_gset_eq:cN { end~ } \@@_abstract_protected_end:n
-  }
-  {
-    \par
-    \clearpage
-    \pagestyle { fancy }
-  }
 %    \end{macrocode}
 %
 % \subsection{Table of contents and list of figures/tables}
