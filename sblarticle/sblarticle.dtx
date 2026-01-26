@@ -366,9 +366,8 @@
   {
     \arabic { table }
   }
-\newcounter { chapter }
-\counterwithout { figure } { chapter }
-\counterwithout { table } { chapter }
+\counterwithout { figure } { part }
+\counterwithout { table } { part }
 %    \end{macrocode}
 %
 % \subsection{Block quotes}
@@ -569,8 +568,8 @@
 %    \begin{macrocode}
 \renewenvironment { abstract }
   {
-    \chapter* { \abstractname }
-    \addcontentsline { toc } { chapter } { \abstractname }
+    \part* { \abstractname }
+    \addcontentsline { toc } { part } { \abstractname }
     \cs_gset_eq:cN { end~ } \@@_abstract_protected_end:n
   }
   {
@@ -583,15 +582,14 @@
 % \subsection{Section titles}
 %
 %    \begin{macrocode}
-\RequirePackage { titlesec }
+\RequirePackage [ newparttoc ] { titlesec }
 \int_set:Nn \c@secnumdepth { -1 }
 \providecommand \phantomsection { }
-\titleclass { \chapter } [ 0 ] { top }
-\cs_new_nopar:Npn \@chapapp { \chaptername }
+\titleclass { \part } [ 0 ] { top }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\titlespacing* { \chapter }       { 0pt } { 37pt } { 29pt }
+\titlespacing* { \part }          { 0pt } { 37pt } { 29pt }
 \titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
 \titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
 \titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
@@ -600,13 +598,22 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\cs_set_nopar:Npn \thepart
+  {
+    \@arabic \c@part
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \titleformat
-  { \chapter }
-  [ block ]
-  { \normalfont \normalsize \singlespacing \filcenter }
-  { \MakeUppercase \chaptertitlename \space \thechapter . }
-  { 0.5em }
-  { \phantomsection \MakeUppercase }
+  {\part}
+  [display]
+  {\normalfont\normalsize\singlespacing\filcenter}
+  {
+    \MakeUppercase \chaptername \space \thepart
+  }
+  {12pt}
+  {\MakeUppercase}
 \titleformat
   { \section }
   [ block ]
@@ -654,7 +661,7 @@
 %    \begin{macrocode}
 \cs_set:Npn \tableofcontents
   {
-    \chapter* { \contentsname }
+    \part* { \contentsname }
     \@mkboth
       { \contentsname }
       { \contentsname }
@@ -667,8 +674,8 @@
 %    \begin{macrocode}
 \cs_set:Npn \listoffigures
   {
-    \chapter* { \listfigurename }
-    \addcontentsline { toc } { chapter } { \listfigurename }
+    \part* { \listfigurename }
+    \addcontentsline { toc } { part } { \listfigurename }
     \@mkboth
       { \listfigurename }
       { \listfigurename }
@@ -681,8 +688,8 @@
 %    \begin{macrocode}
 \cs_set:Npn \listoftables
   {
-    \chapter* { \listtablename }
-    \addcontentsline { toc } { chapter } { \listtablename }
+    \part* { \listtablename }
+    \addcontentsline { toc } { part } { \listtablename }
     \@mkboth
       { \listfigurename }
       { \listfigurename }
@@ -730,15 +737,15 @@
   }
   { }
   { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
-\titlecontents { chapter }
+\titlecontents { part }
   [ 0pt ]
   { \singlespacing \filright }
   {
     \@@_hyperlink:nn
       { \Hy@tocdestname }
       {
-        \MakeUppercase \chaptertitlename \space
-        \thecontentslabel : \space
+        \MakeUppercase { \chaptername } \space
+        \thecontentslabel : \enspace
       }
     \MakeUppercase
   }
@@ -778,18 +785,70 @@
 %
 % \subsection{Appendices}
 %
+% Set up appendix headings and table of contents.
+%
+%    \begin{macrocode}
+\cs_set_eq:NN \sblarticle@hyperlink \@@_hyperlink:nn
+\newcounter { sblarticle@appendix@count }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_set_up_appendices:
+  {
+    \int_compare:nNnT { \c@sblarticle@appendix@count } = { \c_one_int }
+      {
+        \int_zero:N \c@sblarticle@appendix@count
+      }
+    \titleformat
+      { \part }
+      [ display ]
+      {
+        \stepcounter { sblarticle@appendix@count }
+        \protected@write \@auxout
+          { }
+          {
+            \string \setcounter { sblarticle@appendix@count } { \thepart }
+          }
+        \singlespacing \normalfont \normalsize \filcenter
+      }
+      {
+        \MakeUppercase { \chaptername }
+        \ifnum \c@sblarticle@appendix@count > 1
+          \strut \space \thepart
+        \fi
+      }
+      { 12pt }
+      { \MakeUppercase }
+    \titlecontents { part }
+      [ 0pt ]
+      { \singlespacing \filright }
+      {
+        \sblarticle@hyperlink
+          { \Hy@tocdestname }
+          {
+            \MakeUppercase { \chaptername }
+            \ifnum \c@sblarticle@appendix@count > 1
+              \strut \space \thecontentslabel
+            \fi
+            : \enspace
+          }
+        \MakeUppercase
+      }
+      { \MakeUppercase }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+  }
+%    \end{macrocode}
+%
 %    \begin{macrocode}
 \hook_gput_code:nnn
   { cmd / appendix / after }
   { sblarticle }
   {
-    \cs_set_eq:NN \section \chapter
-    \cs_gset_nopar:Npn \thesection
-      { \@arabic \c@section }
+    \cs_set_eq:NN \section \part
     \int_set_eq:NN \c@secnumdepth \c_one_int
-    \cs_set_nopar:Npn \@chapapp
-      { \appendixname }
-    \addtocontents { toc } { \def \protect \@chapapp { \appendixname } }
+    \cs_set_nopar:Npn \chaptername { \appendixname }
+    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
+    \@@_set_up_appendices:
   }
 %    \end{macrocode}
 %
@@ -806,21 +865,21 @@
 \dim_set:Nn \biblabelsep { 0.5in }
 \defbibheading { bibliography } [ \bibname ]
   {
-    \chapter* {#1}
+    \part* {#1}
   }
 \defbibheading { bibintoc } [ \bibname ]
   {
-    \chapter* {#1}
-    \addcontentsline { toc } { chapter } {#1}
+    \part* {#1}
+    \addcontentsline { toc } { part } {#1}
   }
 \defbibheading { biblist } [ \biblistname ]
   {
-    \chapter* {#1}
+    \part* {#1}
   }
 \defbibheading { biblistintoc } [ \biblistname ]
   {
-    \chapter* {#1}
-    \addcontentsline { toc } { chapter } {#1}
+    \part* {#1}
+    \addcontentsline { toc } { part } {#1}
   }
 %    \end{macrocode}
 %
@@ -930,7 +989,7 @@
 %    \begin{macrocode}
                     \peek_analysis_map_break:n
                       {
-                        \chapter { \@title }
+                        \part { \@title }
                         \pagenumbering { arabic }
                         ##1
                       }
@@ -948,7 +1007,7 @@
               {
                 \peek_analysis_map_break:n
                   {
-                    \chapter { \@title }
+                    \part { \@title }
                     \pagenumbering { arabic }
                     ##1
                   }
