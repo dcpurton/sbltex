@@ -34,7 +34,7 @@
 %
 % \title{The \pkg{sblarticle} Class}
 % \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
-% \date{2026/02/01 v1.0}
+% \date{2026/02/02 v1.0}
 %
 % \maketitle
 %
@@ -89,7 +89,7 @@
 %
 % \subsection{Acknowledgements}
 %
-% The \pkg{sblarticle} package depends on a number of other packages:
+% The \pkg{sblarticle} class depends on a number of other packages:
 % \begin{itemize}
 %   \item \pkg{sblfonts} (with \pkg{fontspec}, \pkg{fontenc} and \pkg{babel}),
 %     \pkg{biblatex-sbl} (with \pkg{biblatex})
@@ -178,7 +178,7 @@
 %
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesExplClass{sblarticle}{2026/02/01}{1.0}
+\ProvidesExplClass{sblarticle}{2026/02/02}{1.0}
   {Society of Biblical Literature Article Class (DCP)}
 %    \end{macrocode}
 %
@@ -507,8 +507,8 @@
 \author { [Your ~ Name] }
 \title { Title ~ of ~ Paper }
 \tl_gset:Nn \g_@@_course_tl { [Course ~ Number ~ and ~ Title] }
-\tl_gset:Nn \g__sblarticle_institution_tl { [Name ~ of ~ Institution] }
-\tl_gset:Nn \g__sblarticle_professor_tl { [Name ~ of ~ Professor] }
+\tl_gset:Nn \g_@@_institution_tl { [Name ~ of ~ Institution] }
+\tl_gset:Nn \g_@@_professor_tl { [Name ~ of ~ Professor] }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -548,7 +548,7 @@
 %   This function is used to inject |\__sblarticle_fontmatter_peek:|
 %
 %    \begin{macrocode}
-\cs_set_eq:Nc \__sblarticle_orig_protected_end:n { end~ }
+\cs_set_eq:Nc \@@_orig_protected_end:n { end~ }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
