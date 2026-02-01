@@ -258,6 +258,7 @@
   { \l_@@_options_to_biblatex_clist }
   { biblatex }
 \RequirePackage { biblatex }
+\RequirePackage { csquotes }
 %    \end{macrocode}
 %
 % \subsection{Margins}
@@ -317,10 +318,8 @@
 %    \begin{macrocode}
 \IfDocumentMetadataTF
   {
-    \hook_gput_code:nnn { fntext / para } { sblarticle}
-      {
-        \dim_set:Nn \parindent { 0.5in }
-      }
+    \hook_gput_code:nnn { fntext / para } { sblarticle }
+      { \RaggedRight }
     \socket_new_plug:nnn { fntext / mark } { sblarticle }
       {
         \skip_horizontal:N \footnotemargin
@@ -582,79 +581,115 @@
 % \subsection{Section titles}
 %
 %    \begin{macrocode}
-\RequirePackage [ newparttoc ] { titlesec }
 \int_set:Nn \c@secnumdepth { -1 }
-\providecommand \phantomsection { }
-\titleclass { \part } [ 0 ] { top }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-\titlespacing* { \part }          { 0pt } { 37pt } { 29pt }
-\titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
-\titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
-\titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
-\titlespacing* { \paragraph }     { 0pt } { 37pt } { 0pt }
-\titlespacing* { \subparagraph }  { 0pt } { 37pt } { 0pt }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
 \cs_set_nopar:Npn \thepart
   {
     \@arabic \c@part
   }
 %    \end{macrocode}
 %
+% For documents using \cs{DocumentMetadata} use standard kernel commands to
+% redefine section headings, otherwise use the \pkg{titlesec} package. 
+%
 %    \begin{macrocode}
-\titleformat
-  {\part}
-  [display]
-  {\normalfont\normalsize\singlespacing\filcenter}
+\IfDocumentMetadataTF
   {
-    \MakeUppercase \chaptername \space \thepart
+    \cs_set:Npn \section
+      {
+        \hook_gput_code:nnn { para / end } { sblarticle }
+          { \dim_zero:N \hangindent }
+        \@startsection { section } { 1 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize \bfseries \centering }
+      }
+    \cs_set:Npn \subsection
+      {
+        \hook_gput_code:nnn { para / end } { sblarticle }
+          { \dim_zero:N \hangindent }
+        \@startsection { subsection } { 2 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize \centering }
+      }
+    \cs_set:Npn \subsubsection
+      {
+        \@startsection { subsubsection } { 3 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize \bfseries \itshape }
+      }
+    \cs_set:Npn \paragraph
+      {
+        \@startsection { paragraph } { 4 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize }
+      }
+    \cs_set:Npn \subparagraph
+      {
+        \@startsection { subparagraph } { 5 } { 0pt } { -37pt } { -1em }
+          { \singlespacing \normalfont \normalsize \bfseries }
+      }
   }
-  {12pt}
-  {\MakeUppercase}
-\titleformat
-  { \section }
-  [ block ]
-  { \normalfont \normalsize \singlespacing \bfseries \filcenter }
-  { \thesection }
-  { 0.5em }
-  { }
-\titleformat
-  { \subsection }
-  [ block ]
-  { \normalfont \normalsize \singlespacing \filcenter }
-  { \thesubsection }
-  { 0.5em }
-  { }
-\titleformat
-  { \subsubsection }
-  [ block ]
-  { \normalfont \normalsize \singlespacing \bfseries \itshape \filright }
-  { \thesubsubsection }
-  { 0.5em }
-  { }
-\titleformat
-  { \paragraph }
-  [ block ]
-  { \normalfont \normalsize \singlespacing \filright }
-  { \theparagraph }
-  { 0.5em }
-  { }
-\titleformat
-  { \subparagraph }
-  [ runin ]
-  { \normalfont \normalsize \bfseries }
-  { \thesubparagraph }
-  { 1em }
-  { }
+  {
+    \RequirePackage [ newparttoc ] { titlesec }
+    \providecommand \phantomsection { }
+    \titleclass { \part } [ 0 ] { top }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titlespacing* { \part }          { 0pt } { 37pt } { 24pt }
+    \titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \paragraph }     { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \subparagraph }  { 0pt } { 37pt } { 0pt }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titleformat
+      { \part }
+      [ display ]
+      { \normalfont \normalsize \singlespacing \filcenter }
+      {
+        \MakeUppercase \chaptername \space \thepart
+      }
+      { 12pt }
+      { \MakeUppercase }
+    \titleformat
+      { \section }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \bfseries \filcenter }
+      { \thesection }
+      { 0.5em }
+      { }
+    \titleformat
+      { \subsection }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \filcenter }
+      { \thesubsection }
+      { 0.5em }
+      { }
+    \titleformat
+      { \subsubsection }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \bfseries \itshape \filright }
+      { \thesubsubsection }
+      { 0.5em }
+      { }
+    \titleformat
+      { \paragraph }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \filright }
+      { \theparagraph }
+      { 0.5em }
+      { }
+    \titleformat
+      { \subparagraph }
+      [ runin ]
+      { \normalfont \normalsize \bfseries }
+      { \thesubparagraph }
+      { 1em }
+      { }
+  }
 %    \end{macrocode}
 %
 % \subsection{Table of contents and list of figures/tables}
 %
 %    \begin{macrocode}
-\RequirePackage { titletoc }
 \int_set:Nn \c@tocdepth { 2 }
 %    \end{macrocode}
 %
@@ -699,6 +734,139 @@
   }
 %    \end{macrocode}
 %
+% For documents using \cs{DocumentMetadata} use standard kernel commands to
+% redefine table of contents lines, otherwise use the \pkg{titletoc} package. 
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \text_declare_expand_equivalent:Nn \numberline
+      {
+        \exp_not:n { \numberline }
+      }
+    \hook_gput_code:nnn { cmd / @dottedtocline / before }
+      { sblarticle }
+      {
+        \addvspace { \baselineskip }
+      }
+    \hook_gput_code_with_args:nnn { contentsline / text / after }
+      { sblarticle }
+      {
+        \int_compare:nNnT {#1} > { -1 }
+          {
+            \cs_set_nopar:Npn \leaders ##1 ##2 { }
+            \hook_gput_next_code:nn { cmd / SuspendTagging / after }
+              {
+                \cs_set_nopar:Npn \leaders ##1 ##2 { }
+              }
+          }
+      }
+    \cs_set_nopar:cpn { contentsline@text@-1@format }
+      { \MakeUppercase }
+    \cs_set_nopar:Npn \numberline #1
+      {
+        \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+        #1 \enspace
+        \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \l@part
+      {
+        \@dottedtocline { -1 } { 0em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@section
+      {
+        \@dottedtocline { 1 } { 1em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@subsection
+      {
+        \@dottedtocline { 2 } { 2em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@subsubsection
+      {
+        \@dottedtocline { 3 } { 3em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@paragraph
+      {
+        \@dottedtocline { 4 } { 4em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@subparagraph
+      {
+        \@dottedtocline { 5 } { 5em } { 0em }
+      }
+%    \end{macrocode}
+%
+% Redefine \cs{@part} and \cs{@spart} to format major headings.
+%
+%    \begin{macrocode}
+    \hook_gput_code:nnn { cmd / part / before } { sblarticle }
+      {
+        \clearpage
+        \mode_leave_vertical:
+        \par
+        \thispagestyle { plain }
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \@part [#1]#2
+      {
+        \addvspace { 37pt }
+        \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+          {
+            \refstepcounter { part }
+            \addcontentsline { toc } { part }
+              { \chaptername \space \thepart : \enspace #1 }
+          }
+          {
+            \addcontentsline { toc } { part } {#1}
+          }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \int_compare:nNnT { \c@secnumdepth } > { -1 }
+            {
+              \MakeUppercase { \chaptername } \nobreakspace \thepart
+              \par
+              \nobreak
+            }
+          \singlespacing
+          \MakeUppercase {#2}
+          \markboth { } { }
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:N \baselineskip
+        \@afterheading
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn  \@spart #1
+      {
+        \addvspace { 37pt }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \singlespacing
+          \MakeUppercase {#1}
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:N \baselineskip
+        \@afterheading
+      }
+  }
+  {
+    \RequirePackage { titletoc }
+%    \end{macrocode}
+%
 % \begin{macro}{ \@@_hyperlink:nn } \marg{link} \marg{text}
 %
 %   \medskip
@@ -707,80 +875,81 @@
 %   \pkg{hyperref} isn't loaded.
 %
 %    \begin{macrocode}
-\cs_new_protected:Nn \@@_hyperlink:nn
-  {
-    \cs_if_exist_use:NTF \hyperlink
-      { { #1 } { #2 } }
-      { #2 }
-  }
+    \cs_new_protected:Nn \@@_hyperlink:nn
+      {
+        \cs_if_exist_use:NTF \hyperlink
+          { { #1 } { #2 } }
+          { #2 }
+      }
 %    \end{macrocode}
 % \end{macro}
 %
 %    \begin{macrocode}
-\titlecontents { figure }
-  [ 2em ]
-  { \hspace* { 2em } \filright }
-  {
-    \@@_hyperlink:nn
-      { \Hy@tocdestname }
-      { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
-  }
-  { }
-  { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
-\titlecontents { table }
-  [ 2em ]
-  { \hspace* { 2em } \filright }
-  {
-    \@@_hyperlink:nn
-      { \Hy@tocdestname }
-      { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
-  }
-  { }
-  { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
-\titlecontents { part }
-  [ 0pt ]
-  { \singlespacing \filright }
-  {
-    \@@_hyperlink:nn
-      { \Hy@tocdestname }
+    \titlecontents { figure }
+      [ 2em ]
+      { \hspace* { 2em } \filright }
       {
-        \MakeUppercase { \chaptername } \space
-        \thecontentslabel : \enspace
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
       }
-    \MakeUppercase
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { table }
+      [ 2em ]
+      { \hspace* { 2em } \filright }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+      }
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { part }
+      [ 0pt ]
+      { \singlespacing \filright }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          {
+            \MakeUppercase { \chaptername } \space
+            \thecontentslabel : \enspace
+          }
+        \MakeUppercase
+      }
+      { \MakeUppercase }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { section }
+      [ 1em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subsection }
+      [ 2em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subsubsection }
+      [ 3em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { paragraph }
+      [ 4em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subparagraph }
+      [ 5em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
   }
-  { \MakeUppercase }
-  { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
-\titlecontents { section }
-  [ 1em ]
-  { \singlespacing \filright }
-  { }
-  { }
-  { \hfill \contentspage }
-\titlecontents { subsection }
-  [ 2em ]
-  { \singlespacing \filright }
-  { }
-  { }
-  { \hfill \contentspage }
-\titlecontents { subsubsection }
-  [ 3em ]
-  { \singlespacing \filright }
-  { }
-  { }
-  { \hfill \contentspage }
-\titlecontents { paragraph }
-  [ 4em ]
-  { \singlespacing \filright }
-  { }
-  { }
-  { \hfill \contentspage }
-\titlecontents { subparagraph }
-  [ 5em ]
-  { \singlespacing \filright }
-  { }
-  { }
-  { \hfill \contentspage }
 %    \end{macrocode}
 %
 % \subsection{Appendices}
