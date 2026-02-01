@@ -34,7 +34,7 @@
 %
 % \title{The \pkg{sblarticle} Class}
 % \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
-% \date{2026/01/15 v1.0}
+% \date{2026/02/01 v1.0}
 %
 % \maketitle
 %
@@ -87,6 +87,18 @@
 % \pkg{babel}). A different main language can be chosen by passing the
 % \pkg{babel} language name to the class.
 %
+% \subsection{Acknowledgements}
+%
+% The \pkg{sblarticle} package depends on a number of other packages:
+% \begin{itemize}
+%   \item \pkg{sblfonts} (with \pkg{fontspec}, \pkg{fontenc} and \pkg{babel}),
+%     \pkg{biblatex-sbl} (with \pkg{biblatex})
+%   \item \pkg{csquotes}, \pkg{geometry}, \pkg{setspace}, \pkg{ragged2e},
+%     \pkg{fancyhdr}, \pkg{caption}
+%   \item When \cs{DocumentMetadata} is not in use: \pkg{footmisc},
+%     \pkg{titlesec}, \pkg{titletoc}
+% \end{itemize}
+%
 % \subsection{Bug Reports and Feature Requests}
 %
 % Bug reports and feature requests can be made at the \pkg{sbltex}
@@ -104,7 +116,7 @@
 %
 % \begin{function}{\institution}
 %   \begin{syntax}
-%     |\course| \marg{Institution name}
+%     |\institution| \marg{Institution name}
 %   \end{syntax}
 %   Set the name of the institution the paper will be submitted at. This is
 %   included on the title page.
@@ -112,7 +124,7 @@
 %
 % \begin{function}{\professor}
 %   \begin{syntax}
-%     |\course| \marg{Professor name}
+%     |\professor| \marg{Professor name}
 %   \end{syntax}
 %   Set the name of the professor the paper will be submitted to. This is
 %   included on the title page.
@@ -150,6 +162,9 @@
 %       \strut\quad |sblfonts=true|\\
 %       |}|
 %   \end{description}
+%
+%   Note that you will need to download and install the SBL fonts yourself from
+%   \url{https://www.sbl-site.org/resources/fonts/}.
 % \end{function}
 %
 % \section{Implementation}
@@ -163,7 +178,7 @@
 %
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesExplClass{sblarticle}{2026/01/15}{1.0}
+\ProvidesExplClass{sblarticle}{2026/02/01}{1.0}
   {Society of Biblical Literature Article Class (DCP)}
 %    \end{macrocode}
 %
@@ -201,7 +216,7 @@
 %    \begin{macrocode}
 \clist_put_left:Nn \l_@@_options_to_biblatex_clist
   {
-    , style = sbl
+    , style    = sbl
     , language = auto
     , autolang = hyphen
   }
