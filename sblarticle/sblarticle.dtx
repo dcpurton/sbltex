@@ -77,6 +77,7 @@
 %   \item |\tableofcontents|, |\listoffigure|, |\listoftables|
 %   \item |\section|, |\subsection|, |\subsubsection|, |\paragraph|,
 %     |\subparagraph|
+%   \item |\appendix|
 %   \item |\footnote|
 %   \item |\caption|
 %   \item |\printbibliography|, |\printbiblist{abbreviations}|
@@ -103,6 +104,12 @@
 %
 % Bug reports and feature requests can be made at the \pkg{sbltex}
 % GitHub repository. See \url{https://github.com/dcpurton/sbltex}.
+%
+% \begin{description}
+%   \item[Note:] This class is only partially compatible with the \LaTeX{}
+%   tagging project at this stage. As the tagging project stabilises and
+%   dependent packages are updated, compatibility will improve.
+% \end{description}
 %
 % \section{Package Commands}
 %
@@ -979,47 +986,107 @@
 %    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
+    \cs_set_eq:NN \section \part
+    \int_set_eq:NN \c@secnumdepth \c_one_int
+    \cs_set_nopar:Npn \chaptername { \appendixname }
+    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \int_compare:nNnT { \c@sblarticle@appendix@count } = { \c_one_int }
       {
         \int_zero:N \c@sblarticle@appendix@count
       }
-    \titleformat
-      { \part }
-      [ display ]
+    \IfDocumentMetadataTF
       {
-        \stepcounter { sblarticle@appendix@count }
-        \protected@write \@auxout
-          { }
+        \cs_set_nopar:Npn \@chapter [##1]##2
           {
-            \string \setcounter { sblarticle@appendix@count } { \thepart }
+            \addvspace { 37pt }
+            \stepcounter { sblarticle@appendix@count }
+            \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+              {
+                \refstepcounter { part }
+                \protected@write \@auxout
+                  { }
+                  {
+                    \string \setcounter
+                      { sblarticle@appendix@count } { \the \c@part }
+                  }
+                \addcontentsline { toc } { part }
+                  {
+                    \chaptername
+                    \ifnum \c@sblarticle@appendix@count > 1
+                      \space \thechapter
+                    \fi
+                    : \enspace ##1
+                  }
+              }
+              {
+                \addcontentsline { toc } { part } {##1}
+              }
+            \group_begin:
+              \dim_zero:N \parindent
+              \centering
+              \interlinepenalty 10000
+              \normalfont
+              \int_compare:nNnT { \c@secnumdepth } > { -1 }
+                {
+                  \MakeUppercase { \chaptername }
+                  \int_compare:nNnT
+                    { \c@sblarticle@appendix@count } > { \c_one_int }
+                    {
+                       \nobreakspace \thechapter
+                    }
+                  \par
+                  \nobreak
+                }
+              \singlespacing
+              \MakeUppercase {##2}
+              \markboth { } { }
+              \par
+            \group_end:
+            \nobreak
+            \skip_vertical:N \baselineskip
+            \@afterheading
           }
-        \singlespacing \normalfont \normalsize \filcenter
       }
       {
-        \MakeUppercase { \chaptername }
-        \ifnum \c@sblarticle@appendix@count > 1
-          \strut \space \thepart
-        \fi
-      }
-      { 12pt }
-      { \MakeUppercase }
-    \titlecontents { part }
-      [ 0pt ]
-      { \singlespacing \filright }
-      {
-        \sblarticle@hyperlink
-          { \Hy@tocdestname }
+        \titleformat
+          { \part }
+          [ display ]
+          {
+            \stepcounter { sblarticle@appendix@count }
+            \protected@write \@auxout
+              { }
+              {
+                \string \setcounter
+                  { sblarticle@appendix@count } { \the \c@part }
+              }
+            \singlespacing \normalfont \normalsize \filcenter
+          }
           {
             \MakeUppercase { \chaptername }
             \ifnum \c@sblarticle@appendix@count > 1
-              \strut \space \thecontentslabel
+              \strut \space \thepart
             \fi
-            : \enspace
           }
-        \MakeUppercase
+          { 12pt }
+          { \MakeUppercase }
+        \titlecontents { part }
+          [ 0pt ]
+          { \singlespacing \filright }
+          {
+            \sblarticle@hyperlink
+              { \Hy@tocdestname }
+              {
+                \MakeUppercase { \chaptername }
+                \ifnum \c@sblarticle@appendix@count > 1
+                  \strut \space \thecontentslabel
+                \fi
+                : \enspace
+              }
+            \MakeUppercase
+          }
+          { \MakeUppercase }
+          { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
       }
-      { \MakeUppercase }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
   }
 %    \end{macrocode}
 %
@@ -1027,13 +1094,7 @@
 \hook_gput_code:nnn
   { cmd / appendix / after }
   { sblarticle }
-  {
-    \cs_set_eq:NN \section \part
-    \int_set_eq:NN \c@secnumdepth \c_one_int
-    \cs_set_nopar:Npn \chaptername { \appendixname }
-    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
-    \@@_set_up_appendices:
-  }
+  { \@@_set_up_appendices: }
 %    \end{macrocode}
 %
 % \subsection{Bibliography and list of abbreviations}
