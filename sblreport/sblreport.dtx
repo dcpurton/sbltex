@@ -1,0 +1,1178 @@
+% \iffalse meta-comment
+%
+% Copyright (c) 2026 David Purton <dcpurton@marshwiggle.net>
+%
+% This work may be distributed and/or modified under the conditions of
+% the LaTeX Project Public License, either version 1.3c of this license
+% or (at your option) any later version. The latest version of this
+% license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+%<*driver>
+\RequirePackage{pdfmanagement}
+\documentclass[a4paper]{l3doc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{mlmodern}
+\usepackage[font=small, skip=6pt]{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\AddToHook{env/macrocode/before}{%
+  \addvspace{\medskipamount}}
+
+\AddToHook{env/macro/before}{%
+  \addvspace{\medskipamount}}
+
+\begin{document}
+\DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \title{The \pkg{sblreport} Class}
+% \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
+% \date{2026/02/04 v1.0}
+%
+% \maketitle
+%
+% \begin{abstract}
+%   The \pkg{sblreport} class provides a LaTeX class producing theses
+%   conforming to the style required by the Society of Biblical Literature. It
+%   depends on \pkg{sblfonts} for Greek and Hebrew font and language support
+%   and \pkg{biblatex-sbl} for referencing.
+% \end{abstract}
+%
+% \tableofcontents
+%
+% \section{Introduction}
+%
+% The \pkg{sblreport} class creates a thesis matching the style specified
+% in the \emph{Student Supplement for \emph{The SBL Handbook of Style}, Second
+% Edition}. See
+% \url{https://www.sbl-site.org/wp-content/uploads/2025/04/SBLHSsupp2015-02.pdf}.
+%
+% The class works with both |pdflatex| and the Unicode engines, but in order
+% to make use of the SBL fonts you need to install them and use a Unicode
+% engine (|lualatex| is recommended, especially for Hebrew).
+%
+% This class is not intended to be a general flexible starting point for the
+% requirements of all theological colleges and seminaries. In such cases you
+% are better off beginning with the \pkg{report} class and loading
+% \pkg{biblatex-sbl} and (possibly) \pkg{sblfonts} directly. You could use the
+% code in this class as a guide.
+%
+% \subsection{Usage}
+%
+% Load the class using |\documentclass{sblreport}|. See |sbltex-thesis.pdf| in
+% the documentation directory for an extended usage example.
+%
+% The following standard commands and environments have been customised for
+% this class:
+% \begin{itemize}
+%   \item |\author|, |\title|, |\maketitle|
+%   \item |\tableofcontents|, |\listoffigure|, |\listoftables|
+%   \item |\section|, |\subsection|, |\subsubsection|, |\paragraph|,
+%     |\subparagraph|
+%   \item |\appendix|
+%   \item |\footnote|
+%   \item |\caption|
+%   \item |\printbibliography|, |\printbiblist{abbreviations}|
+%   \item |abstract|, |quotation|, |quote|
+% \end{itemize}
+%
+% American, Greek and Hebrew are set up using \pkg{sblfonts} (and
+% \pkg{babel}). A different main language can be chosen by passing the
+% \pkg{babel} language name to the class.
+%
+% \subsection{Acknowledgements}
+%
+% The \pkg{sblreport} class depends on a number of other packages:
+% \begin{itemize}
+%   \item \pkg{sblfonts} (with \pkg{fontspec}, \pkg{fontenc} and \pkg{babel}),
+%     \pkg{biblatex-sbl} (with \pkg{biblatex})
+%   \item \pkg{csquotes}, \pkg{geometry}, \pkg{setspace}, \pkg{ragged2e},
+%     \pkg{fancyhdr}, \pkg{caption}
+%   \item When \cs{DocumentMetadata} is not in use: \pkg{footmisc},
+%     \pkg{titlesec}, \pkg{titletoc}
+% \end{itemize}
+%
+% \subsection{Bug Reports and Feature Requests}
+%
+% Bug reports and feature requests can be made at the \pkg{sbltex}
+% GitHub repository. See \url{https://github.com/dcpurton/sbltex}.
+%
+% \begin{description}
+%   \item[Note:] This class is only partially compatible with the \LaTeX{}
+%   tagging project at this stage. As the tagging project stabilises and
+%   dependent packages are updated, compatibility will improve.
+% \end{description}
+%
+% \section{Package Commands}
+%
+% \begin{function}{\degree}
+%   \begin{syntax}
+%     |\degree| \marg{Degree name}
+%   \end{syntax}
+%   Set the name of the degree the thesis is for. This is included on the
+%   title page.
+% \end{function}
+%
+% \begin{function}{\institution}
+%   \begin{syntax}
+%     |\institution| \marg{Institution name}
+%   \end{syntax}
+%   Set the name of the institution the thesis will be submitted at. This is
+%   included on the title page.
+% \end{function}
+%
+% \section{Package Environments}
+%
+% \begin{function}{acknowledgements}
+%   \begin{syntax}
+%     |\begin| \marg{acknowledgements}
+%     |\end| \marg{acknowledgements}
+%   \end{syntax}
+%   Add an Acknowledgements page to the thesis. The name of the section can be
+%   changed by redefining |\acknowledgementsname|.
+% \end{function}
+%
+% \begin{function}{approvalpage}
+%   \begin{syntax}
+%     |\begin| \marg{approvalpage}
+%     |\end| \marg{approvalpage}
+%   \end{syntax}
+%   Add an approval page to the thesis. This page is empty by default.
+% \end{function}
+%
+% \begin{function}{copyrightpage}
+%   \begin{syntax}
+%     |\begin| \marg{copyrightpage}
+%     |\end| \marg{copyrightpage}
+%   \end{syntax}
+%   Add a copyright page to the thesis. This page is empty by default.
+% \end{function}
+%
+% \begin{function}{dedication}
+%   \begin{syntax}
+%     |\begin| \marg{dedication}
+%     |\end| \marg{dedication}
+%   \end{syntax}
+%   Add a dedication to the thesis. This page is empty by default.
+% \end{function}
+%
+% \begin{function}{epigraph}
+%   \begin{syntax}
+%     |\begin| \marg{epigraph}
+%     |\end| \marg{epigraph}
+%   \end{syntax}
+%   Add an epigraph to the thesis. This page is empty by default.
+% \end{function}
+%
+% \begin{function}{preface}
+%   \begin{syntax}
+%     |\begin| \marg{preface}
+%     |\end| \marg{preface}
+%   \end{syntax}
+%   Add an Preface to the thesis. The name of the section can be changed by
+%   redefining |\prefacename|.
+% \end{function}
+%
+% \section{Package Options}
+%
+% Items passed to the options below are \emph{appended} to the default options
+% rather than replacing them.
+%
+% Any unrecognised options passed to the \pkg{sblreport} class are passed
+% through to the \pkg{report} class.
+%
+% \begin{function}{biblatex}
+%   \begin{syntax}
+%     biblatex = \marg{arguments}\hfill Default: \{style=sbl, language=auto, autolang=hyphen\}
+%   \end{syntax}
+%   These options are passed to the \pkg{biblatex} package.
+% \end{function}
+%
+% \begin{function}{sblfonts}
+%   \begin{syntax}
+%     sblfonts = \marg{arguments}
+%   \end{syntax}
+%   Options to pass to the \pkg{sblfonts} package. The defaults depend on
+%   whether the engine in use is 8bit or Unicode:
+%   \begin{description}
+%     \item[8bit defaults:] |{mainfont=tempora, grfont=Alegreya-LF, hefont=frank}|
+%     \item[Unicode defaults:] \mbox{}\\
+%       |{|\\
+%       \strut\quad |mainfont=TeXGyreTermesX,|\\
+%       \strut\quad |mainfontoptions={Extension=.otf, UprightFont=*-Regular,|\\
+%       \strut\qquad |ItalicFont=*-Italic, BoldFont=*-Bold,|\\
+%       \strut\qquad |BoldItalicFont=*-BoldItalic},|\\
+%       \strut\quad |sblfonts=true|\\
+%       |}|
+%   \end{description}
+%
+%   Note that you will need to download and install the SBL fonts yourself from
+%   \url{https://www.sbl-site.org/resources/fonts/}.
+% \end{function}
+%
+% \section{Implementation}
+%
+% \setlength{\parindent}{0em}
+%
+%    \begin{macrocode}
+%<*class>
+%<@@=sblreport>
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesExplClass{sblreport}{2026/02/04}{1.0}
+  {Society of Biblical Literature Report Class (DCP)}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_new:N \l_@@_options_to_report_class_clist
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\keys_define:nn { sblreport }
+  {
+    , biblatex .clist_set:N = \l_@@_options_to_biblatex_clist
+    , sblfonts .clist_set:N = \l_@@_options_to_sblfonts_clist
+    , unknown  .code:n = {
+                           \clist_put_right:No
+                             \l_@@_options_to_report_class_clist
+                             { \CurrentOption }
+                         }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\ProcessKeyOptions
+%    \end{macrocode}
+%
+% Set default options.
+%
+%    \begin{macrocode}
+\clist_put_left:Nn \l_@@_options_to_report_class_clist
+  {
+    , 12pt
+    , titlepage
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_put_left:Nn \l_@@_options_to_biblatex_clist
+  {
+    , style    = sbl
+    , language = auto
+    , autolang = hyphen
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:TF
+  {
+    \clist_put_left:Nn \l_@@_options_to_sblfonts_clist
+      {
+        , mainfont        = TeXGyreTermesX
+        , mainfontoptions = {
+                              , Extension      = .otf
+                              , UprightFont    = *-Regular
+                              , ItalicFont     = *-Italic
+                              , BoldFont       = *-Bold
+                              , BoldItalicFont = *-BoldItalic
+                            }
+        , sblfonts        = true
+      }
+  }
+  {
+    \clist_put_left:Nn \l_@@_options_to_sblfonts_clist
+      {
+        , mainfont = tempora
+        , grfont   = Alegreya-LF
+        , hefont   = frank
+      }
+  }
+%    \end{macrocode}
+%
+% Load report class.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToClass
+  { \l_@@_options_to_report_class_clist }
+  { report }
+\LoadClass { report }
+%    \end{macrocode}
+%
+% Font and language set up.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToPackage
+  { \l_@@_options_to_sblfonts_clist }
+  { sblfonts }
+\RequirePackage { sblfonts }
+%    \end{macrocode}
+%
+% \pkg{biblatex} set up.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToPackage
+  { \l_@@_options_to_biblatex_clist }
+  { biblatex }
+\RequirePackage { biblatex }
+\RequirePackage { csquotes }
+%    \end{macrocode}
+%
+% \subsection{Margins}
+%
+%    \begin{macrocode}
+\RequirePackage [ margin = 1in, headheight = 14.5pt ] { geometry }
+%    \end{macrocode}
+%
+% \subsection{Text layout}
+%
+%    \begin{macrocode}
+\RequirePackage { setspace }
+\RequirePackage { ragged2e }
+\doublespacing
+\frenchspacing
+\dim_set:Nn \RaggedRightParindent { 0.5in }
+\dim_set:Nn \RaggedLeftParindent  { 0.5in }
+\dim_set:Nn \JustifyingParindent  { 0.5in }
+\RaggedRight
+\sloppy
+\raggedbottom
+\sys_if_engine_luatex:F
+  {
+    \AddBabelHook [ hebrew ] { sblreport } { afterextras }
+      {
+        \raggedleft
+        \parindent 0.5in
+      }
+    \AddBabelHook { sblreport } { afterextras } { \RaggedRight }
+  }
+%    \end{macrocode}
+%
+% \subsection{Headers and footers}
+%
+%    \begin{macrocode}
+\RequirePackage { fancyhdr }
+\pagestyle { fancy }
+\fancyhf { }
+\fancyhead [ R ] { \thepage }
+\cs_set_nopar:Npn \headrulewidth { 0pt }
+\cs_set_nopar:Npn \sectionmark #1
+  {
+    \markboth
+      { \int_compare:nNnT
+          { \c@secnumdepth } > { \c_zero_int }
+          { \thesection \skip_horizontal:n { 1em } }
+        #1
+      }
+      { }
+  }
+%    \end{macrocode}
+%
+% \subsection{Footnotes}
+%
+% Different handling is required for footnotes when tagging code is loaded.
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \hook_gput_code:nnn { fntext / para } { sblreport }
+      { \RaggedRight }
+    \socket_new_plug:nnn { fntext / mark } { sblreport }
+      {
+        \skip_horizontal:N \footnotemargin
+        \@thefnmark . \enspace
+      }
+    \socket_assign_plug:nn { fntext / mark } { sblreport }
+    \socket_assign_plug:nn
+      { build / column / outputbox }
+      { floats-space-footnotes }
+  }
+  {
+    \RequirePackage [ bottom, ragged ] { footmisc }
+    \cs_set:Npn \@makefntext #1
+      {
+        \dim_set_eq:NN \parindent \footnotemargin
+        \@thefnmark . \enspace
+        \footnotelayout #1
+      }
+}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\dim_set:Nn \footnotemargin { 0.5in }
+\cs_set:Npn \footnoterule
+  {
+    \kern -3pt
+    \hrule width 2in
+    \kern 2.6pt
+    \vskip -8pt
+  }
+\dim_set:Nn \footnotesep { 20pt }
+%    \end{macrocode}
+%
+% \subsection{Captions}
+%
+%    \begin{macrocode}
+\RequirePackage [ skip = 12pt ] { caption }
+\cs_set:Npn \thefigure
+  {
+    \arabic { figure }
+  }
+\cs_set:Npn \thetable
+  {
+    \arabic { table }
+  }
+\counterwithout { figure } { chapter }
+\counterwithout { table } { chapter }
+%    \end{macrocode}
+%
+% \subsection{Block quotes}
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \hook_gput_code:nnn { begindocument / before } { sblreport }
+      {
+        \RenewDocumentEnvironment { quotation } { !O { } }
+          {
+            \UseInstance { blockenv } { quotation }
+              {
+                , begin-extra-vspace = 0pt
+                , begin-vspace = 0pt
+                , left-margin  = 0.5in
+                , right-margin = 0pt
+                , para-indent  = 0.5in
+                , para-vspace  = 0pt
+                , final-code   = \singlespacing
+                                 \vspace* { -5pt }
+                                 \ignorespaces
+                , #1
+              }
+          }
+          { \endblockenv }
+        \RenewDocumentEnvironment { quote } { !O { } }
+          {
+            \UseInstance { blockenv } { quote }
+              {
+                , begin-extra-vspace = 0pt
+                , begin-vspace = 0pt
+                , left-margin  = 0.5in
+                , right-margin = 0pt
+                , para-indent  = 0pt
+                , para-vspace  = 7pt
+                , final-code   = \singlespacing
+                                 \vspace* { -5pt }
+                                 \ignorespaces
+                , #1
+              }
+          }
+          { \endblockenv }
+      }
+  }
+  {
+    \renewenvironment { quotation }
+      {
+        \list { }
+          {
+            \dim_set:Nn \leftmargin { 0.5in }
+            \dim_zero:N \rightmargin
+            \dim_zero:N \topsep
+            \dim_zero:N \partopsep
+            \dim_zero:N \itemsep
+            \dim_zero:N \parsep
+            \dim_set:Nn \itemindent { 0.5in }
+            \dim_set:Nn \listparindent { 0.5in }
+          }
+        \item \relax
+        \singlespacing
+        \vspace* { -5pt }
+      }
+      {
+        \endlist
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \renewenvironment { quote }
+      {
+        \list { }
+          {
+            \dim_set:Nn \leftmargin { 0.5in }
+            \dim_zero:N \rightmargin
+            \dim_zero:N \topsep
+            \dim_zero:N \partopsep
+            \dim_zero:N \itemsep
+            \dim_set:Nn \parsep { 7pt }
+            \dim_zero:N \itemindent
+            \dim_zero:N \listparindent
+          }
+        \item \relax
+        \singlespacing
+        \vspace* { -5pt }
+      }
+      {
+        \endlist
+      }
+  }
+%    \end{macrocode}
+%
+% \subsection{Title page}
+%
+%    \begin{macrocode}
+\tl_new:N \g_@@_degree_tl
+\tl_new:N \g_@@_institution_tl
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Npn \degree #1
+  {
+    \tl_gset:Nn \g_@@_degree_tl { #1 }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Npn \institution #1
+  {
+    \tl_gset:Nn \g_@@_institution_tl { #1 }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\author { [Your ~ Name] }
+\title { Title ~ of ~ Paper }
+\tl_gset:Nn \g_@@_degree_tl { [Degree ~ Name] }
+\tl_gset:Nn \g_@@_institution_tl { [Name ~ of ~ Institution] }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set_protected:Npn \maketitle
+  {
+    \newgeometry { top=2in, bottom=2in }
+    \pagenumbering { roman }
+    \thispagestyle { empty }
+    \group_begin:
+      \singlespacing
+      \centering
+      \MakeUppercase { \g__sblreport_institution_tl } \para_end:
+      \vfill
+      \doublespacing
+      \MakeUppercase { \@title } \para_end:
+      \vfill
+      \singlespacing
+      \MakeUppercase { Submitted ~ to ~ the ~ Faculty } \para_end:
+      \MakeUppercase { in ~ Partial ~ Fulfilment ~ of ~ the } \para_end:
+      \MakeUppercase { Requirements ~ for ~ the ~ Degree } \para_end:
+      \MakeUppercase { \g__sblreport_degree_tl } \para_end:
+      \vfill
+      \MakeUppercase { By } \para_end:
+      \MakeUppercase { \@author } \para_end:
+      \MakeUppercase { \@date } \para_end:
+    \group_end:
+    \restoregeometry
+  }
+%    \end{macrocode}
+%
+% \subsection{Front matter environments}
+%
+%    \begin{macrocode}
+\RenewDocumentEnvironment { abstract } { }
+  {
+    \chapter* { \abstractname }
+    \addcontentsline { toc } { chapter } { \abstractname }
+  }
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set_nopar:Npn  \acknowledgementsname { Acknowledgements }
+\NewDocumentEnvironment { acknowledgements } { }
+  {
+    \chapter* { \acknowledgementsname }
+    \addcontentsline { toc } { chapter } { \acknowledgementsname }
+  }
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set_nopar:Npn  \prefacename { Preface }
+\NewDocumentEnvironment { preface } { }
+  {
+    \chapter* { \prefacename }
+    \addcontentsline { toc } { chapter } { \prefacename }
+  }
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { copyrightpage } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+  }
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { approvalpage } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+  }
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { dedication } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+  }
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { epigraph } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+  }
+  { }
+%    \end{macrocode}
+%
+% \subsection{Section titles}
+%
+% For documents using \cs{DocumentMetadata} use standard kernel commands to
+% redefine section headings, otherwise use the \pkg{titlesec} package. 
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \cs_set:Npn \section
+      {
+        \hook_gput_code:nnn { para / end } { sblreport }
+          { \dim_zero:N \hangindent }
+        \@startsection { section } { 1 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize \bfseries \centering }
+      }
+    \cs_set:Npn \subsection
+      {
+        \hook_gput_code:nnn { para / end } { sblreport }
+          { \dim_zero:N \hangindent }
+        \@startsection { subsection } { 2 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize \centering }
+      }
+    \cs_set:Npn \subsubsection
+      {
+        \@startsection { subsubsection } { 3 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize \bfseries \itshape }
+      }
+    \cs_set:Npn \paragraph
+      {
+        \@startsection { paragraph } { 4 } { 0pt } { -37pt } { 1sp }
+          { \singlespacing \normalfont \normalsize }
+      }
+    \cs_set:Npn \subparagraph
+      {
+        \@startsection { subparagraph } { 5 } { 0pt } { -37pt } { -1em }
+          { \singlespacing \normalfont \normalsize \bfseries }
+      }
+  }
+  {
+    \RequirePackage { titlesec }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titlespacing* { \chapter }       { 0pt } { 37pt } { 24pt }
+    \titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \paragraph }     { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \subparagraph }  { 0pt } { 37pt } { 0pt }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titleformat
+      { \chapter }
+      [ display ]
+      { \normalfont \normalsize \singlespacing \filcenter }
+      {
+        \__sblreport_if_page_numbering:nT { roman }
+          { \pagenumbering { arabic } }
+        \MakeUppercase \chaptername \space \thechapter
+      }
+      { 12pt }
+      { \MakeUppercase }
+    \titleformat
+      { \section }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \bfseries \filcenter }
+      { \thesection }
+      { 0.5em }
+      { }
+    \titleformat
+      { \subsection }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \filcenter }
+      { \thesubsection }
+      { 0.5em }
+      { }
+    \titleformat
+      { \subsubsection }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \bfseries \itshape \filright }
+      { \thesubsubsection }
+      { 0.5em }
+      { }
+    \titleformat
+      { \paragraph }
+      [ block ]
+      { \normalfont \normalsize \singlespacing \filright }
+      { \theparagraph }
+      { 0.5em }
+      { }
+    \titleformat
+      { \subparagraph }
+      [ runin ]
+      { \normalfont \normalsize \bfseries }
+      { \thesubparagraph }
+      { 1em }
+      { }
+  }
+%    \end{macrocode}
+%
+% \subsection{Table of contents and list of figures/tables}
+%
+%    \begin{macrocode}
+\int_set:Nn \c@tocdepth { 2 }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\hook_gput_code:nnn { cmd / @starttoc / before } { sblreport }
+  {
+    \hook_gput_next_code:nn { cmd / @input / before }
+      { \singlespacing }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \tableofcontents
+  {
+    \chapter* { \contentsname }
+    \@mkboth
+      { \contentsname }
+      { \contentsname }
+    \@starttoc { toc }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \listoffigures
+  {
+    \chapter* { \listfigurename }
+    \addcontentsline { toc } { chapter } { \listfigurename }
+    \@mkboth
+      { \listfigurename }
+      { \listfigurename }
+    \@starttoc { lof }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \listoftables
+  {
+    \chapter* { \listtablename }
+    \addcontentsline { toc } { chapter } { \listtablename }
+    \@mkboth
+      { \listfigurename }
+      { \listfigurename }
+    \@starttoc { lot }
+  }
+%    \end{macrocode}
+%
+% For documents using \cs{DocumentMetadata} use standard kernel commands to
+% redefine table of contents lines, otherwise use the \pkg{titletoc} package. 
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \text_declare_expand_equivalent:Nn \numberline
+      {
+        \exp_not:n { \numberline }
+      }
+    \hook_gput_code:nnn { cmd / @dottedtocline / before }
+      { sblreport }
+      {
+        \addvspace { \baselineskip }
+      }
+    \hook_gput_code_with_args:nnn { contentsline / text / after }
+      { sblreport }
+      {
+        \int_compare:nNnT {#1} > { -1 }
+          {
+            \cs_set_nopar:Npn \leaders ##1 ##2 { }
+            \hook_gput_next_code:nn { cmd / SuspendTagging / after }
+              {
+                \cs_set_nopar:Npn \leaders ##1 ##2 { }
+              }
+          }
+      }
+    \cs_set_nopar:cpn { contentsline@text@0@format }
+      { \MakeUppercase }
+    \cs_set_nopar:Npn \numberline #1
+      {
+        \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+        #1 \enspace
+        \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \l@chapter
+      {
+        \@dottedtocline { 0 } { 0em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@section
+      {
+        \@dottedtocline { 1 } { 1em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@subsection
+      {
+        \@dottedtocline { 2 } { 2em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@subsubsection
+      {
+        \@dottedtocline { 3 } { 3em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@paragraph
+      {
+        \@dottedtocline { 4 } { 4em } { 0em }
+      }
+    \cs_set_nopar:Npn \l@subparagraph
+      {
+        \@dottedtocline { 5 } { 5em } { 0em }
+      }
+%    \end{macrocode}
+%
+% Redefine \cs{@chapter} and \cs{@schapter} to format chapter headings.
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \@chapter [#1]#2
+      {
+        \__sblreport_if_page_numbering:nT { roman }
+          { \pagenumbering { arabic } }
+        \mode_leave_vertical:
+        \par
+        \addvspace { 37pt }
+        \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+          {
+            \refstepcounter { chapter }
+            \addcontentsline { toc } { chapter }
+              { \chaptername \space \thechapter : \enspace #1 }
+          }
+          {
+            \addcontentsline { toc } { chapter } {#1}
+          }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \int_compare:nNnT { \c@secnumdepth } > { -1 }
+            {
+              \MakeUppercase { \chaptername } \nobreakspace \thechapter
+              \par
+              \nobreak
+            }
+          \singlespacing
+          \MakeUppercase {#2}
+          \markboth { } { }
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:N \baselineskip
+        \@afterheading
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn  \@schapter #1
+      {
+        \mode_leave_vertical:
+        \par
+        \addvspace { 37pt }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \singlespacing
+          \MakeUppercase {#1}
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:N \baselineskip
+        \@afterheading
+      }
+  }
+  {
+    \RequirePackage { titletoc }
+%    \end{macrocode}
+%
+% \begin{macro}{ \@@_hyperlink:nn } \marg{link} \marg{text}
+%
+%   \medskip
+%
+%   A convenience version of |\hyperlink| that just uses \meta{text} if
+%   \pkg{hyperref} isn't loaded.
+%
+%    \begin{macrocode}
+    \cs_new_protected:Nn \@@_hyperlink:nn
+      {
+        \cs_if_exist_use:NTF \hyperlink
+          { { #1 } { #2 } }
+          { #2 }
+      }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+    \titlecontents { figure }
+      [ 2em ]
+      { \hspace* { 2em } \filright }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+      }
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { table }
+      [ 2em ]
+      { \hspace* { 2em } \filright }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+      }
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { chapter }
+      [ 0pt ]
+      { \singlespacing \filright }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          {
+            \MakeUppercase { \chaptername } \space
+            \thecontentslabel : \enspace
+          }
+        \MakeUppercase
+      }
+      { \MakeUppercase }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { section }
+      [ 1em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subsection }
+      [ 2em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subsubsection }
+      [ 3em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { paragraph }
+      [ 4em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subparagraph }
+      [ 5em ]
+      { \singlespacing \filright }
+      { }
+      { }
+      { \hfill \contentspage }
+  }
+%    \end{macrocode}
+%
+% \subsection{Appendices}
+%
+% Set up appendix headings and table of contents.
+%
+%    \begin{macrocode}
+\cs_set_eq:NN \sblreport@hyperlink \@@_hyperlink:nn
+\newcounter { sblreport@appendix@count }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_set_up_appendices:
+  {
+    \cs_set_nopar:Npn \chaptername { \appendixname }
+    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
+    \int_compare:nNnT { \c@sblreport@appendix@count } = { \c_one_int }
+      {
+        \int_zero:N \c@sblreport@appendix@count
+      }
+    \IfDocumentMetadataTF
+      {
+        \cs_set_nopar:Npn \@chapter [##1]##2
+          {
+            \addvspace { 37pt }
+            \stepcounter { sblreport@appendix@count }
+            \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+              {
+                \refstepcounter { chapter }
+                \protected@write \@auxout
+                  { }
+                  {
+                    \string \setcounter
+                      { sblreport@appendix@count } { \the \c@chapter }
+                  }
+                \addcontentsline { toc } { chapter }
+                  {
+                    \chaptername
+                    \ifnum \c@sblreport@appendix@count > 1
+                      \space \thechapter
+                    \fi
+                    : \enspace ##1
+                  }
+              }
+              {
+                \addcontentsline { toc } { chapter } {##1}
+              }
+            \group_begin:
+              \dim_zero:N \parindent
+              \centering
+              \interlinepenalty 10000
+              \normalfont
+              \int_compare:nNnT { \c@secnumdepth } > { -1 }
+                {
+                  \MakeUppercase { \chaptername }
+                  \int_compare:nNnT
+                    { \c@sblreport@appendix@count } > { \c_one_int }
+                    {
+                       \nobreakspace \thechapter
+                    }
+                  \par
+                  \nobreak
+                }
+              \singlespacing
+              \MakeUppercase {##2}
+              \markboth { } { }
+              \par
+            \group_end:
+            \nobreak
+            \skip_vertical:N \baselineskip
+            \@afterheading
+          }
+      }
+      {
+        \titleformat
+          { \chapter }
+          [ display ]
+          {
+            \stepcounter { sblreport@appendix@count }
+            \protected@write \@auxout
+              { }
+              {
+                \protect \setcounter
+                  { sblreport@appendix@count } { \the \c@chapter }
+              }
+            \singlespacing \normalfont \normalsize \filcenter
+          }
+          {
+            \MakeUppercase { \chaptername }
+            \ifnum \c@sblreport@appendix@count > 1
+              \strut \space \thechapter
+            \fi
+          }
+          { 12pt }
+          { \MakeUppercase }
+        \titlecontents { chapter }
+          [ 0pt ]
+          { \singlespacing \filright }
+          {
+            \sblreport@hyperlink
+              { \Hy@tocdestname }
+              {
+                \MakeUppercase { \chaptername }
+                \ifnum \c@sblreport@appendix@count > 1
+                  \strut \space \thecontentslabel
+                \fi
+                : \enspace
+              }
+            \MakeUppercase
+          }
+          { \MakeUppercase }
+          { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\hook_gput_code:nnn
+  { cmd / appendix / after }
+  { sblreport }
+  { \@@_set_up_appendices: }
+%    \end{macrocode}
+%
+% \subsection{Bibliography and list of abbreviations}
+%
+%    \begin{macrocode}
+\DefineBibliographyStrings { english }
+  {
+    shorthands = { List~of~Abbreviations }
+  }
+\cs_set_nopar:Npn \bibsetup { \singlespacing }
+\dim_set:Nn \bibhang { 0.5in }
+\dim_set:Nn \bibitemsep { 12pt }
+\dim_set:Nn \biblabelsep { 0.5in }
+%    \end{macrocode}
+%
+% \subsection{Helper functions}
+%
+% \begin{macro}{\@@_if_page_numbering:nT} \marg{numbering style}
+%     \marg{code if true}
+%
+%   \medskip
+%
+%   Test if the current page numbering style matches a particular style.
+%   (e.g., |arabic| or |roman|).
+%
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \@@_if_page_numbering:n #1 { T }
+  {
+    \cs_set_nopar:Nn \@@_thepage_test:
+      { \csname @ #1 \endcsname \c@page }
+    \if_meaning:w \thepage \@@_thepage_test:
+      \prg_return_true:
+    \else:
+      \prg_return_false:
+    \fi:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\endinput
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%</class>
+%    \end{macrocode}
