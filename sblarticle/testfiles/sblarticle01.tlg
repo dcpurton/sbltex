@@ -141,7 +141,7 @@ Completed box being shipped out [1]
 .....\TU/TeXGyreTermesX(0)/m/n/10 o
 .....\TU/TeXGyreTermesX(0)/m/n/10 t
 .....\discretionary (penalty 50)
-......< \TU/TeXGyreTermesX(0)/m/n/10 ^^ad
+......< \TU/TeXGyreTermesX(0)/m/n/10 -
 .....\TU/TeXGyreTermesX(0)/m/n/10 n
 .....\TU/TeXGyreTermesX(0)/m/n/10 o
 .....\TU/TeXGyreTermesX(0)/m/n/10 t
@@ -151,7 +151,7 @@ Completed box being shipped out [1]
 .....\rule(0.0+3.60004)x0.0
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
+.....\glue(\rightskip) 0.0 plus 24.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 pop
