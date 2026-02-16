@@ -561,7 +561,7 @@
     \group_begin:
       \singlespacing
       \centering
-      \MakeUppercase { \g__sblreport_institution_tl } \para_end:
+      \MakeUppercase { \g_@@_institution_tl } \para_end:
       \vfill
       \doublespacing
       \MakeUppercase { \@title } \para_end:
@@ -570,7 +570,7 @@
       \MakeUppercase { Submitted ~ to ~ the ~ Faculty } \para_end:
       \MakeUppercase { in ~ Partial ~ Fulfilment ~ of ~ the } \para_end:
       \MakeUppercase { Requirements ~ for ~ the ~ Degree } \para_end:
-      \MakeUppercase { \g__sblreport_degree_tl } \para_end:
+      \MakeUppercase { \g_@@_degree_tl } \para_end:
       \vfill
       \MakeUppercase { By } \para_end:
       \MakeUppercase { \@author } \para_end:
@@ -704,7 +704,7 @@
       [ display ]
       { \normalfont \normalsize \singlespacing \filcenter }
       {
-        \__sblreport_if_page_numbering:nT { roman }
+        \@@_if_page_numbering:nT { roman }
           { \pagenumbering { arabic } }
         \MakeUppercase \chaptername \space \thechapter
       }
@@ -866,7 +866,7 @@
 %    \begin{macrocode}
     \cs_set_nopar:Npn \@chapter [#1]#2
       {
-        \__sblreport_if_page_numbering:nT { roman }
+        \@@_if_page_numbering:nT { roman }
           { \pagenumbering { arabic } }
         \mode_leave_vertical:
         \par
