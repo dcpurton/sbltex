@@ -3,9 +3,9 @@
 module = "sblidx"
 maindir = ".."
 checkformat = "latex"
-stdengine    = "pdftex"
+stdengine = "pdftex"
 checkdeps = { maindir .. "/bibleref-sbl" }
-checkengines = {"pdftex"}
+checkengines = { "pdftex" }
 checkfiles = { "*.ist" }
 checkruns = 2
 
