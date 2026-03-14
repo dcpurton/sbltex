@@ -1,0 +1,1556 @@
+% \iffalse meta-comment
+%
+% Copyright (c) 2026 David Purton <dcpurton@marshwiggle.net>
+%
+% This work may be distributed and/or modified under the conditions of
+% the LaTeX Project Public License, either version 1.3c of this license
+% or (at your option) any later version. The latest version of this
+% license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+%<*driver>
+\RequirePackage{pdfmanagement}
+\documentclass[a4paper]{l3doc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{mlmodern}
+\usepackage[font=small, skip=6pt]{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\AddToHook{env/macrocode/before}{%
+  \addvspace{\medskipamount}}
+
+\AddToHook{env/macro/before}{%
+  \addvspace{\medskipamount}}
+
+\begin{document}
+\DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \title{The \pkg{sblbook} Class}
+% \author{David Purton\thanks{Email: \url{dcpurton@marshwiggle.net}}}
+% \date{2026/03/14 v1.0}
+%
+% \maketitle
+%
+% \begin{abstract}
+%   The \pkg{sblbook} class provides a LaTeX class producing print ready books
+%   conforming to the style required by the Society of Biblical Literature. It
+%   depends on \pkg{sblfonts} for Greek and Hebrew font and language support,
+%   \pkg{sblidx} for indexing and \pkg{biblatex-sbl} for referencing.
+% \end{abstract}
+%
+% \tableofcontents
+%
+% \section{Introduction}
+%
+% The \pkg{sblbook} class creates a print ready book matching the style
+% specified in the \emph{Preparing Your Printer-Ready Manuscript}. See
+% \url{https://www.sbl-site.org/assets/pdfs/PRMmanual.pdf}.
+%
+% The class works with both |pdflatex| and the Unicode engines, but in order
+% to make use of the SBL fonts you need to install them and use a Unicode
+% engine (|lualatex| is recommended, especially for Hebrew).
+%
+% \subsection{Usage}
+%
+% Load the class using |\documentclass{sblbook}|. See |sbltex-book.tex| in
+% the documentation directory for an extended usage example.
+%
+% The following standard commands and environments have been customised for
+% this class:
+% \begin{itemize}
+%   \item |\author|, |\title|, |\maketitle|
+%   \item |\tableofcontents|, |\listoffigure|, |\listoftables|
+%   \item |\section|, |\subsection|, |\subsubsection|, |\paragraph|,
+%     |\subparagraph|
+%   \item |\appendix|, |\frontmatter|, |\mainmatter|, |\backmatter|
+%   \item |\footnote|
+%   \item |\caption|
+%   \item |\index|
+%   \item |\printbibliography|, |\printbiblist{abbreviations}|
+%   \item |abstract|, |quotation|, |quote|
+% \end{itemize}
+%
+% American, Greek and Hebrew are set up using \pkg{sblfonts} (and
+% \pkg{babel}). A different main language can be chosen by passing the
+% \pkg{babel} language name to the class.
+%
+% \subsection{Acknowledgements}
+%
+% The \pkg{sblbook} class depends on a number of other packages:
+% \begin{itemize}
+%   \item \pkg{sblfonts} (with \pkg{fontspec}, \pkg{fontenc} and \pkg{babel}),
+%     \pkg{biblatex-sbl} (with \pkg{biblatex}), \pkg{sblidx} (with
+%     \pkg{imakeidx}, \pkg{idxlayout}, \pkg{bibleref-parse} and
+%     \pkg{bibleref-sbl})
+%   \item \pkg{csquotes}, \pkg{geometry}, \pkg{setspace}, \pkg{ragged2e},
+%     \pkg{fancyhdr}
+%   \item When \cs{DocumentMetadata} is not in use: \pkg{caption},
+%     \pkg{footmisc}, \pkg{titlesec}, \pkg{titletoc}
+% \end{itemize}
+%
+% \subsection{Bug Reports and Feature Requests}
+%
+% Bug reports and feature requests can be made at the \pkg{sbltex}
+% GitHub repository. See \url{https://github.com/dcpurton/sbltex}.
+%
+% \begin{description}
+%   \item[Note:] This class is only partially compatible with the \LaTeX{}
+%   tagging project at this stage. As the tagging project stabilises and
+%   dependent packages are updated, compatibility will improve.
+% \end{description}
+%
+% \section{Package Environments}
+%
+% \begin{function}{acknowledgements}
+%   \begin{syntax}
+%     |\begin| \marg{acknowledgements}
+%     |\end| \marg{acknowledgements}
+%   \end{syntax}
+%   Add an Acknowledgements page to the book. The name of the section can be
+%   changed by redefining |\acknowledgementsname|.
+% \end{function}
+%
+% \begin{function}{copyrightpage}
+%   \begin{syntax}
+%     |\begin| \marg{copyrightpage}
+%     |\end| \marg{copyrightpage}
+%   \end{syntax}
+%   Add a copyright page to the book. This page is supplied by SBL Press.
+% \end{function}
+%
+% \begin{function}{dedication}
+%   \begin{syntax}
+%     |\begin| \marg{dedication}
+%     |\end| \marg{dedication}
+%   \end{syntax}
+%   Add a dedication to the book. This page is empty by default. If there is a
+%   dedication, it should be placed on page v.
+% \end{function}
+%
+% \begin{function}{epigraph}
+%   \begin{syntax}
+%     |\begin| \marg{epigraph}
+%     |\end| \marg{epigraph}
+%   \end{syntax}
+%   Add an epigraph to the book. This page is empty by default. If there is an
+%   epigraph, it should be placed on page vii.
+% \end{function}
+%
+% \begin{function}{foreword}
+%   \begin{syntax}
+%     |\begin| \marg{foreword}
+%     |\end| \marg{foreword}
+%   \end{syntax}
+%   Add a Foreword to the book. The name of the section can be changed by
+%   redefining |\forewordname|.
+% \end{function}
+%
+% \begin{function}{introduction}
+%   \begin{syntax}
+%     |\begin| \marg{introduction}
+%     |\end| \marg{introduction}
+%   \end{syntax}
+%   Add an Introduction to the book. The name of the section can be changed by
+%   redefining |\introductionname|.
+% \end{function}
+%
+% \begin{function}{preface}
+%   \begin{syntax}
+%     |\begin| \marg{preface}
+%     |\end| \marg{preface}
+%   \end{syntax}
+%   Add a Preface to the book. The name of the section can be changed by
+%   redefining |\prefacename|.
+% \end{function}
+%
+% \begin{function}{seriespage}
+%   \begin{syntax}
+%     |\begin| \marg{seriespage}
+%     |\end| \marg{seriespage}
+%   \end{syntax}
+%   Add a series page to the book. This page is supplied by SBL Press.
+% \end{function}
+%
+% \begin{function}{titlepage}
+%   \begin{syntax}
+%     |\begin| \marg{titlepage}
+%     |\end| \marg{titlepage}
+%   \end{syntax}
+%   Add a title page to the book. This page is supplied by SBL Press.
+%   Note that this page is distinct from the half title page which is added
+%   with the |\maketitle| command.
+% \end{function}
+%
+% \section{Package Options}
+%
+% Items passed to the options below are \emph{appended} to the default options
+% rather than replacing them.
+%
+% Any unrecognised options passed to the \pkg{sblbook} class are passed
+% through to the \pkg{book} class.
+%
+% \begin{function}{biblatex}
+%   \begin{syntax}
+%     biblatex = \marg{arguments}\hfill Default: \{style=sbl, language=auto, autolang=hyphen\}
+%   \end{syntax}
+%   These options are passed to the \pkg{biblatex} package.
+%
+%   See the \pkg{biblatex-sbl} package documentation for a full description of
+%   supported options and usage.
+% \end{function}
+%
+% \begin{function}{sblfonts}
+%   \begin{syntax}
+%     sblfonts = \marg{arguments}
+%   \end{syntax}
+%   Options to pass to the \pkg{sblfonts} package. The defaults depend on
+%   whether the engine in use is 8bit or Unicode:
+%   \begin{description}
+%     \item[8bit defaults:] \mbox{}\\
+%       |{|\\
+%       \strut\quad |mainfont=Baskervaldx,|\\
+%       \strut\quad |grfont=Alegreya-LF,|\\
+%       \strut\quad |hefont=frank|\\
+%       |}|
+%     \item[Unicode defaults:] \mbox{}\\
+%       |{|\\
+%       \strut\quad |mainfont=Baskervaldx,|\\
+%       \strut\quad |mainfontoptions={Extension=.otf, UprightFont=*-Reg,|\\
+%       \strut\qquad |ItalicFont=*-Ita, BoldFont=*-Bol,|\\
+%       \strut\qquad |BoldItalicFont=*-BolIta},|\\
+%       \strut\quad |sblfonts=true|\\
+%       |}|
+%   \end{description}
+%   Note that you will need to download and install the SBL fonts yourself from
+%   \url{https://www.sbl-site.org/resources/fonts/}.
+%
+%   See the \pkg{sblfonts} package documentation for a full description of
+%   supported options and usage.
+% \end{function}
+%
+% \begin{function}{sblidx}
+%   \begin{syntax}
+%     sblidx = \marg{arguments}\hfill Default: \emph{Empty}
+%   \end{syntax}
+%   These options are passed to the \pkg{sblidx} package. Note that the
+%   \pkg{sblidx} package is only loaded if at least one of |ancient sources|,
+%   |modern authors| or |subject| is passed to the |sblidx| option.
+%
+%   See the \pkg{sblidx} package documentation for a full description of
+%   supported options and usage.
+% \end{function}
+%
+% \begin{function}{trim}
+%   \begin{syntax}
+%     trim = true \textbar\ false\hfill Default: false
+%   \end{syntax}
+%   Whether to trim the PDF to 6 $\times$ 9 inches or not.
+% \end{function}
+%
+% \section{Implementation}
+%
+% \setlength{\parindent}{0em}
+%
+%    \begin{macrocode}
+%<*class>
+%<@@=sblbook>
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesExplClass{sblbook}{2026/03/14}{1.0}
+  {Society of Biblical Literature Book Class (DCP)}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_new:N \l_@@_options_to_book_class_clist
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\keys_define:nn { sblbook }
+  {
+    , biblatex .clist_set:N = \l_@@_options_to_biblatex_clist
+    , sblfonts .clist_set:N = \l_@@_options_to_sblfonts_clist
+    , sblidx   .clist_set:N = \l_@@_options_to_sblidx_clist
+    , trim     .bool_set:N  = \l_@@_trim_bool
+    , trim     .default:n   = true
+    , trim     .initial:n   = false
+    , unknown  .code:n = {
+                           \clist_put_right:No
+                             \l_@@_options_to_book_class_clist
+                             { \CurrentOption }
+                         }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\ProcessKeyOptions
+%    \end{macrocode}
+%
+% Set default options.
+%
+%    \begin{macrocode}
+\clist_put_left:Nn \l_@@_options_to_book_class_clist
+  { }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_put_left:Nn \l_@@_options_to_biblatex_clist
+  {
+    , style    = sbl
+    , language = auto
+    , autolang = hyphen
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:TF
+  {
+    \clist_put_left:Nn \l_@@_options_to_sblfonts_clist
+      {
+        , mainfont        = Baskervaldx
+        , mainfontoptions = {
+                              , Extension      = .otf
+                              , UprightFont    = *-Reg
+                              , ItalicFont     = *-Ita
+                              , BoldFont       = *-Bol
+                              , BoldItalicFont = *-BolIta
+                            }
+        , sblfonts        = true
+      }
+  }
+  {
+    \clist_put_left:Nn \l_@@_options_to_sblfonts_clist
+      {
+        , mainfont = Baskervaldx
+        , grfont   = Alegreya-LF
+        , hefont   = frank
+      }
+  }
+%    \end{macrocode}
+%
+% Load book class.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToClass
+  { \l_@@_options_to_book_class_clist }
+  { book }
+\LoadClass { book }
+%    \end{macrocode}
+%
+% Font and language set up.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToPackage
+  { \l_@@_options_to_sblfonts_clist }
+  { sblfonts }
+\RequirePackage { sblfonts }
+%    \end{macrocode}
+%
+% Set up upper case kerning.
+%
+%    \begin{macrocode}
+\sys_if_engine_opentype:T
+  {
+    \hook_gput_code:nnn
+      { cmd / MakeUppercase / before }
+      { sblbook }
+      { \addfontfeature { Kerning = Uppercase } }
+    \hook_gput_code:nnn
+      { cmd / MakeUppercase / after }
+      { sblbook }
+      { \addfontfeature { Kerning = UppercaseOff } }
+  }
+%    \end{macrocode}
+%
+% \pkg{biblatex} set up.
+%
+%    \begin{macrocode}
+\exp_args:No \PassOptionsToPackage
+  { \l_@@_options_to_biblatex_clist }
+  { biblatex }
+\RequirePackage { biblatex }
+\RequirePackage { csquotes }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\clist_if_exist:NT \l_@@_options_to_sblidx_clist
+  {
+    \exp_args:No \PassOptionsToPackage
+      { \l_@@_options_to_sblidx_clist }
+      { sblidx }
+    \RequirePackage { sblidx }
+    \@ifpackageloaded { bibleref }
+      {
+        \RequirePackage { bibleref-parse }
+      }
+      { }
+  }
+%    \end{macrocode}
+%
+% \subsection{Margins}
+%
+%    \begin{macrocode}
+\bool_if:NTF \l_@@_trim_bool
+  {
+    \RequirePackage
+      [
+        , paperwidth  = 6in
+        , paperheight = 9in
+      ]
+      { geometry }
+  }
+  {
+    \RequirePackage { geometry }
+  }
+\dim_new:N \l_@@_top_margin_dim
+\dim_new:N \l_@@_inner_margin_dim
+\dim_set:Nn \l_@@_top_margin_dim
+  { 0.5 \paperheight - 3.75in }
+\dim_set:Nn \l_@@_inner_margin_dim
+  { 0.5 \paperwidth - 2.25in }
+\geometry
+  {
+    , includehead    = true
+    , marginparwidth = 0.5in
+    , textwidth      = 4.5in
+    , height         = 7.5in
+    , top            = \l_@@_top_margin_dim
+    , inner          = \l_@@_inner_margin_dim
+    , headsep        = 12pt
+    , headheight     = 12pt
+    , footskip       = 12pt
+  }
+%    \end{macrocode}
+%
+% \subsection{Text layout}
+%
+%    \begin{macrocode}
+\dim_set:Nn \parindent { 0.25in }
+\RequirePackage [ all ] { nowidow }
+\RequirePackage [ hyphenation , lastparline ] { impnattypo }
+\RequirePackage { microtype }
+%    \end{macrocode}
+%
+% \subsection{Headers and footers}
+%
+%    \begin{macrocode}
+\RequirePackage { fancyhdr }
+\pagestyle { fancy }
+\fancyhf { }
+\fancyhead [ LE , RO ] { \thepage }
+\fancyhead [ CE ] { \itshape \nouppercase { \leftmark } }
+\fancyhead [ CO ] { \itshape \nouppercase { \rightmark } }
+\cs_set_nopar:Npn \headrulewidth { 0pt }
+\cs_set_nopar:Npn \chaptermark #1
+  {
+    \markboth { \@title } { #1 }
+  }
+\cs_set_nopar:Npn \sectionmark #1 { }
+\fancypagestyle { plain }
+  {
+    \fancyhf { }
+    \fancyfoot
+      [ C ]
+      {
+        \smash { \raisebox { 12pt } { -\,\thepage\,- } }
+      }
+    \cs_set_nopar:Npn \headrulewidth { 0pt }
+    \cs_set_nopar:Npn \footrulewidth { 0pt }
+  }
+\cs_set_nopar:Npn \thispagestyle #1
+  {
+    \cs_if_exist:cTF { ps@#1 }
+      {
+        \tl_if_eq:nnT {#1} { plain }
+          {
+            \enlargethispage { -24pt }
+          }
+        \legacy_if_gset_true:n { @specialpage }
+        \cs_gset_nopar:Npn \@specialstyle {#1}
+      }
+      {
+        \undefinedpagestyle
+      }
+  }
+\cs_set_nopar:Npn \cleardoublepage
+  {
+    \clearpage
+    \int_if_even:nT { \c@page }
+      {
+        \hbox:n { }
+        \thispagestyle { empty }
+        \newpage
+      }
+  }
+
+
+
+%    \end{macrocode}
+%
+% \subsection{Footnotes}
+%
+% Different handling is required for footnotes when tagging code is loaded.
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \socket_new_plug:nnn { fntext / mark } { sblbook }
+      {
+        \skip_horizontal:N \footnotemargin
+        \@thefnmark . \enspace
+      }
+    \socket_assign_plug:nn { fntext / mark } { sblbook }
+    \socket_assign_plug:nn
+      { build / column / outputbox }
+      { floats-space-footnotes }
+  }
+  {
+
+    \RequirePackage [ bottom ] { footmisc }
+    \cs_set:Npn \@makefntext #1
+      {
+        \dim_set_eq:NN \parindent \footnotemargin
+        \@thefnmark . \enspace
+        \footnotelayout #1
+      }
+}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\dim_set:Nn \footnotemargin { 0.25in }
+\cs_set:Npn \footnoterule
+  {
+    \kern -3pt
+    \hrule width 1.5in height .5pt depth 0pt
+    \kern 0.0625in
+  }
+%    \end{macrocode}
+%
+% \subsection{Captions}
+%
+%    \begin{macrocode}
+\skip_set:Nn \abovecaptionskip { 6pt }
+\skip_set:Nn \belowcaptionskip { 6pt }
+\cs_set:Npn \thefigure
+  {
+    \arabic { figure }
+  }
+\cs_set:Npn \thetable
+  {
+    \arabic { table }
+  }
+\counterwithout { figure } { chapter }
+\counterwithout { table } { chapter }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \NewSocketPlug { caption / label } { sblbook }
+     {
+       \small
+       #1:~
+     }
+    \AssignSocketPlug { caption / label } { sblbook }
+  }
+  {
+    \RequirePackage [ font = small , skip = 6pt ] { caption }
+  }
+%    \end{macrocode}
+%
+% \subsection{Block quotes}
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \hook_gput_code:nnn { begindocument / before } { sblbook }
+      {
+        \RenewDocumentEnvironment { quotation } { !O { } }
+          {
+            \UseInstance { blockenv } { quotation }
+              {
+                , begin-extra-vspace = 0pt
+                , begin-vspace       = 11pt plus 5pt minus 3pt
+                , left-margin        = \parindent
+                , right-margin       = \parindent
+                , para-indent        = \parindent
+                , para-vspace        = 0pt
+                , final-code         = \small \ignorespaces
+                , #1
+              }
+          }
+          { \endblockenv }
+        \RenewDocumentEnvironment { quote } { !O { } }
+          {
+            \UseInstance { blockenv } { quote }
+              {
+                , begin-extra-vspace = 0pt
+                , begin-vspace       = 11pt plus 5pt minus 3pt
+                , left-margin        = \parindent
+                , right-margin       = \parindent
+                , para-indent        = 0pt
+                , para-vspace        = 6pt plus 2pt minus 1pt
+                , final-code         = \small \ignorespaces
+                , #1
+              }
+          }
+          { \endblockenv }
+      }
+  }
+  {
+    \renewenvironment { quotation }
+      {
+        \small
+        \list { }
+          {
+            \dim_set_eq:NN \leftmargin \parindent
+            \dim_set_eq:NN \rightmargin \leftmargin
+            \skip_set:Nn   \topsep { 11pt plus 5pt minus 3pt }
+            \skip_zero:N   \partopsep
+            \skip_zero:N   \itemsep
+            \skip_zero:N   \parsep
+            \dim_set_eq:NN \itemindent \parindent
+            \dim_set_eq:NN \listparindent \parindent
+          }
+        \item \ignorespaces
+      }
+      {
+        \endlist
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \renewenvironment { quote }
+      {
+        \small
+        \list { }
+          {
+            \dim_set_eq:NN \leftmargin \parindent
+            \dim_set_eq:NN \rightmargin \leftmargin
+            \skip_set:Nn   \topsep { 11pt plus 5pt minus 3pt }
+            \skip_zero:N   \partopsep
+            \skip_zero:N   \itemsep
+            \skip_set:Nn   \parsep { 6pt plus 2pt minus 1pt }
+            \dim_zero:N    \itemindent
+            \dim_zero:N    \listparindent
+          }
+        \item \ignorespaces
+      }
+      {
+        \endlist
+      }
+  }
+%    \end{macrocode}
+%
+% \subsection{Title page}
+%
+% Some pages are supplied by SBL Press and this command notes this at the
+% bottom of the page.
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_supplied_page:
+  {
+    \group_begin:
+      \vfill
+      \normalfont
+      \footnotesize
+      \centering
+      This ~ page ~ is ~ supplied ~ by ~ SBL ~ Press
+      \para_end:
+    \group_end:
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\tl_new:N \g_@@_subtitle_tl
+\cs_set:Npn \subtitle #1
+  {
+    \tl_gset:Nn \g_@@_subtitle_tl {#1}
+  }
+\tl_new:N \g_@@_series_tl
+\cs_set:Npn \series #1
+  {
+    \tl_gset:Nn \g_@@_series_tl {#1}
+  }
+\title    { [Title ~ of ~ Book] }
+\subtitle { [Subtitle ~ of ~ Book] }
+\author   { [Your ~ Name] }
+\series   { [Series ~ Name] }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set_protected:Npn \maketitle
+  {
+    \group_begin:
+      \thispagestyle { empty }
+      \centering
+      \vspace* { 0.5in }
+      \LARGE
+      \MakeUppercase { \@title }
+      \para_end:
+      \tl_if_empty:NF \g_@@_subtitle_tl
+        {
+          \vspace { 0.5in }
+          \Large
+          \g_@@_subtitle_tl
+          \para_end:
+        }
+      \@@_supplied_page:
+    \group_end:
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\RenewDocumentEnvironment { titlepage } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+    \centering
+    \vspace* { 0.5in }
+    \LARGE
+    \MakeUppercase { \@title }
+    \para_end:
+    \tl_if_empty:NF \g_@@_subtitle_tl
+      {
+        \vspace { 0.5in }
+        \Large
+        \g_@@_subtitle_tl
+        \para_end:
+      }
+    \vspace { 0.5in }
+    \large
+    By
+    \para_end:
+    \@author
+    \para_end:
+    \normalsize
+  }
+  { \@@_supplied_page: }
+%    \end{macrocode}
+%
+% \subsection{Front matter environments}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { copyrightpage } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+    \vspace* { 0.5in }
+    \noindent
+    Copyright ~ © ~ \number \year \space by ~ \@author
+  }
+  { \@@_supplied_page: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { seriespage } { }
+  {
+    \clearpage
+    \thispagestyle { empty }
+    \centering
+    \vspace* { 0.5in }
+    \LARGE
+    \MakeUppercase { \g_@@_series_tl }
+    \para_end:
+    \normalsize
+  }
+  { \@@_supplied_page: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { dedication } { }
+  {
+    \cleardoublepage
+    \int_compare:nNnT { \c@page } < { 5 }
+      {
+        \int_gset:Nn \c@page { 5 }
+      }
+    \thispagestyle { empty }
+    \centering
+    \vspace* { 1.5in }
+    \itshape
+  }
+  { \para_end: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\NewDocumentEnvironment { epigraph } { }
+  {
+    \cleardoublepage
+    \int_compare:nNnT { \c@page } < { 5 }
+      {
+        \int_gset:Nn \c@page { 5 }
+      }
+    \thispagestyle { empty }
+    \vspace* { 0.5in }
+  }
+  { \para_end: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Npn \acknowledgementsname { Acknowledgements }
+\NewDocumentEnvironment { acknowledgements } { }
+  {
+    \chapter* { \acknowledgementsname }
+    \chaptermark { \acknowledgementsname }
+    \addcontentsline { toc } { chapter } { \acknowledgementsname }
+  }
+  { \para_end: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Npn \forewordname { Foreword }
+\NewDocumentEnvironment { foreword } { }
+  {
+    \chapter* { \forewordname }
+    \chaptermark { \forewordname }
+    \addcontentsline { toc } { chapter } { \forewordname }
+  }
+  { \para_end: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Npn \introductionname { Introduction }
+\NewDocumentEnvironment { introduction } { }
+  {
+    \chapter* { \introductionname }
+    \chaptermark { \introductionname }
+    \addcontentsline { toc } { chapter } { \introductionname }
+  }
+  { \para_end: }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Npn \prefacename { Preface }
+\NewDocumentEnvironment { preface } { }
+  {
+    \chapter* { \prefacename }
+    \chaptermark { \prefacename }
+    \addcontentsline { toc } { chapter } { \prefacename }
+  }
+  { \para_end: }
+%    \end{macrocode}
+%
+% \subsection{Section titles}
+%
+% For documents using \cs{DocumentMetadata} use standard kernel commands to
+% redefine section headings, otherwise use the \pkg{titlesec} package. 
+%
+%    \begin{macrocode}
+\setcounter { secnumdepth } { 0 }
+\cs_set_nopar:Npn \thepart { \arabic { part } }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \cs_set:Npn \section
+      {
+        \hook_gput_next_code:nn { para / end }
+          {
+            \strut
+            \dim_zero:N \hangindent
+          }
+        \@startsection { section } { 1 } { 0pt }
+          { -12pt plus -4pt minus -2pt } { 10pt plus 4pt minus 2pt }
+          { \normalfont \normalsize \centering \MakeUppercase }
+      }
+    \cs_set:Npn \subsection
+      {
+        \hook_gput_next_code:nn { para / end } { \strut }
+        \@startsection { subsection } { 2 } { 0pt }
+          { -6pt plus -2pt minus -1pt } { 4pt plus 2pt minus 1pt }
+          { \normalfont \normalsize \scshape \raggedright }
+      }
+    \cs_set:Npn \subsubsection
+      {
+        \@startsection { subsubsection } { 3 } { 0pt }
+          { 6pt plus 2pt minus 1pt } { -1em }
+          { \normalfont \normalsize \scshape }
+      }
+    \cs_set:Npn \paragraph
+      {
+        \@startsection { paragraph } { 4 } { 0pt }
+          { 6pt plus 2pt minus 1pt } { -1em }
+          { \normalfont \normalsize \itshape }
+      }
+    \cs_set:Npn \subparagraph
+      {
+        \@startsection { subparagraph } { 5 } { 0.25in }
+          { 0pt } { -1em }
+          { \normalfont \normalsize \scshape }
+      }
+  }
+  {
+    \RequirePackage [ newparttoc ] { titlesec }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titleclass { \part } { page }
+    \assignpagestyle { \part } { empty }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titlespacing* { \part }         { 0pt } { 0.5in }
+      { 0.5in plus 12pt minus 6pt }
+    \titlespacing* { \chapter }      { 0pt } { 0.5in }
+      { 0.5in plus 12pt minus 6pt }
+    \titlespacing* { \section }      { 0pt } { 12pt plus 4pt minus 2pt }
+      { 10pt plus 4pt minus 2pt }
+    \titlespacing* { \subsection }   { 0pt } { 6pt plus 2pt minus 1pt }
+      { 4pt plus 2pt minus 1pt }
+    \titlespacing* {\subsubsection } { 0pt } { 6pt plus 2pt minus 1pt }
+      { 1em }
+    \titlespacing* { \paragraph }    { 0pt } { 6pt plus 2pt minus 1pt }
+      { 1em }
+    \titlespacing* { \subparagraph } { 0.25in } { 0pt } { 1em }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titleformat
+      { \part }
+      [ block ]
+      { \normalfont \Large \scshape \filcenter }
+      { \partname \space \thepart : }
+      { 0.5em }
+      { }
+    \titleformat
+      { \chapter }
+      [ display ]
+      { \normalfont \Large \filcenter }
+      { \thechapter }
+      { 12pt }
+      { }
+    \titleformat
+      { \section }
+      [ block ]
+      { \normalfont \normalsize \filcenter }
+      { \thesection }
+      { .5em }
+      { \MakeUppercase }
+    \titleformat
+      { \subsection }
+      [ block ]
+      { \normalfont \normalsize \scshape \filright }
+      { \thesubsection }
+      { .5em }
+      { }
+    \titleformat
+      { \subsubsection }
+      [ runin ]
+      { \normalfont \normalsize \scshape }
+      { \thesubsubsection }
+      { .5em }
+      { }
+    \titleformat
+      { \paragraph }
+      [ runin ]
+      { \normalfont \normalsize \itshape }
+      { \theparagraph }
+      { .5em }
+      { }
+    \titleformat
+      { \subparagraph }
+      [ runin ]
+      { \normalfont \normalsize \scshape }
+      { \thesubparagraph }
+      { .5em }
+      { }
+  }
+%    \end{macrocode}
+%
+% \subsection{Table of contents and list of figures/tables}
+%
+%    \begin{macrocode}
+\int_set:Nn \c@tocdepth { 1 }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \tableofcontents
+  {
+    \chapter* { \contentsname }
+    \@mkboth
+      { \contentsname }
+      { \contentsname }
+    \int_compare:nNnT { \c@page } < { 5 }
+      { \int_gset:Nn \c@page { 5 } }
+    \@starttoc { toc }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \listoffigures
+  {
+    \chapter* { \listfigurename }
+    \addcontentsline { toc } { chapter } { \listfigurename }
+    \@mkboth
+      { \listfigurename }
+      { \listfigurename }
+    \@starttoc { lof }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_set:Npn \listoftables
+  {
+    \chapter* { \listtablename }
+    \addcontentsline { toc } { chapter } { \listtablename }
+    \@mkboth
+      { \listtablename }
+      { \listtablename }
+    \@starttoc { lot }
+  }
+%    \end{macrocode}
+%
+% For documents using \cs{DocumentMetadata} use standard kernel commands to
+% redefine table of contents lines, otherwise use the \pkg{titletoc} package. 
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \cs_set:Npn \@pnumwidth { 2em }
+    \hook_gput_code_with_args:nnn { contentsline / text / after }
+      { sblbook }
+      {
+        \int_compare:nNnT {#1} = { 1 }
+          {
+            \cs_set_nopar:Npn \leaders ##1 ##2 { }
+            \hook_gput_next_code:nn { cmd / SuspendTagging / after }
+              {
+                \cs_set_nopar:Npn \leaders ##1 ##2 { }
+              }
+          }
+      }
+     \cs_set_nopar:Npn \numberline #1
+       {
+         \hbox_to_wd:nn { \@tempdima }
+           {
+             \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+             \hfill #1. \enspace
+             \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+           }
+       }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \l@chapter
+      {
+        \@dottedtocline { 0 } { 0em } { 2em }
+      }
+    \cs_set_nopar:Npn \l@section
+      {
+        \@dottedtocline { 1 } { 2em } { 2.5em }
+      }
+    \cs_set_nopar:Npn \l@subsection
+      {
+        \@dottedtocline { 2 } { 4.5em } { 3em }
+      }
+    \cs_set_nopar:Npn \l@subsubsection
+      {
+        \@dottedtocline { 3 } { 7.5em } { 3em }
+      }
+    \cs_set_nopar:Npn \l@paragraph
+      {
+        \@dottedtocline { 4 } { 10.5em } { 3em }
+      }
+    \cs_set_nopar:Npn \l@subparagraph
+      {
+        \@dottedtocline { 5 } { 13.5em } { 0em }
+      }
+    \cs_set_eq:NN \l@figure \l@chapter
+    \cs_set_eq:NN \l@table \l@chapter
+%    \end{macrocode}
+%
+% Redefine \cs{@chapter}, \cs{@schapter}, \cs{@part} and \cs{@spart} to format
+% chapter and part headings.
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \@chapter [#1]#2
+      {
+        \@@_if_page_numbering:nT { roman }
+          { \pagenumbering { arabic } }
+        \mode_leave_vertical:
+        \par
+        \addvspace { 0.5in }
+        \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+          {
+            \addtocontents { toc } { \addvspace { \bigskipamount } }
+            \refstepcounter { chapter }
+            \addcontentsline { toc } { chapter }
+              {
+                \protect \numberline { \thechapter } #1
+              }
+          }
+          {
+            \addcontentsline { toc } { chapter } {#1}
+          }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \Large
+          \int_compare:nNnT { \c@secnumdepth } > { -1 }
+            {
+              \thechapter
+              \par
+              \nobreak
+              \skip_vertical:n { \bigskipamount }
+            }
+          #2
+          \strut
+          \chaptermark {#1}
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:n { 0.5in plus 12pt minus 6pt }
+        \@afterheading
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn  \@schapter #1
+      {
+        \mode_leave_vertical:
+        \par
+        \addvspace { 0.5in }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \Large
+          #1
+          \strut
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:n { 0.5in plus 12pt minus 6pt }
+        \@afterheading
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set:Npn \@part [#1]#2
+      {
+        \unskip
+        \skip_vertical:n { 0.5in }
+        \thispagestyle { empty }
+        \int_compare:nNnTF { \c@secnumdepth } > { -2 }
+          {
+            \addtocontents { toc } { \addvspace { \bigskipamount } }
+            \refstepcounter { part }
+            \addcontentsline { toc } { part }
+              {
+                \partname \space \thepart : \hspace { 0.5em } #1
+              }
+          }
+          {
+            \addcontentsline { toc } { part } {#1}
+          }
+        \markboth { } { }
+        \group_begin:
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \Large
+          \scshape
+          \int_compare:nNnT { \c@secnumdepth } > { -2 }
+            { \partname \nobreakspace \thepart : \enspace }
+          #2
+          \strut
+          \par
+        \group_end:
+        \@endpart
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set:Npn \@spart #1
+      {
+        \unskip
+        \skip_vertical:n { 0.5in }
+        \thispagestyle { empty }
+        \group_begin:
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \Large
+          \scshape
+          #1
+          \strut
+          \par
+        \group_end:
+        \@endpart
+      }
+  }
+  {
+    \RequirePackage { titletoc }
+    \contentsmargin { 2em }
+%    \end{macrocode}
+%
+% \begin{macro}{\@@_hyperlink:nn} \marg{link} \marg{text}
+%
+%   \medskip
+%
+%   A convenience version of |\hyperlink| that just uses \meta{text} if
+%   \pkg{hyperref} isn't loaded.
+%
+%    \begin{macrocode}
+    \cs_new_protected:Nn \@@_hyperlink:nn
+      {
+        \cs_if_exist_use:NTF \hyperlink
+          { { #1 } { #2 } }
+          { #2 }
+      }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_contents_label_box:nn} \marg{width} \marg{alignment}
+%
+%   \medskip
+%
+%   Create a boxed contents label with a hyperlink if \pkg{hyperref} is
+%   loaded.
+%
+%    \begin{macrocode}
+    \cs_new_protected:Nn \@@_contents_label_box:nn
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          {
+            \makebox [ #1 ] [ #2 ] { \thecontentslabel . \enspace }
+          }
+      }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_contents_label:}
+%
+%   \medskip
+%
+%   Create an unboxed contents label with a hyperlink if \pkg{hyperref} is
+%   loaded.
+%
+%    \begin{macrocode}
+    \cs_new_protected:Nn \@@_contents_label:
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \thecontentslabel . \enspace }
+      }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_contents_above:n} \marg{dimen}
+%
+%   \medskip
+%
+%   Convenience macro for code before contents line. \meta{dimen} is a
+%   horizontal offset the line.
+%
+%    \begin{macrocode}
+    \cs_new_protected:Nn \@@_contents_above:n
+      {
+        \hspace* { -#1 }
+        \filright
+      }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+    \titlecontents { figure }
+      [ 2em ]
+      {
+        \@@_contents_above:n { 2em }
+      }
+      {
+        \@@_contents_label_box:nn { 2em } { r }
+      }
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { table }
+      [ 2em ]
+      {
+        \@@_contents_above:n { 2em }
+      }
+      {
+        \@@_contents_label_box:nn { 2em } { r }
+      }
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { part }
+      [ 2em ]
+      {
+        \addvspace { \bigskipamount }
+        \scshape \filcenter
+      }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          {
+            \partname \space \thecontentslabel : \hspace { 0.5em }
+          }
+      }
+      { }
+      { }
+    \titlecontents { chapter }
+      [ 2em ]
+      {
+        \tl_if_empty:NF \thecontentslabel
+          {
+            \addvspace { \bigskipamount }
+          }
+        \@@_contents_above:n { 2em }
+      }
+      {
+        \@@_contents_label_box:nn { 2em } { r }
+      }
+      { }
+      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { section }
+      [ 4.5em ]
+      {
+        \@@_contents_above:n { 2.5em }
+      }
+      {
+        \@@_contents_label_box:nn { 2.5em } { r }
+      }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subsection }
+      [ 7.5em ]
+      {
+        \@@_contents_above:n { 3em }
+      }
+      {
+        \@@_contents_label:
+      }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subsubsection }
+      [ 10.5em ]
+      {
+        \@@_contents_above:n { 3em }
+      }
+      {
+        \@@_contents_label:
+      }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { paragraph }
+      [ 13.5em ]
+      {
+        \@@_contents_above:n { 3em }
+      }
+      {
+        \@@_contents_label:
+      }
+      { }
+      { \hfill \contentspage }
+    \titlecontents { subparagraph }
+      [ 16.5em ]
+      {
+        \@@_contents_above:n { 3em }
+      }
+      {
+        \@@_contents_label:
+      }
+      { }
+      { \hfill \contentspage }
+  }
+%    \end{macrocode}
+%
+% Insert a space in the table of contents at the backmatter.
+%
+%    \begin{macrocode}
+\hook_gput_code:nnn
+  { cmd / backmatter / after }
+  { sblbook }
+  {
+    \bool_if:NF \g_@@_appendix_bool
+      {
+        \addtocontents { toc } { \addvspace { \bigskipamount } }
+      }
+  }
+%    \end{macrocode}
+%
+% \subsection{Appendices}
+%
+% Set up appendix headings and table of contents.
+%
+%    \begin{macrocode}
+\cs_set_eq:NN \sblbook@hyperlink \@@_hyperlink:nn
+\bool_new:N \g_@@_appendix_bool
+\newcounter { sblbook@appendix@count }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_set_up_appendices:
+  {
+    \bool_gset_true:N \g_@@_appendix_bool
+    \cs_gset_nopar:Npn \thechapter
+      { \@arabic \c@chapter }
+    \cs_set_nopar:Npn \chaptername
+      { \appendixname }
+    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
+    \addtocontents { toc } { \addvspace { \bigskipamount } }
+    \int_compare:nNnT { \c@sblbook@appendix@count } = { \c_one_int }
+      {
+        \int_zero:N \c@sblbook@appendix@count
+      }
+    \IfDocumentMetadataTF
+      {
+        \cs_set_nopar:Npn \@chapter [##1]##2
+          {
+            \stepcounter { sblbook@appendix@count }
+            \mode_leave_vertical:
+            \par
+            \addvspace { 0.5in }
+            \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+              {
+                \refstepcounter { chapter }
+                \protected@write \@auxout
+                  { }
+                  {
+                    \string \setcounter
+                      { sblbook@appendix@count } { \the \c@chapter }
+                  }
+                \addcontentsline { toc } { chapter }
+                  {
+                    \chaptername
+                    \ifnum \c@sblbook@appendix@count > 1
+                      \space \thechapter
+                    \fi
+                    : \enspace ##1
+                  }
+              }
+              {
+                \addcontentsline { toc } { chapter } {##1}
+              }
+            \group_begin:
+              \dim_zero:N \parindent
+              \centering
+              \interlinepenalty 10000
+              \normalfont
+              \Large
+              \int_compare:nNnT { \c@secnumdepth } > { -1 }
+                {
+                  \chaptername
+                  \int_compare:nNnT
+                    { \c@sblbook@appendix@count } > { \c_one_int }
+                    {
+                       \nobreakspace \thechapter
+                    }
+                  \par
+                  \nobreak
+                  \skip_vertical:n { \bigskipamount }
+                }
+              ##2
+              \chaptermark {##1}
+              \par
+            \group_end:
+            \nobreak
+            \skip_vertical:n { 0.5in plus 12pt minus 6pt }
+            \@afterheading
+          }
+      }
+      {
+        \titleformat
+          { \chapter }
+          [ display ]
+          {
+            \stepcounter { sblbook@appendix@count }
+            \protected@write \@auxout
+              { }
+              {
+                \protect \setcounter
+                  { sblbook@appendix@count } { \the \c@chapter }
+              }
+            \normalfont \Large \filcenter
+          }
+          {
+            \chaptername
+            \ifnum \c@sblbook@appendix@count > 1
+              \strut \space \thechapter
+            \fi
+          }
+          { 12pt }
+          { }
+        \titlecontents { chapter }
+          [ 2em ]
+          {
+            \hspace* { -2em }
+            \filright
+          }
+          {
+            \sblbook@hyperlink
+              { \Hy@tocdestname }
+              {
+                \chaptername
+                \ifnum \c@sblbook@appendix@count > 1
+                  \strut \space \thecontentslabel
+                \fi
+                : \enspace
+              }
+          }
+          { }
+          { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\hook_gput_code:nnn
+  { cmd / appendix / after }
+  { sblbook }
+  { \@@_set_up_appendices: }
+%    \end{macrocode}
+%
+% \subsection{Bibliography and list of abbreviations}
+%
+%    \begin{macrocode}
+\cs_set_nopar:Npn \bibfont { \small }
+\dim_set:Nn \bibhang { 0.25in }
+\dim_set:Nn \biblabelsep { 0.25in }
+%    \end{macrocode}
+%
+% \subsection{Helper functions}
+%
+% \begin{macro}{\@@_if_page_numbering:nT} \marg{numbering style}
+%     \marg{code if true}
+%
+%   \medskip
+%
+%   Test if the current page numbering style matches a particular style.
+%   (e.g., |arabic| or |roman|).
+%
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \@@_if_page_numbering:n #1 { T }
+  {
+    \cs_set_nopar:Nn \@@_thepage_test:
+      { \csname @ #1 \endcsname \c@page }
+    \if_meaning:w \thepage \@@_thepage_test:
+      \prg_return_true:
+    \else:
+      \prg_return_false:
+    \fi:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
+\endinput
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%</class>
+%    \end{macrocode}

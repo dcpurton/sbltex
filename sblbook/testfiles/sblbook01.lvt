@@ -1,0 +1,52 @@
+\DocumentMetadata{
+  lang=en,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f,
+  tagging=on
+}
+\documentclass{sblbook}
+\def\pdfmapfile#1{}
+\input{regression-test}
+\begin{document}
+\START
+\showoutput
+
+\chapter*{Contents}
+
+\makeatletter
+\contentsline {chapter}{List of Figures}{xi}{target*.2}%
+\contentsline {chapter}{List of Tables}{xiii}{target*.3}%
+\contentsline {chapter}{Foreword}{xv}{target*.4}%
+\contentsline {chapter}{Preface}{xvii}{target*.5}%
+\contentsline {chapter}{Acknowledgements}{xix}{target*.6}%
+\contentsline {chapter}{Introduction}{xxi}{target*.7}%
+\contentsline {chapter}{Abbreviations}{xxiii}{target*.8}%
+\addvspace {\bigskipamount }
+\contentsline {chapter}{\numberline{1}Page and Document Setup}{1}{chapter.1}%
+\contentsline {section}{Typical SBL Book Specifications: 6 × 9}{1}{section*.20}%
+\contentsline {section}{Page Size}{1}{section*.21}%
+\contentsline {section}{Headers and Footers}{1}{section*.22}%
+\contentsline {section}{Chapter Title Pages}{3}{section*.23}%
+\contentsline {section}{Pagination}{3}{section*.24}%
+\addvspace {\bigskipamount }
+\contentsline {chapter}{\numberline{2}Font Selection}{5}{chapter.2}%
+\contentsline {section}{Style and Size}{5}{section*.25}%
+\contentsline {section}{Headings and Subheadings}{5}{section*.26}%
+\contentsline {section}{Paragraphs}{6}{section*.30}%
+\contentsline {subsection}{Block Quotations/Extracts}{6}{subsection*.31}%
+\contentsline {section}{Footnotes and Endnotes}{6}{section*.32}%
+\contentsline {subsection}{Bibliographies and Indices}{7}{subsection*.33}%
+\contentsline {section}{Orphans and Widows}{7}{section*.34}%
+\contentsline {section}{Stacking}{7}{section*.35}%
+\addvspace {\bigskipamount }
+\contentsline {chapter}{\numberline{3}Citations}{9}{chapter.3}%
+\addvspace {\bigskipamount }
+\contentsline {chapter}{\numberline{4}Greek and Hebrew}{11}{chapter.4}%
+\def \chaptername {Appendix}
+\addvspace {\bigskipamount }
+\contentsline {chapter}{Appendix:\enspace Appendix Title}{13}{chapter.1}%
+\contentsline {chapter}{Bibliography}{15}{target*.36}%
+\contentsline {chapter}{Ancient Sources Index}{17}{target*.50}%
+\contentsline {chapter}{Modern Authors Index}{19}{target*.51}%
+\contentsline {chapter}{Subject Index}{21}{target*.52}%
+\end{document}

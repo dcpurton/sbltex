@@ -1,0 +1,1302 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(608.2275+0.0)x397.485, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 54.2025
+.\vbox(554.025+0.0)x325.215, shifted 72.27, direction TLT
+..\vbox(12.0+0.0)x325.215, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x325.215, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+0.0)x325.215, direction TLT
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+..\glue 12.0
+..\glue(\lineskip) 0.0
+..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
+...\vbox(494.025+0.0)x325.215, glue set 214.84421fil, direction TLT
+....\write-{}
+....\pdfcolorstack 0 push {0 g 0 G}
+....\write1{\babel@aux{english}{}}
+....\write-{}
+....\glue(\topskip) 10.0
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 36.135
+....\write1{\@writefile{toc}{\addvspace {\bigskipamount }}}
+....\write1{\@writefile{toc}{\protect \contentsline {part}{\protect \bbl@ensure@english  {Part} 1:\protect \hspace  {0.5em}This is a part}{\thepage }{part.1}\protected@file@percent }}
+....\marks1{\__mark_value:nn {1}{}}
+....\marks2{\__mark_value:nn {2}{}}
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 8.352
+....\hbox(9.648+0.2016)x325.215, glue set 90.80914fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/14.4 P
+.....\kern-1.8 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀋
+.....\kern-0.6336 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀜
+.....\kern-0.5328 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀞
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/sc/14.4  
+.....\glue(\spaceskip) 0.0 plus 2.16 minus 1.44
+.....\TU/Baskervaldx(0)/m/sc/14.4 1
+.....\TU/Baskervaldx(0)/m/sc/14.4 :
+.....\kern7.2
+.....\TU/Baskervaldx(0)/m/sc/14.4 T
+.....\kern-0.4032 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀒
+.....\kern-0.4896 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀓
+.....\kern-0.5184 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀝
+.....\TU/Baskervaldx(0)/m/sc/14.4  
+.....\glue(\spaceskip) 0.0 plus 2.16 minus 1.44
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀓
+.....\kern-0.5184 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀝
+.....\TU/Baskervaldx(0)/m/sc/14.4  
+.....\glue(\spaceskip) 0.0 plus 2.16 minus 1.44
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀋
+.....\TU/Baskervaldx(0)/m/sc/14.4  
+.....\glue(\spaceskip) 0.0 plus 2.16 minus 1.44
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀚
+.....\kern-1.7136 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀋
+.....\kern-0.6336 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀜
+.....\kern-0.5328 (font)
+.....\TU/Baskervaldx(0)/m/sc/14.4 󰀞
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 1
+..\glue(\baselineskip) 12.0
+..\hbox(0.0+0.0)x325.215, direction TLT
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(0.0+0.0)x325.215, direction TLT
+...\pdfcolorstack 0 pop
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+{/home/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Completed box being shipped out [2]
+\vbox(608.2275+0.0)x397.48502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 54.2025
+.\vbox(554.025+0.0)x325.215, shifted 72.27002, direction TLT
+..\vbox(12.0+0.0)x325.215, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x325.215, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+0.0)x325.215, direction TLT
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+..\glue 12.0
+..\glue(\lineskip) 0.0
+..\vbox(518.025+0.0)x0.0, glue set 508.025fil, direction TLT
+...\glue(\topskip) 10.0
+...\hbox(0.0+0.0)x0.0, direction TLT
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+..\pdflinkstate 1
+..\glue(\baselineskip) 12.0
+..\hbox(0.0+0.0)x325.215, direction TLT
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(0.0+0.0)x325.215, direction TLT
+...\pdfcolorstack 0 pop
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font 'Baskervaldx-Reg' with script 'Latin'. Check the typeset output, and if it is okay then ignore this warning. Otherwise a different font should be chosen.
+Package fontspec Info: 
+(fontspec)             Font family 'Baskervaldx(1)' created for font 'Baskervaldx' with options [Ligatures=TeX,Script=Latin,Language=English,RawFeature={family=rm},Extension=.otf,UprightFont=*-Reg,ItalicFont=*-Ita,BoldFont=*-Bol,BoldItalicFont=*-BolIta,Kerning=Uppercase].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[Baskervaldx-Reg.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"[Baskervaldx-Reg.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[Baskervaldx-Bol.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"[Baskervaldx-Bol.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[Baskervaldx-Ita.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: <->"[Baskervaldx-Ita.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"[Baskervaldx-BolIta.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: <->"[Baskervaldx-BolIta.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;+cpsp;+smcp;"
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font 'Baskervaldx-Reg' with script 'Latin'. Check the typeset output, and if it is okay then ignore this warning. Otherwise a different font should be chosen.
+Package fontspec Info: 
+(fontspec)             Font family 'Baskervaldx(2)' created for font 'Baskervaldx' with options [Ligatures=TeX,Script=Latin,Language=English,RawFeature={family=rm},Extension=.otf,UprightFont=*-Reg,ItalicFont=*-Ita,BoldFont=*-Bol,BoldItalicFont=*-BolIta,Kerning=Uppercase,Kerning=UppercaseOff].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[Baskervaldx-Reg.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"[Baskervaldx-Reg.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[Baskervaldx-Bol.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"[Baskervaldx-Bol.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[Baskervaldx-Ita.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: <->"[Baskervaldx-Ita.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"[Baskervaldx-BolIta.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: <->"[Baskervaldx-BolIta.otf]:mode=node;script=latn;language=ENG;+tlig;family=rm;-cpsp;+smcp;"
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font 'Baskervaldx-Reg' with script 'Latin'. Check the typeset output, and if it is okay then ignore this warning. Otherwise a different font should be chosen.
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font 'Baskervaldx-Reg' with script 'Latin'. Check the typeset output, and if it is okay then ignore this warning. Otherwise a different font should be chosen.
+Completed box being shipped out [3]
+\vbox(608.2275+3.60004)x397.485, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 54.2025
+.\vbox(554.025+3.60004)x325.215, shifted 72.27, direction TLT
+..\vbox(12.0+0.0)x325.215, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x325.215, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+0.0)x325.215, direction TLT
+.....\hbox(0.0+0.0)x325.215, direction TLT
+......\vbox(0.0+0.0)x325.215, direction TLT
+.......\hbox(0.0+0.0)x325.215, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+.........\vbox(0.0+0.0)x325.215, direction TLT
+..........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 162.6075fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(0.0+0.0)x325.215, direction TLT
+..........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.......\glue 0.0
+.......\rule(0.0+0.0)x325.215
+.......\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+..\glue 12.0
+..\glue(\lineskip) 0.0
+..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
+...\vbox(494.025+0.0)x325.215, glue set 212.95499fil, direction TLT
+....\write-{}
+....\glue(\topskip) 10.0
+....\hbox(0.0+0.0)x325.215, glue set 307.14752fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x18.06749, direction TLT
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 36.135
+....\write1{\@writefile{toc}{\addvspace {\bigskipamount }}}
+....\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline {1}Font Selection}{\thepage }{chapter.1}\protected@file@percent }}
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 8.352
+....\hbox(9.648+0.0)x325.215, glue set 159.3747fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\kern-0.36 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/14.4 1
+.....\penalty 10000
+.....\kern-0.36 (right margin)
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty 10000
+....\glue 12.0 plus 4.0 minus 4.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 5.40005
+....\hbox(12.59995+5.40005)x325.215, glue set 118.83153fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/14.4 F
+.....\kern-1.0224 (font)
+.....\TU/Baskervaldx(0)/m/n/14.4 o
+.....\TU/Baskervaldx(0)/m/n/14.4 n
+.....\TU/Baskervaldx(0)/m/n/14.4 t
+.....\TU/Baskervaldx(0)/m/n/14.4  
+.....\glue(\spaceskip) 0.0 plus 2.16 minus 1.44
+.....\TU/Baskervaldx(0)/m/n/14.4 S
+.....\TU/Baskervaldx(0)/m/n/14.4 e
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/14.4 -
+.....\TU/Baskervaldx(0)/m/n/14.4 l
+.....\TU/Baskervaldx(0)/m/n/14.4 e
+.....\TU/Baskervaldx(0)/m/n/14.4 c
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/14.4 -
+.....\TU/Baskervaldx(0)/m/n/14.4 t
+.....\TU/Baskervaldx(0)/m/n/14.4 i
+.....\TU/Baskervaldx(0)/m/n/14.4 o
+.....\TU/Baskervaldx(0)/m/n/14.4 n
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(12.59995+5.40005)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\marks1{\__mark_value:nn {3}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives [Title of Book]}}}
+....\marks2{\__mark_value:nn {4}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives Font Selection}}}
+....\marks3{\__mark_value:nn {5}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives Font Selection}}}
+....\penalty 10000
+....\glue 36.135 plus 12.0 minus 6.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(8.39996+3.60004)x325.215, glue set 42.45741fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\kern0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\kern0.05 (font)
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(1)/m/n/10 T
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 H
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 I
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 S
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 I
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 S
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 N
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 X
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \kern-0.5 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+......= \kern0.37 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 M
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 P
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 L
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 O
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 F
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 N
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \kern-0.21 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+......= \kern0.05 (font)
+......= \kern-0.21 (font)
+......= \TU/Baskervaldx(1)/m/n/10 -
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 L
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 V
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.54 (font)
+.....\TU/Baskervaldx(1)/m/n/10 L
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 H
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.08 (font)
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 D
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 I
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 N
+.....\kern0.05 (font)
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(1)/m/n/10 G
+.....\kern0.05 (font)
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(8.39996+3.60004)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write1{\@writefile{toc}{\protect \contentsline {section}{This Is an Example of an A-Level Heading}{\thepage }{section*.1}\protected@file@percent }}
+....\penalty 10000
+....\penalty 10000
+....\glue 10.0 plus 4.0 minus 2.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 0.0
+....\hbox(8.39996+3.60004)x325.215, glue set 131.26503fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\kern0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/10 T
+.....\kern-0.28 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀒
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.36 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 I
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 E
+.....\kern0.11 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀢
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern0.02 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀗
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀚
+.....\kern-0.19 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\kern-0.45 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀙
+.....\kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀐
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 B
+.....\discretionary (penalty 50)
+......< \kern0.29 (font)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern0.29 (font)
+......= \TU/Baskervaldx(0)/m/sc/10 -
+.....\TU/Baskervaldx(0)/m/sc/10 L
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.18 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀠
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 H
+.....\kern-0.42 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.31 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀎
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\kern-0.32 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀑
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(8.39996+3.60004)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{This Is an Example of a B-Level Heading}{\thepage }{subsection*.2}\protected@file@percent }}
+....\penalty 10000
+....\penalty 10000
+....\glue 4.0 plus 2.0 minus 1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 1.43996
+....\hbox(6.96+2.65)x325.215, glue set - 0.30513, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\kern0.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/10 T
+.....\kern-0.28 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀒
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.36 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 I
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 E
+.....\kern0.11 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀢
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern0.02 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀗
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀚
+.....\kern-0.19 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\kern-0.45 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀙
+.....\kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀐
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 C
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \TU/Baskervaldx(0)/m/sc/10 -
+.....\TU/Baskervaldx(0)/m/sc/10 L
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.18 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀠
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 H
+.....\kern-0.42 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.31 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀎
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\kern-0.32 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀑
+.....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{This Is an Example of a C-Level Heading}{\thepage }{subsubsection*.3}\protected@file@percent }}
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue 7.0
+.....\TU/Baskervaldx(0)/m/n/10 W
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern0.15 (font)
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 .
+.....\penalty 10000
+.....\kern-1.77 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -300
+....\glue 12.0 plus 4.0 minus 2.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 0.95004
+....\hbox(8.39996+3.60004)x325.215, glue set 42.45741fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\kern0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\kern0.05 (font)
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(1)/m/n/10 T
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 H
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 I
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 S
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 I
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 S
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 N
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 X
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \kern-0.5 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+......= \kern0.37 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 M
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 P
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 L
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 O
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 F
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 N
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \kern-0.21 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+......= \kern0.05 (font)
+......= \kern-0.21 (font)
+......= \TU/Baskervaldx(1)/m/n/10 -
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 L
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 V
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.54 (font)
+.....\TU/Baskervaldx(1)/m/n/10 L
+.....\TU/Baskervaldx(1)/m/n/10  
+.....\glue(\spaceskip) 0.1 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(1)/m/n/10 H
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 E
+.....\kern0.05 (font)
+.....\kern0.08 (font)
+.....\TU/Baskervaldx(1)/m/n/10 A
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 D
+.....\kern0.05 (font)
+.....\discretionary (penalty 50)
+......< \kern0.05 (font)
+......< \TU/Baskervaldx(1)/m/n/10 -
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 I
+.....\kern0.05 (font)
+.....\kern0.05 (font)
+.....\TU/Baskervaldx(1)/m/n/10 N
+.....\kern0.05 (font)
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(1)/m/n/10 G
+.....\kern0.05 (font)
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(8.39996+3.60004)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write1{\@writefile{toc}{\protect \contentsline {section}{This Is an Example of an A-Level Heading}{\thepage }{section*.4}\protected@file@percent }}
+....\penalty 10000
+....\glue 10.0 plus 4.0 minus 2.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 1.43996
+....\hbox(6.96+2.65)x325.215, glue set 240.79497fil, direction TLT
+.....\kern-0.35 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 T
+.....\kern0.16 (font)
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 .
+.....\penalty 10000
+.....\kern-1.77 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -300
+....\glue 6.0 plus 2.0 minus 1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 0.95004
+....\hbox(8.39996+3.60004)x325.215, glue set 131.26503fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\kern0.0
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/10 T
+.....\kern-0.28 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀒
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.36 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 I
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 E
+.....\kern0.11 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀢
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern0.02 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀗
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀚
+.....\kern-0.19 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\kern-0.45 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀙
+.....\kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀐
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 B
+.....\discretionary (penalty 50)
+......< \kern0.29 (font)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern0.29 (font)
+......= \TU/Baskervaldx(0)/m/sc/10 -
+.....\TU/Baskervaldx(0)/m/sc/10 L
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.18 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀠
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 H
+.....\kern-0.42 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.31 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀎
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\kern-0.32 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀑
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(8.39996+3.60004)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{This Is an Example of a B-Level Heading}{\thepage }{subsection*.5}\protected@file@percent }}
+....\penalty 10000
+....\glue 4.0 plus 2.0 minus 1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 1.43996
+....\hbox(6.96+2.65)x325.215, glue set 240.79497fil, direction TLT
+.....\kern-0.35 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 T
+.....\kern0.16 (font)
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 .
+.....\penalty 10000
+.....\kern-1.77 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -300
+....\glue 6.0 plus 2.0 minus 1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+2.65)x325.215, glue set - 0.30513, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\kern0.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/10 T
+.....\kern-0.28 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀒
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.36 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 I
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 E
+.....\kern0.11 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀢
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern0.02 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀗
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀚
+.....\kern-0.19 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\kern-0.45 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀙
+.....\kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀐
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 C
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \TU/Baskervaldx(0)/m/sc/10 -
+.....\TU/Baskervaldx(0)/m/sc/10 L
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.18 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀠
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀖
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 H
+.....\kern-0.42 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀏
+.....\kern-0.31 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀎
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/sc/10 -
+......= \kern-0.38 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀘
+.....\kern-0.32 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀑
+.....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{This Is an Example of a C-Level Heading}{\thepage }{subsubsection*.6}\protected@file@percent }}
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue 7.0
+.....\TU/Baskervaldx(0)/m/n/10 W
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern0.15 (font)
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 .
+.....\penalty 10000
+.....\kern-1.77 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue -2.65
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 1
+..\glue(\baselineskip) 0.0
+..\hbox(12.0+3.60004)x325.215, direction TLT
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(12.0+3.60004)x325.215, direction TLT
+....\hbox(12.0+3.60004)x325.215, direction TLT
+.....\vbox(12.0+3.60004)x325.215, direction TLT
+......\rule(0.0+0.0)x325.215
+......\glue 3.60004
+......\hbox(8.39996+3.60004)x325.215, direction TLT
+.......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\glue 0.0 plus 1.0fill
+.......\vbox(8.39996+3.60004)x325.215, direction TLT
+........\hbox(8.39996+3.60004)x325.215, glue set 156.64548fil, direction TLT
+.........\glue(\leftskip) 0.0 plus 1.0fil
+.........\kern-1.2 (left margin)
+.........\localpar
+..........\localinterlinepenalty=0
+..........\localbrokenpenalty=0
+..........\localleftbox=null
+..........\localrightbox=null
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x13.12404, direction TLT
+..........\hbox(18.77+0.0)x13.12404, direction TLT
+...........\hbox(6.77+0.11)x13.12404, shifted -12.0, direction TLT
+............\TU/Baskervaldx(0)/m/n/10 -
+............\kern1.66702
+............\TU/Baskervaldx(0)/m/n/10 3
+............\kern1.66702
+............\TU/Baskervaldx(0)/m/n/10 -
+.........\rule(8.39996+3.60004)x0.0
+.........\penalty 10000
+.........\glue(\parfillskip) 0.0
+.........\glue(\rightskip) 0.0 plus 1.0fil
+.......\glue 0.0 plus 1.0fill
+.......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdfcolorstack 0 pop
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\kern-611.82753
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern611.82753
+.\pdfliteral page <lua data reference ...>
+<<latex-list-css.html>><<latex-align-css.html>> (sblbook02.aux)
+LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                sblbook02
+(biblatex)                and rerun LaTeX afterwards.
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~32 structure objects
+(tagpdf)             with ~20 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+Package tagpdf Info: writing Root
+Package logreq Info: Writing requests to 'sblbook02.run.xml'.

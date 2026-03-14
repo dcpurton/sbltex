@@ -1,0 +1,2309 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 9, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 9, TOCI --> struct 10, text-unit
+(../mt-cmr.cfg
+File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
+)
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 13, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 13, TOCI --> struct 14, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 17, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 17, TOCI --> struct 18, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 21, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 21, TOCI --> struct 22, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 25, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 25, TOCI --> struct 26, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 29, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 29, TOCI --> struct 30, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 33, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 33, TOCI --> struct 34, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 37, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 37, TOCI --> struct 38, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 43, TOCI --> struct 44, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 47, TOCI --> struct 48, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 51, TOCI --> struct 52, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 55, TOCI --> struct 56, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 59, TOCI --> struct 60, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 63, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 63, TOCI --> struct 64, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 69, TOCI --> struct 70, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 73, TOCI --> struct 74, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 77, TOCI --> struct 78, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 81, TOCI --> struct 82, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 85, TOCI --> struct 86, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 89, TOCI --> struct 90, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 93, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 93, TOCI --> struct 94, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 98, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 98, TOCI --> struct 99, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 103, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 103, TOCI --> struct 104, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 107, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 107, TOCI --> struct 108, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 111, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 111, TOCI --> struct 112, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 115, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 115, TOCI --> struct 116, text-unit
+Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 5, Sect --> struct 119, TOCI
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 119, TOCI --> struct 120, text-unit
+Completed box being shipped out [1]
+\vbox(608.2275+3.60004)x397.485, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 54.2025
+.\vbox(554.025+3.60004)x325.215, shifted 72.27, direction TLT
+..\vbox(12.0+0.0)x325.215, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x325.215, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(0.0+0.0)x325.215, direction TLT
+.....\hbox(0.0+0.0)x325.215, direction TLT
+......\vbox(0.0+0.0)x325.215, direction TLT
+.......\hbox(0.0+0.0)x325.215, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+.........\vbox(0.0+0.0)x325.215, direction TLT
+..........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 162.6075fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(0.0+0.0)x325.215, direction TLT
+..........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.......\glue 0.0
+.......\rule(0.0+0.0)x325.215
+.......\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+..\glue 12.0
+..\glue(\lineskip) 0.0
+..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
+...\vbox(494.025+0.0)x325.215, glue set 8.38495fil, direction TLT
+....\write-{}
+....\pdfcolorstack 0 push {0 g 0 G}
+....\write1{\babel@aux{english}{}}
+....\write-{}
+....\special{}
+....\glue(\topskip) 10.0
+....\hbox(0.0+0.0)x325.215, glue set 307.14752fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x18.06749, direction TLT
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 36.135
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 5.40005
+....\hbox(12.59995+5.40005)x325.215, glue set 135.00992fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/14.4 C
+.....\TU/Baskervaldx(0)/m/n/14.4 o
+.....\TU/Baskervaldx(0)/m/n/14.4 n
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/14.4 -
+.....\TU/Baskervaldx(0)/m/n/14.4 t
+.....\kern-0.3024 (font)
+.....\TU/Baskervaldx(0)/m/n/14.4 e
+.....\TU/Baskervaldx(0)/m/n/14.4 n
+.....\TU/Baskervaldx(0)/m/n/14.4 t
+.....\TU/Baskervaldx(0)/m/n/14.4 s
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(12.59995+5.40005)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty 10000
+....\glue 36.135 plus 12.0 minus 6.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(6.97+2.65)x325.215, glue set 243.84499fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 L
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/n/10 f
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 F
+.....\kern-0.12 (font)
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.45+0.0)x20.0, glue set 11.94fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 i
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.38
+....\hbox(6.97+0.14)x325.215, glue set 247.53497fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 L
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/n/10 f
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 T
+.....\kern-1.33 (font)
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.45+0.0)x20.0, glue set 6.42001fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 i
+......\TU/Baskervaldx(0)/m/n/10 i
+......\TU/Baskervaldx(0)/m/n/10 i
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.9
+....\hbox(6.96+0.15)x325.215, glue set 265.59497fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 F
+.....\kern-0.71 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.12 (font)
+.....\TU/Baskervaldx(0)/m/n/10 w
+.....\kern-0.27 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(4.32+0.0)x20.0, glue set 9.81fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 v
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.88
+....\hbox(6.97+0.14)x325.215, glue set 274.02496fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 P
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 f
+.....\discretionary (penalty 50)
+......< \kern-0.19 (font)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.45+0.0)x20.0, glue set 4.29001fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 v
+......\TU/Baskervaldx(0)/m/n/10 i
+......\TU/Baskervaldx(0)/m/n/10 i
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.9
+....\hbox(6.96+2.65)x325.215, glue set 222.765fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 A
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 k
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\kern-0.16 (font)
+.....\TU/Baskervaldx(0)/m/n/10 w
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\kern-0.33 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 m
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.45+0.0)x20.0, glue set 6.64fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 i
+......\TU/Baskervaldx(0)/m/n/10 x
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+0.15)x325.215, glue set 251.66501fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 I
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.3 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.45+0.0)x20.0, glue set 6.64fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 i
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.89
+....\hbox(6.96+0.14)x325.215, glue set 245.60498fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 A
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.15 (font)
+.....\TU/Baskervaldx(0)/m/n/10 v
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.45+0.0)x20.0, glue set 1.12001fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 x
+......\TU/Baskervaldx(0)/m/n/10 i
+......\TU/Baskervaldx(0)/m/n/10 i
+......\TU/Baskervaldx(0)/m/n/10 i
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 12.0 plus 4.0 minus 4.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.9
+....\hbox(6.96+2.65)x325.215, glue set 171.59497fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\hbox(6.7+0.14)x20.0, glue set 7.48fill, direction TLT
+......\glue 0.0 plus 1.0fill
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\TU/Baskervaldx(0)/m/n/10 .
+......\kern5.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 P
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\kern-0.33 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 D
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 m
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.7+0.0)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+2.65)x325.215, glue set 120.18495fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 T
+.....\kern-1.62 (font)
+.....\TU/Baskervaldx(0)/m/n/10 y
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 B
+.....\TU/Baskervaldx(0)/m/n/10 L
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.49849 minus 1.00099
+.....\TU/Baskervaldx(0)/m/n/10 B
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 k
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 ﬁ
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10 :
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 1.0 plus 3.0 minus 0.5
+.....\TU/Baskervaldx(0)/m/n/10 6
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 ^^d7
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 9
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.7+0.0)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.5
+....\hbox(6.85+2.65)x325.215, glue set 244.83498fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 P
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\kern-0.33 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 z
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.7+0.0)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+0.15)x325.215, glue set 196.42497fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 H
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 F
+.....\kern-0.71 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.7+0.0)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.89
+....\hbox(6.96+2.65)x325.215, glue set 200.55496fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 C
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 T
+.....\kern-0.18 (font)
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 P
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\kern-0.33 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.77+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.58
+....\hbox(6.77+2.65)x325.215, glue set 239.69499fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 P
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.77+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 12.0 plus 4.0 minus 4.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+0.17)x325.215, glue set 224.415fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\hbox(6.77+0.14)x20.0, glue set 7.48fill, direction TLT
+......\glue 0.0 plus 1.0fill
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 2
+......\TU/Baskervaldx(0)/m/n/10 .
+......\kern5.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 F
+.....\kern-0.71 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.96+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 5
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.87
+....\hbox(6.96+2.65)x325.215, glue set 225.13498fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 y
+.....\kern-0.23 (font)
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 z
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.96+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 5
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+2.65)x325.215, glue set 168.61497fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 H
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.96+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 5
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+2.65)x325.215, glue set 237.11496fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 P
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.8+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 6
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+0.15)x325.215, glue set 181.985fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 F
+.....\kern-0.71 (font)
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 E
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\kern-0.21 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.8+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 6
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.88
+....\hbox(6.97+2.65)x325.215, glue set 192.33498fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 O
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\discretionary (penalty 50)
+......< \kern-0.58 (font)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern0.16 (font)
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\penalty 10000
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 W
+.....\kern-0.53 (font)
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\kern-0.16 (font)
+.....\TU/Baskervaldx(0)/m/n/10 w
+.....\kern-0.12 (font)
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.97+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 7
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.38
+....\hbox(6.97+2.65)x325.215, glue set 248.61499fill, direction TLT
+.....\glue(\leftskip) 45.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x20.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\penalty 10000
+.....\glue -45.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 k
+.....\discretionary (penalty 50)
+......< \kern-0.67 (font)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\glue 0.0 plus 1.0fill
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.97+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 7
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 12.0 plus 4.0 minus 4.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.5
+....\hbox(6.85+0.18)x325.215, glue set 246.505fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\hbox(6.77+0.14)x20.0, glue set 7.48fill, direction TLT
+......\glue 0.0 plus 1.0fill
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 3
+......\TU/Baskervaldx(0)/m/n/10 .
+......\kern5.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 C
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+......= \kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.77+0.11)x20.0, glue set 15.01fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 9
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 12.0 plus 4.0 minus 4.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.86
+....\hbox(6.96+0.17)x325.215, glue set 204.51495fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\hbox(6.83+0.14)x20.0, glue set 7.48fill, direction TLT
+......\glue 0.0 plus 1.0fill
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 4
+......\TU/Baskervaldx(0)/m/n/10 .
+......\kern5.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 G
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 k
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 H
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.29 (font)
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\kern-0.12 (font)
+.....\TU/Baskervaldx(0)/m/n/10 w
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.7+0.0)x20.0, glue set 10.01999fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\TU/Baskervaldx(0)/m/n/10 1
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 12.0 plus 4.0 minus 4.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.87
+....\hbox(6.96+2.65)x325.215, glue set 189.90497fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 A
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 x
+.....\TU/Baskervaldx(0)/m/n/10 :
+.....\kern5.0
+.....\TU/Baskervaldx(0)/m/n/10 A
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 x
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 T
+.....\kern-0.18 (font)
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.77+0.11)x20.0, glue set 10.01999fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\TU/Baskervaldx(0)/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.39
+....\hbox(6.96+2.65)x325.215, glue set 250.635fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 B
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 l
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 p
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\kern-0.27 (font)
+.....\TU/Baskervaldx(0)/m/n/10 y
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.96+0.11)x20.0, glue set 10.01999fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\TU/Baskervaldx(0)/m/n/10 5
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 2.38
+....\hbox(6.97+0.17)x325.215, glue set 208.265fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 A
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 i
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\kern-0.32 (font)
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 I
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/n/10 x
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.97+0.11)x20.0, glue set 10.01999fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\TU/Baskervaldx(0)/m/n/10 7
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.87
+....\hbox(6.96+0.15)x325.215, glue set 206.29498fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 M
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 A
+.....\kern-0.24 (font)
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10 h
+.....\TU/Baskervaldx(0)/m/n/10 o
+.....\TU/Baskervaldx(0)/m/n/10 r
+.....\TU/Baskervaldx(0)/m/n/10 s
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 I
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/n/10 x
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.77+0.11)x20.0, glue set 10.01999fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 1
+......\TU/Baskervaldx(0)/m/n/10 9
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.89
+....\hbox(6.96+2.64)x325.215, glue set 246.84499fill, direction TLT
+.....\glue(\leftskip) 20.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -20.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/n/10 S
+.....\TU/Baskervaldx(0)/m/n/10 u
+.....\TU/Baskervaldx(0)/m/n/10 b
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 j
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\TU/Baskervaldx(0)/m/n/10 c
+.....\TU/Baskervaldx(0)/m/n/10 t
+.....\TU/Baskervaldx(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/n/10 I
+.....\TU/Baskervaldx(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/Baskervaldx(0)/m/n/10 -
+.....\TU/Baskervaldx(0)/m/n/10 d
+.....\TU/Baskervaldx(0)/m/n/10 e
+.....\kern-0.17 (font)
+.....\TU/Baskervaldx(0)/m/n/10 x
+.....\penalty 10000
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.03+0.14)x7.52988, direction TLT
+.......\mathon
+.......\kern2.49994 (italic)
+.......\hbox(1.03+0.14)x2.53, direction TLT
+........\TU/Baskervaldx(0)/m/n/10 .
+.......\kern2.49994 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.77+0.0)x20.0, glue set 10.01999fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/Baskervaldx(0)/m/n/10 2
+......\TU/Baskervaldx(0)/m/n/10 1
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue -2.64
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\pdflinkstate 1
+..\glue(\baselineskip) 0.0
+..\hbox(12.0+3.60004)x325.215, direction TLT
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(12.0+3.60004)x325.215, direction TLT
+....\hbox(12.0+3.60004)x325.215, direction TLT
+.....\vbox(12.0+3.60004)x325.215, direction TLT
+......\rule(0.0+0.0)x325.215
+......\glue 3.60004
+......\hbox(8.39996+3.60004)x325.215, direction TLT
+.......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\glue 0.0 plus 1.0fill
+.......\vbox(8.39996+3.60004)x325.215, direction TLT
+........\hbox(8.39996+3.60004)x325.215, glue set 156.64548fil, direction TLT
+.........\glue(\leftskip) 0.0 plus 1.0fil
+.........\kern-1.2 (left margin)
+.........\localpar
+..........\localinterlinepenalty=0
+..........\localbrokenpenalty=0
+..........\localleftbox=null
+..........\localrightbox=null
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x13.12404, direction TLT
+..........\hbox(18.7+0.0)x13.12404, direction TLT
+...........\hbox(6.7+0.0)x13.12404, shifted -12.0, direction TLT
+............\TU/Baskervaldx(0)/m/n/10 -
+............\kern1.66702
+............\TU/Baskervaldx(0)/m/n/10 1
+............\kern1.66702
+............\TU/Baskervaldx(0)/m/n/10 -
+.........\rule(8.39996+3.60004)x0.0
+.........\penalty 10000
+.........\glue(\parfillskip) 0.0
+.........\glue(\rightskip) 0.0 plus 1.0fil
+.......\glue 0.0 plus 1.0fill
+.......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdfcolorstack 0 pop
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\kern-611.82753
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern611.82753
+.\pdfliteral page <lua data reference ...>
+Non-PDF special ignored!{/home/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<<latex-list-css.html>><<latex-align-css.html>> (sblbook01.aux)
+LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                sblbook01
+(biblatex)                and rerun LaTeX afterwards.
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~122 structure objects
+(tagpdf)             with ~120 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+Package tagpdf Warning: Destination 'target*.2' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.3' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.4' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.5' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.6' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.7' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.8' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'chapter.1' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.20' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.21' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.22' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.23' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.24' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'chapter.2' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.25' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.26' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.30' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.32' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.34' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'section*.35' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'chapter.3' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'chapter.4' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'chapter.1' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.36' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.50' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.51' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination 'target*.52' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Info: writing Root
+Package logreq Info: Writing requests to 'sblbook01.run.xml'.

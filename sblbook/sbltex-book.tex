@@ -1,0 +1,444 @@
+%! TeX Program = lualatex
+
+\documentclass[sblidx={ancient sources, modern authors, subject}]{sblbook}
+
+\addbibresource{sbltex.bib}
+
+\begin{document}
+
+\frontmatter
+
+\title{[Title of Book]}
+\author{[Your Name]}
+\index{front matter!half-title page}%
+\maketitle
+
+\begin{seriespage}
+  \index{front matter!series page}%
+\end{seriespage}
+
+\begin{titlepage}
+  \index{front matter!title page}%
+\end{titlepage}
+
+\begin{copyrightpage}
+  \index{front matter!copyright page}%
+\end{copyrightpage}
+
+\begin{dedication}
+  \index{front matter!dedication}%
+  If there is a dedication, it should be placed on page v.
+\end{dedication}
+
+\begin{epigraph}
+  \index{front matter!epigraph}%
+  If there is an Epigraph, it should be placed on page vii.
+\end{epigraph}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\begin{foreword}
+\end{foreword}
+
+\begin{preface}
+\end{preface}
+
+\begin{acknowledgements}
+\end{acknowledgements}
+
+\begin{introduction}
+  \index{introduction}%
+  The decision whether to number the introduction with arabic or roman
+  numerals depends on the nature of the introduction and the extent to which
+  it is a substantive part of the main text.
+
+  This document models and describes how to produce a printer-ready manuscript
+  for SBL Press. A printer-ready manuscript is a completely formatted and
+  finished text ready to be replicated by the printer. The published work will
+  look exactly like the printer-ready version of the manuscript submitted
+
+  Much of the content of this document has been taken from
+  \citetitle{prmmanual} published by SBL Press \autocite{prmmanual}.
+\end{introduction}
+
+\printbiblist[heading=biblistintoc]{abbreviations}
+
+\mainmatter
+
+\chapter{Page and Document Setup}
+
+\section{Typical SBL Book Specifications: 6 × 9}
+
+See Table \ref{bookspecs} for typical book specifications.
+
+\begin{table}
+  \centering
+  \caption{SBL book specifications}
+  \label{bookspecs}
+  \begin{tabular}{@{}lp{5.7cm}@{}}
+    \MakeUppercase{Printed margins} & .75 inch left and right, top and
+    bottom\index{margins} \\
+    \MakeUppercase{Usable area} & 4.5 × 7.5 inches (including
+    headers\index{headers}, footers\index{footers}, and
+    footnotes\index{footnotes}) \\
+    \MakeUppercase{Document margins} & top: 2 inches; bottom 1.75 inches; left
+    2 inches; right 2 inches (for letter paper) \\
+    \MakeUppercase{Running heads} & 10/12, with 12-point spacing after, often
+    with a font \emph{style} different from the main body font (e.g., italics
+    or small capitals); \texttt{sblbook} uses italics\index{running heads} \\
+    \MakeUppercase{Chapter titles} & 14/18, with .5-inch white space (e.g., 36
+    points) between the chapter\index{chapters} title and the first paragraph
+    of the main text \\
+    \MakeUppercase{Body-text font/leading} & 10/12, fully
+    justified\index{justification}, with .25-inch indentation of the first
+    line\index{font!size} \\
+    \MakeUppercase{Block quotations} & 9/11, fully justified, with .25-inch
+    right and left indentation and 11 points above and below the
+    paragraph\index{quotations!block} \\
+    \MakeUppercase{Captions} & 9/11, center justification, with 6 points above
+    and below the caption\index{captions} \\
+    \MakeUppercase{Footnotes/endnotes} & 9/11, fully justified (possibly with
+    a .5-point rule between the bottom of the main body text and the first
+    footnote); \texttt{sblbook} uses standard \LaTeX\
+    \texttt{\string\footnotesize} which is
+    8/9.5\index{footnotes}\index{endnotes} \\
+    \MakeUppercase{Bibliography} & 9/11, fully justified, with .25-inch
+    hanging indentation, with no space between bibliographical
+    entries\index{bibliography} \\
+    \MakeUppercase{Indices} & 9/11, set in two columns when
+    possible\index{indices} \\
+    \MakeUppercase{Superscript} & 9-point font; \texttt{sblbook} uses the
+    \LaTeX\ default of \texttt{\string\scriptsize} which is 7-point as 9-point
+    is quite large and does not match actual SBL
+    publications\index{superscripts} \\
+  \end{tabular}
+\end{table}
+
+\section{Page Size}
+
+\index{page size}%
+SBL Press publishes works primarily in a 6~×~9--inch format but can
+print to different dimensions, depending on the type of work and the specific
+series in which it is to appear. Please consult your SBL Press editor and the
+SBL Press production staff if a book you are preparing seems to require
+something other than the standard 6~×~9 trim size.\index{page size!trim size}
+
+Regardless of the trim size, allowance should be made for .75-inch
+margins\index{margins} on all sides. Thus, 6~×~9 texts have a maximum usable
+area\index{page size!usable area} of 4.5~×~7.5 inches; 8.5~×~11--inch texts
+have a maximum usable area of 7~×~9.5 inches. The vertical dimension is the
+maximum length measured from the \emph{top of the running head}\index{running
+heads} to the \emph{bottom of the last line of text or footnote}.
+
+Although most books will be printed at a 6~×~9 trim size, the files you create
+should be set up on 8.5~×~11 pages.
+
+The \texttt{sblbook} class centers the 4.5~×~7.5--inch useable
+area\index{page size!usable area} on the requested paper size\index{page
+size!paper size}. The default is \texttt{letterpaper}, but the class option
+\texttt{a4paper} will also work.  The \texttt{trim} class option outputs a
+6~×~9--inch PDF.
+
+\section{Headers and Footers}
+
+\index{headers}\index{footers}\index{running heads}%
+The \emph{header} (or running head) is the text that appears on each page
+above the main text. Except for pages that begin a new chapter or section, all
+page numbers should appear in the header at the outside margin. The book or
+part title should appear centered in the header of verso\index{verso}
+(left-hand/even) pages, and the chapter or part title should appear in
+recto\index{recto} (right-hand/odd) page headers, except on the pages where
+the titles first appear. In multiauthored works, contributors’ names should
+appear on verso\index{verso} pages and chapter names on recto\index{recto}
+pages. It is advisable to use a font style different from the body font in
+page headers (e.g., italics or small capitals). The format should follow the
+size and leading of the main text (typically 10/12), with 12-point spacing
+after the text.
+
+SBL Press books typically include a \emph{footer}\index{footer} (or
+folio) at the bottom of a page only for the page number on the first page of a
+chapter or section. A footer should include only the page number (not a book
+or part title) and should be centered on the page.  The format should follow
+the size\index{font!size} and leading\index{font!leading} of the main text
+(typically 10/12), with 12-point spacing before the text.
+
+\section{Chapter Title Pages}
+
+\index{chapters!title pages}%
+The first page of a chapter should begin approximately one-third down from the
+top of the page. The chapter heading should include the chapter number (if
+applicable, as a numeral, not spelled out) and the chapter title itself on the
+following line. It is preferable to leave approximately one-half inch of
+“white space” between the chapter title and the first paragraph of the main
+text. As noted above, chapter title pages do not include a running head but
+rather a footer with the page number centered below the text.
+
+\section{Pagination}
+
+The first four pages of the book (i–iv) are referred to as the \emph{front
+matter}\index{front matter} (the half-title page\index{front matter!half-title
+page}, the series page\index{front matter!series page}, the title
+page\index{front matter!title page}, and the copyright page\index{front
+matter!copyright page}) and will be prepared by SBL Press production staff in
+accordance with the series format. Page v is the first page for which the
+author is responsible. If there is a dedication\index{front
+matter!dedication}, it should be placed on page v and the table of contents on
+page vii, page vi being blank. Remember: the table of contents lists only the
+items that follow it. Table \ref{frontmattersequence} offers the typical
+sequence of a book’s front matter.
+
+\begin{table}
+  \centering
+  \caption{Sequence of a book's front matter}
+  \label{frontmattersequence}
+  \begin{tabular}{lr}
+    Half-title page & i \\
+    Series page & ii \\
+    Title page & iii \\
+    Copyright page & iv \\
+    Dedication (if applicable) & v \\
+    blank (if applicable) & vi \\
+    Table of contents & vii \\
+    Foreword (optional) & recto\index{recto} \\
+    Preface (optional) & recto\index{recto} \\
+    Acknowledgments (optional) & recto\index{recto} \\
+    Introduction (if not part of text) & recto\index{recto} \\
+    Abbreviations & recto\index{recto} \\
+  \end{tabular}
+\end{table}
+
+\chapter{Font Selection}
+
+\section{Style and Size}
+
+Texts should be prepared in a good quality, proportionally spaced, serif font,
+such as (New) Baskerville\index{font!Baskerville}\index{font!New Baskerville},
+Times\index{font!Times} (New) Roman\index{font!Times New Roman}, New Century
+Schoolbook\index{font!New Century Schoolbook}, or
+Palatino\index{font!Palatino}. SBL Press books typically use a 10-point font
+for the body text and an 8- or 9-point font for footnotes or endnotes.
+
+The \texttt{sblbook} class uses the Baskervaldx\index{font!Baskervaldx} font
+by default, but an alternative can be specified by passing options to the
+\textsf{sblfonts} package using the \texttt{sblfonts} class option. See the
+documentation for the \textsf{sblfonts} package for details.
+
+Chapter titles are usually set in a 14-point font. It is preferable to use the
+same font face throughout the book for the main body text, running
+heads,\index{running heads} headings, subheadings, block quotations,
+footnotes, bibliography, and indices.\index{indices}
+
+If available, \texttt{sblbook} will use the SBL fonts for Greek and Hebrew
+with Unicode engines otherwise the class falls back to Alegreya for Greek and
+Frank Ruehl CLM for Hebrew. The class sets up the \texttt{babel} package for
+\texttt{polytonicgreek} and \texttt{hebrew}. Other languages can be loaded
+manually or on the fly with \texttt{lualatex}.
+
+\section{Headings and Subheadings}
+
+The design of headings and subheadings is left to the discretion of the
+author. As a rule (and as in this manual), first-level headings are centered,
+and second-level headings are justified left, but other consistent styles are
+acceptable. Generally it is best also to distinguish headings and subheadings
+from the body text through use of a different font style (e.g., small capitals
+with title-case capitalization; small capitals with no initial capitalization;
+italics). Finally, headings that are followed by \emph{less} than two lines of
+text before the end of a page should be avoided.\index{widows}
+
+\section*{This Is an Example of an A-Level Heading}
+
+\subsection*{This Is an Example of a B-Level Subheading}
+
+\subsubsection*{This Is an Example of a C-Level Subheading.}
+
+When you use only two levels of heading, they can be centered and flush left,
+respectively, both with white space before and after the heading (settings
+here: 12-point spacing before and after A-level heading; 6-point spacing
+before and after B-level subheading). If you use a third level of heading, the
+paragraph should have space before it, and the following text should be run
+in, as in this paragraph.
+
+\section{Paragraphs}
+
+First lines of paragraphs are normally indented one-quarter inch. The first
+line of a paragraph following a chapter title, heading, or subheading (e.g.,
+this paragraph) should not be indented.
+
+Generally the text in books is \emph{fully justified}---each line is exactly
+the same length. Occasionally a line will have an unsightly space (e.g., when
+the line ends in a word that cannot be divided).  This problem can be
+corrected by a minor rewrite.
+
+\subsection{Block Quotations/Extracts}
+
+A quotation of five or more lines should be set off as a separate paragraph from
+the main text and formatted differently from the body text.
+\begin{quote}
+  This paragraph is an example of a block quote. The margins for block
+  quotations should be set in one-quarter inch from the right and left margins
+  of the body text, and it is customary to use a font size 1 point smaller
+  than the body font.
+\end{quote}
+Finally, it is preferable to leave some white space above and below the
+extract (6 to 11 points). Thus, typical specifications for a block quote would
+be a 9-point font with 11-point leading (9/11), indent of .25 inch right and
+left, and 11 points above and below the paragraph.
+
+\section{Footnotes and Endnotes}
+
+\index{footnotes}%
+To provide the greatest ease of use for readers, SBL Press prefers footnotes
+to endnotes\index{endnotes}. Footnote numbers should restart their count at
+one at the beginning of each chapter. Footnote text should be set in a font
+size smaller than the main body text, usually 8 or 9 point, and leading should
+be adjusted accordingly.\footnote{This is an example
+footnote\index{footnotes}. Note that SBL Press prefers the first line of
+footnotes to be indented. See
+\url{https://sblhs2.com/2016/06/21/indenting-footnotes/}.} Thus, a typical
+font/leading specification for footnotes is 8/10 or 9/11. It is acceptable but
+not mandatory to set a thin rule (line) between the end of the main text and
+the first footnote. If you insert such a rule, it is typically .5 point in
+width, begins at the left margin, and extends approximately 1.5 inches to the
+right.
+
+The note number should be superscripted in the main text. In the footnote, the
+note number should match the rest of the footnote. The typical specifications
+for a superscripted number is 9-point font raised 3
+points.\footnote{The specification of a 9-point font raised 3 points for
+superscripts is quite large and not what the SBL Press does in any of their
+actual published books. I've kept the \LaTeX\ default which is
+\texttt{\string\scriptsize} (7-point) raised 3.5 point.}
+
+\subsection{Bibliographies and Indices}
+
+To conserve space, bibliographies and indices should be set in a font size
+smaller than the main body text. In most cases, then, bibliographies and
+indices will be set in 9-point font with 11-point leading (9/11). Indices
+should be set in at least two columns.\index{indices}
+
+The \texttt{sblbook} class supports a \emph{Subject Index}, \emph{Modern
+Authors Index} and \emph{Ancient Sources Index}. Each index can be enabled
+independently by passing one or more of \texttt{ancient sources},
+\texttt{modern authors} and \texttt{subject} to the \texttt{sblidx} class
+option. Modern authors from \texttt{biblatex-sbl} citations are automatically
+added to the \emph{Modern Authors Index} when cited. Scriptural references
+cited using \verb|\pibibleverse| from the \texttt{bibleref-parse} package are
+automatically added to the \emph{Ancient Sources Index}. Each of the three
+indices is formatted in a slightly different way inline with the requirements
+of the instructions on preparing indices at
+\url{https://www.sbl-site.org/assets/pdfs/pubs/Indexing_SBL.pdf}.
+
+\section{Orphans and Widows}
+
+If at all possible, avoid \emph{orphans}\index{orphans} and
+\emph{widows}\index{widows} when typesetting your manuscript. Orphans and
+widows are single lines that become separated from the rest of their paragraph
+because of a page break. New paragraphs should not begin at the bottom of a
+page if there is room for only one line, and the final line of a paragraph
+should not stand alone at the top of a page.
+
+\section{Stacking}
+
+It is also wise to minimize “stacking”\index{stacking} in the text. Stacking
+occurs when two consecutive lines begin or end with the same word(s) or two
+consecutive lines end with a hyphen. Ths class will not place two hyphens on
+consecutive lines, but it's best to rewrite paragraphs where consecutive lines
+begin or end with the same word. You can highlight them (along with rivers) by
+placing
+\texttt{\string\PassOptionsToPackage\{draft,\,homeoarchy,\,rivers\}\{impnattypo\}}
+just before \verb|\documentclass{sblbook}| (the \texttt{luatex} engine is
+required).
+
+\chapter{Citations}
+
+\index{citations}%
+Citations should be referenced using \verb+\autocite+ or \verb+\autocites+ for
+single volume resources and \verb+\avolcite+ or \verb+\avolcites+ for
+multi-volume resources. These macros will place the citation in a footnote.
+\verb+\parencite+, \verb+\parencites+, \verb+\pvolcite+, and \verb+\pvolcites+
+place citations in parentheses.
+
+For example, citing a classical primary source \ptranscite{tacitus:ann};
+citing a lexicon \autocite[\foreignlanguage{polytonicgreek}{παρρησία}]{BDAG};
+citing volume 2 of a multi-volume commentary
+\avolcite{2}[125]{dahood:1965-1970}; citing two resources by the same author
+in a single footnote \autocites[504]{harrington:1970}[241]{harrington:1986};
+citing a resource for the second time \autocite[505]{harrington:1970}; citing
+an article in an edited collection \autocite{collins:1986}; citing another
+article in the same edited collection \autocite{attridge:1986}. Citing an
+author in the main body of the text can be done using \verb+\citeauthor+,
+e.g., \citeauthor{scott+etal:1993} and \citeauthor{robinson+koester:1971}
+\autocite[See][]{scott+etal:1993,robinson+koester:1971}.
+
+\chapter{Greek and Hebrew}
+
+I strongly recommend using the \texttt{luatex} engine for multilingual work,
+especially for right-to-left languages. Inline Greek and Hebrew need to be
+marked up with \texttt{xetex} and \texttt{pdftex}. With \texttt{pdftex} Hebrew
+pointing support is limited and cantillation marks are not supported at all.
+\begin{quotation}
+  \selectlanguage{polytonicgreek}
+  Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος.
+  οὗτος ἦν ἐν ἀρχῇ πρὸς τὸν θεόν.
+  \foreignlanguage{american}{(\pibibleverse{John 1:1})}
+\end{quotation}
+\begin{quotation}
+  \selectlanguage{hebrew}
+  בּראשׁית בּרא אלהים את השּׁמים ואת הארץ׃ והארץ היתה תהוּ ובהוּ וחשׁך על־פּני תהום
+  ורוּח אלהים מרחפת על־פּני המּים׃
+  \foreignlanguage{american}{(\pibibleverse{Genesis 1:1-2})}
+\end{quotation}
+Inline Greek (\foreignlanguage{polytonicgreek}{Ἐν ἀρχῇ}) and Hebrew
+(\foreignlanguage{hebrew}{בּראשׁית}) are also possible.\footnote{Bible
+references in footnotes, e.g., \pibibleverse{Deuteronomy 6:4} and
+\pibibleverse{1 Peter 3:18} should appear in the index with their note
+number.}
+
+\appendix
+
+\chapter{Appendix Title}
+
+\index{appendices}%
+Each appendix should have a number and a title, unless there is only one
+appendix, in which case the appendix does not need a number. Every appendix
+requires a heading, so if you are including a preexisting document you will
+need to type a heading (i.e., the appendix number and title) on that document
+so that it conforms to your numbered appendices.
+
+An appendix is formatted like the first page of a chapter. Locate page numbers
+at the bottom center of the first page of each appendix and at the top right
+corner of subsequent pages. If the appendix is already numbered, put those
+page numbers in square brackets. Page numbering for the appendices is
+consecutive with the rest of the book.
+
+Margins for the appendices should be the same as the rest of the book. You
+may need to reduce the content of the appendix to fit the margins.
+
+\backmatter
+
+\nocite{NIDNTT, Jastrow, DMBI, mclay:2006, oday:intertextuality, rad:1990}
+
+\printbibliography[heading=bibintoc]
+
+\index{block quotations|see{quotations}}
+\index{copyright page|see{front matter}}
+\index{dedication|see{front matter}}
+\index{epigraph|see{front matter}}
+\index{folio|see{footer}}
+\index{half-title page|see{front matter}}
+\index{series page|see{front matter}}
+\index{title page|see{front matter}}
+
+\index{headers|seealso{running heads}}
+\index{running heads|seealso{headers}}
+\index{recto|seealso{verso}}
+\index{verso|seealso{recto}}
+
+\SBLPrintIndices
+
+\end{document}
+

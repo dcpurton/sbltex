@@ -1,0 +1,38 @@
+\DocumentMetadata{
+  lang=en,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f,
+  tagging=on
+}
+\documentclass{sblbook}
+\def\pdfmapfile#1{}
+\input{regression-test}
+\begin{document}
+\START
+\showoutput
+
+\part{This is a part}
+
+\chapter{Font Selection}
+
+\section{This Is an Example of an A-Level Heading}
+
+\subsection{This Is an Example of a B-Level Heading}
+
+\subsubsection{This Is an Example of a C-Level Heading}
+
+Which runs into its paragraph.
+
+\section{This Is an Example of an A-Level Heading}
+
+This is a paragraph.
+
+\subsection{This Is an Example of a B-Level Heading}
+
+This is a paragraph.
+
+\subsubsection{This Is an Example of a C-Level Heading}
+
+Which runs into its paragraph.
+
+\end{document}
