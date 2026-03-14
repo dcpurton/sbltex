@@ -618,30 +618,39 @@
   {
     \cs_set:Npn \section
       {
-        \hook_gput_code:nnn { para / end } { sblarticle }
-          { \dim_zero:N \hangindent }
+        \hook_gput_next_code:nnn { para / end }
+          {
+            \strut
+            \dim_zero:N \hangindent
+          }
         \@startsection { section } { 1 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \bfseries \centering }
       }
     \cs_set:Npn \subsection
       {
-        \hook_gput_code:nnn { para / end } { sblarticle }
-          { \dim_zero:N \hangindent }
+        \hook_gput_next_code:nnn { para / end }
+          {
+            \strut
+            \dim_zero:N \hangindent
+          }
         \@startsection { subsection } { 2 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \centering }
       }
     \cs_set:Npn \subsubsection
       {
+        \hook_gput_next_code:nnn { para / end } { \strut }
         \@startsection { subsubsection } { 3 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \bfseries \itshape }
       }
     \cs_set:Npn \paragraph
       {
+        \hook_gput_next_code:nnn { para / end } { \strut }
         \@startsection { paragraph } { 4 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize }
       }
     \cs_set:Npn \subparagraph
       {
+        \hook_gput_next_code:nnn { para / end } { \strut }
         \@startsection { subparagraph } { 5 } { 0pt } { -37pt } { -1em }
           { \singlespacing \normalfont \normalsize \bfseries }
       }
@@ -858,6 +867,7 @@
             }
           \singlespacing
           \MakeUppercase {#2}
+          \strut
           \markboth { } { }
           \par
         \group_end:
@@ -878,6 +888,7 @@
           \normalfont
           \singlespacing
           \MakeUppercase {#1}
+          \strut
           \par
         \group_end:
         \nobreak
