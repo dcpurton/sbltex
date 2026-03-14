@@ -94,9 +94,9 @@
 %   \item \pkg{sblfonts} (with \pkg{fontspec}, \pkg{fontenc} and \pkg{babel}),
 %     \pkg{biblatex-sbl} (with \pkg{biblatex})
 %   \item \pkg{csquotes}, \pkg{geometry}, \pkg{setspace}, \pkg{ragged2e},
-%     \pkg{fancyhdr}, \pkg{caption}
-%   \item When \cs{DocumentMetadata} is not in use: \pkg{footmisc},
-%     \pkg{titlesec}, \pkg{titletoc}
+%     \pkg{fancyhdr}
+%   \item When \cs{DocumentMetadata} is not in use: \pkg{caption},
+%     \pkg{footmisc}, \pkg{titlesec}, \pkg{titletoc}
 % \end{itemize}
 %
 % \subsection{Bug Reports and Feature Requests}
@@ -421,7 +421,8 @@
 % \subsection{Captions}
 %
 %    \begin{macrocode}
-\RequirePackage [ skip = 12pt ] { caption }
+\skip_set:Nn \abovecaptionskip { 6pt }
+\skip_set:Nn \belowcaptionskip { 6pt }
 \cs_set:Npn \thefigure
   {
     \arabic { figure }
@@ -432,6 +433,21 @@
   }
 \counterwithout { figure } { chapter }
 \counterwithout { table } { chapter }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+  {
+    \NewSocketPlug { caption / label } { sblreport }
+     {
+       \small
+       #1:~
+     }
+    \AssignSocketPlug { caption / label } { sblreport }
+  }
+  {
+    \RequirePackage [ font = small , skip = 6pt ] { caption }
+  }
 %    \end{macrocode}
 %
 % \subsection{Block quotes}
