@@ -201,51 +201,54 @@
 %     biblatex = \marg{arguments}\hfill Default: \{style=sbl, language=auto, autolang=hyphen\}
 %   \end{syntax}
 %   These options are passed to the \pkg{biblatex} package.
-%
-%   See the \pkg{biblatex-sbl} package documentation for a full description of
-%   supported options and usage.
 % \end{function}
+%
+% See the \pkg{biblatex-sbl} package documentation for a full description of
+% supported options and usage.
 %
 % \begin{function}{sblfonts}
 %   \begin{syntax}
 %     sblfonts = \marg{arguments}
 %   \end{syntax}
-%   Options to pass to the \pkg{sblfonts} package. The defaults depend on
-%   whether the engine in use is 8bit or Unicode:
-%   \begin{description}
-%     \item[8bit defaults:] \mbox{}\\
-%       |{|\\
-%       \strut\quad |mainfont=Baskervaldx,|\\
-%       \strut\quad |grfont=Alegreya-LF,|\\
-%       \strut\quad |hefont=frank|\\
-%       |}|
-%     \item[Unicode defaults:] \mbox{}\\
-%       |{|\\
-%       \strut\quad |mainfont=Baskervaldx,|\\
-%       \strut\quad |mainfontoptions={Extension=.otf, UprightFont=*-Reg,|\\
-%       \strut\qquad |ItalicFont=*-Ita, BoldFont=*-Bol,|\\
-%       \strut\qquad |BoldItalicFont=*-BolIta},|\\
-%       \strut\quad |sblfonts=true|\\
-%       |}|
-%   \end{description}
-%   Note that you will need to download and install the SBL fonts yourself from
-%   \url{https://www.sbl-site.org/resources/fonts/}.
-%
-%   See the \pkg{sblfonts} package documentation for a full description of
-%   supported options and usage.
+%   Options to pass to the \pkg{sblfonts} package.
 % \end{function}
+%
+% The defaults depend on whether the engine in use is 8bit or Unicode:
+% \begin{description}
+%   \item[8bit defaults:] \mbox{}\\
+%     |{|\\
+%     \strut\quad |mainfont=Baskervaldx,|\\
+%     \strut\quad |grfont=Alegreya-LF,|\\
+%     \strut\quad |hefont=frank|\\
+%     |}|
+%   \item[Unicode defaults:] \mbox{}\\
+%     |{|\\
+%     \strut\quad |mainfont=Baskervaldx,|\\
+%     \strut\quad |mainfontoptions={Extension=.otf, UprightFont=*-Reg,|\\
+%     \strut\qquad |ItalicFont=*-Ita, BoldFont=*-Bol,|\\
+%     \strut\qquad |BoldItalicFont=*-BolIta},|\\
+%     \strut\quad |sblfonts=true|\\
+%     |}|
+% \end{description}
+% Note that you will need to download and install the SBL fonts yourself from
+% \url{https://www.sbl-site.org/resources/fonts/}.
+%
+% See the \pkg{sblfonts} package documentation for a full description of
+% supported options and usage.
 %
 % \begin{function}{sblidx}
 %   \begin{syntax}
 %     sblidx = \marg{arguments}\hfill Default: \emph{Empty}
 %   \end{syntax}
-%   These options are passed to the \pkg{sblidx} package. Note that the
-%   \pkg{sblidx} package is only loaded if at least one of |ancient sources|,
-%   |modern authors| or |subject| is passed to the |sblidx| option.
-%
-%   See the \pkg{sblidx} package documentation for a full description of
-%   supported options and usage.
+%   These options are passed to the \pkg{sblidx} package.
 % \end{function}
+%
+% Note that the \pkg{sblidx} package is only loaded if at least one of
+% |ancient sources|, |modern authors| or |subject| is passed to the |sblidx|
+% option.
+%
+% See the \pkg{sblidx} package documentation for a full description of
+% supported options and usage.
 %
 % \begin{function}{trim}
 %   \begin{syntax}
