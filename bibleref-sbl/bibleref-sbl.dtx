@@ -52,10 +52,10 @@
 %   The \pkg{bibleref-sbl} package extends the \pkg{bibleref} package to
 %   support Bible book names as specified by the \emph{Society of Biblical
 %   Literature Handbook of Style}.\footnote{\emph{The SBL Handbook of Style:
-%   For Biblical Studies and Related Disciplines}, 2nd ed.\@ (Atlanta: SBL
-%   Press, 2014).} This includes adjustment of abbreviations, addition of
-%   extra Deuterocanonical books, an interface for acceptable options and
-%   correct index sorting.
+%   For Biblical Studies and Related Disciplines}, 2nd ed.\@ (SBL Press,
+%   2014).} This includes adjustment of abbreviations, addition of extra
+%   Deuterocanonical books, an interface for acceptable options and correct
+%   index sorting.
 % \end{abstract}
 %
 % \tableofcontents
@@ -186,7 +186,15 @@
 %   respectively.
 % \end{macro}
 %
+% \begin{macro}{\pibible}
+%   The \pkg{bibleref-parse} package is missing this function which is
+%   analogous to the \pkg{bibleref} \cs{ibible} function. This package adds it
+%   for completeness and consistency.
+% \end{macro}
+%
 % \section{Supported Book Names}
+%
+% \enlargethispage{1ex}
 %
 % \subsection{\brsblot}
 %
@@ -371,11 +379,9 @@ delim_2 "\\quad\\hfill"
   initsep=0pt plus 2pt]{idxlayout}
 \makeindex[name=\jobname-ancient-sources,
   title=Ancient Souces Index, options=-s \jobname.ist -q]
-
 \usepackage{bibleref-sbl}
 \renewcommand{\biblerefindex}{%
   \index[\jobname-ancient-sources]}
-
 \newcommand*{\idxn}[2]{#2 n.~#1}
 \newcommand*{\idxnn}[2]{#2 nn.~#1}
 
@@ -506,6 +512,27 @@ delim_2 "\\quad\\hfill"
        \brp@convert
        \let\brp@do\iBibleverse
        \brp@brlist}}
+    {}
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\pibible}
+%
+%   If \pkg{bibleref-parse} is loaded, ensure that \cs{pibible} is defined.
+%   This function, which is analogous to the \pkg{bibleref} \cs{ibible}
+%   function is missing.
+%
+%    \begin{macrocode}
+\AtEndPreamble{
+  \@ifpackageloaded{bibleref-parse}
+    {\@ifundefined{pibible}
+       {\newcommand{\pibible}[2][]{%
+          \brp@parse[#1]{#2}%
+          \brp@convert
+          \let\brp@do\ibible
+          \brp@brlist}}
+       {}}
     {}
 }
 %    \end{macrocode}

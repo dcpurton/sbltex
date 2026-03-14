@@ -1,0 +1,15 @@
+\documentclass{article}
+\input{regression-test}
+\usepackage{imakeidx}
+\makeindex
+\usepackage{bibleref-parse}
+\usepackage{bibleref-sbl}
+\pagestyle{empty}
+\raggedright
+\begin{document}
+\START
+\showoutput
+Filler text.
+\pibible{Gen 1:1}
+\printindex
+\end{document}
