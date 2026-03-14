@@ -4,5 +4,8 @@ bundle = "sbltex"
 modules = {
   "bibleref-sbl",
   "sblfonts",
-  "sblidx"
+  "sblidx",
+  "sblarticle",
+  "sblreport",
+  "sblbook"
 }
