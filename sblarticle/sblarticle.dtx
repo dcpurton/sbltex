@@ -843,6 +843,11 @@
       {
         \@dottedtocline { 5 } { 5em } { 0em }
       }
+    \cs_set_nopar:Npn \l@figure
+      {
+        \@dottedtocline { 1 } { 0em } { 0em }
+      }
+    \cs_set_eq:NN \l@table \@figure
 %    \end{macrocode}
 %
 % Redefine \cs{@part} and \cs{@spart} to format major headings.
@@ -936,7 +941,7 @@
 %    \begin{macrocode}
     \titlecontents { figure }
       [ 2em ]
-      { \hspace* { 2em } \filright }
+      { \singlespacing \filright }
       {
         \@@_hyperlink:nn
           { \Hy@tocdestname }
@@ -946,7 +951,7 @@
       { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
     \titlecontents { table }
       [ 2em ]
-      { \hspace* { 2em } \filright }
+      { \singlespacing \filright }
       {
         \@@_hyperlink:nn
           { \Hy@tocdestname }

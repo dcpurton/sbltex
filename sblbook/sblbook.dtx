@@ -1065,8 +1065,11 @@
       {
         \@dottedtocline { 5 } { 13.5em } { 0em }
       }
-    \cs_set_eq:NN \l@figure \l@chapter
-    \cs_set_eq:NN \l@table \l@chapter
+    \cs_set_nopar:Npn \l@figure
+      {
+        \@dottedtocline { 0 } { 0em } { 2em }
+      }
+    \cs_set_eq:NN \l@table \l@figure
 %    \end{macrocode}
 %
 % Redefine \cs{@chapter}, \cs{@schapter}, \cs{@part} and \cs{@spart} to format

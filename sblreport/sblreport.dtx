@@ -884,6 +884,11 @@
       {
         \@dottedtocline { 5 } { 5em } { 0em }
       }
+    \cs_set_nopar:Npn \l@figure
+      {
+        \@dottedtocline { 1 } { 0em } { 0em }
+      }
+    \cs_set_eq:NN \l@table \l@figure
 %    \end{macrocode}
 %
 % Redefine \cs{@chapter} and \cs{@schapter} to format chapter headings.
@@ -970,22 +975,22 @@
 %
 %    \begin{macrocode}
     \titlecontents { figure }
-      [ 2em ]
-      { \hspace* { 2em } \filright }
+      [ 0pt ]
+      { \singlepacing \filright }
       {
         \@@_hyperlink:nn
           { \Hy@tocdestname }
-          { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+          { \makebox [ 2em ] [ r ] { \thecontentslabel . \enspace } }
       }
       { }
       { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
     \titlecontents { table }
-      [ 2em ]
-      { \hspace* { 2em } \filright }
+      [ 0pt ]
+      { \singlespacing \filright }
       {
         \@@_hyperlink:nn
           { \Hy@tocdestname }
-          { \makebox [ 2em ] [ l ] { \thecontentslabel . \enspace } }
+          { \makebox [ 2em ] [ r ] { \thecontentslabel . \enspace } }
       }
       { }
       { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
