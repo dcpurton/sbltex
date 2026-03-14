@@ -31,7 +31,4 @@ version 2005/12/01 or later.
 
 This work is "maintained" (as per the LPPL maintenance status)
 by David Purton.
-
-This work consists of the files bibleref-sbl.ins, bibleref-sbl.dtx,
-README.md, and the derived files bibleref-sbl.sty and bibleref-sbl.pdf
 ```

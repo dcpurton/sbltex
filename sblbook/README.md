@@ -1,14 +1,14 @@
-# sblidx – A LaTeX style for Society of Biblical Literature indices
+# sblbook – A LaTeX class for producing SBL print ready books
 
-The `sblidx` package provides a LaTeX style for creating indices in line with
-the requirements of the Society of Biblical Literature. Indices for ancient
-sources (via `bibleref-sbl`), modern authors (via `biblatex-sbl`) and subjects
-are supported. Number ranges are compressed and indexed items in notes are
-indicated using n. and nn.
+The `sblbook` class provides a LaTeX class producing a print ready book
+conforming to the style required by the Society of Biblical Literature. It
+depends on `sblfonts` for Greek and Hebrew font and language support,
+`biblatex-sbl` for referencing, `sblidx` for indexing and `bibleref-sbl` for
+Scripture references.
 
 ## Installation from TeXLive or MiKTeX
 
-The `sblidx` package is distributed as part of the `sbltex` bundle and is in
+The `sblbook` class is distributed as part of the `sbltex` bundle and is in
 TeXLive and MiKTeX. This bundle can be installed in the usual way through your
 distribution. E.g., in TeXLive by running:
 

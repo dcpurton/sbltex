@@ -1,4 +1,4 @@
-# sblfonts – Font and language set up for Society of Biblical Literature style documents
+#sblfonts – Font and language set up for Society of Biblical Literature style documents
 
 The `sblfonts` package provides a LaTeX style for setting up font and language
 support for documents conforming to the requirements of the Society of
@@ -31,7 +31,4 @@ version 2005/12/01 or later.
 
 This work is "maintained" (as per the LPPL maintenance status)
 by David Purton.
-
-This work consists of the files sblidx.ins, sblidx.dtx, README.md,
-and the derived files sblidx.sty, sblidx.ist and sblidx.pdf
 ```
