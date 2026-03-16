@@ -3,6 +3,7 @@ build
 *.aux
 *.log
 sblidx.pdf
+sblfonts.pdf
 bibleref-sbl.pdf
 sblarticle.pdf
 sbltex-termpaper.pdf
