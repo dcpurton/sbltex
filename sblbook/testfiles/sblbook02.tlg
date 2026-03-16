@@ -28,7 +28,7 @@ Completed box being shipped out [1]
 ..\glue 12.0
 ..\glue(\lineskip) 0.0
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
-...\vbox(494.025+0.0)x325.215, glue set 214.84421fil, direction TLT
+...\vbox(494.025+0.0)x325.215, glue set 212.24496fil, direction TLT
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\write1{\babel@aux{english}{}}
@@ -42,8 +42,8 @@ Completed box being shipped out [1]
 ....\marks2{\__mark_value:nn {2}{}}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 8.352
-....\hbox(9.648+0.2016)x325.215, glue set 90.80914fil, direction TLT
+....\glue(\baselineskip) 5.40005
+....\hbox(12.59995+5.40005)x325.215, glue set 90.80914fil, direction TLT
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\localpar
 ......\localinterlinepenalty=0
@@ -90,6 +90,9 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/sc/14.4 󰀜
 .....\kern-0.5328 (font)
 .....\TU/Baskervaldx(0)/m/sc/14.4 󰀞
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\rule(12.59995+5.40005)x0.0
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -97,8 +100,6 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ...\glue 0.0 plus 1.0fil minus 1.0fil
-..\pdfliteral page <lua data reference ...>
-..\pdfliteral page <lua data reference ...>
 ..\pdflinkstate 1
 ..\glue(\baselineskip) 12.0
 ..\hbox(0.0+0.0)x325.215, direction TLT
