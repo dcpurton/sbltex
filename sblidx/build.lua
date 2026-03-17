@@ -20,3 +20,6 @@ function runtest_tasks(name, run)
       return ""
   end
 end
+
+-- Load the common build code
+dofile(maindir .. "/build-common.lua")

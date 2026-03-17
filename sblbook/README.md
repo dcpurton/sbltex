@@ -1,20 +1,27 @@
-# sblbook – A LaTeX class for producing SBL print ready books
+# sblbook – A LaTeX class for SBL style print ready books
 
-The `sblbook` class provides a LaTeX class producing a print ready book
-conforming to the style required by the Society of Biblical Literature. It
-depends on `sblfonts` for Greek and Hebrew font and language support,
-`biblatex-sbl` for referencing, `sblidx` for indexing and `bibleref-sbl` for
-Scripture references.
+[`sblbook`](https://github.com/dcpurton/sbltex/tree/main/sblbook)
+provides a LaTeX class for producing articles and papers conforming to the
+style required by the Society of Biblical Literature. It depends on
+[`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts) for
+language support, [`biblatex-sbl`](https://github.com/dcpurton/biblatex-sbl)
+for referencing,
+[`sblidx`](https://github.com/dcpurton/sbltex/tree/main/sblidx) for indexing
+and
+[`bibleref-sbl`](https://github.com/dcpurton/sbltex/tree/main/bibleref-sbl)
+for Scripture references.
 
-## Installation from TeXLive or MiKTeX
+## Installation
 
-The `sblbook` class is distributed as part of the `sbltex` bundle and is in
-TeXLive and MiKTeX. This bundle can be installed in the usual way through your
+The [`sblbook`](https://github.com/dcpurton/sbltex/tree/main/sblbook) class
+is in TeXLive and MiKTeX and can be installed in the usual way through your
 distribution. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install sblbook
 ```
+
+For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
 ## Licence
 

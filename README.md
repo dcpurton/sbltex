@@ -1,20 +1,42 @@
-# sbltex – A bundle of LaTeX styles for Society of Biblical Literature style documents
+# sbltex – A bundle of LaTeX styles for SBL style documents
 
-The `sbltex` bundle provides a set of LaTeX packages for typesetting documents
-in line with the requirements of the Society of Biblical Literature. The
-bundle includes class files for producing papers (`sblarticle`), theses
-(`sblreport`), and books (`sblbook`). Bible references are supported using the
-`bibleref-sbl` package and indices are supported using the `sblidx` package.
-Bibliographic references are supported using the `biblatex-sbl` package which
-is distributed separately.
+The `sbltex` bundle provides a set of LaTeX style files for typesetting
+documents in line with the requirements of the Society of Biblical Literature.
+
+The bundle includes:
+
+- [`bibleref-sbl`](https://github.com/dcpurton/sbltex/tree/main/bibleref-sbl)
+  — SBL style for the
+  [`bibleref`](https://ctan.org/pkg/bibleref) and
+  [`bibleref-parse`](https://ctan.org/pkg/bibleref-parse) LaTeX packages
+- [`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts) — Font
+  and language set up for SBL style documents
+- [`sblidx`](https://github.com/dcpurton/sbltex/tree/main/sblidx) — A LaTeX
+  package for SBL style indices
+- [`sblarticle`](https://github.com/dcpurton/sbltex/tree/main/sblarticle) — A
+  LaTeX class for SBL style articles and papers
+- [`sblreport`](https://github.com/dcpurton/sbltex/tree/main/sblreport) — A
+  LaTeX class for SBL style theses
+- [`sblbook`](https://github.com/dcpurton/sbltex/tree/main/sblbook) — A LaTeX
+  class for SBL print ready books
+
+Bibliographic references are supported using the
+[`biblatex-sbl`](https://github.com/dcpurton/biblatex-sbl) package which
+implements SBL style for the [`biblatex`](https://www.ctan.org/pkg/biblatex)
+package.
 
 ## Installation from TeXLive or MiKTeX
 
-The `sbltex` bundle is in TeXLive and MiKTeX and can be installed in the
-usual way through your distribution. E.g., in TeXLive by running:
+The `sbltex` bundle packages and classes are distributed separately in TeXLive
+and MiKTeX and can be installed in the usual way. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install bibleref-sbl
+tlmgr install sblfonts
+tlmgr install sblidx
+tlmgr install sblarticle
+tlmgr install sblreport
+tlmgr install sblbook
 ```
 
 ## Installation from Git Source
@@ -27,8 +49,8 @@ Clone the git repository using:
 git clone https://github.com/dcpurton/sbltex.git
 ```
 
-Change to the `sbltex` directory, and then the style files and documentation
-can be installed by running:
+Change to the `sbltex` directory, and then all package, class and
+documentation files can be installed by running:
 
 ```
 l3build install --full

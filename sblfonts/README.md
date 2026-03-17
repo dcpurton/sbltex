@@ -1,20 +1,22 @@
-#sblfonts – Font and language set up for Society of Biblical Literature style documents
+# sblfonts – Font and language set up for SBL style documents
 
-The `sblfonts` package provides a LaTeX style for setting up font and language
-support for documents conforming to the requirements of the Society of
-Biblical Literature. Greek and Hebrew languages are supported using the SBL
-fonts. If these fonts are not available then fonts included with TeXLive are
-used.
+[`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts) provides a
+LaTeX package for setting up font and language support for documents
+conforming to the requirements of the Society of Biblical Literature. Greek
+and Hebrew languages are supported using the SBL fonts. If these fonts are not
+available then fonts included with TeXLive are used.
 
-## Installation from TeXLive or MiKTeX
+## Installation
 
-The `sblfonts` package is distributed as part of the `sbltex` bundle and is in
-TeXLive and MiKTeX. This bundle can be installed in the usual way through your
-distribution. E.g., in TeXLive by running:
+The [`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts)
+package is in TeXLive and MiKTeX and can be installed in the usual way through
+your distribution. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install sblfonts
 ```
+
+For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
 ## Licence
 

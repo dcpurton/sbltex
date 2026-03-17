@@ -1,20 +1,25 @@
-# sblidx – A LaTeX style for Society of Biblical Literature indices
+# sblidx – A LaTeX package for SBL style indices
 
-The `sblidx` package provides a LaTeX style for creating indices in line with
-the requirements of the Society of Biblical Literature. Indices for ancient
-sources (via `bibleref-sbl`), modern authors (via `biblatex-sbl`) and subjects
-are supported. Number ranges are compressed and indexed items in notes are
+[`sblidx`](https://github.com/dcpurton/sbltex/tree/main/sblidx) package
+provides a LaTeX package for creating indices in line with the requirements of
+the Society of Biblical Literature. Indices for ancient sources (via
+[`bibleref-sbl`](https://github.com/dcpurton/sbltex/tree/main/bibleref-sbl)),
+modern authors (via
+[`biblatex-sbl`](https://github.com/dcpurton/biblatex-sbl)) and subjects are
+supported. Number ranges are compressed and indexed items in notes are
 indicated using n. and nn.
 
-## Installation from TeXLive or MiKTeX
+## Installation
 
-The `sblidx` package is distributed as part of the `sbltex` bundle and is in
-TeXLive and MiKTeX. This bundle can be installed in the usual way through your
+The [`sblidx`](https://github.com/dcpurton/sbltex/tree/main/sblidx) package is
+in TeXLive and MiKTeX and can be installed in the usual way through your
 distribution. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install sblidx
 ```
+
+For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
 ## Licence
 

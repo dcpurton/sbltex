@@ -26,3 +26,6 @@ function typeset_demo_tasks()
 
   return 0
 end
+
+-- Load the common build code
+dofile(maindir .. "/build-common.lua")

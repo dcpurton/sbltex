@@ -1,19 +1,23 @@
-# sblarticle – A LaTeX class for producing SBL style articles and papers
+# sblarticle – A LaTeX class for SBL style articles and papers
 
-The `sblarticle` class provides a LaTeX class producing articles and papers
-conforming to the style required by the Society of Biblical Literature. It
-depends on `sblfonts` for Greek and Hebrew font and language support and
-`biblatex-sbl` for referencing.
+[`sblarticle`](https://github.com/dcpurton/sbltex/tree/main/sblarticle)
+provides a LaTeX class for producing articles and papers conforming to the
+style required by the Society of Biblical Literature. It depends on
+[`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts) for
+language support and
+[`biblatex-sbl`](https://github.com/dcpurton/biblatex-sbl) for referencing.
 
-## Installation from TeXLive or MiKTeX
+## Installation
 
-The `sblarticle` class is distributed as part of the `sbltex` bundle and is in
-TeXLive and MiKTeX. This bundle can be installed in the usual way through your
-distribution. E.g., in TeXLive by running:
+The [`sblarticle`](https://github.com/dcpurton/sbltex/tree/main/sblarticle)
+class is in TeXLive and MiKTeX and can be installed in the usual way through
+your distribution. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install sblarticle
 ```
+
+For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
 ## Licence
 

@@ -1,19 +1,23 @@
-# sblreport – A LaTeX class for producing SBL style theses
+# sblreport – A LaTeX class for SBL style theses
 
-The `sblreport` class provides a LaTeX class producing theses conforming to
-the style required by the Society of Biblical Literature. It depends on
-`sblfonts` for Greek and Hebrew font and language support and `biblatex-sbl`
-for referencing.
+[`sblreport`](https://github.com/dcpurton/sbltex/tree/main/sblreport) provides
+a LaTeX class for producing theses conforming to the style required by the
+Society of Biblical Literature. It depends on
+[`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts) for
+language support and
+[`biblatex-sbl`](https://github.com/dcpurton/biblatex-sbl) for referencing.
 
-## Installation from TeXLive or MiKTeX
+## Installation
 
-The `sblreport` class is distributed as part of the `sbltex` bundle and is in
-TeXLive and MiKTeX. This bundle can be installed in the usual way through your
-distribution. E.g., in TeXLive by running:
+The [`sblreport`](https://github.com/dcpurton/sbltex/tree/main/sblreport)
+class is in TeXLive and MiKTeX and can be installed in the usual way through
+your distribution. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install sblreport
 ```
+
+For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
 ## Licence
 

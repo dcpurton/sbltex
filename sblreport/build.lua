@@ -14,3 +14,6 @@ function typeset_demo_tasks()
   typesetexe = "lualatex"
   return 0
 end
+
+-- Load the common build code
+dofile(maindir .. "/build-common.lua")

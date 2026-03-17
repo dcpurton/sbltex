@@ -1,20 +1,24 @@
-# bibleref-sbl — Society of Biblical Literature Style for the `bibleref` LaTeX Package
+# bibleref-sbl — SBL style for the bibleref and bibleref-parse LaTeX packages
 
-The `bibleref-sbl` package extends the `bibleref` package to support Bible
-book names as specified by the *Society of Biblical Literature Handbook of
-Style*.  This includes adjustment of abbreviations, addition of extra
-Deuterocanonical books, an interface for acceptable options and correct index
-sorting.
+[`bibleref-sbl`](https://github.com/dcpurton/sbltex/tree/main/bibleref-sbl)
+extends the [`bibleref`](https://www.ctan.org/pkg/bibleref) and
+[`bibleref-parse`](https://www.ctan.org/pkg/bibleref-parse) packages to
+support Bible book names as specified by the Society of Biblical Literature.
+This includes adjustment of abbreviations, addition of extra Deuterocanonical
+books, an interface for acceptable options and correct index sorting.
 
-## Installation from TeXLive or MiKTeX
+## Installation
 
-The `bibleref-sbl` package is distributed as part of the `sbltex` bundle and
-is in TeXLive and MiKTeX. This bundle can be installed in the usual way
-through your distribution. E.g., in TeXLive by running:
+The
+[`bibleref-sbl`](https://github.com/dcpurton/sbltex/tree/main/bibleref-sbl)
+package is in TeXLive and MiKTeX and can be installed in the usual way through
+your distribution. E.g., in TeXLive by running:
 
 ```
-tlmgr install sbltex
+tlmgr install bibleref-sbl
 ```
+
+For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
 ## Licence
 
