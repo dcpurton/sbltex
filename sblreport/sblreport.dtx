@@ -682,7 +682,7 @@
   {
     \cs_set:Npn \section
       {
-        \hook_gput_next_code:nnn { para / end }
+        \hook_gput_next_code:nn { para / end }
           {
             \strut
             \dim_zero:N \hangindent
@@ -692,7 +692,7 @@
       }
     \cs_set:Npn \subsection
       {
-        \hook_gput_next_code:nnn { para / end }
+        \hook_gput_next_code:nn { para / end }
           {
             \strut
             \dim_zero:N \hangindent
@@ -702,19 +702,19 @@
       }
     \cs_set:Npn \subsubsection
       {
-        \hook_gput_next_code:nnn { para / end } { \strut }
+        \hook_gput_next_code:nn { para / end } { \strut }
         \@startsection { subsubsection } { 3 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \bfseries \itshape }
       }
     \cs_set:Npn \paragraph
       {
-        \hook_gput_next_code:nnn { para / end } { \strut }
+        \hook_gput_next_code:nn { para / end } { \strut }
         \@startsection { paragraph } { 4 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize }
       }
     \cs_set:Npn \subparagraph
       {
-        \hook_gput_next_code:nnn { para / end } { \strut }
+        \hook_gput_next_code:nn { para / end } { \strut }
         \@startsection { subparagraph } { 5 } { 0pt } { -37pt } { -1em }
           { \singlespacing \normalfont \normalsize \bfseries }
       }
