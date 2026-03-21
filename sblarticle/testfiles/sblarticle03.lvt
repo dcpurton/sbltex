@@ -1,0 +1,44 @@
+\documentclass{sblarticle}
+\input{regression-test}
+\pagestyle{empty}
+\begin{document}
+\START
+\showoutput
+\part{This Is an Example of an A-Level Heading}
+
+\section{This Is an Example of an B-Level Heading}
+
+\subsection{This Is an Example of a C-Level Heading}
+
+\subsubsection{This Is an Example of a D-Level Heading}
+
+\paragraph{This Is an Example of a E-Level Heading}
+
+\subparagraph{This Is an Example of a F-Level Heading}
+
+Which runs into its paragraph.
+
+\part{This Is an Example of an A-Level Heading}
+
+This is a paragraph.
+
+\section{This Is an Example of a B-Level Heading}
+
+This is a paragraph.
+
+\subsection{This Is an Example of a C-Level Heading}
+
+This is a paragraph.
+
+\subsubsection{This Is an Example of a D-Level Heading}
+
+This is a paragraph.
+
+\paragraph{This Is an Example of a E-Level Heading}
+
+This is a paragraph.
+
+\subparagraph{This Is an Example of a F-Level Heading}
+
+Which runs into its paragraph.
+\end{document}

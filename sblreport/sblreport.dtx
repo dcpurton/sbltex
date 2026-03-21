@@ -674,6 +674,24 @@
 %
 % \subsection{Section titles}
 %
+% These two functions ensure consistent spacing after section headings whether
+% body paragraph text follows or another section heading follows.
+%
+%    \begin{macrocode}
+\cs_new_nopar:Nn \@@_before_head_correction:
+  {
+    \hook_gclear_next_code:n { para / before }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\cs_new_nopar:Nn \@@_after_head_correction:
+  {
+    \vspace* { -5.5pt }
+    \hook_gput_next_code:nn { para / before } { \vspace* { 5.5pt } }
+  }
+%    \end{macrocode}
+%
 % For documents using \cs{DocumentMetadata} use standard kernel commands to
 % redefine section headings, otherwise use the \pkg{titlesec} package. 
 %
@@ -683,40 +701,108 @@
     \cs_set:Npn \section
       {
         \hook_gput_next_code:nn { para / end }
-          {
-            \strut
-            \dim_zero:N \hangindent
-          }
+          { \dim_zero:N \hangindent }
+        \@@_before_head_correction:
+        \hook_gput_next_code:nn { para / after }
+          { \@@_after_head_correction: }
         \@startsection { section } { 1 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \bfseries \centering }
       }
     \cs_set:Npn \subsection
       {
         \hook_gput_next_code:nn { para / end }
-          {
-            \strut
-            \dim_zero:N \hangindent
-          }
+          { \dim_zero:N \hangindent }
+        \@@_before_head_correction:
+        \hook_gput_next_code:nn { para / after }
+          { \@@_after_head_correction: }
         \@startsection { subsection } { 2 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \centering }
       }
     \cs_set:Npn \subsubsection
       {
-        \hook_gput_next_code:nn { para / end } { \strut }
+        \@@_before_head_correction:
+        \hook_gput_next_code:nn { para / after }
+          { \@@_after_head_correction: }
         \@startsection { subsubsection } { 3 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize \bfseries \itshape }
       }
     \cs_set:Npn \paragraph
       {
+        \@@_before_head_correction:
         \hook_gput_next_code:nn { para / end } { \strut }
         \@startsection { paragraph } { 4 } { 0pt } { -37pt } { 1sp }
           { \singlespacing \normalfont \normalsize }
       }
     \cs_set:Npn \subparagraph
       {
-        \hook_gput_next_code:nn { para / end } { \strut }
         \@startsection { subparagraph } { 5 } { 0pt } { -37pt } { -1em }
           { \singlespacing \normalfont \normalsize \bfseries }
+      }
+%    \end{macrocode}
+%
+% Redefine \cs{@chapter} and \cs{@schapter} to format chapter headings.
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn \@chapter [#1]#2
+      {
+        \@@_if_page_numbering:nT { roman }
+          { \pagenumbering { arabic } }
+        \mode_leave_vertical:
+        \par
+        \addvspace { 37pt }
+        \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+          {
+            \refstepcounter { chapter }
+            \addcontentsline { toc } { chapter }
+              { \chaptername \space \thechapter : \enspace #1 }
+          }
+          {
+            \addcontentsline { toc } { chapter } {#1}
+          }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \int_compare:nNnT { \c@secnumdepth } > { -1 }
+            {
+              \MakeUppercase { \chaptername } \nobreakspace \thechapter
+              \par
+              \nobreak
+            }
+          \singlespacing
+          \MakeUppercase {#2}
+          \hook_gput_next_code:nn { para / after }
+            { \@@_after_head_correction: }
+          \markboth { } { }
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:n { 39pt }
+        \@afterheading
+      }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \cs_set_nopar:Npn  \@schapter #1
+      {
+        \mode_leave_vertical:
+        \par
+        \addvspace { 37pt }
+        \group_begin:
+          \dim_zero:N \parindent
+          \centering
+          \interlinepenalty 10000
+          \normalfont
+          \singlespacing
+          \MakeUppercase {#1}
+          \hook_gput_next_code:nn { para / after }
+            { \@@_after_head_correction: }
+          \par
+        \group_end:
+        \nobreak
+        \skip_vertical:n { 39pt }
+        \@afterheading
       }
   }
   {
@@ -724,7 +810,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-    \titlespacing* { \chapter }       { 0pt } { 37pt } { 24pt }
+    \titlespacing* { \chapter }       { 0pt } { 41pt } { 37pt }
     \titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
     \titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
     \titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
@@ -740,35 +826,51 @@
       {
         \@@_if_page_numbering:nT { roman }
           { \pagenumbering { arabic } }
-        \MakeUppercase \chaptername \space \thechapter
+        \MakeUppercase { \chaptername } \space \thechapter
       }
       { 12pt }
       { \MakeUppercase }
+      [ \@@_after_head_correction: ]
     \titleformat
       { \section }
       [ block ]
-      { \normalfont \normalsize \singlespacing \bfseries \filcenter }
+      {
+        \@@_before_head_correction:
+        \normalfont \normalsize \singlespacing \bfseries \filcenter
+      }
       { \thesection }
       { 0.5em }
       { }
+      [ \@@_after_head_correction: ]
     \titleformat
       { \subsection }
       [ block ]
-      { \normalfont \normalsize \singlespacing \filcenter }
+      {
+        \@@_before_head_correction:
+        \normalfont \normalsize \singlespacing \filcenter
+      }
       { \thesubsection }
       { 0.5em }
       { }
+      [ \@@_after_head_correction: ]
     \titleformat
       { \subsubsection }
       [ block ]
-      { \normalfont \normalsize \singlespacing \bfseries \itshape \filright }
+      {
+        \@@_before_head_correction:
+        \normalfont \normalsize \singlespacing \bfseries \itshape \filright
+      }
       { \thesubsubsection }
       { 0.5em }
       { }
+      [ \@@_after_head_correction: ]
     \titleformat
       { \paragraph }
       [ block ]
-      { \normalfont \normalsize \singlespacing \filright }
+      {
+        \@@_before_head_correction:
+        \normalfont \normalsize \singlespacing \filright
+      }
       { \theparagraph }
       { 0.5em }
       { }
@@ -898,68 +1000,6 @@
         \@dottedtocline { 1 } { 0em } { 0em }
       }
     \cs_set_eq:NN \l@table \l@figure
-%    \end{macrocode}
-%
-% Redefine \cs{@chapter} and \cs{@schapter} to format chapter headings.
-%
-%    \begin{macrocode}
-    \cs_set_nopar:Npn \@chapter [#1]#2
-      {
-        \@@_if_page_numbering:nT { roman }
-          { \pagenumbering { arabic } }
-        \mode_leave_vertical:
-        \par
-        \addvspace { 42pt }
-        \int_compare:nNnTF { \c@secnumdepth } > { -1 }
-          {
-            \refstepcounter { chapter }
-            \addcontentsline { toc } { chapter }
-              { \chaptername \space \thechapter : \enspace #1 }
-          }
-          {
-            \addcontentsline { toc } { chapter } {#1}
-          }
-        \group_begin:
-          \dim_zero:N \parindent
-          \centering
-          \interlinepenalty 10000
-          \normalfont
-          \int_compare:nNnT { \c@secnumdepth } > { -1 }
-            {
-              \MakeUppercase { \chaptername } \nobreakspace \thechapter
-              \par
-              \nobreak
-            }
-          \singlespacing
-          \MakeUppercase {#2}
-          \markboth { } { }
-          \par
-        \group_end:
-        \nobreak
-        \skip_vertical:N \baselineskip
-        \@afterheading
-      }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-    \cs_set_nopar:Npn  \@schapter #1
-      {
-        \mode_leave_vertical:
-        \par
-        \addvspace { 37pt }
-        \group_begin:
-          \dim_zero:N \parindent
-          \centering
-          \interlinepenalty 10000
-          \normalfont
-          \singlespacing
-          \MakeUppercase {#1}
-          \par
-        \group_end:
-        \nobreak
-        \skip_vertical:N \baselineskip
-        \@afterheading
-      }
   }
   {
     \RequirePackage { titletoc }
@@ -1072,6 +1112,8 @@
       {
         \cs_set_nopar:Npn \@chapter [##1]##2
           {
+            \mode_leave_vertical:
+            \par
             \addvspace { 37pt }
             \stepcounter { sblreport@appendix@count }
             \int_compare:nNnTF { \c@secnumdepth } > { -1 }
@@ -1113,11 +1155,13 @@
                 }
               \singlespacing
               \MakeUppercase {##2}
+              \hook_gput_next_code:nn { para / after }
+                { \@@_after_head_correction: }
               \markboth { } { }
               \par
             \group_end:
             \nobreak
-            \skip_vertical:N \baselineskip
+            \skip_vertical:n { 39pt }
             \@afterheading
           }
       }
