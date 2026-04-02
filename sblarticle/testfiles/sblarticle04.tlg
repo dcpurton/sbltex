@@ -1471,7 +1471,7 @@ Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                sblarticle04
 (biblatex)                and rerun LaTeX afterwards.
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~48 structure objects
+(tagpdf)             Writing out ~49 structure objects
 (tagpdf)             with ~25 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
