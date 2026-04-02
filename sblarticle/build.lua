@@ -7,7 +7,6 @@ checkengines = {"luatex"}
 checkdeps = {maindir .. "/sblfonts"}
 typesetdemofiles = {"sbltex-termpaper.tex"}
 typesetdeps = {maindir .. "/sblfonts"}
-typesetsuppfiles = {"sbltex.bib"}
 typesetexe = "pdflatex"
 
 function typeset_demo_tasks()

@@ -19,6 +19,9 @@ tlmgr install sblarticle
 
 For installation from GitHub, see https://github.com/dcpurton/sbltex.
 
+Note that the example paper, `sbltex-termpaper.tex`, needs `biblatex-sbl.bib`
+which is distributed in the `biblatex-sbl` package.
+
 ## Licence
 
 ```

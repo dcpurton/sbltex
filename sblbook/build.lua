@@ -15,7 +15,6 @@ typesetdeps = {
   maindir .. "/sblidx",
   maindir .. "/bibleref-sbl"
 }
-typesetsuppfiles = {"sbltex.bib"}
 typesetexe = "pdflatex"
 
 function typeset_demo_tasks()
