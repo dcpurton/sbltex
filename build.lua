@@ -10,3 +10,5 @@ modules = {
   "sblreport",
   "sblbook"
 }
+
+tagfiles = {"*.dtx", "README.md"}

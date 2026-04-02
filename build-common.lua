@@ -1,11 +1,13 @@
 -- common build code
 
 function update_tag(file, content, tagname, tagdate)
+  -- Update version in LaTeX package/class
   content = content:gsub(
     "(\\Provides%w+%s*%b{}%s*%[)%d%d%d%d%-%d%d%-%d%d%s+v[%d%.%a]+",
     "%1" .. tagdate .. " v" .. tagname
   )
 
+  -- Update version in Expl package/class
   content = content:gsub(
     "(\\ProvidesExpl%w+%s*%b{}%s*)(%b{})(%s*)(%b{})",
     function(prefix, _date, ws, _ver)
@@ -16,9 +18,29 @@ function update_tag(file, content, tagname, tagdate)
     end
   )
 
+  -- Update version in documentation
   content = content:gsub(
     "(\\date%{)%d%d%d%d%-%d%d%-%d%d%s+v[%d%.%a]+(%})",
     "%1" .. tagdate .. " v" .. tagname .. "%2"
+  )
+
+  -- Update single copyright year: if tagdate year is greater, convert to range
+  content = content:gsub(
+    "(Copyright %([Cc]%) )(%d%d%d%d)",
+    function(prefix, year)
+      local tagyear = tagdate:sub(1, 4)
+      if tagyear > year then
+        return prefix .. year .. "-" .. tagyear
+      else
+        return prefix .. year
+      end
+    end
+  )
+
+  -- Update end year in copyright range: Copyright (c) YYYY-YYYY
+  content = content:gsub(
+    "(Copyright %([Cc]%) %d%d%d%d%-)%d%d%d%d",
+    "%1" .. tagdate:sub(1, 4)
   )
 
   return content
