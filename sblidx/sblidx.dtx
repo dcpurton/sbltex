@@ -1370,8 +1370,12 @@ delim_t "}"
     \cs_if_eq:NNTF #2 \@@_empty_encap:
       {
         \tl_if_empty:NTF #1
-          { \int_set_eq:NN #3 \c_one_int }
-          { \int_set:Nn #3 { 2 } }
+          {
+            \int_set:Nn #3 { \c_one_int }
+          }
+          {
+            \int_set:Nn #3 { 2 }
+          }
       }
       { \int_zero:N #3 }
   }
@@ -1499,7 +1503,7 @@ delim_t "}"
     \seq_if_empty:NTF \l_tmpb_seq
       {
         \clist_set:Nn #2 {#1}
-        \int_gset_eq:NN \g_@@_status_code_int \c_one_int
+        \int_gset:Nn \g_@@_status_code_int { \c_one_int }
       }
       {
         \clist_clear:N #2
@@ -1552,7 +1556,9 @@ delim_t "}"
         \tl_set:Nn \l_tmpa_tl {#1}
       }
     \tl_if_empty:NTF \l_tmpa_tl
-      { \int_gset_eq:NN \g_@@_status_code_int \c_one_int }
+      {
+        \int_gset:Nn \g_@@_status_code_int { \c_one_int }
+      }
       {
         \clist_set:NV \l_tmpa_clist \l_tmpa_tl
         \clist_map_inline:Nn \l_tmpa_clist
@@ -1589,7 +1595,9 @@ delim_t "}"
     \seq_set_regex_extract_once:NNn
       \l_tmpa_seq \l_@@_page_encap_regex {#1}
     \seq_if_empty:NTF \l_tmpa_seq
-      { \int_gset_eq:NN \g_@@_status_code_int \c_one_int }
+      {
+        \int_gset:Nn \g_@@_status_code_int { \c_one_int }
+      }
       {
         \@@_range_to_clist:eN
           { \seq_item:Nn \l_tmpa_seq { 3 } }
@@ -1629,7 +1637,9 @@ delim_t "}"
     \seq_set_regex_extract_once:NNn
       \l_tmpa_seq \l_@@_see_also_regex {#1}
     \seq_if_empty:NTF \l_tmpa_seq
-      { \int_gset_eq:NN \g_@@_status_code_int \c_one_int }
+      {
+        \int_gset:Nn \g_@@_status_code_int { \c_one_int }
+      }
       {
         \int_incr:N \l_@@_see_also_int
         \seq_put_right:Ne \l_@@_page_data_seq
@@ -1660,7 +1670,9 @@ delim_t "}"
     \seq_set_regex_extract_once:NNn
       \l_tmpa_seq \l_@@_page_with_note_regex {#1}
     \seq_if_empty:NTF \l_tmpa_seq
-      { \int_gset_eq:NN \g_@@_status_code_int \c_one_int }
+      {
+        \int_gset:Nn \g_@@_status_code_int { \c_one_int }
+      }
       {
         \seq_put_right:Ne \l_@@_page_data_seq
           {
@@ -1691,7 +1703,9 @@ delim_t "}"
 \cs_new_protected:Nn \@@_consolidate_page_data:N
   {
     \keys_set:ne { sblidx / pagedata }
-      { \seq_item:Nn #1 { \c_one_int } }
+      {
+        \seq_item:Nn #1 { \c_one_int }
+      }
     \clist_set:NV \l_@@_pages_clist \l_@@_page_tl
     \clist_set:NV \l_@@_notes_clist \l_@@_note_tl
     \cs_set_eq:NN \@@_encap_previous: \@@_encap:
