@@ -1,7 +1,7 @@
 # sblbook – A LaTeX class for SBL style print ready books
 
 [`sblbook`](https://github.com/dcpurton/sbltex/tree/main/sblbook)
-provides a LaTeX class for producing articles and papers conforming to the
+provides a LaTeX class for producing print ready books conforming to the
 style required by the Society of Biblical Literature. It depends on
 [`sblfonts`](https://github.com/dcpurton/sbltex/tree/main/sblfonts) for
 language support, [`biblatex-sbl`](https://github.com/dcpurton/biblatex-sbl)
