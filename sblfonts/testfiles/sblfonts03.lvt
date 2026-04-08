@@ -1,6 +1,6 @@
 \documentclass{article}
 \input{regression-test}
-\usepackage[font=tempora, grfont=Alegreya-OsF, hefont=frank]{sblfonts}
+\usepackage[sblfonts]{sblfonts}
 \pagestyle{empty}
 \begin{document}
 \START

@@ -159,7 +159,17 @@
 %   supports the LGR encoding. For Unicode engines this should be a
 %   \pkg{fontspec} font name. If unset, then under |pdflatex| the default
 %   font is |grmn1000| and under Unicode engines the default font is CMU Serif
-%   or |mainfont| if it supports Greek.
+%   or |mainfont| if it supports Greek. With the Unicode engines, the optional
+%   arguments passed to \cs{babelfont} can be specified in the |grfontoptions|
+%   option.
+% \end{function}
+%
+% \begin{function}{grfontoptions}
+%   \begin{syntax}
+%     grfontoptions = \meta{fontspec options}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   The optional arguments passed to \cs{babelfont} for the Greek font under
+%   Unicode engines. This option is ignored under |pdftex|.
 % \end{function}
 %
 % \begin{function}{hefont}
@@ -170,23 +180,34 @@
 %   supports the NHE8 encoding. For Unicode engines this should be a
 %   \pkg{fontspec} font name. If unset, then under |pdflatex| the default
 %   font is |david| and under Unicode engines the default font is DavidCLM
-%   or |mainfont| if it supports Hebrew.
-%
-%   In reality, |pdflatex| is really only supported for interest. You should
-%   use |lualatex| for any right-to-left languages.
+%   or |mainfont| if it supports Hebrew. With the Unicode engines, the optional
+%   arguments passed to \cs{babelfont} can be specified in the |hefontoptions|
+%   option.
 % \end{function}
 %
-% \subsection{Unicode only options}
+% In reality, |pdflatex| is really only supported for interest. You should use
+% |lualatex| for any right-to-left languages.
 %
-% The following options control whether the SBL Greek and Hebrew fonts should
-% be used.
+% \begin{function}{hefontoptions}
+%   \begin{syntax}
+%     hefontoptions = \meta{fontspec options}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   The optional arguments passed to \cs{babelfont} for the Hebrew font under
+%   Unicode engines. This option is ignored under |pdftex|.
+% \end{function}
+%
+% \subsection{Using SBL Greek and Hebrew fonts}
+%
+% Under Unicode engines, the following options control whether the SBL Greek
+% and Hebrew fonts should be used. Under |pdftex| the similar looking
+% |Alegreya-OsF| and |frank| fonts are used.
 %
 % \begin{function}{sblfonts}
 %   \begin{syntax}
 %     sblfonts = true \textbar\ false \textbar\ fallback\hfill Default: fallback
 %   \end{syntax}
 %   This is a shortcut option for setting both |sblgreek| and |sblhebrew| at
-%   the same time.
+%   the same time. Under |pdftex|, |false| and |fallback| behave the same.
 % \end{function}
 %
 % \begin{function}{sblgreek}
@@ -195,15 +216,19 @@
 %   \end{syntax}
 %   This option controls if and when the SBL Greek font should be used. The order
 %   of fonts tried for each option is:
-%   \begin{description}
-%     \item[\texttt{true}] SBL BibLit, SBL Greek, Alegreya.
-%     \item[\texttt{false}] |mainfont| (if specified) otherwise CMU Serif.
-%       This is useful if the test to detect Greek support in |mainfont| is
-%       not accurate.
-%     \item[\texttt{fallback}] |mainfont| (if specified and if Greek is
-%     supported) otherwise CMU Serif.
-%   \end{description}
 % \end{function}
+% \begin{description}
+%   \item[\texttt{true}] Under Unicode engines: SBL BibLit, SBL Greek,
+%     Alegreya. Under |pdftex|: |Alegreya-OsF|.
+%   \item[\texttt{false}] Under Unicode engines: |mainfont| (if specified)
+%     otherwise CMU Serif. This is useful if the test to detect Greek support
+%     in |mainfont| is not accurate. Under |pdftex|: the same as the
+%     |fallback| option.
+%   \item[\texttt{fallback}] Under Unicode engines: |mainfont| (if specified
+%     and if Greek is supported) otherwise CMU Serif. Under |pdftex|:
+%     |mainfont| (if specified and if the LGR encoding is supported),
+%     otherwise |cmr|.
+% \end{description}
 %
 % \begin{function}{sblhebrew}
 %   \begin{syntax}
@@ -211,15 +236,19 @@
 %   \end{syntax}
 %   This option controls if and when the SBL Hebrew font should be used. The order
 %   of fonts tried for each option is:
-%   \begin{description}
-%     \item[\texttt{true}] SBL BibLit, SBL Hebrew, Frank Ruehl CLM.
-%     \item[\texttt{false}] |mainfont| (if specified) otherwise DavidCLM.
-%       This is useful if the test to detect Hebrew support in |mainfont| is
-%       not accurate.
-%     \item[\texttt{fallback}] |mainfont| (if specified and if Hebrew is
-%     supported) otherwise DavidCLM.
-%   \end{description}
 % \end{function}
+% \begin{description}
+%   \item[\texttt{true}] Under Unicode engines: SBL BibLit, SBL Hebrew, Frank
+%     Ruehl CLM. Under |pdftex|: |frank|.
+%   \item[\texttt{false}] Under Unicode engines: |mainfont| (if specified)
+%     otherwise DavidCLM. This is useful if the test to detect Hebrew support
+%     in |mainfont| is not accurate. Under |pdftex|: the same as the
+%     |fallback| option.
+%   \item[\texttt{fallback}] Under Unicode engines: |mainfont| (if specified
+%     and if Hebrew is supported) otherwise DavidCLM. Under |pdftex|:
+%     |mainfont| (if specified and if the NHE8 encoding is supported),
+%     otherwise |david|.
+% \end{description}
 %
 % \section{Implementation}
 %
@@ -242,7 +271,9 @@
     , mainfont        .tl_set:N    = \l_@@_mainfont_tl
     , mainfontoptions .clist_set:N = \l_@@_mainfont_options_clist
     , grfont          .tl_set:N    = \l_@@_grfont_tl
+    , grfontoptions   .clist_set:N = \l_@@_grfont_options_clist
     , hefont          .tl_set:N    = \l_@@_hefont_tl
+    , hefontoptions   .clist_set:N = \l_@@_hefont_options_clist
   }
 %    \end{macrocode}
 %
@@ -252,7 +283,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\sys_if_engine_opentype:T
+\sys_if_engine_opentype:TF
   {
     \keys_define:nn { sblfonts }
       {
@@ -282,6 +313,34 @@
                                   }
         , sblhebrew .default:n  = { true }
         , sblhebrew .initial:n  = { fallback }
+      }
+  }
+%    \end{macrocode}
+%
+% For |pdftex| make |sblfonts|, |sblgreek| and |sblhebrew| noops.
+%
+%    \begin{macrocode}
+  {
+    \keys_define:nn { sblfonts }
+      {
+        , sblfonts  .meta:n    = { sblgreek = #1 , sblhebrew = #1 }
+        , sblfonts  .default:n = { true }
+        , sblgreek  .code:n    = {
+                                   \str_if_eq:nnT {#1} { true }
+                                     {
+                                       \tl_set:Nn \l_@@_grfont_tl
+                                         { Alegreya-OsF }
+                                     }
+                                 }
+        , sblgreek  .default:n  = { true }
+        , sblhebrew .code:n     = {
+                                    \str_if_eq:nnT {#1} { true }
+                                      {
+                                        \tl_set:Nn \l_@@_hefont_tl
+                                          { frank }
+                                      }
+                                  }
+        , sblhebrew .default:n  = { true }
       }
   }
 %    \end{macrocode}
@@ -368,7 +427,8 @@
         Extension      = .otf ,
         ItalicFont     = cmunti ,
         BoldFont       = cmunbx ,
-        BoldItalicFont = cmunbi
+        BoldItalicFont = cmunbi ,
+        \l_@@_grfont_options_clist
       ]
       { cmunrm }
   }
@@ -388,7 +448,8 @@
         UprightFont    = *-Medium ,
         ItalicFont     = *-MediumItalic ,
         BoldFont       = *-Bold ,
-        BoldItalicFont = *-BoldItalic
+        BoldItalicFont = *-BoldItalic ,
+        \l_@@_hefont_options_clist
       ]
       { DavidCLM }
   }
@@ -450,7 +511,8 @@
               [
                 ItalicFont     = SBL ~ BibLit ,
                 BoldFont       = SBL ~ BibLit ,
-                BoldItalicFont = SBL ~ BibLit
+                BoldItalicFont = SBL ~ BibLit ,
+                \l_@@_grfont_options_clist
               ]
               { SBL ~ BibLit }
           }
@@ -461,7 +523,8 @@
                   [
                     ItalicFont     = SBL ~ Greek ,
                     BoldFont       = SBL ~ Greek ,
-                    BoldItalicFont = SBL ~ Greek
+                    BoldItalicFont = SBL ~ Greek ,
+                    \l_@@_grfont_options_clist
                   ]
                   { SBL ~ Greek }
               }
@@ -472,7 +535,8 @@
                     UprightFont = *-Regular ,
                     ItalicFont  = *-Italic ,
                     BoldFont    = *-Bold ,
-                    BoldItalic  = *-BoldItalic
+                    BoldItalic  = *-BoldItalic ,
+                    \l_@@_grfont_options_clist
                   ]
                   { Alegreya }
               }
@@ -489,7 +553,8 @@
               [
                 ItalicFont     = SBL ~ BibLit ,
                 BoldFont       = SBL ~ BibLit ,
-                BoldItalicFont = SBL ~ BibLit
+                BoldItalicFont = SBL ~ BibLit ,
+                \l_@@_hefont_options_clist
               ]
               { SBL ~ BibLit }
           }
@@ -500,7 +565,8 @@
                   [
                     ItalicFont     = SBL ~ Hebrew ,
                     BoldFont       = SBL ~ Hebrew ,
-                    BoldItalicFont = SBL ~ Hebrew
+                    BoldItalicFont = SBL ~ Hebrew ,
+                    \l_@@_hefont_options_clist
                   ]
                   { SBL ~ Hebrew }
               }
@@ -511,7 +577,8 @@
                     UprightFont = *-Medium ,
                     ItalicFont = *-MediumOblique ,
                     BoldFont = *-Bold ,
-                    BoldItalic = *-BoldOblique
+                    BoldItalic = *-BoldOblique ,
+                    \l_@@_hefont_options_clist
                   ]
                   { FrankRuehlCLM }
               }
@@ -525,11 +592,15 @@
 %    \begin{macrocode}
     \tl_if_empty:NF \l_@@_grfont_tl
       {
-        \babelfont [ polytonicgreek ] { rm } { \l_@@_grfont_tl }
+        \babelfont [ polytonicgreek ] { rm }
+          [ \l_@@_grfont_options_clist ]
+          { \l_@@_grfont_tl }
       }
     \tl_if_empty:NF \l_@@_hefont_tl
       {
-        \babelfont [ hebrew ] { rm } { \l_@@_hefont_tl }
+        \babelfont [ hebrew ] { rm }
+          [ \l_@@_hefont_options_clist ]
+          { \l_@@_hefont_tl }
       }
   }
   {
