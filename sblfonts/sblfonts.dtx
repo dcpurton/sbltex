@@ -179,7 +179,7 @@
 %   Set the Hebrew font. For |pdflatex| this should be an NFSS font name which
 %   supports the NHE8 encoding. For Unicode engines this should be a
 %   \pkg{fontspec} font name. If unset, then under |pdflatex| the default
-%   font is |david| and under Unicode engines the default font is DavidCLM
+%   font is |david| and under Unicode engines the default font is David CLM
 %   or |mainfont| if it supports Hebrew. With the Unicode engines, the optional
 %   arguments passed to \cs{babelfont} can be specified in the |hefontoptions|
 %   option.
@@ -227,7 +227,7 @@
 %   \item[\texttt{fallback}] Under Unicode engines: |mainfont| (if specified
 %     and if Greek is supported) otherwise CMU Serif. Under |pdftex|:
 %     |mainfont| (if specified and if the LGR encoding is supported),
-%     otherwise |cmr|.
+%     otherwise |grmn1000|.
 % \end{description}
 %
 % \begin{function}{sblhebrew}
@@ -241,11 +241,11 @@
 %   \item[\texttt{true}] Under Unicode engines: SBL BibLit, SBL Hebrew, Frank
 %     Ruehl CLM. Under |pdftex|: |frank|.
 %   \item[\texttt{false}] Under Unicode engines: |mainfont| (if specified)
-%     otherwise DavidCLM. This is useful if the test to detect Hebrew support
+%     otherwise David CLM. This is useful if the test to detect Hebrew support
 %     in |mainfont| is not accurate. Under |pdftex|: the same as the
 %     |fallback| option.
 %   \item[\texttt{fallback}] Under Unicode engines: |mainfont| (if specified
-%     and if Hebrew is supported) otherwise DavidCLM. Under |pdftex|:
+%     and if Hebrew is supported) otherwise David CLM. Under |pdftex|:
 %     |mainfont| (if specified and if the NHE8 encoding is supported),
 %     otherwise |david|.
 % \end{description}
