@@ -20,27 +20,34 @@ function update_tag(file, content, tagname, tagdate)
 
   -- Update version in documentation
   content = content:gsub(
-    "(\\date%{)%d%d%d%d%-%d%d%-%d%d%s+v[%d%.%a]+(%})",
+    "(\\date%{)%d%d%d%d[%-%/]%d%d[%-%/]%d%d%s+v[%d%.%a]+(%})",
     "%1" .. tagdate .. " v" .. tagname .. "%2"
-  )
-
-  -- Update single copyright year: if tagdate year is greater, convert to range
-  content = content:gsub(
-    "(Copyright %([Cc]%) )(%d%d%d%d)",
-    function(prefix, year)
-      local tagyear = tagdate:sub(1, 4)
-      if tagyear > year then
-        return prefix .. year .. "-" .. tagyear
-      else
-        return prefix .. year
-      end
-    end
   )
 
   -- Update end year in copyright range: Copyright (c) YYYY-YYYY
   content = content:gsub(
-    "(Copyright %([Cc]%) %d%d%d%d%-)%d%d%d%d",
-    "%1" .. tagdate:sub(1, 4)
+    "(Copyright %([Cc]%) %d%d%d%d%-)(%d%d%d%d)",
+    function(prefix, endyear)
+      local tagyear = tagdate:sub(1, 4)
+      if tagyear > endyear then
+        return prefix .. tagyear
+      else
+        return prefix .. endyear
+      end
+    end
+  )
+
+  -- Update single copyright year: if tagdate year is greater, convert to range
+  content = content:gsub(
+    "(Copyright %([Cc]%) )(%d%d%d%d)([^%-%d])",
+    function(prefix, year, after)
+      local tagyear = tagdate:sub(1, 4)
+      if tagyear > year then
+        return prefix .. year .. "-" .. tagyear .. after
+      else
+        return prefix .. year .. after
+      end
+    end
   )
 
   return content
