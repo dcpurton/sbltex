@@ -1,0 +1,54 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 527.9436fil
+...\write-{}
+...\write1{\babel@aux{german}{}}
+...\glue(\topskip) 5.6955
+...\hbox(4.3045+1.94397)x345.0, glue set 297.75787fil
+....\hbox(0.0+0.0)x15.0
+....\T1/cmr/m/n/10 g
+....\T1/cmr/m/n/10 e
+....\T1/cmr/m/n/10 r
+....\T1/cmr/m/n/10 m
+....\T1/cmr/m/n/10 a
+....\T1/cmr/m/n/10 n
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 3.64093
+...\hbox(6.4151+0.0)x345.0, glue set 283.34473fil
+....\hbox(0.0+0.0)x15.0
+....\T1/cmr/m/n/10 2
+....\T1/cmr/m/n/10 0
+....\T1/cmr/m/n/10 2
+....\T1/cmr/m/n/10 6
+....\T1/cmr/m/n/10 -
+....\discretionary
+....\T1/cmr/m/n/10 0
+....\T1/cmr/m/n/10 5
+....\T1/cmr/m/n/10 -
+....\discretionary
+....\T1/cmr/m/n/10 0
+....\T1/cmr/m/n/10 4
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 30.0
+..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
+(sblfonts04.aux)

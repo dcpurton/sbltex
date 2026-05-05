@@ -137,6 +137,24 @@
 %
 % \section{Package Options}
 %
+% \begin{function}{mainlang}
+%   \begin{syntax}
+%     mainlang = \meta{babel language}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the main language of the document. If this is unset, the main language
+%   is the language passed to the document class or if that is unset,
+%   |american|.
+% \end{function}
+%
+% \begin{function}{mainlangoptions}
+%   \begin{syntax}
+%     mainlanguageoptions = \meta{babelprovide options}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the options passed to \cs{babelprovide} when loading the main language
+%   (in addition to |import, main|). This is not used if the main language is
+%   passed to \pkg{babel} via the document class options.
+% \end{function}
+%
 % \begin{function}{mainfont}
 %   \begin{syntax}
 %     mainfont = \meta{package} \textbar\ \meta{fontspec name}\hfill Default: \emph{unset}
@@ -176,6 +194,14 @@
 %   Unicode engines. This option is ignored under |pdftex|.
 % \end{function}
 %
+% \begin{function}{grlangoptions}
+%   \begin{syntax}
+%     grlangoptions = \meta{babelprovide options}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the options passed to \cs{babelprovide} when loading |polytonicgreek|
+%   (in addition to |import, onchar=ids fonts|).
+% \end{function}
+%
 % \begin{function}{hefont}
 %   \begin{syntax}
 %     hefont = \meta{NFSS font} \textbar\ \meta{fontspec name}\hfill Default: \emph{unset}
@@ -198,6 +224,14 @@
 %   \end{syntax}
 %   The optional arguments passed to \cs{babelfont} for the Hebrew font under
 %   Unicode engines. This option is ignored under |pdftex|.
+% \end{function}
+%
+% \begin{function}{helangoptions}
+%   \begin{syntax}
+%     helangoptions = \meta{babelprovide options}\hfill Default: \emph{unset}
+%   \end{syntax}
+%   Set the options passed to \cs{babelprovide} when loading |hebrew| (in
+%   addition to |import, onchar=ids fonts|).
 % \end{function}
 %
 % \subsection{Using SBL Greek and Hebrew fonts}
@@ -272,12 +306,16 @@
 %    \begin{macrocode}
 \keys_define:nn { sblfonts }
   {
+    , mainlang        .tl_set:N    = \l_@@_mainlang_tl
+    , mainlangoptions .clist_set:N = \l_@@_mainlang_options_clist
     , mainfont        .tl_set:N    = \l_@@_mainfont_tl
     , mainfontoptions .clist_set:N = \l_@@_mainfont_options_clist
     , grfont          .tl_set:N    = \l_@@_grfont_tl
     , grfontoptions   .clist_set:N = \l_@@_grfont_options_clist
+    , grlangoptions   .clist_set:N = \l_@@_grlang_options_clist
     , hefont          .tl_set:N    = \l_@@_hefont_tl
     , hefontoptions   .clist_set:N = \l_@@_hefont_options_clist
+    , helangoptions   .clist_set:N = \l_@@_helang_options_clist
   }
 %    \end{macrocode}
 %
@@ -358,16 +396,44 @@
 % \cs{babelprovide} macros need to be run outside of ExplSyntax.
 %
 %    \begin{macrocode}
+\tl_set_eq:NN \@sblfonts@mainlang \l_@@_mainlang_tl
+\clist_set:Ne \@sblfonts@mainlang@options
+  {
+    , import
+    , \clist_use:N \l_@@_mainlang_options_clist
+    , main
+  }
+\clist_set:Ne \@sblfonts@grlang@options
+  {
+    , import
+    , onchar = ids ~ fonts
+    , \clist_use:N \l_@@_grlang_options_clist
+  }
+\clist_set:Ne \@sblfonts@helang@options
+  {
+    , import
+    , onchar = ids ~ fonts
+    , \clist_use:N \l_@@_helang_options_clist
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \ExplSyntaxOff
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 \newcommand*{\@sblfonts@load@american}{%
-  \babelprovide[import, main]{american}}
+  \expandafter\babelprovide\expandafter
+    [\@sblfonts@mainlang@options]{american}}
+\newcommand*{\@sblfonts@load@mainlang}{%
+  \expandafter\babelprovide\expandafter
+    [\@sblfonts@mainlang@options]{\@sblfonts@mainlang}}
 \newcommand*{\@sblfonts@load@polytonicgreek}{%
-  \babelprovide[import, onchar=ids fonts]{polytonicgreek}}
+  \expandafter\babelprovide\expandafter
+    [\@sblfonts@grlang@options]{polytonicgreek}}
 \newcommand*{\@sblfonts@load@hebrew}{%
-  \babelprovide[import, onchar=ids fonts]{hebrew}}
+  \expandafter\babelprovide\expandafter
+    [\@sblfonts@helang@options]{hebrew}}
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -382,7 +448,11 @@
 \cs_new_protected:Nn \@@_load_languages:
   {
     \tl_if_eq:NnT \languagename { nil }
-      { \@sblfonts@load@american }
+      {
+        \tl_if_empty:NTF \l_@@_mainlang_tl
+          { \@sblfonts@load@american }
+          { \@sblfonts@load@mainlang }
+      }
     \@sblfonts@load@polytonicgreek
     \@sblfonts@load@hebrew
     \babeladjust{ select.write = shift }

@@ -1,0 +1,14 @@
+\documentclass{article}
+\input{regression-test}
+\usepackage[
+    mainlang=german,
+    mainlangoptions={date.gregorian/date.long = {[y]-[MM]-[dd]}}
+  ]{sblfonts}
+\pagestyle{empty}
+\begin{document}
+\START
+\showoutput
+\languagename
+
+\localedate{2026}{05}{04}
+\end{document}
