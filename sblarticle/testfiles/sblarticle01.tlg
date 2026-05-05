@@ -76,7 +76,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] /F 4 /Contents <FEFF0047006F00200074006F002000640065007300740069006E006100740069006F006E00200066006F006F0074006E006F00740065002A002E0031>  /LTEX_position /isolated/StructParent 100} action struct name{footnote*.1} goto name{footnote*.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] /F 4  /LTEX_position /isolated/StructParent 100} action struct name{footnote*.1} goto name{footnote*.1}
 .....\pdfcolorstack 0 push {0.50196 0.0 0.02353 rg 0.50196 0.0 0.02353 RG}
 .....\hbox(9.76271+0.0)x4.5, direction TLT
 ......\mathon
