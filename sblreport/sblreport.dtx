@@ -1239,7 +1239,7 @@
 %   (e.g., |arabic| or |roman|).
 %
 %    \begin{macrocode}
-\prg_new_conditional:Npnn \@@_if_page_numbering:n #1 { T }
+\prg_new_protected_conditional:Npnn \@@_if_page_numbering:n #1 { T }
   {
     \cs_set_nopar:Nn \@@_thepage_test:
       { \csname @ #1 \endcsname \c@page }
