@@ -1,5 +1,7 @@
 -- common build code
 
+tagfiles = {"*.dtx", "*.ins", "README.md"}
+
 function update_tag(file, content, tagname, tagdate)
   -- Update version in LaTeX package/class
   content = content:gsub(
