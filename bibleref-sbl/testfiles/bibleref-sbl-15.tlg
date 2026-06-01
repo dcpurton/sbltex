@@ -30,7 +30,8 @@ Completed box being shipped out [1]
 ....\glue 4.44444 plus 4.99997 minus 0.37036
 ....\write3{\indexentry{10@Old Testament/Hebrew Bible!01\relax @\protect \BRbooktitlestyle {Genesis}!001:001@\protect \BRchapterstyle {1}\protect \BRchvsep \protect \BRversestyle {1}|textrm}{\thepage }}
 ....\penalty 10000
-....\glue 0.0
+....\glue -0.00002
+....\glue 0.00002
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0 plus 1.0fil
