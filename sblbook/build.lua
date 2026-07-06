@@ -19,6 +19,7 @@ typesetexe = "pdflatex"
 
 function typeset_demo_tasks()
   typesetexe = "lualatex"
+  typesetruns = 4
 
   local current = os.getenv("INDEXSTYLE") or ""
   os.setenv("INDEXSTYLE", abspath(localdir) .. os_pathsep .. current)

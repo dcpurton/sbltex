@@ -102,9 +102,11 @@
 % GitHub repository. See \url{https://github.com/dcpurton/sbltex}.
 %
 % \begin{description}
-%   \item[Note:] This class is only partially compatible with the \LaTeX{}
-%   tagging project at this stage. As the tagging project stabilises and
-%   dependent packages are updated, compatibility will improve.
+%   \item[Note:] This class is compatible with the \LaTeX{} tagging project at
+%   release time. Although, regular updates will continue to be needed as the
+%   tagging project evolves and improves. The demonstration thesis,
+%   |sbltex-book.pdf| in the documentation is built with tagging enabled and
+%   successfully verifies with VeraPDF.
 % \end{description}
 %
 % \section{Package Environments}
@@ -494,9 +496,6 @@
         \newpage
       }
   }
-
-
-
 %    \end{macrocode}
 %
 % \subsection{Footnotes}
@@ -575,38 +574,31 @@
 %    \begin{macrocode}
 \IfDocumentMetadataTF
   {
-    \hook_gput_code:nnn { begindocument / before } { sblbook }
+    \EditInstance { blockenv } { quotation }
       {
-        \RenewDocumentEnvironment { quotation } { !O { } }
-          {
-            \UseInstance { blockenv } { quotation }
-              {
-                , begin-extra-vspace = 0pt
-                , begin-vspace       = 11pt plus 5pt minus 3pt
-                , left-margin        = \parindent
-                , right-margin       = \parindent
-                , para-indent        = \parindent
-                , para-vspace        = 0pt
-                , final-code         = \small \ignorespaces
-                , #1
-              }
-          }
-          { \endblockenv }
-        \RenewDocumentEnvironment { quote } { !O { } }
-          {
-            \UseInstance { blockenv } { quote }
-              {
-                , begin-extra-vspace = 0pt
-                , begin-vspace       = 11pt plus 5pt minus 3pt
-                , left-margin        = \parindent
-                , right-margin       = \parindent
-                , para-indent        = 0pt
-                , para-vspace        = 6pt plus 2pt minus 1pt
-                , final-code         = \small \ignorespaces
-                , #1
-              }
-          }
-          { \endblockenv }
+        , final-code = \small \ignorespaces
+      }
+    \EditInstance { block } { quotation-1 }
+      {
+        , begin-extra-vspace = 0pt
+        , begin-vspace       = 11pt plus 5pt minus 3pt
+        , left-margin        = \parindent
+        , right-margin       = \parindent
+        , para-indent        = \parindent
+        , para-vspace        = 0pt
+      }
+    \EditInstance { blockenv } { quote }
+      {
+        , final-code = \small \ignorespaces
+      }
+    \EditInstance { block } { quote-1 }
+      {
+        , begin-extra-vspace = 0pt
+        , begin-vspace       = 11pt plus 5pt minus 3pt
+        , left-margin        = \parindent
+        , right-margin       = \parindent
+        , para-indent        = 0pt
+        , para-vspace        = 6pt plus 2pt minus 1pt
       }
   }
   {
@@ -691,14 +683,42 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\NewTaggingSocket{ sblbook / flatblock / begin } { 1 }
+\NewTaggingSocket{ sblbook / flatblock / end } { 0 }
+\NewTaggingSocketPlug { sblbook / flatblock / begin } { default }
+  {
+    \tag_struct_begin:n
+      {
+        tag = #1
+      }
+    \tagpdfsetup { para / flattened = true }
+  }
+\NewTaggingSocketPlug { sblbook / flatblock / end } { default }
+  {
+    \para_end:
+    \tag_struct_end:
+  }
+\AssignTaggingSocketPlug { sblbook / flatblock / begin } { default }
+\AssignTaggingSocketPlug { sblbook / flatblock / end } { default }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \cs_set_protected:Npn \maketitle
   {
     \group_begin:
+      \UseTaggingSocket { sblbook / flatblock / begin }
+        { \UseStructureName { title / block } }
       \thispagestyle { empty }
       \centering
       \vspace* { 0.5in }
       \LARGE
-      \MakeUppercase { \@title }
+      \IfDocumentMetadataTF
+        {
+          \UseTaggingSocket { title } { } { \MakeUppercase { \@title } }
+        }
+        {
+          \MakeUppercase { \@title }
+        }
       \para_end:
       \tl_if_empty:NF \g_@@_subtitle_tl
         {
@@ -708,6 +728,7 @@
           \para_end:
         }
       \@@_supplied_page:
+      \UseTaggingSocket { sblbook / flatblock / end }
     \group_end:
   }
 %    \end{macrocode}
@@ -716,11 +737,19 @@
 \RenewDocumentEnvironment { titlepage } { }
   {
     \clearpage
+    \UseTaggingSocket { sblbook / flatblock / begin }
+      { \UseStructureName { title / block } }
     \thispagestyle { empty }
     \centering
     \vspace* { 0.5in }
     \LARGE
-    \MakeUppercase { \@title }
+    \IfDocumentMetadataTF
+      {
+        \UseTaggingSocket { title } { } { \MakeUppercase { \@title } }
+      }
+      {
+        \MakeUppercase { \@title }
+      }
     \para_end:
     \tl_if_empty:NF \g_@@_subtitle_tl
       {
@@ -737,7 +766,10 @@
     \para_end:
     \normalsize
   }
-  { \@@_supplied_page: }
+  {
+    \@@_supplied_page:
+    \UseTaggingSocket { sblbook / flatblock / end }
+  }
 %    \end{macrocode}
 %
 % \subsection{Front matter environments}
@@ -746,18 +778,23 @@
 \NewDocumentEnvironment { copyrightpage } { }
   {
     \clearpage
+    \UseTaggingSocket { sblbook / flatblock / begin } { text-unit }
     \thispagestyle { empty }
     \vspace* { 0.5in }
     \noindent
     Copyright ~ © ~ \number \year \space by ~ \@author
   }
-  { \@@_supplied_page: }
+  {
+    \@@_supplied_page:
+    \UseTaggingSocket { sblbook / flatblock / end }
+  }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 \NewDocumentEnvironment { seriespage } { }
   {
     \clearpage
+    \UseTaggingSocket { sblbook / flatblock / begin } { text-unit }
     \thispagestyle { empty }
     \centering
     \vspace* { 0.5in }
@@ -766,13 +803,17 @@
     \para_end:
     \normalsize
   }
-  { \@@_supplied_page: }
+  {
+    \@@_supplied_page:
+    \UseTaggingSocket { sblbook / flatblock / end }
+  }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 \NewDocumentEnvironment { dedication } { }
   {
     \cleardoublepage
+    \UseTaggingSocket { sblbook / flatblock / begin } { text-unit }
     \int_compare:nNnT { \c@page } < { 5 }
       {
         \int_gset:Nn \c@page { 5 }
@@ -782,13 +823,17 @@
     \vspace* { 1.5in }
     \itshape
   }
-  { \para_end: }
+  {
+    \para_end:
+    \UseTaggingSocket { sblbook / flatblock / end }
+  }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 \NewDocumentEnvironment { epigraph } { }
   {
     \cleardoublepage
+    \UseTaggingSocket { sblbook / flatblock / begin } { text-unit }
     \int_compare:nNnT { \c@page } < { 5 }
       {
         \int_gset:Nn \c@page { 5 }
@@ -796,7 +841,10 @@
     \thispagestyle { empty }
     \vspace* { 0.5in }
   }
-  { \para_end: }
+  {
+    \para_end:
+    \UseTaggingSocket { sblbook / flatblock / end }
+  }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -856,41 +904,98 @@
 %    \begin{macrocode}
 \IfDocumentMetadataTF
   {
-    \cs_set:Npn \section
+    \EditInstance { heading } { part }
       {
-        \hook_gput_next_code:nn { para / end }
+        , after-penalty-vspace = 0.5in
+        , after-vspace         = 0.5in plus 12pt minus 6pt
+        , heading-decls        = \normalfont \Large \scshape \centering
+        , title-decls          =
+      }
+    \EditInstance { headformat } { part }
+      {
+        , number-title-sep = 12pt
+      }
+    \DeclareDocumentCommand \part { s = { shorttitle } o m }
+      {
+        \ParseLaTeXeHeading { part } {#1} {#2} {#3}
+      }
+    \EditInstance { heading } { chapter }
+      {
+        , placement            = top
+        , after-penalty-vspace = 0.5in
+        , after-vspace         = 0.5in plus 12pt minus 6pt
+        , prefix               = 
+        , heading-decls        = \normalfont \normalsize \Large \centering
+        , title-decls          =
+      }
+    \EditInstance { headformat } { chapter }
+      {
+        , number-title-sep = 12pt
+      }
+    \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
+      {
+        \IfBooleanF {#1}
           {
-            \strut
-            \dim_zero:N \hangindent
+            \@@_if_page_numbering:nT { roman }
+              {
+                \cleardoublepage
+                \pagenumbering { arabic }
+              }
+            \addtocontents { toc } { \addvspace { \bigskipamount } }
           }
-        \@startsection { section } { 1 } { 0pt }
-          { -12pt plus -4pt minus -2pt } { 10pt plus 4pt minus 2pt }
-          { \normalfont \normalsize \centering \MakeUppercase }
+        \ParseLaTeXeHeading { chapter } {#1} {#2} {#3}
       }
-    \cs_set:Npn \subsection
+    \EditInstance { heading } { section }
       {
-        \hook_gput_next_code:nn { para / end } { \strut }
-        \@startsection { subsection } { 2 } { 0pt }
-          { -6pt plus -2pt minus -1pt } { 4pt plus 2pt minus 1pt }
-          { \normalfont \normalsize \scshape \raggedright }
+        , before-vspace = 12pt plus 2pt minus 1pt
+        , after-vspace  = 10.5pt plus 4pt minus 2pt
+        , heading-decls = \normalfont \normalsize \centering
       }
-    \cs_set:Npn \subsubsection
+    \EditInstance { headformat } { section }
       {
-        \@startsection { subsubsection } { 3 } { 0pt }
-          { 6pt plus 2pt minus 1pt } { -1em }
-          { \normalfont \normalsize \scshape }
+        , title-format = \MakeUppercase {#1}
+        , number-title-sep = 0.5em
       }
-    \cs_set:Npn \paragraph
+    \EditInstance { heading } { subsection }
       {
-        \@startsection { paragraph } { 4 } { 0pt }
-          { 6pt plus 2pt minus 1pt } { -1em }
-          { \normalfont \normalsize \itshape }
+        , before-vspace = 6pt plus 2pt minus 1pt
+        , after-vspace  = 4pt plus 2pt minus 1pt
+        , heading-decls = \normalfont \normalsize \scshape \raggedright
       }
-    \cs_set:Npn \subparagraph
+    \EditInstance { headformat } { subsection }
       {
-        \@startsection { subparagraph } { 5 } { 0.25in }
-          { 0pt } { -1em }
-          { \normalfont \normalsize \scshape }
+        , number-title-sep = 0.5em
+      }
+    \DeclareInstance { heading } { subsubsection } { runin }
+      {
+        , name                = subsubsection
+        , parent-name         = subsection
+        , level               = 3
+        , before-vspace       = 6pt plus 2pt minus 1pt
+        , after-vspace        = 1em
+        , heading-decls       = \normalfont \normalsize \scshape
+        , mark-cmd            = \subsubsectionmark {#1}
+        , headformat-instance = subsubsection
+      }
+    \DeclareInstance { headformat } { subsubsection } { runin }
+      {
+        , heading-indent = 0pt
+      }
+    \EditInstance { heading } { paragraph }
+      {
+        , before-vspace = 6pt plus 2pt minus 1pt
+        , after-vspace  = 1em
+        , heading-decls = \normalfont \normalsize \itshape
+      }
+    \EditInstance { heading } { subparagraph }
+      {
+        , before-vspace = 6pt plus 2pt minus 1pt
+        , after-vspace  = 1em
+        , heading-decls = \normalfont \normalsize \scshape
+      }
+    \EditInstance { headformat } { subparagraph }
+      {
+        , heading-indent = 0.25in
       }
   }
   {
@@ -1024,180 +1129,97 @@
     \hook_gput_code_with_args:nnn { contentsline / text / after }
       { sblbook }
       {
-        \int_compare:nNnT {#1} = { 1 }
+        \int_compare:nNnT {#1} > { \c_zero_int }
           {
             \cs_set_nopar:Npn \leaders ##1 ##2 { }
-            \hook_gput_next_code:nn { cmd / SuspendTagging / after }
+          }
+      }
+    \socket_new:nn { sblbook / numberline } { 1 }
+    \socket_new_plug:nnn { sblbook / numberline }
+      { default }
+      {
+        \hbox_to_wd:nn
+          { \@tempdima }
+          {
+            \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+            \hfill #1. \enspace
+            \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+          }
+      }
+    \socket_new_plug:nnn { sblbook / numberline }
+      { chapter }
+      {
+        \int_compare:nNnTF { \int_use:N \c@sblbook@appendices } = { 1 }
+          {
+            \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+            \chaptername
+            \int_compare:nNnT { \c@sblbook@appendix@count } > { 1 }
               {
-                \cs_set_nopar:Npn \leaders ##1 ##2 { }
+                \skip_horizontal:n
+                  {
+                    \InstanceValue
+                      { headformat } { chapter } { prefix-number-sep }
+                  }
+                #1
+              }
+            : \enspace
+            \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+          }
+          {
+            \hbox_to_wd:nn
+              { \@tempdima }
+              {
+                \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+                \hfill #1. \enspace
+                \hook_use:nnw { contentsline / number / after } { 1 } {#1}
               }
           }
       }
-     \cs_set_nopar:Npn \numberline #1
-       {
-         \hbox_to_wd:nn { \@tempdima }
-           {
-             \hook_use:nnw { contentsline / number / before } { 1 } {#1}
-             \hfill #1. \enspace
-             \hook_use:nnw { contentsline / number / after } { 1 } {#1}
-           }
-       }
+    \socket_assign_plug:nn
+      { sblbook / numberline } { default }
+    \cs_set_nopar:Npn \numberline #1
+      {
+        \socket_use:n { sblbook / numberline } {#1}
+      }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
     \cs_set_nopar:Npn \l@chapter
       {
+        \socket_assign_plug:nn { sblbook / numberline } { chapter }
         \@dottedtocline { 0 } { 0em } { 2em }
       }
     \cs_set_nopar:Npn \l@section
       {
+        \socket_assign_plug:nn { sblbook / numberline } { default }
         \@dottedtocline { 1 } { 2em } { 2.5em }
       }
     \cs_set_nopar:Npn \l@subsection
       {
+        \socket_assign_plug:nn { sblbook / numberline } { default }
         \@dottedtocline { 2 } { 4.5em } { 3em }
       }
     \cs_set_nopar:Npn \l@subsubsection
       {
+        \socket_assign_plug:nn { sblbook / numberline } { default }
         \@dottedtocline { 3 } { 7.5em } { 3em }
       }
     \cs_set_nopar:Npn \l@paragraph
       {
+        \socket_assign_plug:nn { sblbook / numberline } { default }
         \@dottedtocline { 4 } { 10.5em } { 3em }
       }
     \cs_set_nopar:Npn \l@subparagraph
       {
+        \socket_assign_plug:nn { sblbook / numberline } { default }
         \@dottedtocline { 5 } { 13.5em } { 0em }
       }
     \cs_set_nopar:Npn \l@figure
       {
+        \socket_assign_plug:nn { sblbook / numberline } { default }
         \@dottedtocline { 0 } { 0em } { 2em }
       }
     \cs_set_eq:NN \l@table \l@figure
-%    \end{macrocode}
-%
-% Redefine \cs{@chapter}, \cs{@schapter}, \cs{@part} and \cs{@spart} to format
-% chapter and part headings.
-%
-%    \begin{macrocode}
-    \cs_set_nopar:Npn \@chapter [#1]#2
-      {
-        \@@_if_page_numbering:nT { roman }
-          { \pagenumbering { arabic } }
-        \mode_leave_vertical:
-        \par
-        \addvspace { 0.5in }
-        \int_compare:nNnTF { \c@secnumdepth } > { -1 }
-          {
-            \addtocontents { toc } { \addvspace { \bigskipamount } }
-            \refstepcounter { chapter }
-            \addcontentsline { toc } { chapter }
-              {
-                \protect \numberline { \thechapter } #1
-              }
-          }
-          {
-            \addcontentsline { toc } { chapter } {#1}
-          }
-        \group_begin:
-          \dim_zero:N \parindent
-          \centering
-          \interlinepenalty 10000
-          \normalfont
-          \Large
-          \int_compare:nNnT { \c@secnumdepth } > { -1 }
-            {
-              \thechapter
-              \par
-              \nobreak
-              \skip_vertical:n { \bigskipamount }
-            }
-          #2
-          \strut
-          \chaptermark {#1}
-          \par
-        \group_end:
-        \nobreak
-        \skip_vertical:n { 0.5in plus 12pt minus 6pt }
-        \@afterheading
-      }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-    \cs_set_nopar:Npn  \@schapter #1
-      {
-        \mode_leave_vertical:
-        \par
-        \addvspace { 0.5in }
-        \group_begin:
-          \dim_zero:N \parindent
-          \centering
-          \interlinepenalty 10000
-          \normalfont
-          \Large
-          #1
-          \strut
-          \par
-        \group_end:
-        \nobreak
-        \skip_vertical:n { 0.5in plus 12pt minus 6pt }
-        \@afterheading
-      }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-    \cs_set:Npn \@part [#1]#2
-      {
-        \unskip
-        \skip_vertical:n { 0.5in }
-        \thispagestyle { empty }
-        \int_compare:nNnTF { \c@secnumdepth } > { -2 }
-          {
-            \addtocontents { toc } { \addvspace { \bigskipamount } }
-            \refstepcounter { part }
-            \addcontentsline { toc } { part }
-              {
-                \partname \space \thepart : \hspace { 0.5em } #1
-              }
-          }
-          {
-            \addcontentsline { toc } { part } {#1}
-          }
-        \markboth { } { }
-        \group_begin:
-          \centering
-          \interlinepenalty 10000
-          \normalfont
-          \Large
-          \scshape
-          \int_compare:nNnT { \c@secnumdepth } > { -2 }
-            { \partname \nobreakspace \thepart : \enspace }
-          #2
-          \strut
-          \par
-        \group_end:
-        \@endpart
-      }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-    \cs_set:Npn \@spart #1
-      {
-        \unskip
-        \skip_vertical:n { 0.5in }
-        \thispagestyle { empty }
-        \group_begin:
-          \centering
-          \interlinepenalty 10000
-          \normalfont
-          \Large
-          \scshape
-          #1
-          \strut
-          \par
-        \group_end:
-        \@endpart
-      }
   }
   {
     \RequirePackage { titletoc }
@@ -1383,7 +1405,7 @@
   { cmd / backmatter / after }
   { sblbook }
   {
-    \bool_if:NF \g_@@_appendix_bool
+    \int_compare:nNnF { \int_use:N \c@sblbook@appendices } = { \c_zero_int }
       {
         \addtocontents { toc } { \addvspace { \bigskipamount } }
       }
@@ -1396,78 +1418,53 @@
 %
 %    \begin{macrocode}
 \cs_set_eq:NN \sblbook@hyperlink \@@_hyperlink:nn
-\bool_new:N \g_@@_appendix_bool
-\newcounter { sblbook@appendix@count }
+\int_new:N \c@sblbook@appendix@count
+\int_new:N \c@sblbook@appendices
 %    \end{macrocode}
 %
 %    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
-    \bool_gset_true:N \g_@@_appendix_bool
-    \cs_gset_nopar:Npn \thechapter
-      { \@arabic \c@chapter }
-    \cs_set_nopar:Npn \chaptername
-      { \appendixname }
+    \addtocontents { toc } { \c@sblbook@appendices 1 }
     \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \addtocontents { toc } { \addvspace { \bigskipamount } }
-    \int_compare:nNnT { \c@sblbook@appendix@count } = { \c_one_int }
-      {
-        \int_zero:N \c@sblbook@appendix@count
-      }
+    \int_compare:nNnT { \c@sblbook@appendix@count } = { 1 }
+      { \int_zero:N \c@sblbook@appendix@count }
     \IfDocumentMetadataTF
       {
-        \cs_set_nopar:Npn \@chapter [##1]##2
+        \cs_new:Nn \@@_appendix_number_format:n
           {
-            \stepcounter { sblbook@appendix@count }
-            \mode_leave_vertical:
-            \par
-            \addvspace { 0.5in }
-            \int_compare:nNnTF { \c@secnumdepth } > { -1 }
+            \int_compare:nNnT
+              { \c@sblbook@appendix@count } > { 1 }
+              { \theheading }
+          }
+        \cs_new:Nn \@@_appendix_prefix_number_sep:
+          {
+            \int_compare:nNnTF
+              { \c@sblbook@appendix@count } > { 1 }
+              { 0.5em }
+              { 0em }
+          }
+        \EditInstance { heading } { chapter }
+          {
+            , number-format = \@@_appendix_number_format:n
+            , prefix        = \appendixname
+          }
+        \EditInstance { headformat } { chapter }
+          {
+            , prefix-number-sep = \@@_appendix_prefix_number_sep:
+          }
+        \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
+          {
+            \int_incr:N \c@sblbook@appendix@count
+            \protected@write \@auxout
+              { }
               {
-                \refstepcounter { chapter }
-                \protected@write \@auxout
-                  { }
-                  {
-                    \string \setcounter
-                      { sblbook@appendix@count } { \the \c@chapter }
-                  }
-                \addcontentsline { toc } { chapter }
-                  {
-                    \chaptername
-                    \ifnum \c@sblbook@appendix@count > 1
-                      \space \thechapter
-                    \fi
-                    : \enspace ##1
-                  }
+                \string \setcounter
+                  { sblbook@appendix@count }
+                  { \int_use:N \c@chapter }
               }
-              {
-                \addcontentsline { toc } { chapter } {##1}
-              }
-            \group_begin:
-              \dim_zero:N \parindent
-              \centering
-              \interlinepenalty 10000
-              \normalfont
-              \Large
-              \int_compare:nNnT { \c@secnumdepth } > { -1 }
-                {
-                  \chaptername
-                  \int_compare:nNnT
-                    { \c@sblbook@appendix@count } > { \c_one_int }
-                    {
-                       \nobreakspace \thechapter
-                    }
-                  \par
-                  \nobreak
-                  \skip_vertical:n { \bigskipamount }
-                }
-              ##2
-              \chaptermark {##1}
-              \par
-            \group_end:
-            \nobreak
-            \skip_vertical:n { 0.5in plus 12pt minus 6pt }
-            \@afterheading
+            \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
           }
       }
       {
