@@ -408,7 +408,7 @@
   }
   {
     \RequirePackage [ bottom, ragged ] { footmisc }
-    \cs_set:Npn \@makefntext #1
+    \cs_set_protected:Npn \@makefntext #1
       {
         \dim_set_eq:NN \parindent \footnotemargin
         \@thefnmark . \enspace
