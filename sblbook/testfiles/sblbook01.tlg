@@ -2,58 +2,58 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 10, TOCI
+(tagpdf)                struct 6, Sect --> struct 9, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 10, TOCI --> struct 11, text-unit
+(tagpdf)                struct 9, TOCI --> struct 10, text-unit
 (../mt-cmr.cfg
 File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
 )
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 14, TOCI
+(tagpdf)                struct 6, Sect --> struct 13, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 14, TOCI --> struct 15, text-unit
+(tagpdf)                struct 13, TOCI --> struct 14, text-unit
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 18, TOCI
+(tagpdf)                struct 6, Sect --> struct 17, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 18, TOCI --> struct 19, text-unit
+(tagpdf)                struct 17, TOCI --> struct 18, text-unit
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 22, TOCI
+(tagpdf)                struct 6, Sect --> struct 21, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 22, TOCI --> struct 23, text-unit
+(tagpdf)                struct 21, TOCI --> struct 22, text-unit
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 26, TOCI
+(tagpdf)                struct 6, Sect --> struct 25, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 26, TOCI --> struct 27, text-unit
+(tagpdf)                struct 25, TOCI --> struct 26, text-unit
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 30, TOCI
+(tagpdf)                struct 6, Sect --> struct 29, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 30, TOCI --> struct 31, text-unit
+(tagpdf)                struct 29, TOCI --> struct 30, text-unit
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 34, TOCI
+(tagpdf)                struct 6, Sect --> struct 33, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 34, TOCI --> struct 35, text-unit
+(tagpdf)                struct 33, TOCI --> struct 34, text-unit
 Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 38, TOCI
+(tagpdf)                struct 6, Sect --> struct 37, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 38, TOCI --> struct 39, text-unit
+(tagpdf)                struct 37, TOCI --> struct 38, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 44, TOCI --> struct 45, text-unit
+(tagpdf)                struct 42, TOCI --> struct 43, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 48, TOCI --> struct 49, text-unit
@@ -66,15 +66,12 @@ Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 60, TOCI --> struct 61, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 64, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 64, TOCI --> struct 65, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 70, TOCI --> struct 71, text-unit
+(tagpdf)                struct 68, TOCI --> struct 69, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 74, TOCI --> struct 75, text-unit
@@ -90,48 +87,30 @@ Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 90, TOCI --> struct 91, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 94, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 94, TOCI --> struct 95, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 99, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 99, TOCI --> struct 100, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 104, TOCI
+(tagpdf)                struct 98, TOCI --> struct 99, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 104, TOCI --> struct 105, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 108, TOCI
+(tagpdf)                struct 103, TOCI --> struct 104, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
 (tagpdf)                struct 108, TOCI --> struct 109, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 112, TOCI
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 112, TOCI --> struct 113, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 116, TOCI
+(tagpdf)                struct 113, TOCI --> struct 114, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 116, TOCI --> struct 117, text-unit
-Package tagpdf Warning: Parent-Child 'pdf2:Sect' --> 'pdf:TOCI'.
-(tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 6, Sect --> struct 120, TOCI
+(tagpdf)                struct 117, TOCI --> struct 118, text-unit
 Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
 (tagpdf)                Relation is not allowed! on line ...
-(tagpdf)                struct 120, TOCI --> struct 121, text-unit
+(tagpdf)                struct 121, TOCI --> struct 122, text-unit
+Package tagpdf Warning: Parent-Child 'pdf:TOCI' --> 'pdf2:Part'.
+(tagpdf)                Relation is not allowed! on line ...
+(tagpdf)                struct 125, TOCI --> struct 126, text-unit
 Completed box being shipped out [1]
 \vbox(608.2275+3.60004)x397.485, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -158,7 +137,7 @@ Completed box being shipped out [1]
 .......\hbox(0.0+0.0)x325.215, direction TLT
 ........\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
 .........\vbox(0.0+0.0)x325.215, direction TLT
-..........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+..........\hbox(0.0+0.0)x325.215, glue set 162.6075fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -166,7 +145,7 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0
+...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
@@ -208,28 +187,22 @@ Completed box being shipped out [1]
 ..\glue 12.0
 ..\glue(\lineskip) 0.0
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
-...\vbox(494.025+0.0)x325.215, glue set 8.38495fil, direction TLT
+...\vbox(494.025+0.0)x325.215, glue set - 0.54788, direction TLT
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\write1{\babel@aux{english}{}}
 ....\write-{}
-....\special{}
 ....\glue(\topskip) 10.0
-....\hbox(0.0+0.0)x325.215, glue set 307.14752fil, direction TLT
-.....\localpar
-......\localinterlinepenalty=0
-......\localbrokenpenalty=0
-......\localleftbox=null
-......\localrightbox=null
-.....\hbox(0.0+0.0)x18.06749, direction TLT
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
+....\rule(0.0+0.0)x*
+....\penalty 10000
 ....\glue 36.135
+....\glue 0.0
+....\latelua0{}
+....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 5.40005
-....\hbox(12.59995+5.40005)x325.215, glue set 135.00992fil, direction TLT
+....\glue(\baselineskip) 8.136
+....\hbox(9.864+0.2592)x325.215, glue set 135.00992fil, direction TLT
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\localpar
 ......\localinterlinepenalty=0
@@ -237,6 +210,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
+.....\glue 0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/Baskervaldx(0)/m/n/14.4 C
@@ -250,18 +224,19 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/14.4 n
 .....\TU/Baskervaldx(0)/m/n/14.4 t
 .....\TU/Baskervaldx(0)/m/n/14.4 s
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\rule(12.59995+5.40005)x0.0
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\write1{\@writefile{lof}{\protect \addvspace {10\p@ }}}
+....\write1{\@writefile{lot}{\protect \addvspace {10\p@ }}}
 ....\penalty 10000
 ....\glue 36.135 plus 12.0 minus 6.0
 ....\glue 0.0 plus 0.2
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\lineskip) 1.0
+....\glue(\baselineskip) 4.7708
 ....\hbox(6.97+2.65)x325.215, glue set 243.84499fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
@@ -305,10 +280,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -374,10 +351,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -440,10 +419,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -501,10 +482,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -577,10 +560,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -646,10 +631,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -720,10 +707,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -747,6 +736,55 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
+....\glue 12.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 5.16
+....\hbox(6.7+0.14)x325.215, glue set 120.1125fil, direction TLT
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/10 P
+.....\kern-1.25 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀜
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀞
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 1
+.....\TU/Baskervaldx(0)/m/sc/10 :
+.....\kern5.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/Baskervaldx(0)/m/sc/10 F
+.....\kern-0.14 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀓
+.....\kern-0.34 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀜
+.....\kern0.26 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀝
+.....\TU/Baskervaldx(0)/m/sc/10 󰀞
+.....\TU/Baskervaldx(0)/m/sc/10  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/Baskervaldx(0)/m/sc/10 P
+.....\kern-1.25 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀋
+.....\kern-0.44 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀜
+.....\kern-0.37 (font)
+.....\TU/Baskervaldx(0)/m/sc/10 󰀞
+.....\kern0.0 (italic)
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue 12.0 plus 4.0 minus 4.0
 ....\glue 0.0 plus 0.2
 ....\glue(\parskip) 0.0 plus 1.0
@@ -812,10 +850,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1027,7 +1067,7 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 o
 .....\TU/Baskervaldx(0)/m/n/10 o
 .....\TU/Baskervaldx(0)/m/n/10 t
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 ......= \kern-0.21 (font)
 .....\TU/Baskervaldx(0)/m/n/10 e
@@ -1088,7 +1128,7 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 T
 .....\kern-0.18 (font)
 .....\TU/Baskervaldx(0)/m/n/10 i
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 t
 .....\TU/Baskervaldx(0)/m/n/10 l
@@ -1147,14 +1187,14 @@ Completed box being shipped out [1]
 .....\kern-0.37 (font)
 .....\TU/Baskervaldx(0)/m/n/10 a
 .....\TU/Baskervaldx(0)/m/n/10 g
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 i
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 n
 .....\TU/Baskervaldx(0)/m/n/10 a
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 ......= \kern-0.14 (font)
 .....\TU/Baskervaldx(0)/m/n/10 t
@@ -1236,10 +1276,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1355,13 +1397,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 S
 .....\TU/Baskervaldx(0)/m/n/10 u
 .....\TU/Baskervaldx(0)/m/n/10 b
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 h
 .....\TU/Baskervaldx(0)/m/n/10 e
 .....\TU/Baskervaldx(0)/m/n/10 a
 .....\TU/Baskervaldx(0)/m/n/10 d
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 i
 .....\TU/Baskervaldx(0)/m/n/10 n
@@ -1412,7 +1454,7 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 a
 .....\TU/Baskervaldx(0)/m/n/10 r
 .....\TU/Baskervaldx(0)/m/n/10 a
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 g
 .....\TU/Baskervaldx(0)/m/n/10 r
@@ -1483,7 +1525,7 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 E
 .....\TU/Baskervaldx(0)/m/n/10 n
 .....\TU/Baskervaldx(0)/m/n/10 d
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 n
 .....\TU/Baskervaldx(0)/m/n/10 o
@@ -1553,7 +1595,7 @@ Completed box being shipped out [1]
 .....\kern-0.53 (font)
 .....\TU/Baskervaldx(0)/m/n/10 i
 .....\TU/Baskervaldx(0)/m/n/10 d
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 o
 .....\kern-0.16 (font)
@@ -1605,7 +1647,7 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 a
 .....\TU/Baskervaldx(0)/m/n/10 c
 .....\TU/Baskervaldx(0)/m/n/10 k
-.....\discretionary (penalty 50)
+.....\discretionary (penalty 10000)
 ......< \kern-0.67 (font)
 ......< \TU/Baskervaldx(0)/m/n/10 -
 .....\TU/Baskervaldx(0)/m/n/10 i
@@ -1680,10 +1722,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1759,10 +1803,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1813,6 +1859,8 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 x
 .....\TU/Baskervaldx(0)/m/n/10 :
 .....\kern5.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/Baskervaldx(0)/m/n/10 A
 .....\TU/Baskervaldx(0)/m/n/10 p
 .....\TU/Baskervaldx(0)/m/n/10 p
@@ -1839,10 +1887,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1909,10 +1959,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1987,10 +2039,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -2066,10 +2120,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -2134,10 +2190,12 @@ Completed box being shipped out [1]
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.03+0.14)x7.52988, direction TLT
 .......\mathon
+.......\begindir TLT
 .......\kern2.49994 (italic)
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\TU/Baskervaldx(0)/m/n/10 .
 .......\kern2.49994 (italic)
+.......\enddir TLT
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -2176,7 +2234,7 @@ Completed box being shipped out [1]
 ......\hbox(8.39996+3.60004)x325.215, direction TLT
 .......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
 ........\vbox(0.0+0.0)x325.215, direction TLT
-.........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 162.6075fil, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
 ...........\localbrokenpenalty=0
@@ -2184,7 +2242,7 @@ Completed box being shipped out [1]
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\penalty 10000
-..........\glue(\parfillskip) 0.0
+..........\glue(\parfillskip) 0.0 plus 1.0fil
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fill
@@ -2235,15 +2293,23 @@ Completed box being shipped out [1]
 .\hbox(0.0+0.0)x0.0, direction TLT
 .\kern611.82753
 .\pdfliteral page <lua data reference ...>
-Non-PDF special ignored!{/home/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<<latex-list-css.html>><<latex-align-css.html>> (sblbook01.aux)
+{/home/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<<latex-list-css.html>><<latex-align-css.html>> (sblbook01.aux)
 LaTeX Warning: There were undefined references.
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                sblbook01
 (biblatex)                and rerun LaTeX afterwards.
+Package tagpdf Warning: The structure Sect can not be closed.
+(tagpdf)                It is not equal to the current structure TOC on the main stack
+Package tagpdf Warning: The structure Sect can not be closed.
+(tagpdf)                It is not equal to the current structure TOC on the main stack
+Package tagpdf Warning: There are still open structures on the stack!
+(tagpdf)                The stack contains {Sect}{Sect},{Document}{Document},{Root}{StructTreeRoot}.
+(tagpdf)                The structures are automatically closed,
+(tagpdf)                but their nesting can be wrong.
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~123 structure objects
-(tagpdf)             with ~120 'MC' leaf nodes.
+(tagpdf)             Writing out ~128 structure objects
+(tagpdf)             with ~124 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
@@ -2251,59 +2317,61 @@ Package tagpdf Info: writing RoleMap
 Package tagpdf Info: writing ClassMap
 Package tagpdf Info: writing NameSpaces
 Package tagpdf Info: writing StructElems
-Package tagpdf Warning: Destination 'target*.2' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.3' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.4' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.5' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.6' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.7' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.8' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'chapter.1' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.20' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.21' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.22' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.23' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.24' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'chapter.2' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.25' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.26' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.30' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.32' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.34' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'section*.35' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'chapter.3' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'chapter.4' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'chapter.1' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.36' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.50' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.51' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
-Package tagpdf Warning: Destination 'target*.52' has no related structure.
+Package tagpdf Warning: Destination '' has no related structure.
+(tagpdf)                /Ref not updated.
+Package tagpdf Warning: Destination '' has no related structure.
 (tagpdf)                /Ref not updated.
 Package tagpdf Info: writing Root
 Package logreq Info: Writing requests to 'sblbook01.run.xml'.

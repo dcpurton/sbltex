@@ -1,9 +1,3 @@
-\DocumentMetadata{
-  lang=en,
-  pdfstandard = ua-2,
-  pdfstandard = a-4f,
-  tagging=on
-}
 \documentclass{sblbook}
 \def\pdfmapfile#1{}
 \input{regression-test}
@@ -22,14 +16,12 @@
 \contentsline {chapter}{Introduction}{xxi}{}%
 \contentsline {chapter}{Abbreviations}{xxiii}{}%
 \contentsline {part}{\numberline {1}First Part}{1}{}%
-\addvspace {\bigskipamount }
 \contentsline {chapter}{\numberline {1}Page and Document Setup}{1}{}%
 \contentsline {section}{Typical SBL Book Specifications: 6 × 9}{1}{}%
 \contentsline {section}{Page Size}{1}{}%
 \contentsline {section}{Headers and Footers}{1}{}%
 \contentsline {section}{Chapter Title Pages}{3}{}%
 \contentsline {section}{Pagination}{3}{}%
-\addvspace {\bigskipamount }
 \contentsline {chapter}{\numberline {2}Font Selection}{5}{}%
 \contentsline {section}{Style and Size}{5}{}%
 \contentsline {section}{Headings and Subheadings}{5}{}%
@@ -39,16 +31,17 @@
 \contentsline {subsection}{Bibliographies and Indices}{7}{}%
 \contentsline {section}{Orphans and Widows}{7}{}%
 \contentsline {section}{Stacking}{7}{}%
-\addvspace {\bigskipamount }
 \contentsline {chapter}{\numberline {3}Citations}{9}{}%
-\addvspace {\bigskipamount }
 \contentsline {chapter}{\numberline {4}Greek and Hebrew}{11}{}%
 \c@sblbook@appendices 1
 \def \chaptername {Appendix}
 \addvspace {\bigskipamount }
+\ttl@change@i {\@ne }{chapter}{2em}{\hspace *{-2em}\filright }{\sblbook@hyperlink {\Hy@tocdestname }{\chaptername \ifnum \c@sblbook@appendix@count >1\strut \space \thecontentslabel \fi :\enspace }}{}{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
 \contentsline {chapter}{\numberline {1}Appendix Title}{13}{}%
 \contentsline {chapter}{Bibliography}{15}{}%
 \contentsline {chapter}{Ancient Sources Index}{17}{}%
 \contentsline {chapter}{Modern Authors Index}{19}{}%
 \contentsline {chapter}{Subject Index}{21}{}%
+\contentsfinish 
 \end{document}
