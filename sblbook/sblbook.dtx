@@ -518,7 +518,7 @@
   {
 
     \RequirePackage [ bottom ] { footmisc }
-    \cs_set:Npn \@makefntext #1
+    \cs_set_protected:Npn \@makefntext #1
       {
         \dim_set_eq:NN \parindent \footnotemargin
         \@thefnmark . \enspace
@@ -667,12 +667,12 @@
 %
 %    \begin{macrocode}
 \tl_new:N \g_@@_subtitle_tl
-\cs_set:Npn \subtitle #1
+\cs_set_protected:Npn \subtitle #1
   {
     \tl_gset:Nn \g_@@_subtitle_tl {#1}
   }
 \tl_new:N \g_@@_series_tl
-\cs_set:Npn \series #1
+\cs_set_protected:Npn \series #1
   {
     \tl_gset:Nn \g_@@_series_tl {#1}
   }
