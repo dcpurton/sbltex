@@ -713,6 +713,7 @@
 %
 %    \begin{macrocode}
 \int_set:Nn \c@secnumdepth { 0 }
+\cs_set_nopar:Npn \thepart { \arabic { part } }
 %    \end{macrocode}
 %
 % These two functions ensure consistent spacing after section headings whether
@@ -739,6 +740,26 @@
 %    \begin{macrocode}
 \IfDocumentMetadataTF
   {
+    \EditInstance { heading } { part }
+      {
+        , heading-decls        = \singlespacing
+                                 \normalfont \normalsize
+                                 \centering
+        , prefix               = \MakeUppercase { \partname }
+        , title-decls          =
+        , start-code           = \cleardoublepage
+                                 \thispagestyle { empty }
+                                 \null \vfil
+      }
+    \EditInstance { headformat } { part }
+      {
+        , title-format     = \MakeUppercase {#1}
+        , number-title-sep = 12pt
+      }
+    \DeclareDocumentCommand \part { s = { shorttitle } o m }
+      {
+        \ParseLaTeXeHeading { part } {#1} {#2} {#3}
+      }
     \EditInstance { heading } { chapter }
       {
         , placement            = top
@@ -752,7 +773,7 @@
       }
     \EditInstance { headformat } { chapter }
       {
-        , title-format = \MakeUppercase {#1}
+        , title-format     = \MakeUppercase {#1}
         , number-title-sep = 12pt
       }
     \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
@@ -829,8 +850,6 @@
       { \@@_before_head_correction: }
     \hook_gput_code:nnn { cmd / paragraph / before } { sblreport }
       { \@@_before_head_correction: }
-    \hook_gput_code:nnn { cmd / part / after } { sblreport }
-      { \@@_after_head_correction: }
     \hook_gput_code:nnn { cmd / section / after } { sblreport }
       { \@@_after_head_correction: }
     \hook_gput_code:nnn { cmd / subsection / after } { sblreport }
@@ -839,10 +858,16 @@
       { \@@_after_head_correction: }
   }
   {
-    \RequirePackage { titlesec }
+    \RequirePackage [ newparttoc ] { titlesec }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+    \titleclass { \part } { page }
+    \assignpagestyle { \part } { empty }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+    \titlespacing* { \part }          { 0pt } { 0pt } { 0pt }
     \titlespacing* { \chapter }       { 0pt } { 41pt } { 37pt }
     \titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
     \titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
@@ -852,6 +877,14 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+    \titleformat
+      { \part }
+      [ display ]
+      { \vfil \normalfont \normalsize \singlespacing \filcenter }
+      { \MakeUppercase { \partname } \space \thepart }
+      { 12pt }
+      { \MakeUppercase }
+      [ \vfil ]
     \titleformat
       { \chapter }
       [ display ]
@@ -1031,6 +1064,19 @@
         : \enspace
         \hook_use:nnw { contentsline / number / after } { 1 } {#1}
       }
+    \socket_new_plug:nnn { sblreport / numberline }
+      { part }
+      {
+        \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+        \InstanceValue { heading } { part } { prefix }
+        \skip_horizontal:n
+          {
+            \InstanceValue { headformat } { part } { prefix-number-sep }
+          }
+        #1
+        : \enspace
+        \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+      }
     \socket_assign_plug:nn
       { sblreport / numberline } { default }
     \cs_set_nopar:Npn \numberline #1
@@ -1040,6 +1086,13 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+    \cs_set_nopar:Npn \l@part #1#2
+      {
+        \socket_assign_plug:nn { sblreport / numberline } { part }
+        \addvspace { 12pt }
+        \centering
+        \MakeUppercase {#1}
+      }
     \cs_set_nopar:Npn \l@chapter
       {
         \socket_assign_plug:nn { sblreport / numberline } { chapter }
@@ -1119,6 +1172,20 @@
       }
       { }
       { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+    \titlecontents { part }
+      [ 0pt ]
+      { \singlespacing \filcenter }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          {
+            \MakeUppercase { \partname } \space
+            \thecontentslabel : \enspace
+          }
+        \MakeUppercase
+      }
+      { }
+      { }
     \titlecontents { chapter }
       [ 0pt ]
       { \singlespacing \filright }
@@ -1183,6 +1250,7 @@
     \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \int_compare:nNnT { \c@sblreport@appendix@count } = { 1 }
       { \int_zero:N \c@sblreport@appendix@count }
+    \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
     \IfDocumentMetadataTF
       {
         \cs_new:Nn \@@_appendix_number_format:n
@@ -1215,7 +1283,7 @@
               {
                 \string \setcounter
                   { sblreport@appendix@count }
-                  { \int_use:N \c@chapter }
+                  { \int_use:N \c@sblreport@appendix@count }
               }
             \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
           }
@@ -1231,7 +1299,7 @@
               {
                 \protect \setcounter
                   { sblreport@appendix@count }
-                  { \int_use:N \c@chapter }
+                  { \int_use:N \c@sblreport@appendix@count }
               }
             \singlespacing \normalfont \normalsize \filcenter
           }
