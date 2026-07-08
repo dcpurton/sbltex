@@ -368,7 +368,7 @@
   }
   {
     \RequirePackage [ bottom, ragged ] { footmisc }
-    \cs_set:Npn \@makefntext #1
+    \cs_set_protected:Npn \@makefntext #1
       {
         \dim_set_eq:NN \parindent \footnotemargin
         \@thefnmark . \enspace
@@ -605,14 +605,14 @@
 %
 %   \medskip
 %
-%   This function is used to inject |\__sblarticle_fontmatter_peek:|
+%   This function is used to inject |\__sblarticle_frontmatter_peek:|
 %
 %    \begin{macrocode}
 \cs_set_eq:Nc \@@_orig_protected_end:n { end~ }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_new_nopar:Nn \@@_abstract_protected_end:n
+\cs_new_protected_nopar:Nn \@@_abstract_protected_end:n
   {
     \@@_orig_protected_end:n { #1 }
     \tl_if_eq:nnT { #1 } { abstract }
@@ -860,7 +860,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_set:Npn \tableofcontents
+\cs_set_protected:Npn \tableofcontents
   {
     \part* { \contentsname }
     \@mkboth
@@ -873,7 +873,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_set:Npn \listoffigures
+\cs_set_protected:Npn \listoffigures
   {
     \part* { \listfigurename }
     \addcontentsline { toc } { part } { \listfigurename }
@@ -887,13 +887,13 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_set:Npn \listoftables
+\cs_set_protected:Npn \listoftables
   {
     \part* { \listtablename }
     \addcontentsline { toc } { part } { \listtablename }
     \@mkboth
-      { \listfigurename }
-      { \listfigurename }
+      { \listtablename }
+      { \listtablename }
     \@starttoc { lot }
     \clearpage
     \@@_frontmatter_peek:
@@ -1141,7 +1141,7 @@
           {
             , prefix-number-sep = \@@_appendix_prefix_number_sep:
           }
-        \DeclareDocumentCommand \section { s = { shorttitle } o m}
+        \DeclareDocumentCommand \section { s = { shorttitle } o m }
           {
             \int_incr:N \c@sblarticle@appendix@count
             \protected@write \@auxout
@@ -1242,7 +1242,7 @@
 % with |\newrobuscmd*| with optional arguments.
 %
 %    \begin{macrocode}
-\cs_new:Npn \sblarticle@printbiblist@frontmatter@peek
+\cs_new_protected:Npn \sblarticle@printbiblist@frontmatter@peek
   {
     \@@_if_page_numbering:nT { roman }
       {
