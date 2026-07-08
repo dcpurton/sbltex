@@ -1117,6 +1117,7 @@
     \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \int_compare:nNnT { \c@sblarticle@appendix@count } = { 1 }
       { \int_zero:N \c@sblarticle@appendix@count }
+    \cs_set_nopar:Npn \thepart { \arabic { part } }
     \IfDocumentMetadataTF
       {
         \cs_new:Nn \@@_appendix_number_format:n
@@ -1149,7 +1150,7 @@
               {
                 \string \setcounter
                   { sblarticle@appendix@count }
-                  { \int_use:N \c@part }
+                  { \int_use:N \c@sblarticle@appendix@count }
               }
             \ParseLaTeXeHeading { part } {##1} {##2} {##3}
           }
@@ -1166,7 +1167,7 @@
               {
                 \string \setcounter
                   { sblarticle@appendix@count }
-                  { \int_use:N \c@part }
+                  { \int_use:N \c@sblarticle@appendix@count }
               }
             \singlespacing \normalfont \normalsize \filcenter
           }
