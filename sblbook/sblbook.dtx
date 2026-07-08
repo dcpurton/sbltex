@@ -897,7 +897,7 @@
 % redefine section headings, otherwise use the \pkg{titlesec} package. 
 %
 %    \begin{macrocode}
-\setcounter { secnumdepth } { 0 }
+\int_set:Nn \c@secnumdepth { 0 }
 \cs_set_nopar:Npn \thepart { \arabic { part } }
 %    \end{macrocode}
 %
@@ -906,10 +906,11 @@
   {
     \EditInstance { heading } { part }
       {
-        , after-penalty-vspace = 0.5in
-        , after-vspace         = 0.5in plus 12pt minus 6pt
         , heading-decls        = \normalfont \Large \scshape \centering
         , title-decls          =
+        , start-code           = \cleardoublepage
+                                 \thispagestyle { empty }
+                                 \null \vfil
       }
     \EditInstance { headformat } { part }
       {
@@ -1008,8 +1009,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-    \titlespacing* { \part }         { 0pt } { 0.5in }
-      { 0.5in plus 12pt minus 6pt }
+    \titlespacing* { \part }         { 0pt } { 0pt } { 0pt }
     \titlespacing* { \chapter }      { 0pt } { 0.5in }
       { 0.5in plus 12pt minus 6pt }
     \titlespacing* { \section }      { 0pt } { 12pt plus 4pt minus 2pt }
@@ -1026,11 +1026,12 @@
 %    \begin{macrocode}
     \titleformat
       { \part }
-      [ block ]
-      { \normalfont \Large \scshape \filcenter }
-      { \partname \space \thepart : }
-      { 0.5em }
+      [ display ]
+      { \vfil \normalfont \Large \scshape \filcenter }
+      { \partname \space \thepart }
+      { 12pt }
       { }
+      [ \vfil ]
     \titleformat
       { \chapter }
       [ display ]
@@ -1175,6 +1176,19 @@
               }
           }
       }
+    \socket_new_plug:nnn { sblbook / numberline }
+      { part }
+      {
+        \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+        \InstanceValue { heading } { part } { prefix }
+        \skip_horizontal:n
+          {
+            \InstanceValue { headformat } { part } { prefix-number-sep }
+          }
+        #1
+        : \enspace
+        \hook_use:nnw { contentsline / number / after } { 1 } {#1}
+      }
     \socket_assign_plug:nn
       { sblbook / numberline } { default }
     \cs_set_nopar:Npn \numberline #1
@@ -1184,6 +1198,13 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+    \cs_set_nopar:Npn \l@part #1#2
+      {
+        \socket_assign_plug:nn { sblbook / numberline } { part }
+        \addvspace { 12pt }
+        \centering
+        \textsc {#1}
+      }
     \cs_set_nopar:Npn \l@chapter
       {
         \socket_assign_plug:nn { sblbook / numberline } { chapter }
@@ -1317,7 +1338,7 @@
       { }
       { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
     \titlecontents { part }
-      [ 2em ]
+      [ 0pt ]
       {
         \addvspace { \bigskipamount }
         \scshape \filcenter
@@ -1430,6 +1451,7 @@
     \addtocontents { toc } { \addvspace { \bigskipamount } }
     \int_compare:nNnT { \c@sblbook@appendix@count } = { 1 }
       { \int_zero:N \c@sblbook@appendix@count }
+    \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
     \IfDocumentMetadataTF
       {
         \cs_new:Nn \@@_appendix_number_format:n
@@ -1462,7 +1484,7 @@
               {
                 \string \setcounter
                   { sblbook@appendix@count }
-                  { \int_use:N \c@chapter }
+                  { \int_use:N \c@sblbook@appendix@count }
               }
             \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
           }
@@ -1477,7 +1499,8 @@
               { }
               {
                 \protect \setcounter
-                  { sblbook@appendix@count } { \the \c@chapter }
+                  { sblbook@appendix@count }
+                  { \int_use:N \c@sblbook@appendix@count }
               }
             \normalfont \Large \filcenter
           }
