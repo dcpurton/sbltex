@@ -9,6 +9,7 @@ checkdeps = {
   maindir .. "/sblidx",
   maindir .. "/bibleref-sbl"
 }
+checkruns = 2
 typesetdemofiles = {"sbltex-book.tex"}
 typesetdeps = {
   maindir .. "/sblfonts",

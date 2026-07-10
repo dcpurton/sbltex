@@ -1,0 +1,15 @@
+\documentclass{sblbook}
+\def\pdfmapfile#1{}
+\input{regression-test}
+\begin{document}
+\START
+\showoutput
+\frontmatter
+\tableofcontents
+\mainmatter
+\appendix
+\chapter{First Appendix}
+\chapter{Second Appendix}
+\backmatter
+\chapter{Back Matter Chapter}
+\end{document}
