@@ -1244,15 +1244,29 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\hook_gput_code:nnn { enddocument / afterlastpage } { sblreport }
+  {
+    \protected@write \@auxout
+      { }
+      {
+        \string \setcounter
+          { sblreport@appendix@count }
+          { \int_use:N \c@sblreport@appendix@count }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
     \addtocontents { toc } { \c@sblreport@appendices 1 }
-    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \int_compare:nNnT { \c@sblreport@appendix@count } = { 1 }
-      { \int_zero:N \c@sblreport@appendix@count }
+      { \int_gzero:N \c@sblreport@appendix@count }
     \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
     \IfDocumentMetadataTF
       {
+        \addtocontents { toc }
+          { \def \protect \chaptername { \appendixname } }
         \cs_new:Nn \@@_appendix_number_format:n
           {
             \int_compare:nNnT
@@ -1277,14 +1291,8 @@
           }
         \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
           {
-            \int_incr:N \c@sblreport@appendix@count
-            \protected@write \@auxout
-              { }
-              {
-                \string \setcounter
-                  { sblreport@appendix@count }
-                  { \int_use:N \c@sblreport@appendix@count }
-              }
+            \bool_if:nF {##1}
+              { \int_gincr:N \c@sblreport@appendix@count }
             \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
           }
       }
@@ -1293,21 +1301,15 @@
           { \chapter }
           [ display ]
           {
-            \stepcounter { sblreport@appendix@count }
-            \protected@write \@auxout
-              { }
-              {
-                \protect \setcounter
-                  { sblreport@appendix@count }
-                  { \int_use:N \c@sblreport@appendix@count }
-              }
             \singlespacing \normalfont \normalsize \filcenter
           }
           {
+            \int_gincr:N \c@sblreport@appendix@count
             \MakeUppercase { \appendixname }
-            \ifnum \c@sblreport@appendix@count > 1
-              \strut \space \thechapter
-            \fi
+            \int_compare:nNnT { \c@sblreport@appendix@count } > { 1 }
+              {
+                \space \thechapter
+              }
           }
           { 12pt }
           { \MakeUppercase }
