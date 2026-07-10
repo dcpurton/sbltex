@@ -935,7 +935,7 @@
       }
     \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
       {
-        \IfBooleanF {#1}
+        \bool_if:nF {#1}
           {
             \@@_if_page_numbering:nT { roman }
               {
@@ -944,7 +944,27 @@
               }
             \addtocontents { toc } { \addvspace { \bigskipamount } }
           }
-        \ParseLaTeXeHeading { chapter } {#1} {#2} {#3}
+        \legacy_if:nTF { @mainmatter }
+          {
+            \ParseLaTeXeHeading { chapter } {#1} {#2} {#3}
+          }
+          {
+            \bool_if:nTF {#1}
+              {
+                \ParseLaTeXeHeading { chapter } {#1} {#2} {#3}
+              }
+              {
+                \tl_if_novalue:nTF {#2}
+                  {
+                    \ParseLaTeXeHeading { chapter } { \c_true_bool }
+                      { shorttitle = {#3} } {#3}
+                  }
+                  {
+                    \ParseLaTeXeHeading { chapter } { \c_true_bool }
+                      {#2} {#3}
+                  }
+              }
+          }
       }
     \EditInstance { heading } { section }
       {
