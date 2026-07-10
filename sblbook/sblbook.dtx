@@ -1464,16 +1464,30 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\hook_gput_code:nnn { enddocument / afterlastpage } { sblbook }
+  {
+    \protected@write \@auxout
+      { }
+      {
+        \string \setcounter
+          { sblbook@appendix@count }
+          { \int_use:N \c@sblbook@appendix@count }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
     \addtocontents { toc } { \c@sblbook@appendices 1 }
-    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \addtocontents { toc } { \addvspace { \bigskipamount } }
     \int_compare:nNnT { \c@sblbook@appendix@count } = { 1 }
-      { \int_zero:N \c@sblbook@appendix@count }
+      { \int_gzero:N \c@sblbook@appendix@count }
     \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
     \IfDocumentMetadataTF
       {
+        \addtocontents { toc }
+          { \def \protect \chaptername { \appendixname } }
         \cs_new:Nn \@@_appendix_number_format:n
           {
             \int_compare:nNnT
@@ -1498,15 +1512,29 @@
           }
         \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
           {
-            \int_incr:N \c@sblbook@appendix@count
-            \protected@write \@auxout
-              { }
+            \legacy_if:nTF { @mainmatter }
               {
-                \string \setcounter
-                  { sblbook@appendix@count }
-                  { \int_use:N \c@sblbook@appendix@count }
+                \bool_if:nF {##1}
+                  { \int_gincr:N \c@sblbook@appendix@count }
+                \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
               }
-            \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
+              {
+                \bool_if:nTF {##1}
+                  {
+                    \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
+                  }
+                  {
+                    \tl_if_novalue:nTF {##2}
+                      {
+                        \ParseLaTeXeHeading { chapter } { \c_true_bool }
+                          { shorttitle = {##3} } {##3}
+                      }
+                      {
+                        \ParseLaTeXeHeading { chapter } { \c_true_bool }
+                          {##2} {##3}
+                      }
+                  }
+              }
           }
       }
       {
@@ -1514,21 +1542,15 @@
           { \chapter }
           [ display ]
           {
-            \stepcounter { sblbook@appendix@count }
-            \protected@write \@auxout
-              { }
-              {
-                \protect \setcounter
-                  { sblbook@appendix@count }
-                  { \int_use:N \c@sblbook@appendix@count }
-              }
             \normalfont \Large \filcenter
           }
           {
-            \chaptername
-            \ifnum \c@sblbook@appendix@count > 1
-              \strut \space \thechapter
-            \fi
+            \int_gincr:N \c@sblbook@appendix@count
+            \appendixname
+            \int_compare:nNnT { \c@sblbook@appendix@count } > { 1 }
+              {
+                \space \thechapter
+              }
           }
           { 12pt }
           { }
@@ -1542,7 +1564,7 @@
             \sblbook@hyperlink
               { \Hy@tocdestname }
               {
-                \chaptername
+                \appendixname
                 \ifnum \c@sblbook@appendix@count > 1
                   \strut \space \thecontentslabel
                 \fi
