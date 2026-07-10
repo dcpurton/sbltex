@@ -1110,16 +1110,31 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+\hook_gput_code:nnn { enddocument / afterlastpage } { sblarticle }
+  {
+    \protected@write \@auxout
+      { }
+      {
+        \string \setcounter
+          { sblarticle@appendix@count }
+          { \int_use:N \c@sblarticle@appendix@count }
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
     \int_set:Nn \c@secnumdepth { 1 }
     \addtocontents { toc } { \c@sblarticle@appendices 1 }
-    \addtocontents { toc } { \def \protect \chaptername { \appendixname } }
     \int_compare:nNnT { \c@sblarticle@appendix@count } = { 1 }
-      { \int_zero:N \c@sblarticle@appendix@count }
+      { \int_gzero:N \c@sblarticle@appendix@count }
     \cs_set_nopar:Npn \thepart { \arabic { part } }
+    \int_zero:N \c@part
     \IfDocumentMetadataTF
       {
+        \addtocontents { toc }
+          { \def \protect \chaptername { \appendixname } }
         \cs_new:Nn \@@_appendix_number_format:n
           {
             \int_compare:nNnT
@@ -1144,13 +1159,9 @@
           }
         \DeclareDocumentCommand \section { s = { shorttitle } o m }
           {
-            \int_incr:N \c@sblarticle@appendix@count
-            \protected@write \@auxout
-              { }
+            \bool_if:nF {##1}
               {
-                \string \setcounter
-                  { sblarticle@appendix@count }
-                  { \int_use:N \c@sblarticle@appendix@count }
+                \int_gincr:N \c@sblarticle@appendix@count
               }
             \ParseLaTeXeHeading { part } {##1} {##2} {##3}
           }
@@ -1161,21 +1172,13 @@
           { \part }
           [ display ]
           {
-            \stepcounter { sblarticle@appendix@count }
-            \protected@write \@auxout
-              { }
-              {
-                \string \setcounter
-                  { sblarticle@appendix@count }
-                  { \int_use:N \c@sblarticle@appendix@count }
-              }
             \singlespacing \normalfont \normalsize \filcenter
           }
           {
+            \int_gincr:N \c@sblarticle@appendix@count
             \MakeUppercase { \appendixname }
-            \ifnum \c@sblarticle@appendix@count > 1
-              \strut \space \thepart
-            \fi
+            \int_compare:nNnT { \c@sblarticle@appendix@count } > { 1 }
+              { \space \thepart }
           }
           { 12pt }
           { \MakeUppercase }
