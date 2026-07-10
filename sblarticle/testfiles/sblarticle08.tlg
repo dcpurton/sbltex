@@ -1,0 +1,810 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(sblarticle08.toc)
+\tf@toc=\write...
+Completed box being shipped out [1]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+...\pdflinkstate 0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 444.38254fil, direction TLT
+...\write-{}
+...\write1{\babel@aux{english}{}}
+...\write-{}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\latelua0{}
+...\penalty 10000
+...\glue -14.5
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.388
+...\hbox(8.112+0.168)x469.75502, glue set 203.6055fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\kern-0.12 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 37.0
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
+...\marks1{\__mark_value:nn {1}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives \protect \bbl@ensure@english  {Contents}}}}
+...\penalty 10000
+...\marks2{\__mark_value:nn {2}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives \protect \bbl@ensure@english  {Contents}}}}
+...\penalty 10000
+...\marks3{\__mark_value:nn {3}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives \protect \bbl@ensure@english  {Contents}}}}
+...\penalty 10000
+...\glue 14.5
+...\glue 0.0 plus 0.2
+...\glue(\parskip) 0.0 plus 1.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 5.5
+...\glue 0.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.22
+...\hbox(8.112+0.168)x469.75502, glue set 360.23099fill, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\penalty 10000
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 L
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\kern-1.08 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\discretionary (penalty 50)
+.....< \kern-0.3 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\penalty 10000
+....\penalty 10000
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.2+0.132)x8.99991, direction TLT
+......\mathon
+......\begindir TLT
+......\kern2.99995 (italic)
+......\hbox(1.2+0.132)x3.0, direction TLT
+.......\TU/TeXGyreTermesX(0)/m/n/12 .
+......\kern2.99995 (italic)
+......\enddir TLT
+......\mathoff
+....\penalty 10000
+....\penalty 10000
+....\hbox(8.112+0.0)x18.60004, glue set 12.60004fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/TeXGyreTermesX(0)/m/n/12 1
+.....\kern-1.0
+.....\kern1.0
+....\penalty 10000
+....\glue(\parfillskip) -30.60004
+....\glue(\rightskip) 30.60004
+...\glue 14.5
+...\glue 0.0 plus 0.2
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.22
+...\hbox(8.112+0.168)x469.75502, glue set 278.72699fill, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\penalty 10000
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue 0.0 plus 1.5 minus 1.0
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\TU/TeXGyreTermesX(0)/m/n/12 :
+....\kern6.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\kern-0.24 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\penalty 10000
+....\penalty 10000
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.2+0.132)x8.99991, direction TLT
+......\mathon
+......\begindir TLT
+......\kern2.99995 (italic)
+......\hbox(1.2+0.132)x3.0, direction TLT
+.......\TU/TeXGyreTermesX(0)/m/n/12 .
+......\kern2.99995 (italic)
+......\enddir TLT
+......\mathoff
+....\penalty 10000
+....\penalty 10000
+....\hbox(8.112+0.0)x18.60004, glue set 12.60004fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/TeXGyreTermesX(0)/m/n/12 2
+.....\kern-1.0
+.....\kern1.0
+....\penalty 10000
+....\glue(\parfillskip) -30.60004
+....\glue(\rightskip) 30.60004
+...\glue 14.5
+...\glue 0.0 plus 0.2
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.22
+...\hbox(8.112+0.168)x469.75502, glue set 263.28296fill, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\penalty 10000
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue 0.0 plus 1.5 minus 1.0
+....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\TU/TeXGyreTermesX(0)/m/n/12 :
+....\kern6.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\kern-0.12 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\penalty 10000
+....\penalty 10000
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.2+0.132)x8.99991, direction TLT
+......\mathon
+......\begindir TLT
+......\kern2.99995 (italic)
+......\hbox(1.2+0.132)x3.0, direction TLT
+.......\TU/TeXGyreTermesX(0)/m/n/12 .
+......\kern2.99995 (italic)
+......\enddir TLT
+......\mathoff
+....\penalty 10000
+....\penalty 10000
+....\hbox(8.112+0.168)x18.60004, glue set 12.60004fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/TeXGyreTermesX(0)/m/n/12 3
+.....\kern-1.0
+.....\kern1.0
+....\penalty 10000
+....\glue(\parfillskip) -30.60004
+....\glue(\rightskip) 30.60004
+...\glue -0.168
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 1
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\glue 0.0 plus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+LaTeX template Info: Declaring instance 'part' of type heading on line ....
+LaTeX template Info: Declaring instance 'part' of type headformat on line ....
+Completed box being shipped out [1]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+...\pdflinkstate 0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 536.70471fil, direction TLT
+...\write-{}
+...\write-{}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\latelua0{}
+...\penalty 10000
+...\glue -14.5
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.388
+...\hbox(8.112+0.168)x469.75502, glue set 189.41551fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 L
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\kern-1.08 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\discretionary (penalty 50)
+.....< \kern-0.3 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\marks1{\__mark_value:nn {4}{}}
+...\marks2{\__mark_value:nn {5}{}}
+...\write1{\@writefile{toc}{\protect \contentsline {part}{Title of Paper}{\thepage }{target*.2}\protected@file@percent }}
+...\penalty 10000
+...\glue 37.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
+...\write1{\@writefile{toc}{\c@sblarticle@appendices 1}}
+...\penalty 10000
+...\write1{\@writefile{toc}{\def \protect \chaptername {\protect \bbl@ensure@english  {Appendix}}}}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\pdflinkstate 1
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\glue 0.0 plus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+Completed box being shipped out [2]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+...\pdflinkstate 0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 499.20868fil, direction TLT
+...\write-{}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\latelua0{}
+...\penalty 10000
+...\glue -14.5
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 5.5
+...\glue 0.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.388
+...\hbox(8.112+0.132)x469.75502, glue set 199.2135fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\penalty 10000
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\penalty 10000
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 12.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.256
+...\hbox(8.112+0.168)x469.75502, glue set 187.49551fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\kern-0.24 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\marks1{\__mark_value:nn {6}{}}
+...\marks2{\__mark_value:nn {7}{}}
+...\write1{\@writefile{toc}{\protect \contentsline {part}{\protect \numberline {1}First Appendix}{\thepage }{target*.3}\protected@file@percent }}
+...\penalty 10000
+...\glue 37.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\pdflinkstate 1
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\glue 0.0 plus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+Completed box being shipped out [3]
+\vbox(680.43001+0.168)x469.75502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue -39.5
+.\vbox(719.93001+0.168)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+...\pdflinkstate 0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 504.7081fil, direction TLT
+...\write-{}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\latelua0{}
+...\penalty 10000
+...\glue -14.5
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.388
+...\hbox(8.112+0.132)x469.75502, glue set 199.2135fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\penalty 10000
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\penalty 10000
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 12.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.256
+...\hbox(8.112+0.168)x469.75502, glue set 179.7735fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+.....= \kern-0.12 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\marks1{\__mark_value:nn {8}{}}
+...\marks2{\__mark_value:nn {9}{}}
+...\write1{\@writefile{toc}{\protect \contentsline {part}{\protect \numberline {2}Second Appendix}{\thepage }{target*.4}\protected@file@percent }}
+...\penalty 10000
+...\glue 37.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\pdflinkstate 1
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.168)x469.75502, direction TLT
+...\hbox(8.112+0.168)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 3
+....\glue 0.0 plus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+Completed box being shipped out [4]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\pdflinkstate 1
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+...\pdflinkstate 0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 531.20526fil, direction TLT
+...\write-{}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\latelua0{}
+...\penalty 10000
+...\glue -14.5
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 6.388
+...\hbox(8.112+0.168)x469.75502, glue set 165.71552fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 U
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 U
+....\TU/TeXGyreTermesX(0)/m/n/12 M
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 B
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12  
+....\glue(\spaceskip) 0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 37.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 1
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\TU/TeXGyreTermesX(0)/m/n/12 4
+....\glue 0.0 plus 1.0fil
+..\pdfliteral page <lua data reference ...>
+..\pdfliteral page <lua data reference ...>
+..\pdflinkstate 0
+.\kern0.0
+.\kern-680.43001
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern680.43001
+.\pdfliteral page <lua data reference ...>
+<<latex-list-css.html>><<latex-align-css.html>> (sblarticle08.aux)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~31 structure objects
+(tagpdf)             with ~30 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+Package tagpdf Info: writing Root
+Package logreq Info: Writing requests to 'sblarticle08.run.xml'.

@@ -1,0 +1,18 @@
+\DocumentMetadata{
+  lang=en,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f,
+  tagging=on
+}
+\documentclass{sblarticle}
+\def\pdfmapfile#1{}
+\input{regression-test}
+\begin{document}
+\START
+\showoutput
+\tableofcontents
+\appendix
+\section{First Appendix}
+\section{Second Appendix}
+\section*{Unnumbered Section}
+\end{document}

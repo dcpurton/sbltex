@@ -1,0 +1,659 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(sblarticle06.toc)
+\tf@toc=\write...
+Completed box being shipped out [1]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 429.8841fil, direction TLT
+...\write-{}
+...\write1{\babel@aux{american}{}}
+...\write-{}
+...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
+...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 4.35005
+...\hbox(10.14995+4.35004)x469.75502, glue set 203.6055fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\kern-0.12 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\kern0.0
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
+...\glue 37.0
+...\glue 0.0
+...\marks1{\__mark_value:nn {1}{\protect \foreignlanguage {american}{\protect \bbl@restore@actives \protect \bbl@ensure@american  {Contents}}}}
+...\penalty 10000
+...\marks2{\__mark_value:nn {2}{\protect \foreignlanguage {american}{\protect \bbl@restore@actives \protect \bbl@ensure@american  {Contents}}}}
+...\penalty 10000
+...\marks3{\__mark_value:nn {3}{\protect \foreignlanguage {american}{\protect \bbl@restore@actives \protect \bbl@ensure@american  {Contents}}}}
+...\penalty 10000
+...\glue 14.5
+...\penalty 10000
+...\glue 0.0 plus 0.1
+...\penalty 10000
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 5.5
+...\glue 0.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 0.00002
+...\hbox(10.14995+4.35004)x469.75502, glue set 357.23099fill, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 L
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\kern-1.08 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\discretionary (penalty 50)
+.....< \kern-0.3 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\rule(10.14995+4.35004)x0.0
+....\kern0.0
+....\glue 6.0
+....\glue -6.0
+....\glue 3.0
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.2+0.132)x6.0, glue set 3.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(1.2+0.132)x3.0, direction TLT
+.......\TU/TeXGyreTermesX(0)/m/n/12 .
+....\kern0.0
+....\hbox(8.112+0.0)x18.60004, glue set 12.60004fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\rule(*+*)x0.0
+....\penalty 10000
+....\glue -18.60004
+....\penalty 10000
+....\glue(\parfillskip) -12.0 plus 1.0fil
+....\glue(\rightskip) 30.60004 plus 1.0fil
+...\penalty 10000
+...\penalty 0
+...\glue 0.0 plus 0.1
+...\penalty 10000
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 0.00002
+...\hbox(10.14995+4.35004)x469.75502, glue set 275.72699fill, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\rule(10.14995+4.35004)x0.0
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\TU/TeXGyreTermesX(0)/m/n/12 :
+....\kern6.0
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\kern-0.24 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\rule(10.14995+4.35004)x0.0
+....\kern0.0
+....\glue 6.0
+....\glue -6.0
+....\glue 3.0
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.2+0.132)x6.0, glue set 3.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(1.2+0.132)x3.0, direction TLT
+.......\TU/TeXGyreTermesX(0)/m/n/12 .
+....\kern0.0
+....\hbox(8.112+0.0)x18.60004, glue set 12.60004fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\rule(*+*)x0.0
+....\penalty 10000
+....\glue -18.60004
+....\penalty 10000
+....\glue(\parfillskip) -12.0 plus 1.0fil
+....\glue(\rightskip) 30.60004 plus 1.0fil
+...\penalty 10000
+...\penalty 0
+...\glue 0.0 plus 0.1
+...\penalty 10000
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 0.00002
+...\hbox(10.14995+4.35004)x469.75502, glue set 260.28296fill, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\rule(10.14995+4.35004)x0.0
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\TU/TeXGyreTermesX(0)/m/n/12 :
+....\kern6.0
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\kern-0.12 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\rule(10.14995+4.35004)x0.0
+....\kern0.0
+....\glue 6.0
+....\glue -6.0
+....\glue 3.0
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.2+0.132)x6.0, glue set 3.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(1.2+0.132)x3.0, direction TLT
+.......\TU/TeXGyreTermesX(0)/m/n/12 .
+....\kern0.0
+....\hbox(8.112+0.168)x18.60004, glue set 12.60004fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\TU/TeXGyreTermesX(0)/m/n/12 3
+....\rule(*+*)x0.0
+....\penalty 10000
+....\glue -18.60004
+....\penalty 10000
+....\glue(\parfillskip) -12.0 plus 1.0fil
+....\glue(\rightskip) 30.60004 plus 1.0fil
+...\penalty 10000
+...\glue -4.35004
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\glue 0.0 plus 1.0fil
+Completed box being shipped out [1]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 532.52307fil, direction TLT
+...\write-{}
+...\write-{}
+...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
+...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 4.35005
+...\hbox(10.14995+4.35004)x469.75502, glue set 189.41551fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 L
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\kern-1.08 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\discretionary (penalty 50)
+.....< \kern-0.3 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\kern0.0
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
+...\glue 37.0
+...\glue 0.0
+...\marks1{\__mark_value:nn {4}{}}
+...\marks2{\__mark_value:nn {5}{}}
+...\write1{\@writefile{toc}{\protect \contentsline {part}{Title of Paper}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\write1{\@writefile{toc}{\c@sblarticle@appendices 1}}
+...\penalty 10000
+...\write1{\@writefile{toc}{\ttl@change@i {\@ne }{part}{0pt}{\singlespacing \filright }{\sblarticle@hyperlink {\Hy@tocdestname }{\MakeUppercase {\appendixname }\ifnum \c@sblarticle@appendix@count >1\strut \space \thecontentslabel \fi :\enspace }\MakeUppercase }{\MakeUppercase }{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax }}
+...\penalty 10000
+...\write1{\@writefile{toc}{\ttl@change@v {part}{}{}{}\relax }}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\glue 0.0 plus 1.0fil
+Completed box being shipped out [2]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 495.0271fil, direction TLT
+...\write-{}
+...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
+...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 5.5
+...\glue 0.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 4.35005
+...\hbox(10.14995+4.35004)x469.75502, glue set 200.7135fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 1
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 12.0
+...\glue 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 0.00002
+...\hbox(10.14995+4.35004)x469.75502, glue set 187.49551fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 F
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\kern-0.24 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\kern0.0
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 37.0
+...\glue 0.0
+...\marks1{\__mark_value:nn {6}{}}
+...\marks2{\__mark_value:nn {7}{}}
+...\write1{\@writefile{toc}{\protect \contentsline {part}{\protect \numberline {1}First Appendix}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\glue 0.0 plus 1.0fil
+Completed box being shipped out [3]
+\vbox(680.43001+0.168)x469.75502, direction TLT
+.\glue -39.5
+.\vbox(719.93001+0.168)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 500.52652fil, direction TLT
+...\write-{}
+...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
+...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 4.35005
+...\hbox(10.14995+4.35004)x469.75502, glue set 200.7135fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 2
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 12.0
+...\glue 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 0.00002
+...\hbox(10.14995+4.35004)x469.75502, glue set 179.7735fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+.....= \kern-0.12 (font)
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 A
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\discretionary (penalty 50)
+.....< \kern-0.48 (font)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 P
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 X
+....\kern0.0
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 37.0
+...\glue 0.0
+...\marks1{\__mark_value:nn {8}{}}
+...\marks2{\__mark_value:nn {9}{}}
+...\write1{\@writefile{toc}{\protect \contentsline {part}{\protect \numberline {2}Second Appendix}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.168)x469.75502, direction TLT
+...\hbox(8.112+0.168)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/TeXGyreTermesX(0)/m/n/12 3
+....\glue 0.0 plus 1.0fil
+Completed box being shipped out [4]
+\vbox(680.43001+0.0)x469.75502, direction TLT
+.\glue -39.5
+.\vbox(719.93001+0.0)x469.75502, direction TLT
+..\vbox(14.5+0.0)x469.75502, glue set 14.5fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x469.75502, direction TLT
+....\hbox(0.0+0.0)x469.75502, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(650.43001+0.0)x469.75502, glue set 527.02368fil, direction TLT
+...\write-{}
+...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
+...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
+...\glue(\topskip) 12.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 41.0
+...\glue 0.0
+...\glue 14.5
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 4.35005
+...\hbox(10.14995+4.35004)x469.75502, glue set 165.71552fil, direction TLT
+....\glue(\leftskip) 0.0 plus 1.0fil
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\rule(10.14995+4.35004)x0.0
+....\TU/TeXGyreTermesX(0)/m/n/12 U
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\TU/TeXGyreTermesX(0)/m/n/12 U
+....\TU/TeXGyreTermesX(0)/m/n/12 M
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 B
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 R
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 D
+....\glue(\spaceskip) 3.0
+....\TU/TeXGyreTermesX(0)/m/n/12 S
+....\TU/TeXGyreTermesX(0)/m/n/12 E
+....\TU/TeXGyreTermesX(0)/m/n/12 C
+....\discretionary (penalty 50)
+.....< \TU/TeXGyreTermesX(0)/m/n/12 -
+....\TU/TeXGyreTermesX(0)/m/n/12 T
+....\TU/TeXGyreTermesX(0)/m/n/12 I
+....\TU/TeXGyreTermesX(0)/m/n/12 O
+....\TU/TeXGyreTermesX(0)/m/n/12 N
+....\kern0.0
+....\rule(10.14995+4.35004)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0
+....\glue(\rightskip) 0.0 plus 1.0fil
+...\penalty 10000
+...\glue 37.0
+...\glue 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 21.888
+..\hbox(8.112+0.0)x469.75502, direction TLT
+...\hbox(8.112+0.0)x469.75502, glue set 231.8775fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/TeXGyreTermesX(0)/m/n/12 4
+....\glue 0.0 plus 1.0fil
+(sblarticle06.aux)
+Package logreq Info: Writing requests to 'sblarticle06.run.xml'.

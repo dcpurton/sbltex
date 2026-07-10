@@ -1,0 +1,11 @@
+\documentclass{sblarticle}
+\def\pdfmapfile#1{}
+\input{regression-test}
+\begin{document}
+\START
+\showoutput
+\tableofcontents
+\appendix
+\section{First Appendix}
+\section*{Unnumbered Section}
+\end{document}
