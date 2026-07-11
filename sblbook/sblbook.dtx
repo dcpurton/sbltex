@@ -1170,11 +1170,11 @@
     \socket_new_plug:nnn { sblbook / numberline }
       { chapter }
       {
-        \int_compare:nNnTF { \int_use:N \c@sblbook@appendices } = { 1 }
+        \int_compare:nNnTF { \int_use:N \sblbook@appendices } = { 1 }
           {
             \hook_use:nnw { contentsline / number / before } { 1 } {#1}
             \chaptername
-            \int_compare:nNnT { \c@sblbook@appendix@count } > { 1 }
+            \int_compare:nNnT { \sblbook@appendix@state } > { 1 }
               {
                 \skip_horizontal:n
                   {
@@ -1446,7 +1446,7 @@
   { cmd / backmatter / after }
   { sblbook }
   {
-    \int_compare:nNnF { \int_use:N \c@sblbook@appendices } = { \c_zero_int }
+    \int_compare:nNnF { \int_use:N \sblbook@appendices } = { \c_zero_int }
       {
         \addtocontents { toc } { \addvspace { \bigskipamount } }
       }
@@ -1459,8 +1459,22 @@
 %
 %    \begin{macrocode}
 \cs_set_eq:NN \sblbook@hyperlink \@@_hyperlink:nn
-\int_new:N \c@sblbook@appendix@count
-\int_new:N \c@sblbook@appendices
+%    \end{macrocode}
+%
+% Create a state flag indicating if \cs{appendix} has been called. Within
+% appendices, this flag is set to a value of 1. This is only used when
+% \cs{DocumentMetadata} is in use.
+%
+%    \begin{macrocode}
+\int_new:N \sblbook@appendices
+%    \end{macrocode}
+%
+% Create a state flag for number of appendices. A value of 0 indicates there
+% are no appendices, 1 indicates one appendix and 2 indicates multiple
+% appendices.
+%
+%    \begin{macrocode}
+\int_new:N \sblbook@appendix@state
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1469,9 +1483,9 @@
     \protected@write \@auxout
       { }
       {
-        \string \setcounter
-          { sblbook@appendix@count }
-          { \int_use:N \c@sblbook@appendix@count }
+        \exp_not:N \global
+        \exp_not:N \sblbook@appendix@state
+        \int_use:N \sblbook@appendix@state
       }
   }
 %    \end{macrocode}
@@ -1479,10 +1493,10 @@
 %    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
-    \addtocontents { toc } { \c@sblbook@appendices 1 }
+    \addtocontents { toc } { \sblbook@appendices 1 }
     \addtocontents { toc } { \addvspace { \bigskipamount } }
-    \int_compare:nNnT { \c@sblbook@appendix@count } = { 1 }
-      { \int_gzero:N \c@sblbook@appendix@count }
+    \int_compare:nNnT { \sblbook@appendix@state } = { 1 }
+      { \int_gzero:N \sblbook@appendix@state }
     \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
     \IfDocumentMetadataTF
       {
@@ -1491,13 +1505,13 @@
         \cs_new:Nn \@@_appendix_number_format:n
           {
             \int_compare:nNnT
-              { \c@sblbook@appendix@count } > { 1 }
+              { \sblbook@appendix@state } > { 1 }
               { \theheading }
           }
         \cs_new:Nn \@@_appendix_prefix_number_sep:
           {
             \int_compare:nNnTF
-              { \c@sblbook@appendix@count } > { 1 }
+              { \sblbook@appendix@state } > { 1 }
               { 0.5em }
               { 0em }
           }
@@ -1515,7 +1529,10 @@
             \legacy_if:nTF { @mainmatter }
               {
                 \bool_if:nF {##1}
-                  { \int_gincr:N \c@sblbook@appendix@count }
+                  {
+                    \int_compare:nNnT { \sblbook@appendix@state } < { 2 }
+                      { \int_gincr:N \sblbook@appendix@state }
+                  }
                 \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
               }
               {
@@ -1545,9 +1562,10 @@
             \normalfont \Large \filcenter
           }
           {
-            \int_gincr:N \c@sblbook@appendix@count
+            \int_compare:nNnT { \sblbook@appendix@state } < { 2 }
+              { \int_gincr:N \sblbook@appendix@state }
             \appendixname
-            \int_compare:nNnT { \c@sblbook@appendix@count } > { 1 }
+            \int_compare:nNnT { \sblbook@appendix@state } > { 1 }
               {
                 \space \thechapter
               }
@@ -1565,7 +1583,7 @@
               { \Hy@tocdestname }
               {
                 \appendixname
-                \ifnum \c@sblbook@appendix@count > 1
+                \ifnum \sblbook@appendix@state > 1
                   \strut \space \thecontentslabel
                 \fi
                 : \enspace

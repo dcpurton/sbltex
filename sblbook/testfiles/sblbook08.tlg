@@ -582,7 +582,7 @@ Completed box being shipped out [1]
 ..\glue(\lineskip) 0.0
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
 ...\vbox(494.025+0.0)x325.215, glue set 359.93903fil, direction TLT
-....\write1{\@writefile{toc}{\c@sblbook@appendices 1}}
+....\write1{\@writefile{toc}{\sblbook@appendices 1}}
 ....\write1{\@writefile{toc}{\addvspace {\bigskipamount }}}
 ....\write1{\@writefile{toc}{\def \protect \chaptername {\protect \bbl@ensure@english  {Appendix}}}}
 ....\write-{}

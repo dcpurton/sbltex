@@ -1040,10 +1040,10 @@
       { chapter }
       {
         \hook_use:nnw { contentsline / number / before } { 1 } {#1}
-        \int_compare:nNnTF { \int_use:N \c@sblreport@appendices } = { 1 }
+        \int_compare:nNnTF { \int_use:N \sblreport@appendices } = { 1 }
           {
             \InstanceValue { heading } { chapter } { prefix }
-            \int_compare:nNnT { \c@sblreport@appendix@count } > { 1 }
+            \int_compare:nNnT { \sblreport@appendix@state } > { 1 }
               {
                 \skip_horizontal:n
                   {
@@ -1239,8 +1239,22 @@
 %
 %    \begin{macrocode}
 \cs_set_eq:NN \sblreport@hyperlink \@@_hyperlink:nn
-\int_new:N \c@sblreport@appendix@count
-\int_new:N \c@sblreport@appendices
+%    \end{macrocode}
+%
+% Create a state flag indicating if \cs{appendix} has been called. Within
+% appendices, this flag is set to a value of 1. This is only used when
+% \cs{DocumentMetadata} is in use.
+%
+%    \begin{macrocode}
+\int_new:N \sblreport@appendices
+%    \end{macrocode}
+%
+% Create a state flag for number of appendices. A value of 0 indicates there
+% are no appendices, 1 indicates one appendix and 2 indicates multiple
+% appendices.
+%
+%    \begin{macrocode}
+\int_new:N \sblreport@appendix@state
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1249,9 +1263,9 @@
     \protected@write \@auxout
       { }
       {
-        \string \setcounter
-          { sblreport@appendix@count }
-          { \int_use:N \c@sblreport@appendix@count }
+        \exp_not:N \global
+        \exp_not:N \sblreport@appendix@state
+        \int_use:N \sblreport@appendix@state
       }
   }
 %    \end{macrocode}
@@ -1259,24 +1273,24 @@
 %    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
-    \addtocontents { toc } { \c@sblreport@appendices 1 }
-    \int_compare:nNnT { \c@sblreport@appendix@count } = { 1 }
-      { \int_gzero:N \c@sblreport@appendix@count }
+    \int_compare:nNnT { \sblreport@appendix@state } = { 1 }
+      { \int_gzero:N \sblreport@appendix@state }
     \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
     \IfDocumentMetadataTF
       {
+        \addtocontents { toc } { \sblreport@appendices 1 }
         \addtocontents { toc }
           { \def \protect \chaptername { \appendixname } }
         \cs_new:Nn \@@_appendix_number_format:n
           {
             \int_compare:nNnT
-              { \c@sblreport@appendix@count } > { 1 }
+              { \sblreport@appendix@state } > { 1 }
               { \theheading }
           }
         \cs_new:Nn \@@_appendix_prefix_number_sep:
           {
             \int_compare:nNnTF
-              { \c@sblreport@appendix@count } > { 1 }
+              { \sblreport@appendix@state } > { 1 }
               { 0.5em }
               { 0em }
           }
@@ -1292,7 +1306,10 @@
         \DeclareDocumentCommand \chapter { s = { shorttitle } o m }
           {
             \bool_if:nF {##1}
-              { \int_gincr:N \c@sblreport@appendix@count }
+              {
+                \int_compare:nNnT { \sblreport@appendix@state } < { 2 }
+                  { \int_gincr:N \sblreport@appendix@state }
+              }
             \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
           }
       }
@@ -1304,9 +1321,10 @@
             \singlespacing \normalfont \normalsize \filcenter
           }
           {
-            \int_gincr:N \c@sblreport@appendix@count
+            \int_compare:nNnT { \sblreport@appendix@state } < { 2 }
+              { \int_gincr:N \sblreport@appendix@state }
             \MakeUppercase { \appendixname }
-            \int_compare:nNnT { \c@sblreport@appendix@count } > { 1 }
+            \int_compare:nNnT { \sblreport@appendix@state } > { 1 }
               {
                 \space \thechapter
               }
@@ -1321,7 +1339,7 @@
               { \Hy@tocdestname }
               {
                 \MakeUppercase { \appendixname }
-                \ifnum \c@sblreport@appendix@count > 1
+                \ifnum \sblreport@appendix@state > 1
                   \strut \space \thecontentslabel
                 \fi
                 : \enspace

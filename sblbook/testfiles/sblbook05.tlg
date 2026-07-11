@@ -433,9 +433,9 @@ Completed box being shipped out [1]
 ..\glue(\lineskip) 0.0
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
 ...\vbox(494.025+0.0)x325.215, glue set 358.35495fil, direction TLT
-....\write1{\@writefile{toc}{\c@sblbook@appendices 1}}
+....\write1{\@writefile{toc}{\sblbook@appendices 1}}
 ....\write1{\@writefile{toc}{\addvspace {\bigskipamount }}}
-....\write1{\@writefile{toc}{\ttl@change@i {\@ne }{chapter}{2em}{\hspace *{-2em}\filright }{\sblbook@hyperlink {\Hy@tocdestname }{\appendixname \ifnum \c@sblbook@appendix@count >1\strut \space \thecontentslabel \fi :\enspace }}{}{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax }}
+....\write1{\@writefile{toc}{\ttl@change@i {\@ne }{chapter}{2em}{\hspace *{-2em}\filright }{\sblbook@hyperlink {\Hy@tocdestname }{\appendixname \ifnum \sblbook@appendix@state >1\strut \space \thecontentslabel \fi :\enspace }}{}{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax }}
 ....\write1{\@writefile{toc}{\ttl@change@v {chapter}{}{}{}\relax }}
 ....\write-{}
 ....\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline {1}First Appendix}{\thepage }{}\protected@file@percent }}

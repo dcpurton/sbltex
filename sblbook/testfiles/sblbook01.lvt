@@ -43,7 +43,7 @@
 \contentsline {chapter}{\numberline {3}Citations}{9}{}%
 \addvspace {\bigskipamount }
 \contentsline {chapter}{\numberline {4}Greek and Hebrew}{11}{}%
-\c@sblbook@appendices 1
+\sblbook@appendices 1
 \def \chaptername {Appendix}
 \addvspace {\bigskipamount }
 \contentsline {chapter}{\numberline {1}Appendix Title}{13}{}%

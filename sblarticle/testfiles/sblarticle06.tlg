@@ -351,9 +351,7 @@ Completed box being shipped out [1]
 ...\marks2{\__mark_value:nn {5}{}}
 ...\write1{\@writefile{toc}{\protect \contentsline {part}{Title of Paper}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
-...\write1{\@writefile{toc}{\c@sblarticle@appendices 1}}
-...\penalty 10000
-...\write1{\@writefile{toc}{\ttl@change@i {\@ne }{part}{0pt}{\singlespacing \filright }{\sblarticle@hyperlink {\Hy@tocdestname }{\MakeUppercase {\appendixname }\ifnum \c@sblarticle@appendix@count >1\strut \space \thecontentslabel \fi :\enspace }\MakeUppercase }{\MakeUppercase }{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax }}
+...\write1{\@writefile{toc}{\ttl@change@i {\@ne }{part}{0pt}{\singlespacing \filright }{\sblarticle@hyperlink {\Hy@tocdestname }{\MakeUppercase {\appendixname }\ifnum \sblarticle@appendix@state >1\strut \space \thecontentslabel \fi :\enspace }\MakeUppercase }{\MakeUppercase }{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax }}
 ...\penalty 10000
 ...\write1{\@writefile{toc}{\ttl@change@v {part}{}{}{}\relax }}
 ...\penalty 10000

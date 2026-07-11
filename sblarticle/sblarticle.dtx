@@ -941,10 +941,10 @@
       { part }
       {
         \hook_use:nnw { contentsline / number / before } { 1 } {#1}
-        \int_compare:nNnTF { \int_use:N \c@sblarticle@appendices } = { 1 }
+        \int_compare:nNnTF { \sblarticle@appendices } = { 1 }
           {
             \InstanceValue { heading } { part } { prefix }
-            \int_compare:nNnT { \c@sblarticle@appendix@count } > { 1 }
+            \int_compare:nNnT { \sblarticle@appendix@state } > { 1 }
               {
                 \skip_horizontal:n
                   {
@@ -1105,8 +1105,22 @@
 %
 %    \begin{macrocode}
 \cs_set_eq:NN \sblarticle@hyperlink \@@_hyperlink:nn
-\int_new:N \c@sblarticle@appendix@count
-\int_new:N \c@sblarticle@appendices
+%    \end{macrocode}
+%
+% Create a state flag indicating if \cs{appendix} has been called. Within
+% appendices, this flag is set to a value of 1. This is only used when
+% \cs{DocumentMetadata} is in use.
+%
+%    \begin{macrocode}
+\int_new:N \sblarticle@appendices
+%    \end{macrocode}
+%
+% Create a state flag for number of appendices. A value of 0 indicates there
+% are no appendices, 1 indicates one appendix and 2 indicates multiple
+% appendices.
+%
+%    \begin{macrocode}
+\int_new:N \sblarticle@appendix@state
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1115,9 +1129,9 @@
     \protected@write \@auxout
       { }
       {
-        \string \setcounter
-          { sblarticle@appendix@count }
-          { \int_use:N \c@sblarticle@appendix@count }
+        \exp_not:N \global
+        \exp_not:N \sblarticle@appendix@state
+        \int_use:N \sblarticle@appendix@state
       }
   }
 %    \end{macrocode}
@@ -1126,25 +1140,25 @@
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
     \int_set:Nn \c@secnumdepth { 1 }
-    \addtocontents { toc } { \c@sblarticle@appendices 1 }
-    \int_compare:nNnT { \c@sblarticle@appendix@count } = { 1 }
-      { \int_gzero:N \c@sblarticle@appendix@count }
+    \int_compare:nNnT { \sblarticle@appendix@state } = { 1 }
+      { \int_gzero:N \sblarticle@appendix@state }
     \cs_set_nopar:Npn \thepart { \arabic { part } }
     \int_zero:N \c@part
     \IfDocumentMetadataTF
       {
+        \addtocontents { toc } { \sblarticle@appendices 1 }
         \addtocontents { toc }
           { \def \protect \chaptername { \appendixname } }
         \cs_new:Nn \@@_appendix_number_format:n
           {
             \int_compare:nNnT
-              { \c@sblarticle@appendix@count } > { 1 }
+              { \sblarticle@appendix@state } > { 1 }
               { \theheading }
           }
         \cs_new:Nn \@@_appendix_prefix_number_sep:
           {
             \int_compare:nNnTF
-              { \c@sblarticle@appendix@count } > { 1 }
+              { \sblarticle@appendix@state } > { 1 }
               { 0.5em }
               { 0em }
           }
@@ -1161,7 +1175,8 @@
           {
             \bool_if:nF {##1}
               {
-                \int_gincr:N \c@sblarticle@appendix@count
+                \int_compare:nNnT { \sblarticle@appendix@state } < { 2 }
+                  { \int_gincr:N \sblarticle@appendix@state }
               }
             \ParseLaTeXeHeading { part } {##1} {##2} {##3}
           }
@@ -1175,9 +1190,10 @@
             \singlespacing \normalfont \normalsize \filcenter
           }
           {
-            \int_gincr:N \c@sblarticle@appendix@count
+            \int_compare:nNnT { \sblarticle@appendix@state } < { 2 }
+              { \int_gincr:N \sblarticle@appendix@state }
             \MakeUppercase { \appendixname }
-            \int_compare:nNnT { \c@sblarticle@appendix@count } > { 1 }
+            \int_compare:nNnT { \sblarticle@appendix@state } > { 1 }
               { \space \thepart }
           }
           { 12pt }
@@ -1190,7 +1206,7 @@
               { \Hy@tocdestname }
               {
                 \MakeUppercase { \appendixname }
-                \ifnum \c@sblarticle@appendix@count > 1
+                \ifnum \sblarticle@appendix@state > 1
                   \strut \space \thecontentslabel
                 \fi
                 : \enspace

@@ -415,7 +415,7 @@ Completed box being shipped out [1]
 ...\penalty 10000
 ...\glue -5.5
 ...\glue 0.0
-...\write1{\@writefile{toc}{\c@sblarticle@appendices 1}}
+...\write1{\@writefile{toc}{\sblarticle@appendices 1}}
 ...\penalty 10000
 ...\write1{\@writefile{toc}{\def \protect \chaptername {\protect \bbl@ensure@english  {Appendix}}}}
 ...\penalty 10000
