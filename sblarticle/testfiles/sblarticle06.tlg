@@ -374,7 +374,7 @@ Completed box being shipped out [2]
 ....\hbox(0.0+0.0)x469.75502, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(650.43001+0.0)x469.75502, glue set 495.0271fil, direction TLT
+..\vbox(650.43001+0.0)x469.75502, glue set 500.52652fil, direction TLT
 ...\write-{}
 ...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
 ...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
@@ -458,6 +458,10 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0
 ....\glue(\rightskip) 0.0 plus 1.0fil
 ...\penalty 10000
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
 ...\glue 37.0
 ...\glue 0.0
 ...\marks1{\__mark_value:nn {6}{}}
@@ -494,6 +498,10 @@ Completed box being shipped out [3]
 ...\glue 0.0
 ...\glue 14.5
 ...\glue(\parskip) 0.0 plus 1.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 5.5
+...\glue 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 4.35005
 ...\hbox(10.14995+4.35004)x469.75502, glue set 200.7135fil, direction TLT
@@ -566,6 +574,10 @@ Completed box being shipped out [3]
 ....\glue(\parfillskip) 0.0
 ....\glue(\rightskip) 0.0 plus 1.0fil
 ...\penalty 10000
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
 ...\glue 37.0
 ...\glue 0.0
 ...\marks1{\__mark_value:nn {8}{}}
@@ -602,6 +614,10 @@ Completed box being shipped out [4]
 ...\glue 0.0
 ...\glue 14.5
 ...\glue(\parskip) 0.0 plus 1.0
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue 5.5
+...\glue 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 4.35005
 ...\hbox(10.14995+4.35004)x469.75502, glue set 165.71552fil, direction TLT
@@ -642,6 +658,10 @@ Completed box being shipped out [4]
 ....\glue(\parfillskip) 0.0
 ....\glue(\rightskip) 0.0 plus 1.0fil
 ...\penalty 10000
+...\rule(0.0+0.0)x*
+...\penalty 10000
+...\glue -5.5
+...\glue 0.0
 ...\glue 37.0
 ...\glue 0.0
 ...\glue 0.0 plus 1.0fil

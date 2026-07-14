@@ -1311,6 +1311,7 @@
                   { \int_gincr:N \sblreport@appendix@state }
               }
             \ParseLaTeXeHeading { chapter } {##1} {##2} {##3}
+            \@@_after_head_correction:
           }
       }
       {
@@ -1331,6 +1332,7 @@
           }
           { 12pt }
           { \MakeUppercase }
+          [ \@@_after_head_correction: ]
         \titlecontents { chapter }
           [ 0pt ]
           { \singlespacing \filright }

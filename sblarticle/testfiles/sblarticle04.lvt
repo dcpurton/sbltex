@@ -47,4 +47,17 @@ This is a paragraph.
 \subparagraph{This Is an Example of a F-Level Heading}
 
 Which runs into its paragraph.
+
+\appendix
+
+\section{This Is an Example of an A-Level Appendix Heading}
+
+\subsection{This Is an Example of a B-Level Appendix Heading}
+
+\subsubsection{This Is an Example of a C-Level Appendix Heading}
+
+\paragraph{This Is an Example of a D-Level Appendix Heading}
+
+\subparagraph{This Is an Example of a E-Level Appendix Heading}
+
 \end{document}

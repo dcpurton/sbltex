@@ -1139,7 +1139,7 @@
 %    \begin{macrocode}
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
-    \int_set:Nn \c@secnumdepth { 1 }
+    \int_set:Nn \c@secnumdepth { 0 }
     \int_compare:nNnT { \sblarticle@appendix@state } = { 1 }
       { \int_gzero:N \sblarticle@appendix@state }
     \cs_set_nopar:Npn \thepart { \arabic { part } }
@@ -1179,9 +1179,37 @@
                   { \int_gincr:N \sblarticle@appendix@state }
               }
             \ParseLaTeXeHeading { part } {##1} {##2} {##3}
+            \@@_after_head_correction:
+          }
+        \DeclareDocumentCommand \subsection { s = { shorttitle } o m }
+          {
+            \@@_before_head_correction:
+            \ParseLaTeXeHeading { section } {##1} {##2} {##3}
+            \@@_after_head_correction:
+          }
+        \DeclareDocumentCommand \subsubsection { s = { shorttitle } o m }
+          {
+            \@@_before_head_correction:
+            \ParseLaTeXeHeading { subsection } {##1} {##2} {##3}
+            \@@_after_head_correction:
+          }
+        \DeclareDocumentCommand \paragraph { s = { shorttitle } o m }
+          {
+            \@@_before_head_correction:
+            \ParseLaTeXeHeading { subsubsection } {##1} {##2} {##3}
+            \@@_after_head_correction:
+          }
+        \DeclareDocumentCommand \subparagraph { s = { shorttitle } o m }
+          {
+            \@@_before_head_correction:
+            \ParseLaTeXeHeading { paragraph } {##1} {##2} {##3}
           }
       }
       {
+        \cs_set_eq:NN \subparagraph \paragraph
+        \cs_set_eq:NN \paragraph \subsubsection
+        \cs_set_eq:NN \subsubsection \subsection
+        \cs_set_eq:NN \subsection \section
         \cs_set_eq:NN \section \part
         \titleformat
           { \part }
@@ -1198,6 +1226,7 @@
           }
           { 12pt }
           { \MakeUppercase }
+          [ \@@_after_head_correction: ]
         \titlecontents { part }
           [ 0pt ]
           { \singlespacing \filright }
