@@ -1143,6 +1143,7 @@
     \int_compare:nNnT { \sblarticle@appendix@state } = { 1 }
       { \int_gzero:N \sblarticle@appendix@state }
     \cs_set_nopar:Npn \thepart { \arabic { part } }
+    \cs_set_nopar:Npn \thesection { \arabic { section } }
     \int_zero:N \c@part
     \IfDocumentMetadataTF
       {
