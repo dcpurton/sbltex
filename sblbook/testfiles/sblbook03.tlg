@@ -1147,8 +1147,4 @@ Completed box being shipped out [3]
 ...\pdfcolorstack 0 pop
 .\kern0.0
 (sblbook03.aux)
-LaTeX Warning: There were undefined references.
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                sblbook03
-(biblatex)                and rerun LaTeX afterwards.
 Package logreq Info: Writing requests to 'sblbook03.run.xml'.

@@ -35,8 +35,8 @@
 \contentsline {chapter}{\numberline {4}Greek and Hebrew}{11}{}%
 \sblbook@appendices 1
 \def \chaptername {Appendix}
-\addvspace {\bigskipamount }
-\ttl@change@i {\@ne }{chapter}{2em}{\hspace *{-2em}\filright }{\sblbook@hyperlink {\Hy@tocdestname }{\chaptername \ifnum \sblbook@appendix@state >1\strut \space \thecontentslabel \fi :\enspace }}{}{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax \ttl@change@v {chapter}{}{}{}\relax
+\addvspace {12pt plus 1pt}
+\ttl@change@i {\@ne }{chapter}{2em}{\hspace *{-2em}\filright }{\sblbook@hyperlink {\Hy@tocdestname }{\chaptername \ifnum \sblbook@appendix@state >1\strut \space \thecontentslabel \fi :\enspace }}{}{\hspace {0.5em}\titlerule *[0.65pc]{.}\contentspage }\relax \ttl@change@v {chapter}{}{}{}\relax
 \contentsline {chapter}{\numberline {1}Appendix Title}{13}{}%
 \contentsline {chapter}{Bibliography}{15}{}%
 \contentsline {chapter}{Ancient Sources Index}{17}{}%

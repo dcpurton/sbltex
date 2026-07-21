@@ -445,6 +445,34 @@
 \RequirePackage { microtype }
 %    \end{macrocode}
 %
+% Commands to disable and enable the |lastparline| feature of the
+% \pkg{impnattype} package.
+%
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_lastparline_off:
+  {
+    \sys_if_engine_luatex:T
+      {
+        \lua_now:e
+          {
+            luatexbase.remove_from_callback("pre_linebreak_filter",
+              "lastparline")
+          }
+      }
+  }
+\cs_new_protected:Nn \@@_lastparline_on:
+  {
+    \sys_if_engine_luatex:T
+      {
+        \lua_now:e
+          {
+            luatexbase.add_to_callback("pre_linebreak_filter",
+              last_line_minimal_length, "lastparline")
+          }
+      }
+  }
+%    \end{macrocode}
+%
 % \subsection{Headers and footers}
 %
 %    \begin{macrocode}
@@ -906,11 +934,11 @@
   {
     \EditInstance { heading } { part }
       {
-        , heading-decls        = \normalfont \Large \scshape \centering
-        , title-decls          =
-        , start-code           = \cleardoublepage
-                                 \thispagestyle { empty }
-                                 \null \vfil
+        , heading-decls = \normalfont \Large \scshape \centering
+        , title-decls   =
+        , start-code    = \cleardoublepage
+                          \thispagestyle { empty }
+                          \null \vfil
       }
     \EditInstance { headformat } { part }
       {
@@ -942,7 +970,7 @@
                 \cleardoublepage
                 \pagenumbering { arabic }
               }
-            \addtocontents { toc } { \addvspace { \bigskipamount } }
+            \addtocontents { toc } { \addvspace { 12pt ~ plus ~ 1pt } }
           }
         \legacy_if:nTF { @mainmatter }
           {
@@ -975,17 +1003,12 @@
     \EditInstance { headformat } { section }
       {
         , title-format = \MakeUppercase {#1}
-        , number-title-sep = 0.5em
       }
     \EditInstance { heading } { subsection }
       {
         , before-vspace = 6pt plus 2pt minus 1pt
         , after-vspace  = 4pt plus 2pt minus 1pt
         , heading-decls = \normalfont \normalsize \scshape \raggedright
-      }
-    \EditInstance { headformat } { subsection }
-      {
-        , number-title-sep = 0.5em
       }
     \DeclareInstance { heading } { subsubsection } { runin }
       {
@@ -1012,7 +1035,7 @@
       {
         , before-vspace = 6pt plus 2pt minus 1pt
         , after-vspace  = 1em
-        , heading-decls = \normalfont \normalsize \scshape
+        , heading-decls = \normalfont \normalsize \itshape
       }
     \EditInstance { headformat } { subparagraph }
       {
@@ -1029,18 +1052,20 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-    \titlespacing* { \part }         { 0pt } { 0pt } { 0pt }
-    \titlespacing* { \chapter }      { 0pt } { 0.5in }
+    \titlespacing* { \part }         { 0pt }    { 0pt }
+      { 0pt }
+    \titlespacing* { \chapter }      { 0pt }    { 0.5in }
       { 0.5in plus 12pt minus 6pt }
-    \titlespacing* { \section }      { 0pt } { 12pt plus 4pt minus 2pt }
+    \titlespacing* { \section }      { 0pt }    { 12pt plus 4pt minus 2pt }
       { 10pt plus 4pt minus 2pt }
-    \titlespacing* { \subsection }   { 0pt } { 6pt plus 2pt minus 1pt }
+    \titlespacing* { \subsection }   { 0pt }    { 6pt plus 2pt minus 1pt }
       { 4pt plus 2pt minus 1pt }
-    \titlespacing* {\subsubsection } { 0pt } { 6pt plus 2pt minus 1pt }
+    \titlespacing* {\subsubsection } { 0pt }    { 6pt plus 2pt minus 1pt }
       { 1em }
-    \titlespacing* { \paragraph }    { 0pt } { 6pt plus 2pt minus 1pt }
+    \titlespacing* { \paragraph }    { 0pt }    { 6pt plus 2pt minus 1pt }
       { 1em }
-    \titlespacing* { \subparagraph } { 0.25in } { 0pt } { 1em }
+    \titlespacing* { \subparagraph } { 0.25in } { 6pt plus 2pt minus 1pt }
+      { 1em }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1064,35 +1089,35 @@
       [ block ]
       { \normalfont \normalsize \filcenter }
       { \thesection }
-      { .5em }
+      { 1em }
       { \MakeUppercase }
     \titleformat
       { \subsection }
       [ block ]
       { \normalfont \normalsize \scshape \filright }
       { \thesubsection }
-      { .5em }
+      { 1em }
       { }
     \titleformat
       { \subsubsection }
       [ runin ]
       { \normalfont \normalsize \scshape }
       { \thesubsubsection }
-      { .5em }
+      { 1em }
       { }
     \titleformat
       { \paragraph }
       [ runin ]
       { \normalfont \normalsize \itshape }
       { \theparagraph }
-      { .5em }
+      { 1em }
       { }
     \titleformat
       { \subparagraph }
       [ runin ]
-      { \normalfont \normalsize \scshape }
+      { \normalfont \normalsize \itshape }
       { \thesubparagraph }
-      { .5em }
+      { 1em }
       { }
   }
 %    \end{macrocode}
@@ -1112,7 +1137,9 @@
       { \contentsname }
     \int_compare:nNnT { \c@page } < { 5 }
       { \int_gset:Nn \c@page { 5 } }
+    \@@_lastparline_off:
     \@starttoc { toc }
+    \@@_lastparline_on:
   }
 %    \end{macrocode}
 %
@@ -1124,7 +1151,9 @@
     \@mkboth
       { \listfigurename }
       { \listfigurename }
+    \@@_lastparline_off:
     \@starttoc { lof }
+    \@@_lastparline_on:
   }
 %    \end{macrocode}
 %
@@ -1136,7 +1165,9 @@
     \@mkboth
       { \listtablename }
       { \listtablename }
+    \@@_lastparline_off:
     \@starttoc { lot }
+    \@@_lastparline_on:
   }
 %    \end{macrocode}
 %
@@ -1157,7 +1188,7 @@
       }
     \socket_new:nn { sblbook / numberline } { 1 }
     \socket_new_plug:nnn { sblbook / numberline }
-      { default }
+      { boxed }
       {
         \hbox_to_wd:nn
           { \@tempdima }
@@ -1166,6 +1197,13 @@
             \hfill #1. \enspace
             \hook_use:nnw { contentsline / number / after } { 1 } {#1}
           }
+      }
+    \socket_new_plug:nnn { sblbook / numberline }
+      { default }
+      {
+        \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+        #1. \enspace
+        \hook_use:nnw { contentsline / number / after } { 1 } {#1}
       }
     \socket_new_plug:nnn { sblbook / numberline }
       { chapter }
@@ -1220,10 +1258,44 @@
 %    \begin{macrocode}
     \cs_set_nopar:Npn \l@part #1#2
       {
-        \socket_assign_plug:nn { sblbook / numberline } { part }
-        \addvspace { 12pt }
-        \centering
-        \textsc {#1}
+        \int_compare:nNnT { \c@tocdepth } > { -2 }
+          {
+            \socket_assign_plug:nn { sblbook / numberline } { part }
+            \addpenalty { -\@highpenalty }
+            \addvspace { 12pt plus 1pt }
+            \group_begin:
+              \centering
+              \skip_set:Nn \leftskip  { \@pnumwidth plus 1.0fil }
+              \skip_set_eq:NN \rightskip \leftskip
+              {
+                \mode_leave_vertical:
+                \scshape
+                \hook_use:nnw { contentsline / text / before } { 4 }
+                  { \toclevel@part }
+                  {#1}
+                  {#2}
+                  { \@contentsline@destination }
+                \use:c { contentsline@text@-1@format } {#1}
+                \hook_use:nnw { contentsline / text / after } { 4 }
+                  { \toclevel@part }
+                  {#1}
+                  {#2}
+                  { \@contentsline@destination }
+                \hook_use:nnw { contentsline / page / before } { 4 }
+                  { \toclevel@part }
+                  {#1}
+                  {#2}
+                  { \@contentsline@destination }
+                \hook_use:nnw { contentsline / page / after } { 4 }
+                  { \toclevel@part }
+                  {#1}
+                  {#2}
+                  { \@contentsline@destination }
+              }
+              \par
+              \nobreak
+            \group_end:
+          }
       }
     \cs_set_nopar:Npn \l@chapter
       {
@@ -1233,31 +1305,31 @@
     \cs_set_nopar:Npn \l@section
       {
         \socket_assign_plug:nn { sblbook / numberline } { default }
-        \@dottedtocline { 1 } { 2em } { 2.5em }
+        \@dottedtocline { 1 } { 2em } { 0em }
       }
     \cs_set_nopar:Npn \l@subsection
       {
         \socket_assign_plug:nn { sblbook / numberline } { default }
-        \@dottedtocline { 2 } { 4.5em } { 3em }
+        \@dottedtocline { 2 } { 4em } { 0em }
       }
     \cs_set_nopar:Npn \l@subsubsection
       {
         \socket_assign_plug:nn { sblbook / numberline } { default }
-        \@dottedtocline { 3 } { 7.5em } { 3em }
+        \@dottedtocline { 3 } { 6em } { 0em }
       }
     \cs_set_nopar:Npn \l@paragraph
       {
         \socket_assign_plug:nn { sblbook / numberline } { default }
-        \@dottedtocline { 4 } { 10.5em } { 3em }
+        \@dottedtocline { 4 } { 8em } { 0em }
       }
     \cs_set_nopar:Npn \l@subparagraph
       {
         \socket_assign_plug:nn { sblbook / numberline } { default }
-        \@dottedtocline { 5 } { 13.5em } { 0em }
+        \@dottedtocline { 5 } { 10em } { 0em }
       }
     \cs_set_nopar:Npn \l@figure
       {
-        \socket_assign_plug:nn { sblbook / numberline } { default }
+        \socket_assign_plug:nn { sblbook / numberline } { boxed }
         \@dottedtocline { 0 } { 0em } { 2em }
       }
     \cs_set_eq:NN \l@table \l@figure
@@ -1346,7 +1418,7 @@
         \@@_contents_label_box:nn { 2em } { r }
       }
       { }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
     \titlecontents { table }
       [ 2em ]
       {
@@ -1356,12 +1428,14 @@
         \@@_contents_label_box:nn { 2em } { r }
       }
       { }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
     \titlecontents { part }
       [ 0pt ]
       {
-        \addvspace { \bigskipamount }
+        \addvspace { 12pt plus 1pt }
         \scshape \filcenter
+        \skip_set:Nn \leftskip { \@pnumwidth plus 1.0fil }
+        \skip_set_eq:NN \rightskip \leftskip
       }
       {
         \@@_hyperlink:nn
@@ -1377,7 +1451,7 @@
       {
         \tl_if_empty:NF \thecontentslabel
           {
-            \addvspace { \bigskipamount }
+            \addvspace { 12pt plus 1pt }
           }
         \@@_contents_above:n { 2em }
       }
@@ -1385,55 +1459,45 @@
         \@@_contents_label_box:nn { 2em } { r }
       }
       { }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
     \titlecontents { section }
-      [ 4.5em ]
+      [ 2em ]
       {
-        \@@_contents_above:n { 2.5em }
+        \@@_contents_above:n { 1sp }
       }
-      {
-        \@@_contents_label_box:nn { 2.5em } { r }
-      }
+      { \@@_contents_label: }
       { }
       { \hfill \contentspage }
     \titlecontents { subsection }
-      [ 7.5em ]
+      [ 4em ]
       {
-        \@@_contents_above:n { 3em }
+        \@@_contents_above:n { 1sp }
       }
-      {
-        \@@_contents_label:
-      }
+      { \@@_contents_label: }
       { }
       { \hfill \contentspage }
     \titlecontents { subsubsection }
-      [ 10.5em ]
+      [ 6em ]
       {
-        \@@_contents_above:n { 3em }
+        \@@_contents_above:n { 1sp }
       }
-      {
-        \@@_contents_label:
-      }
+      { \@@_contents_label: }
       { }
       { \hfill \contentspage }
     \titlecontents { paragraph }
-      [ 13.5em ]
+      [ 8em ]
       {
-        \@@_contents_above:n { 3em }
+        \@@_contents_above:n { 1sp }
       }
-      {
-        \@@_contents_label:
-      }
+      { \@@_contents_label: }
       { }
       { \hfill \contentspage }
     \titlecontents { subparagraph }
-      [ 16.5em ]
+      [ 10em ]
       {
-        \@@_contents_above:n { 3em }
+        \@@_contents_above:n { 1sp }
       }
-      {
-        \@@_contents_label:
-      }
+      { \@@_contents_label: }
       { }
       { \hfill \contentspage }
   }
@@ -1448,7 +1512,7 @@
   {
     \int_compare:nNnF { \int_use:N \sblbook@appendices } = { \c_zero_int }
       {
-        \addtocontents { toc } { \addvspace { \bigskipamount } }
+        \addtocontents { toc } { \addvspace { 12pt ~ plus ~ 1pt } }
       }
   }
 %    \end{macrocode}
@@ -1494,7 +1558,7 @@
 \cs_new_protected:Nn \@@_set_up_appendices:
   {
     \addtocontents { toc } { \sblbook@appendices 1 }
-    \addtocontents { toc } { \addvspace { \bigskipamount } }
+    \addtocontents { toc } { \addvspace { 12pt ~ plus ~ 1pt } }
     \int_compare:nNnT { \sblbook@appendix@state } = { 1 }
       { \int_gzero:N \sblbook@appendix@state }
     \cs_set_nopar:Npn \thechapter { \arabic { chapter } }
@@ -1590,7 +1654,7 @@
               }
           }
           { }
-          { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+          { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
       }
   }
 %    \end{macrocode}

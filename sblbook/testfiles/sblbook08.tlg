@@ -1,9 +1,10 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-(sblbook08.toc (../mt-cmr.cfg
+Removing  `lastparline' from `pre_linebreak_filter'. (sblbook08.toc (../mt-cmr.cfg
 File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
 ))
 \tf@toc=\write...
+Inserting `lastparline' in `pre_linebreak_filter'.
 Completed box being shipped out [5]
 \vbox(608.2275+3.60004)x397.485, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -133,7 +134,7 @@ Completed box being shipped out [5]
 ....\penalty 10000
 ....\marks3{\__mark_value:nn {3}{\protect \foreignlanguage {english}{\protect \bbl@restore@actives \protect \bbl@ensure@english  {Contents}}}}
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue 0.0 plus 0.2
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -186,7 +187,6 @@ Completed box being shipped out [5]
 .....\TU/Baskervaldx(0)/m/n/10 d
 .....\TU/Baskervaldx(0)/m/n/10 i
 .....\TU/Baskervaldx(0)/m/n/10 x
-.....\penalty 10000
 .....\penalty 10000
 .....\penalty 10000
 .....\pdfliteral page <lua data reference ...>
@@ -273,7 +273,6 @@ Completed box being shipped out [5]
 .....\TU/Baskervaldx(0)/m/n/10 x
 .....\penalty 10000
 .....\penalty 10000
-.....\penalty 10000
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
@@ -349,7 +348,6 @@ Completed box being shipped out [5]
 .....\kern-0.21 (font)
 .....\TU/Baskervaldx(0)/m/n/10 e
 .....\TU/Baskervaldx(0)/m/n/10 r
-.....\penalty 10000
 .....\penalty 10000
 .....\penalty 10000
 .....\pdfliteral page <lua data reference ...>
@@ -583,7 +581,7 @@ Completed box being shipped out [1]
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
 ...\vbox(494.025+0.0)x325.215, glue set 359.93903fil, direction TLT
 ....\write1{\@writefile{toc}{\sblbook@appendices 1}}
-....\write1{\@writefile{toc}{\addvspace {\bigskipamount }}}
+....\write1{\@writefile{toc}{\addvspace {12pt plus 1pt}}}
 ....\write1{\@writefile{toc}{\def \protect \chaptername {\protect \bbl@ensure@english  {Appendix}}}}
 ....\write-{}
 ....\glue(\topskip) 10.0

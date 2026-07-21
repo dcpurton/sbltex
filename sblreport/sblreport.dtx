@@ -763,7 +763,7 @@
     \EditInstance { heading } { chapter }
       {
         , placement            = top
-        , after-penalty-vspace = 41pt
+        , after-penalty-vspace = 35.7pt
         , after-vspace         = 37pt
         , prefix               = \MakeUppercase { \chaptername }
         , heading-decls        = \singlespacing
@@ -787,6 +787,7 @@
               }
           }
         \ParseLaTeXeHeading { chapter } {#1} {#2} {#3}
+        \@@_after_head_correction:
       }
     \EditInstance { heading } { section }
       {
@@ -796,10 +797,6 @@
                           \normalfont \normalsize \bfseries
                           \centering
       }
-    \EditInstance { headformat } { section }
-      {
-        , number-title-sep = 0.5em
-      }
     \EditInstance { heading } { subsection }
       {
         , before-vspace = 37pt
@@ -807,10 +804,6 @@
         , heading-decls = \singlespacing
                           \normalfont \normalsize
                           \centering
-      }
-    \EditInstance { headformat } { subsection }
-      {
-        , number-title-sep = 0.5em
       }
     \EditInstance { heading } { subsubsection }
       {
@@ -867,21 +860,26 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-    \titlespacing* { \part }          { 0pt } { 0pt } { 0pt }
-    \titlespacing* { \chapter }       { 0pt } { 41pt } { 37pt }
-    \titlespacing* { \section }       { 0pt } { 37pt } { 0pt }
-    \titlespacing* { \subsection }    { 0pt } { 37pt } { 0pt }
-    \titlespacing* { \subsubsection } { 0pt } { 37pt } { 0pt }
-    \titlespacing* { \paragraph }     { 0pt } { 37pt } { 0pt }
-    \titlespacing* { \subparagraph }  { 0pt } { 37pt } { 0pt }
+    \titlespacing* { \part }          { 0pt } { 0pt }    { 0pt }
+    \titlespacing* { \chapter }       { 0pt } { 35.7pt } { 37pt }
+    \titlespacing* { \section }       { 0pt } { 37pt }   { 0pt }
+    \titlespacing* { \subsection }    { 0pt } { 37pt }   { 0pt }
+    \titlespacing* { \subsubsection } { 0pt } { 37pt }   { 0pt }
+    \titlespacing* { \paragraph }     { 0pt } { 37pt }   { 0pt }
+    \titlespacing* { \subparagraph }  { 0pt } { 37pt }   { 1em }
 %    \end{macrocode}
 %
 %    \begin{macrocode}
     \titleformat
       { \part }
       [ display ]
-      { \vfil \normalfont \normalsize \singlespacing \filcenter }
-      { \MakeUppercase { \partname } \space \thepart }
+      {
+        \cs_if_exist_use:N \phantomsection
+        \vfil \normalfont \normalsize \singlespacing \filcenter
+      }
+      {
+        \MakeUppercase { \partname } \space \thepart
+      }
       { 12pt }
       { \MakeUppercase }
       [ \vfil ]
@@ -905,7 +903,7 @@
         \normalfont \normalsize \singlespacing \bfseries \filcenter
       }
       { \thesection }
-      { 0.5em }
+      { 1em }
       { }
       [ \@@_after_head_correction: ]
     \titleformat
@@ -916,7 +914,7 @@
         \normalfont \normalsize \singlespacing \filcenter
       }
       { \thesubsection }
-      { 0.5em }
+      { 1em }
       { }
       [ \@@_after_head_correction: ]
     \titleformat
@@ -927,7 +925,7 @@
         \normalfont \normalsize \singlespacing \bfseries \itshape \filright
       }
       { \thesubsubsection }
-      { 0.5em }
+      { 1em }
       { }
       [ \@@_after_head_correction: ]
     \titleformat
@@ -938,7 +936,7 @@
         \normalfont \normalsize \singlespacing \filright
       }
       { \theparagraph }
-      { 0.5em }
+      { 1em }
       { }
     \titleformat
       { \subparagraph }
@@ -957,10 +955,13 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\hook_gput_code:nnn { cmd / @starttoc / before } { sblreport }
+\IfDocumentMetadataT
   {
-    \hook_gput_next_code:nn { cmd / @input / before }
-      { \singlespacing }
+    \hook_gput_code:nnn { cmd / @starttoc / before } { sblreport }
+      {
+        \hook_gput_next_code:nn { cmd / @input / before }
+          { \singlespacing }
+      }
   }
 %    \end{macrocode}
 %
@@ -1012,7 +1013,7 @@
     \hook_gput_code:nnn { cmd / @dottedtocline / before }
       { sblreport }
       {
-        \addvspace { \baselineskip }
+        \addvspace { 14.5pt }
       }
     \hook_gput_code_with_args:nnn { contentsline / text / after }
       { sblreport }
@@ -1028,13 +1029,9 @@
     \socket_new_plug:nnn { sblreport / numberline }
       { default }
       {
-        \hbox_to_wd:nn
-          { \@tempdima }
-          {
-            \hook_use:nnw { contentsline / number / before } { 1 } {#1}
-            #1 \hfil
-            \hook_use:nnw { contentsline / number / after } { 1 } {#1}
-          }
+        \hook_use:nnw { contentsline / number / before } { 1 } {#1}
+        #1 \skip_horizontal:n { 1em }
+        \hook_use:nnw { contentsline / number / after } { 1 } {#1}
       }
     \socket_new_plug:nnn { sblreport / numberline }
       { chapter }
@@ -1086,12 +1083,44 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+    \cs_set_nopar:cpn { contentsline@text@-1@format }
+      { \MakeUppercase }
     \cs_set_nopar:Npn \l@part #1#2
       {
         \socket_assign_plug:nn { sblreport / numberline } { part }
-        \addvspace { 12pt }
-        \centering
-        \MakeUppercase {#1}
+        \addpenalty { -\@highpenalty }
+        \addvspace { 14.5pt }
+        \group_begin:
+          \centering
+          \skip_set:Nn \leftskip  { \@pnumwidth plus 1.0fil }
+          \skip_set_eq:NN \rightskip \leftskip
+          {
+            \mode_leave_vertical:
+            \hook_use:nnw { contentsline / text / before } { 4 }
+              { \toclevel@part }
+              {#1}
+              {#2}
+              { \@contentsline@destination }
+            \use:c { contentsline@text@-1@format } {#1}
+            \hook_use:nnw { contentsline / text / after } { 4 }
+              { \toclevel@part }
+              {#1}
+              {#2}
+              { \@contentsline@destination }
+            \hook_use:nnw { contentsline / page / before } { 4 }
+              { \toclevel@part }
+              {#1}
+              {#2}
+              { \@contentsline@destination }
+            \hook_use:nnw { contentsline / page / after } { 4 }
+              { \toclevel@part }
+              {#1}
+              {#2}
+              { \@contentsline@destination }
+          }
+          \par
+          \nobreak
+        \group_end:
       }
     \cs_set_nopar:Npn \l@chapter
       {
@@ -1161,7 +1190,7 @@
           { \makebox [ 2em ] [ r ] { \thecontentslabel . \enspace } }
       }
       { }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
     \titlecontents { table }
       [ 0pt ]
       { \singlespacing \filright }
@@ -1171,7 +1200,7 @@
           { \makebox [ 2em ] [ r ] { \thecontentslabel . \enspace } }
       }
       { }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
     \titlecontents { part }
       [ 0pt ]
       { \singlespacing \filcenter }
@@ -1184,7 +1213,7 @@
           }
         \MakeUppercase
       }
-      { }
+      { \MakeUppercase }
       { }
     \titlecontents { chapter }
       [ 0pt ]
@@ -1199,35 +1228,55 @@
         \MakeUppercase
       }
       { \MakeUppercase }
-      { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+      { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
     \titlecontents { section }
       [ 1em ]
       { \singlespacing \filright }
-      { }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \thecontentslabel \hspace { 1em } }
+      }
       { }
       { \hfill \contentspage }
     \titlecontents { subsection }
       [ 2em ]
       { \singlespacing \filright }
-      { }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \thecontentslabel \hspace { 1em } }
+      }
       { }
       { \hfill \contentspage }
     \titlecontents { subsubsection }
       [ 3em ]
       { \singlespacing \filright }
-      { }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \thecontentslabel \hspace { 1em } }
+      }
       { }
       { \hfill \contentspage }
     \titlecontents { paragraph }
       [ 4em ]
       { \singlespacing \filright }
-      { }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \thecontentslabel \hspace { 1em } }
+      }
       { }
       { \hfill \contentspage }
     \titlecontents { subparagraph }
       [ 5em ]
       { \singlespacing \filright }
-      { }
+      {
+        \@@_hyperlink:nn
+          { \Hy@tocdestname }
+          { \thecontentslabel \hspace { 1em } }
+      }
       { }
       { \hfill \contentspage }
   }
@@ -1349,7 +1398,7 @@
             \MakeUppercase
           }
           { \MakeUppercase }
-          { \hspace { 0.5em } \titlerule* [ 0.5pc ] { . } \contentspage }
+          { \hspace { 0.5em } \titlerule* [ 0.65pc ] { . } \contentspage }
       }
   }
 %    \end{macrocode}

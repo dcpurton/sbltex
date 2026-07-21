@@ -333,8 +333,6 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\write1{\@writefile{toc}{\sblarticle@appendices 1}}
 ...\penalty 10000
-...\write1{\@writefile{toc}{\def \protect \chaptername {\protect \bbl@ensure@english  {Appendix}}}}
-...\penalty 10000
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
@@ -373,12 +371,12 @@ Completed box being shipped out [2]
 ...\pdflinkstate 0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(650.43001+0.0)x469.75502, glue set 504.7081fil, direction TLT
+..\vbox(650.43001+0.0)x469.75502, glue set 510.00754fil, direction TLT
 ...\write-{}
 ...\glue(\topskip) 12.0
 ...\rule(0.0+0.0)x*
 ...\penalty 10000
-...\glue 41.0
+...\glue 35.7
 ...\glue 0.0
 ...\glue 14.5
 ...\latelua0{}
@@ -505,12 +503,12 @@ Completed box being shipped out [3]
 ...\pdflinkstate 0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(650.43001+0.0)x469.75502, glue set 531.20526fil, direction TLT
+..\vbox(650.43001+0.0)x469.75502, glue set 536.5047fil, direction TLT
 ...\write-{}
 ...\glue(\topskip) 12.0
 ...\rule(0.0+0.0)x*
 ...\penalty 10000
-...\glue 41.0
+...\glue 35.7
 ...\glue 0.0
 ...\glue 14.5
 ...\latelua0{}

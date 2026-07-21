@@ -1,0 +1,61 @@
+\DocumentMetadata
+  {
+    , lang          = en
+    , pdfstandard   = ua-2
+    , tagging       = on
+    , tagging-setup = { math/mathml/luamml/load = false }
+  }
+
+\documentclass{sblbook}
+\def\pdfmapfile#1{}
+\input{regression-test}
+\pagestyle{empty}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\usepackage[colorlinks]{hyperref}
+\begin{document}
+\START
+\showoutput
+\tableofcontents
+
+\part{This Is an Example of a Part Heading}
+
+\chapter{This Is an Example of a Chapter Heading}
+
+\section{This Is an Example of an A-Level Heading}
+
+\subsection{This Is an Example of a B-Level Heading}
+
+\subsubsection{This Is an Example of a C-Level Heading}
+
+Which runs into its paragraph.
+
+\paragraph{This Is an Example of a D-Level Heading}
+
+Which runs into its paragraph.
+
+\subparagraph{This Is an Example of a E-Level Heading}
+
+Which runs into its paragraph.
+
+\appendix
+
+\chapter{This Is an Example of an Appendix Heading}
+
+\section{This Is an Example of an A-Level Appendix Heading}
+
+\subsection{This Is an Example of a B-Level Appendix Heading}
+
+\subsubsection{This Is an Example of a C-Level Appendix Heading}
+
+Which runs into its paragraph.
+
+\paragraph{This Is an Example of a D-Level Appendix Heading}
+
+Which runs into its paragraph.
+
+\subparagraph{This Is an Example of a E-Level Appendix Heading}
+
+Which runs into its paragraph.
+
+\end{document}

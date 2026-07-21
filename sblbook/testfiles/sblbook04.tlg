@@ -68,7 +68,7 @@ Completed box being shipped out [1]
 ..\glue 12.0
 ..\glue(\lineskip) 0.0
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
-...\vbox(494.025+0.0)x325.215, glue set - 0.56816, direction TLT
+...\vbox(494.025+0.0)x325.215, glue set 0.14612, direction TLT
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\write1{\babel@aux{american}{}}
@@ -114,7 +114,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(8.39996+3.60004)x325.215, glue set 242.31499fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 244.11491fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -148,12 +148,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 s
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -178,7 +179,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 246.00497fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 247.8049fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -211,12 +212,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 s
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -243,7 +245,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 264.06497fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 265.8649fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -273,12 +275,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 d
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -303,7 +306,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 272.49496fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 274.29489fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -330,12 +333,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 e
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -362,7 +366,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 221.235fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 223.03493fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -402,12 +406,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 s
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -433,7 +438,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 250.13501fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 251.93494fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -467,12 +472,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 n
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -498,7 +504,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 244.07498fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 245.87491fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -537,12 +543,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 s
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -567,12 +574,12 @@ Completed box being shipped out [1]
 ....\penalty -300
 ....\glue 0.0 plus 0.1
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 110.1125fil, direction TLT
-.....\glue(\leftskip) 0.0 plus 1.0fil
+....\hbox(8.39996+3.60004)x325.215, glue set 100.1125fil, direction TLT
+.....\glue(\leftskip) 20.0 plus 1.0fil
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -616,11 +623,11 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\glue 0.0 plus 0.1
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 170.06497fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 171.8649fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -669,12 +676,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 p
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -698,8 +706,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 120.18495fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 120.18497fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -708,7 +716,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 T
@@ -782,8 +790,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 244.83498fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 244.83499fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -792,7 +800,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 P
@@ -826,8 +834,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 196.42497fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 196.42499fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -836,7 +844,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 H
@@ -884,8 +892,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 200.55496fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 200.55498fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -894,7 +902,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 C
@@ -944,8 +952,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 239.69499fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 239.695fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -954,7 +962,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 P
@@ -992,11 +1000,11 @@ Completed box being shipped out [1]
 ....\penalty -300
 ....\glue 0.0 plus 0.1
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 222.885fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 224.68492fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1035,12 +1043,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 n
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -1064,8 +1073,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 225.13498fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 225.135fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1074,7 +1083,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 S
@@ -1112,8 +1121,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 168.61497fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 168.61499fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1122,7 +1131,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 H
@@ -1175,8 +1184,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 237.11496fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 237.11497fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1185,7 +1194,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 P
@@ -1221,8 +1230,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 181.985fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 181.98502fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1231,7 +1240,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 F
@@ -1283,8 +1292,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 192.33498fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 192.33499fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1293,7 +1302,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 O
@@ -1343,8 +1352,8 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 248.61499fill, direction TLT
-.....\glue(\leftskip) 45.0
+....\hbox(8.39996+3.60004)x325.215, glue set 248.615fill, direction TLT
+.....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1353,7 +1362,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\rule(*+*)x0.0
 .....\penalty 10000
-.....\glue -25.0
+.....\glue -0.00002
 .....\glue 0.0
 .....\rule(8.39996+3.60004)x0.0
 .....\TU/Baskervaldx(0)/m/n/10 S
@@ -1384,11 +1393,11 @@ Completed box being shipped out [1]
 ....\penalty -300
 ....\glue 0.0 plus 0.1
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 244.975fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 246.77493fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1422,12 +1431,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 s
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -1448,11 +1458,11 @@ Completed box being shipped out [1]
 ....\penalty 0
 ....\glue 0.0 plus 0.1
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 202.98495fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 204.78488fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1493,12 +1503,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 w
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -1517,17 +1528,17 @@ Completed box being shipped out [1]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 20.0 plus 1.0fil
 ....\penalty 10000
-....\glue 12.0 plus 4.0 minus 4.0
-....\glue -15.60004 plus -4.0 minus -4.0
+....\glue 12.0 plus 1.0
+....\glue -15.60004 plus -1.0
 ....\penalty 0
 ....\glue 3.60004
-....\glue 12.0 plus 4.0 minus 4.0
+....\glue 12.0 plus 1.0
 ....\glue 0.0 plus 0.1
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 188.74496fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 190.54489fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1574,12 +1585,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 e
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -1604,7 +1616,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 249.105fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 250.90492fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1640,12 +1652,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 y
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -1670,7 +1683,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 206.735fill, direction TLT
+....\hbox(8.39996+3.60004)x325.215, glue set 208.53493fill, direction TLT
 .....\glue(\leftskip) 20.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1712,12 +1725,13 @@ Completed box being shipped out [1]
 .....\TU/Baskervaldx(0)/m/n/10 x
 .....\rule(8.39996+3.60004)x0.0
 .....\kern0.0
+.....\penalty 10000
 .....\glue 5.0
 .....\penalty 10000
-.....\glue -6.0
+.....\glue -7.79993
 .....\glue 2.53
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
+......\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\hbox(1.03+0.14)x2.53, direction TLT
 ........\pdfcolorstack 0 push {0 g 0 G}
@@ -1736,145 +1750,7 @@ Completed box being shipped out [1]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 20.0 plus 1.0fil
 ....\penalty 10000
-....\penalty 0
-....\glue 0.0 plus 0.1
-....\penalty 10000
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 204.76498fill, direction TLT
-.....\glue(\leftskip) 20.0
-.....\localpar
-......\localinterlinepenalty=0
-......\localbrokenpenalty=0
-......\localleftbox=null
-......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\rule(*+*)x0.0
-.....\penalty 10000
-.....\glue -20.0
-.....\glue 0.0
-.....\rule(8.39996+3.60004)x0.0
-.....\TU/Baskervaldx(0)/m/n/10 M
-.....\TU/Baskervaldx(0)/m/n/10 o
-.....\TU/Baskervaldx(0)/m/n/10 d
-.....\discretionary (penalty 50)
-......< \TU/Baskervaldx(0)/m/n/10 -
-.....\TU/Baskervaldx(0)/m/n/10 e
-.....\TU/Baskervaldx(0)/m/n/10 r
-.....\TU/Baskervaldx(0)/m/n/10 n
-.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.....\TU/Baskervaldx(0)/m/n/10 A
-.....\kern-0.24 (font)
-.....\TU/Baskervaldx(0)/m/n/10 u
-.....\discretionary (penalty 50)
-......< \TU/Baskervaldx(0)/m/n/10 -
-.....\TU/Baskervaldx(0)/m/n/10 t
-.....\TU/Baskervaldx(0)/m/n/10 h
-.....\TU/Baskervaldx(0)/m/n/10 o
-.....\TU/Baskervaldx(0)/m/n/10 r
-.....\TU/Baskervaldx(0)/m/n/10 s
-.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.....\TU/Baskervaldx(0)/m/n/10 I
-.....\TU/Baskervaldx(0)/m/n/10 n
-.....\discretionary (penalty 50)
-......< \TU/Baskervaldx(0)/m/n/10 -
-.....\TU/Baskervaldx(0)/m/n/10 d
-.....\TU/Baskervaldx(0)/m/n/10 e
-.....\kern-0.17 (font)
-.....\TU/Baskervaldx(0)/m/n/10 x
-.....\rule(8.39996+3.60004)x0.0
-.....\kern0.0
-.....\glue 5.0
-.....\penalty 10000
-.....\glue -6.0
-.....\glue 2.53
-.....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\hbox(1.03+0.14)x2.53, direction TLT
-........\pdfcolorstack 0 push {0 g 0 G}
-........\TU/Baskervaldx(0)/m/n/10 .
-........\pdfcolorstack 0 pop
-.....\kern0.0
-.....\hbox(6.77+0.11)x20.0, glue set 10.01999fil, direction TLT
-......\glue 0.0 plus 1.0fil
-......\TU/Baskervaldx(0)/m/n/10 1
-......\TU/Baskervaldx(0)/m/n/10 9
-.....\rule(*+*)x0.0
-.....\penalty 10000
-.....\penalty 10000
-.....\glue -20.0
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 20.0 plus 1.0fil
-....\penalty 10000
-....\penalty 0
-....\glue 0.0 plus 0.1
-....\penalty 10000
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 0.0
-....\hbox(8.39996+3.60004)x325.215, glue set 245.31499fill, direction TLT
-.....\glue(\leftskip) 20.0
-.....\localpar
-......\localinterlinepenalty=0
-......\localbrokenpenalty=0
-......\localleftbox=null
-......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\rule(*+*)x0.0
-.....\penalty 10000
-.....\glue -20.0
-.....\glue 0.0
-.....\rule(8.39996+3.60004)x0.0
-.....\TU/Baskervaldx(0)/m/n/10 S
-.....\TU/Baskervaldx(0)/m/n/10 u
-.....\TU/Baskervaldx(0)/m/n/10 b
-.....\discretionary (penalty 50)
-......< \TU/Baskervaldx(0)/m/n/10 -
-.....\TU/Baskervaldx(0)/m/n/10 j
-.....\TU/Baskervaldx(0)/m/n/10 e
-.....\TU/Baskervaldx(0)/m/n/10 c
-.....\TU/Baskervaldx(0)/m/n/10 t
-.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.....\TU/Baskervaldx(0)/m/n/10 I
-.....\TU/Baskervaldx(0)/m/n/10 n
-.....\discretionary (penalty 50)
-......< \TU/Baskervaldx(0)/m/n/10 -
-.....\TU/Baskervaldx(0)/m/n/10 d
-.....\TU/Baskervaldx(0)/m/n/10 e
-.....\kern-0.17 (font)
-.....\TU/Baskervaldx(0)/m/n/10 x
-.....\rule(8.39996+3.60004)x0.0
-.....\kern0.0
-.....\glue 5.0
-.....\penalty 10000
-.....\glue -6.0
-.....\glue 2.53
-.....\leaders 0.0 plus 1.0fill
-......\hbox(1.03+0.14)x6.0, glue set 3.47fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\hbox(1.03+0.14)x2.53, direction TLT
-........\pdfcolorstack 0 push {0 g 0 G}
-........\TU/Baskervaldx(0)/m/n/10 .
-........\pdfcolorstack 0 pop
-.....\kern0.0
-.....\hbox(6.77+0.0)x20.0, glue set 10.01999fil, direction TLT
-......\glue 0.0 plus 1.0fil
-......\TU/Baskervaldx(0)/m/n/10 2
-......\TU/Baskervaldx(0)/m/n/10 1
-.....\rule(*+*)x0.0
-.....\penalty 10000
-.....\penalty 10000
-.....\glue -20.0
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 20.0 plus 1.0fil
-....\penalty 10000
 ....\glue -3.60004
-....\glue 0.0 plus 1.0fil
-....\glue 0.0
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\baselineskip) 0.0
 ..\hbox(12.0+3.60004)x325.215, direction TLT
@@ -1939,9 +1815,266 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\pdfcolorstack 0 pop
 .\kern0.0
-{/home/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map} (sblbook04.aux)
-LaTeX Warning: There were undefined references.
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                sblbook04
-(biblatex)                and rerun LaTeX afterwards.
+{/home/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Completed box being shipped out [2]
+\vbox(608.2275+0.0)x397.48502, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 54.2025
+.\vbox(554.025+0.0)x325.215, shifted 72.27002, direction TLT
+..\vbox(12.0+0.0)x325.215, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(12.0+0.0)x325.215, direction TLT
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(12.0+0.0)x325.215, direction TLT
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(12.0+0.0)x325.215, direction TLT
+......\vbox(12.0+0.0)x325.215, direction TLT
+.......\hbox(8.39996+3.60004)x325.215, direction TLT
+........\hbox(8.39996+3.60004)x0.0, glue set - 325.215fil, direction TLT
+.........\vbox(8.39996+3.60004)x325.215, direction TLT
+..........\hbox(8.39996+3.60004)x325.215, glue set 160.11249fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\TU/Baskervaldx(0)/m/n/10 2
+...........\rule(8.39996+3.60004)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(8.39996+3.60004)x325.215, direction TLT
+.........\hbox(8.39996+3.60004)x325.215, glue set 162.6075fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\rule(8.39996+3.60004)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(0.0+0.0)x325.215, direction TLT
+..........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.......\glue 0.0
+.......\rule(0.0+0.0)x325.215
+.......\glue 0.0
+....\pdfcolorstack 0 pop
+..\glue 12.0
+..\glue(\lineskip) 0.0
+..\vbox(518.025+0.0)x325.215, glue set 496.025fil, direction TLT
+...\glue(\topskip) 1.60004
+...\hbox(8.39996+3.60004)x325.215, glue set 206.56491fill, direction TLT
+....\glue(\leftskip) 20.0
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\rule(*+*)x0.0
+....\penalty 10000
+....\glue -20.0
+....\glue 0.0
+....\rule(8.39996+3.60004)x0.0
+....\TU/Baskervaldx(0)/m/n/10 M
+....\TU/Baskervaldx(0)/m/n/10 o
+....\TU/Baskervaldx(0)/m/n/10 d
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx(0)/m/n/10 -
+....\TU/Baskervaldx(0)/m/n/10 e
+....\TU/Baskervaldx(0)/m/n/10 r
+....\TU/Baskervaldx(0)/m/n/10 n
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx(0)/m/n/10 A
+....\kern-0.24 (font)
+....\TU/Baskervaldx(0)/m/n/10 u
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx(0)/m/n/10 -
+....\TU/Baskervaldx(0)/m/n/10 t
+....\TU/Baskervaldx(0)/m/n/10 h
+....\TU/Baskervaldx(0)/m/n/10 o
+....\TU/Baskervaldx(0)/m/n/10 r
+....\TU/Baskervaldx(0)/m/n/10 s
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx(0)/m/n/10 I
+....\TU/Baskervaldx(0)/m/n/10 n
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx(0)/m/n/10 -
+....\TU/Baskervaldx(0)/m/n/10 d
+....\TU/Baskervaldx(0)/m/n/10 e
+....\kern-0.17 (font)
+....\TU/Baskervaldx(0)/m/n/10 x
+....\rule(8.39996+3.60004)x0.0
+....\kern0.0
+....\penalty 10000
+....\glue 5.0
+....\penalty 10000
+....\glue -7.79993
+....\glue 2.53
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(1.03+0.14)x2.53, direction TLT
+.......\pdfcolorstack 0 push {0 g 0 G}
+.......\TU/Baskervaldx(0)/m/n/10 .
+.......\pdfcolorstack 0 pop
+....\kern0.0
+....\hbox(6.77+0.11)x20.0, glue set 10.01999fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\TU/Baskervaldx(0)/m/n/10 1
+.....\TU/Baskervaldx(0)/m/n/10 9
+....\rule(*+*)x0.0
+....\penalty 10000
+....\penalty 10000
+....\glue -20.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 20.0 plus 1.0fil
+...\penalty 10000
+...\penalty 0
+...\glue 0.0 plus 0.1
+...\penalty 10000
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 0.0
+...\hbox(8.39996+3.60004)x325.215, glue set 247.11491fill, direction TLT
+....\glue(\leftskip) 20.0
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x0.0, direction TLT
+....\rule(*+*)x0.0
+....\penalty 10000
+....\glue -20.0
+....\glue 0.0
+....\rule(8.39996+3.60004)x0.0
+....\TU/Baskervaldx(0)/m/n/10 S
+....\TU/Baskervaldx(0)/m/n/10 u
+....\TU/Baskervaldx(0)/m/n/10 b
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx(0)/m/n/10 -
+....\TU/Baskervaldx(0)/m/n/10 j
+....\TU/Baskervaldx(0)/m/n/10 e
+....\TU/Baskervaldx(0)/m/n/10 c
+....\TU/Baskervaldx(0)/m/n/10 t
+....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+....\TU/Baskervaldx(0)/m/n/10 I
+....\TU/Baskervaldx(0)/m/n/10 n
+....\discretionary (penalty 50)
+.....< \TU/Baskervaldx(0)/m/n/10 -
+....\TU/Baskervaldx(0)/m/n/10 d
+....\TU/Baskervaldx(0)/m/n/10 e
+....\kern-0.17 (font)
+....\TU/Baskervaldx(0)/m/n/10 x
+....\rule(8.39996+3.60004)x0.0
+....\kern0.0
+....\penalty 10000
+....\glue 5.0
+....\penalty 10000
+....\glue -7.79993
+....\glue 2.53
+....\leaders 0.0 plus 1.0fill
+.....\hbox(1.03+0.14)x7.79993, glue set 5.26993fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(1.03+0.14)x2.53, direction TLT
+.......\pdfcolorstack 0 push {0 g 0 G}
+.......\TU/Baskervaldx(0)/m/n/10 .
+.......\pdfcolorstack 0 pop
+....\kern0.0
+....\hbox(6.77+0.0)x20.0, glue set 10.01999fil, direction TLT
+.....\glue 0.0 plus 1.0fil
+.....\TU/Baskervaldx(0)/m/n/10 2
+.....\TU/Baskervaldx(0)/m/n/10 1
+....\rule(*+*)x0.0
+....\penalty 10000
+....\penalty 10000
+....\glue -20.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 20.0 plus 1.0fil
+...\penalty 10000
+...\glue -3.60004
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+..\glue(\baselineskip) 8.39996
+..\hbox(3.60004+0.0)x325.215, direction TLT
+...\pdfcolorstack 0 push {0 g 0 G}
+...\hbox(3.60004+0.0)x325.215, direction TLT
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\hbox(3.60004+0.0)x325.215, direction TLT
+.....\vbox(3.60004+0.0)x325.215, direction TLT
+......\rule(0.0+0.0)x325.215
+......\glue 3.60004
+......\hbox(0.0+0.0)x325.215, direction TLT
+.......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 162.6075fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0 plus 1.0fil
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\glue 0.0 plus 1.0fill
+.......\vbox(0.0+0.0)x325.215, direction TLT
+........\hbox(0.0+0.0)x325.215, glue set 162.6075fil, direction TLT
+.........\glue(\leftskip) 0.0 plus 1.0fil
+.........\localpar
+..........\localinterlinepenalty=0
+..........\localbrokenpenalty=0
+..........\localleftbox=null
+..........\localrightbox=null
+.........\hbox(0.0+0.0)x0.0, direction TLT
+.........\penalty 10000
+.........\glue(\parfillskip) 0.0
+.........\glue(\rightskip) 0.0 plus 1.0fil
+.......\glue 0.0 plus 1.0fill
+.......\hbox(0.0+0.0)x0.0, glue set - 325.215fil, direction TLT
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\vbox(0.0+0.0)x325.215, direction TLT
+.........\hbox(0.0+0.0)x325.215, glue set 325.215fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0
+...\pdfcolorstack 0 pop
+.\kern0.0
+(sblbook04.aux)
 Package logreq Info: Writing requests to 'sblbook04.run.xml'.

@@ -1,0 +1,44 @@
+\DocumentMetadata
+  {
+    , lang          = en
+    , pdfstandard   = ua-2
+    , tagging       = on
+    , tagging-setup = { math/mathml/luamml/load = false }
+  }
+
+\documentclass{sblarticle}
+\input{regression-test}
+\pagestyle{empty}
+\setcounter{secnumdepth}{10}
+\setcounter{tocdepth}{10}
+\usepackage[colorlinks]{hyperref}
+\begin{document}
+\START
+\showoutput
+\tableofcontents
+
+\section{This Is an Example of an A-Level Heading}
+
+\subsection{This Is an Example of a B-Level Heading}
+
+\subsubsection{This Is an Example of a C-Level Heading}
+
+\paragraph{This Is an Example of a D-Level Heading}
+
+\subparagraph{This Is an Example of a E-Level Heading}
+
+Which runs into its paragraph.
+
+\appendix
+
+\section{This Is an Example of an A-Level Appendix Heading}
+
+\subsection{This Is an Example of a B-Level Appendix Heading}
+
+\subsubsection{This Is an Example of a C-Level Appendix Heading}
+
+\paragraph{This Is an Example of a D-Level Appendix Heading}
+
+\subparagraph{This Is an Example of a E-Level Appendix Heading}
+
+\end{document}

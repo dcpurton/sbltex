@@ -1239,7 +1239,7 @@ Completed box being shipped out [2]
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0 plus 24.0
-...\write1{\@writefile{toc}{\ttl@change@i {\@ne }{part}{0pt}{\singlespacing \filright }{\sblarticle@hyperlink {\Hy@tocdestname }{\MakeUppercase {\appendixname }\ifnum \sblarticle@appendix@state >1\strut \space \thecontentslabel \fi :\enspace }\MakeUppercase }{\MakeUppercase }{\hspace {0.5em}\titlerule *[0.5pc]{.}\contentspage }\relax }}
+...\write1{\@writefile{toc}{\ttl@change@i {\@ne }{part}{0pt}{\singlespacing \filright }{\sblarticle@hyperlink {\Hy@tocdestname }{\MakeUppercase {\appendixname }\ifnum \sblarticle@appendix@state >1\strut \space \thecontentslabel \fi :\enspace }\MakeUppercase }{\MakeUppercase }{\hspace {0.5em}\titlerule *[0.65pc]{.}\contentspage }\relax }}
 ...\write1{\@writefile{toc}{\ttl@change@v {part}{}{}{}\relax }}
 ...\glue -2.616
 ...\glue 0.0 plus 1.0fil
@@ -1261,14 +1261,14 @@ Completed box being shipped out [3]
 ....\hbox(0.0+0.0)x469.75502, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(650.43001+0.0)x469.75502, glue set 406.53656fil, direction TLT
+..\vbox(650.43001+0.0)x469.75502, glue set 411.836fil, direction TLT
 ...\write-{}
 ...\write1{\@writefile{lof}{\protect \ttl@tocsep }}
 ...\write1{\@writefile{lot}{\protect \ttl@tocsep }}
 ...\glue(\topskip) 12.0
 ...\rule(0.0+0.0)x*
 ...\penalty 10000
-...\glue 41.0
+...\glue 35.7
 ...\glue 0.0
 ...\glue 14.5
 ...\glue(\parskip) 0.0 plus 1.0

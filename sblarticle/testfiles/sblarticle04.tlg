@@ -1422,7 +1422,6 @@ Completed box being shipped out [2]
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\write1{\@writefile{toc}{\sblarticle@appendices 1}}
-...\write1{\@writefile{toc}{\def \protect \chaptername {\protect \bbl@ensure@english  {Appendix}}}}
 ...\glue -2.616
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
@@ -1462,12 +1461,12 @@ Completed box being shipped out [3]
 ...\pdflinkstate 0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(650.43001+0.0)x469.75502, glue set 408.27042fil, direction TLT
+..\vbox(650.43001+0.0)x469.75502, glue set 413.56985fil, direction TLT
 ...\write-{}
 ...\glue(\topskip) 12.0
 ...\rule(0.0+0.0)x*
 ...\penalty 10000
-...\glue 41.0
+...\glue 35.7
 ...\glue 0.0
 ...\glue 14.5
 ...\latelua0{}

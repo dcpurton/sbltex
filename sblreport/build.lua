@@ -5,6 +5,7 @@ maindir = ".."
 checkformat = "latex"
 checkengines = {"luatex"}
 checkdeps = {maindir .. "/sblfonts"}
+checkruns = 2
 typesetdemofiles = {"sbltex-thesis.tex"}
 typesetdeps = {maindir .. "/sblfonts"}
 typesetexe = "pdflatex"

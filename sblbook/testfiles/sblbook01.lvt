@@ -22,14 +22,14 @@
 \contentsline {chapter}{Introduction}{xxi}{}%
 \contentsline {chapter}{Abbreviations}{xxiii}{}%
 \contentsline {part}{\numberline {1}First Part}{1}{}%
-\addvspace {\bigskipamount }
+\addvspace {12pt plus 1pt}
 \contentsline {chapter}{\numberline {1}Page and Document Setup}{1}{}%
 \contentsline {section}{Typical SBL Book Specifications: 6 × 9}{1}{}%
 \contentsline {section}{Page Size}{1}{}%
 \contentsline {section}{Headers and Footers}{1}{}%
 \contentsline {section}{Chapter Title Pages}{3}{}%
 \contentsline {section}{Pagination}{3}{}%
-\addvspace {\bigskipamount }
+\addvspace {12pt plus 1pt}
 \contentsline {chapter}{\numberline {2}Font Selection}{5}{}%
 \contentsline {section}{Style and Size}{5}{}%
 \contentsline {section}{Headings and Subheadings}{5}{}%
@@ -39,13 +39,13 @@
 \contentsline {subsection}{Bibliographies and Indices}{7}{}%
 \contentsline {section}{Orphans and Widows}{7}{}%
 \contentsline {section}{Stacking}{7}{}%
-\addvspace {\bigskipamount }
+\addvspace {12pt plus 1pt}
 \contentsline {chapter}{\numberline {3}Citations}{9}{}%
-\addvspace {\bigskipamount }
+\addvspace {12pt plus 1pt}
 \contentsline {chapter}{\numberline {4}Greek and Hebrew}{11}{}%
 \sblbook@appendices 1
 \def \chaptername {Appendix}
-\addvspace {\bigskipamount }
+\addvspace {12pt plus 1pt}
 \contentsline {chapter}{\numberline {1}Appendix Title}{13}{}%
 \contentsline {chapter}{Bibliography}{15}{}%
 \contentsline {chapter}{Ancient Sources Index}{17}{}%

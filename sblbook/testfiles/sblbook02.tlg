@@ -291,7 +291,7 @@ Completed box being shipped out [3]
 ..\glue(\lineskip) 0.0
 ..\vbox(518.025+0.0)x325.215, glue set 24.0fil, direction TLT
 ...\vbox(494.025+0.0)x325.215, glue set 214.755fil, direction TLT
-....\write1{\@writefile{toc}{\addvspace {\bigskipamount }}}
+....\write1{\@writefile{toc}{\addvspace {12pt plus 1pt}}}
 ....\write-{}
 ....\glue(\topskip) 10.0
 ....\rule(0.0+0.0)x*
@@ -1294,11 +1294,6 @@ Completed box being shipped out [3]
 .\kern611.82753
 .\pdfliteral page <lua data reference ...>
 <<latex-list-css.html>><<latex-align-css.html>> (sblbook02.aux)
-LaTeX Warning: There were undefined references.
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                sblbook02
-(biblatex)                and rerun LaTeX afterwards.
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~33 structure objects
 (tagpdf)             with ~20 'MC' leaf nodes.
