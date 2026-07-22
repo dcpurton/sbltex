@@ -1129,7 +1129,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_set:Npn \tableofcontents
+\cs_set_protected:Npn \tableofcontents
   {
     \chapter* { \contentsname }
     \@mkboth
@@ -1144,7 +1144,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_set:Npn \listoffigures
+\cs_set_protected:Npn \listoffigures
   {
     \chapter* { \listfigurename }
     \addcontentsline { toc } { chapter } { \listfigurename }
@@ -1158,7 +1158,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\cs_set:Npn \listoftables
+\cs_set_protected:Npn \listoftables
   {
     \chapter* { \listtablename }
     \addcontentsline { toc } { chapter } { \listtablename }
